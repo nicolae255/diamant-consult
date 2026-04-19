@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Projets conclus · Diamant Consult — Biens vendus à Bruxelles</title>
+<meta name="description" content="Découvrez une sélection de biens accompagnés par Diamant Consult jusqu'à leur vente avec succès à Bruxelles : Schaerbeek, Uccle, Woluwé, Etterbeek, Anderlecht, Haren." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.diamantconsult.com/projets.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Projets conclus · Diamant Consult" />
+<meta property="og:description" content="Biens accompagnés jusqu'à leur vente avec succès." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
+<link rel="stylesheet" href="styles.css" />
+
+<style>
+  /* Empty state for "En cours" */
+  .empty-state {
+    grid-column: 1 / -1;
+    padding: clamp(3rem, 6vw, 5rem) 2rem;
+    text-align: center;
+    background: var(--bg-soft);
+    border: 1px dashed var(--line-2);
+    border-radius: var(--r-lg);
+  }
+  .empty-state .empty-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+    opacity: 0.2;
+  }
+  .empty-state h3 {
+    font-family: var(--display);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin-bottom: 0.75rem;
+  }
+  .empty-state p {
+    color: var(--mute);
+    max-width: 44ch;
+    margin: 0 auto 2rem;
+    font-size: 0.95rem;
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Diamant Consult — Accueil">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+      </svg>
+      <span>Diamant Consult</span>
+    </a>
+    <nav aria-label="Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html#offres">Offres</a></li>
+        <li><a href="projets.html" class="active">Projets</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><button class="active">FR</button><button>NL</button><button>EN</button></div>
+      <a href="contact.html" class="nav-cta">Contact<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="sep">/</span>
+      <span>Projets</span>
+    </div>
+
+    <div class="page-hero-inner">
+      <h1 class="display">Projets conclus <span style="color: var(--mute);">&amp; en cours.</span></h1>
+      <p class="page-hero-sub">
+        Découvrez une sélection de biens que nous avons accompagnés jusqu'à leur vente avec succès. Chaque transaction conclue reflète notre engagement à offrir un service personnalisé et efficace, adapté aux besoins de chaque acheteur et vendeur.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJETS -->
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="projets-filter">
+      <button class="filter-btn active" data-filter="all">
+        Tous
+        <span class="count">8</span>
+      </button>
+      <button class="filter-btn" data-filter="en-cours">
+        En cours
+        <span class="count">0</span>
+      </button>
+      <button class="filter-btn" data-filter="vendu">
+        Conclus
+        <span class="count">8</span>
+      </button>
+      <button class="filter-btn" data-filter="vp">
+        Vente publique
+        <span class="count">5</span>
+      </button>
+      <button class="filter-btn" data-filter="gg">
+        Gré à gré
+        <span class="count">3</span>
+      </button>
+    </div>
+
+    <div class="projets-grid" id="projets-grid">
+
+      <!-- 1 — Atelier + Habitation, Schaerbeek, VP -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Vente publique</span>
+          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Atelier et habitation à Schaerbeek" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Schaerbeek
+          </div>
+          <h3 class="projet-title">Atelier + Habitation</h3>
+        </div>
+      </article>
+
+      <!-- 2 — Maison, Schaerbeek, VP -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Vente publique</span>
+          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80" alt="Maison à Schaerbeek" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Schaerbeek
+          </div>
+          <h3 class="projet-title">Maison</h3>
+        </div>
+      </article>
+
+      <!-- 3 — Appartement, Uccle, VP -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Vente publique</span>
+          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Appartement à Uccle" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Uccle
+          </div>
+          <h3 class="projet-title">Appartement</h3>
+        </div>
+      </article>
+
+      <!-- 4 — Commerce + Habitation, Woluwé St-Lambert, GG -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Gré à gré</span>
+          <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=80" alt="Commerce et habitation à Woluwé-Saint-Lambert" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Woluwé-Saint-Lambert
+          </div>
+          <h3 class="projet-title">Commerce + Habitation</h3>
+        </div>
+      </article>
+
+      <!-- 5 — Appartement, Etterbeek, VP -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Vente publique</span>
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Appartement à Etterbeek" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Etterbeek
+          </div>
+          <h3 class="projet-title">Appartement</h3>
+        </div>
+      </article>
+
+      <!-- 6 — Maison, Anderlecht, VP -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Vente publique</span>
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Maison à Anderlecht" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Anderlecht
+          </div>
+          <h3 class="projet-title">Maison</h3>
+        </div>
+      </article>
+
+      <!-- 7 — Maison, Haren, GG -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Gré à gré</span>
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Maison à Haren" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Haren
+          </div>
+          <h3 class="projet-title">Maison</h3>
+        </div>
+      </article>
+
+      <!-- 8 — Maison, Schaerbeek, GG -->
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg">
+        <div class="projet-img">
+          <span class="projet-status vendu">Conclu</span>
+          <span class="projet-type">Gré à gré</span>
+          <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=800&q=80" alt="Maison à Schaerbeek" loading="lazy" />
+        </div>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Schaerbeek
+          </div>
+          <h3 class="projet-title">Maison</h3>
+        </div>
+      </article>
+
+      <!-- Empty state pour "En cours" -->
+      <div class="empty-state" id="empty-state" style="display: none;">
+        <svg class="empty-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L90 40 L50 92 L10 40 Z" stroke="currentColor" stroke-width="3" fill="none"/>
+          <path d="M10 40 L90 40" stroke="currentColor" stroke-width="2.5"/>
+          <path d="M50 8 L30 40 L50 92 L70 40 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+        <h3 class="display">De nouveaux projets arrivent.</h3>
+        <p>Nous préparons actuellement plusieurs biens qui seront bientôt mis en vente. Envie d'être informé en priorité ?</p>
+        <a href="contact.html" class="btn-primary">
+          Être notifié
+          <span class="arr-circle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div>
+        <div class="eyebrow light">Votre bien ici ?</div>
+        <h2 class="display" style="margin-top: 1rem;">Prêt à ajouter votre projet ?</h2>
+        <p>
+          Premier rendez-vous gratuit et sans engagement. Nous estimons votre bien et définissons ensemble la meilleure stratégie — gré à gré à 2% ou vente publique.
+        </p>
+      </div>
+
+      <div class="cta-box-actions">
+        <a href="mailto:borremans.helpinfo@gmail.com" class="cta-btn">
+          <span>borremans.helpinfo@gmail.com</span>
+          <span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+        <a href="tel:+32471853925" class="cta-btn-ghost">
+          <span>+32 471 85 39 25</span>
+          <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+          </svg>
+          <span>Diamant Consult</span>
+        </a>
+        <p>Vente immobilière à Bruxelles &amp; en Wallonie. 2% tout compris pour les particuliers, 500€ le pack visites pour les notaires.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Offres</h5>
+        <ul>
+          <li><a href="index.html#offres">Gré à gré · 2%</a></li>
+          <li><a href="index.html#offres">Ventes publiques · 500€</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Maison</h5>
+        <ul>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><span>Av. du Diamant 138</span></li>
+          <li><span>1030 Schaerbeek</span></li>
+          <li><a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a></li>
+          <li><a href="tel:+32471853925">+32 471 85 39 25</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Diamant Consult · TVA BE 1014.120.350</div>
+      <div class="legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('solid');
+    else nav.classList.remove('solid');
+  }, { passive: true });
+
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        obs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach((el) => obs.observe(el));
+
+  // Filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.projet-card');
+  const emptyState = document.getElementById('empty-state');
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+
+      let visibleCount = 0;
+      cards.forEach((c) => {
+        let show = false;
+        if (filter === 'all') show = true;
+        else if (filter === 'en-cours' && c.dataset.status === 'en-cours') show = true;
+        else if (filter === 'vendu' && c.dataset.status === 'vendu') show = true;
+        else if (filter === 'vp' && c.dataset.mode === 'vp') show = true;
+        else if (filter === 'gg' && c.dataset.mode === 'gg') show = true;
+
+        if (show) {
+          c.style.display = '';
+          setTimeout(() => c.style.opacity = '1', 10);
+          visibleCount++;
+        } else {
+          c.style.opacity = '0';
+          setTimeout(() => c.style.display = 'none', 300);
+        }
+      });
+
+      // Show empty state for "En cours" since we have none yet
+      if (filter === 'en-cours' && visibleCount === 0) {
+        emptyState.style.display = '';
+      } else {
+        emptyState.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Contact · Diamant Consult — Estimation gratuite &amp; sans engagement</title>
+<meta name="description" content="Contactez Diamant Consult pour estimer votre bien ou confier une mission de visites. Téléphone, email et formulaire de contact. Basés à Schaerbeek, Bruxelles." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.diamantconsult.com/contact.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact · Diamant Consult" />
+<meta property="og:description" content="Estimation gratuite et sans engagement. Réponse sous 48h." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Diamant Consult — Accueil">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+      </svg>
+      <span>Diamant Consult</span>
+    </a>
+    <nav aria-label="Navigation">
+      <ul class="nav-menu">
+        <li><a href="index.html#offres">Offres</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><button class="active">FR</button><button>NL</button><button>EN</button></div>
+      <a href="tel:+32471853925" class="nav-cta">
+        Appeler
+        <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <button class="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Accueil</a>
+      <span class="sep">/</span>
+      <span>Contact</span>
+    </div>
+
+    <div class="page-hero-inner">
+      <h1 class="display">Parlons de votre <span style="color: var(--mute);">projet.</span></h1>
+      <p class="page-hero-sub">
+        Premier rendez-vous gratuit et sans engagement. Nous répondons sous 48h à tous vos messages. Pour les demandes urgentes, un appel direct reste le plus rapide.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT GRID -->
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORMULAIRE -->
+      <div class="contact-form reveal">
+        <div class="eyebrow">Formulaire</div>
+        <h3 class="display" style="margin-top: 1rem;">Envoyez-nous un message</h3>
+        <p class="form-intro">
+          Estimation, visites, vente publique — dites-nous ce qu'il vous faut, on vous recontacte rapidement.
+        </p>
+
+        <!--
+          IMPORTANT : pour que ce formulaire envoie des messages, il faut :
+          1. Créer un compte gratuit sur https://formspree.io
+          2. Créer un nouveau form, copier l'endpoint (du type https://formspree.io/f/xyzabcde)
+          3. Remplacer "VOTRE_ID_FORMSPREE" ci-dessous par cet ID
+          Tant que ce n'est pas fait, le formulaire ne fonctionne pas.
+        -->
+        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+
+          <div class="field-row">
+            <div class="field">
+              <label for="prenom">Prénom <span class="req">*</span></label>
+              <input type="text" id="prenom" name="prenom" required autocomplete="given-name" />
+            </div>
+            <div class="field">
+              <label for="nom">Nom <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" />
+            </div>
+            <div class="field">
+              <label for="tel">Téléphone</label>
+              <input type="tel" id="tel" name="tel" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="type">Je suis</label>
+            <select id="type" name="type">
+              <option value="particulier">Particulier — je veux vendre</option>
+              <option value="notaire">Notaire — organisation de visites</option>
+              <option value="autre">Autre demande</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="adresse">Adresse du bien (si applicable)</label>
+            <input type="text" id="adresse" name="adresse" placeholder="Rue, numéro, commune" />
+          </div>
+
+          <div class="field">
+            <label for="message">Votre message <span class="req">*</span></label>
+            <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos questions, vos contraintes..."></textarea>
+          </div>
+
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <button type="submit" class="contact-submit">
+            Envoyer le message
+            <svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- INFOS -->
+      <div class="contact-info">
+
+        <div class="info-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Téléphone — réponse immédiate</div>
+            <a href="tel:+32471853925" class="info-value">+32 471 85 39 25</a>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Email</div>
+            <a href="mailto:borremans.helpinfo@gmail.com" class="info-value">borremans.helpinfo@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Adresse</div>
+            <div class="info-value">Avenue du Diamant 138<br>1030 Schaerbeek</div>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <div class="info-label">Disponibilité</div>
+            <div class="info-value">Lun — Sam<br><span style="font-family: var(--sans); font-size: 0.9rem; color: var(--mute); font-weight: 400;">Soirs &amp; week-ends inclus</span></div>
+          </div>
+        </div>
+
+        <div class="map-embed reveal">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=4.3795%2C50.8600%2C4.3925%2C50.8680&layer=mapnik&marker=50.8640%2C4.3860"
+            loading="lazy"
+            title="Localisation Diamant Consult — Avenue du Diamant 138, Schaerbeek"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ / ZONE INTERVENTION REMINDER -->
+<section style="background: var(--bg-soft); padding: clamp(4rem, 8vw, 6rem) 0;">
+  <div class="container">
+    <div class="offers-head">
+      <div>
+        <div class="eyebrow">Questions fréquentes</div>
+        <h2 class="display reveal" style="margin-top: 1rem;">À savoir <span style="color: var(--mute);">avant de nous contacter.</span></h2>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 1rem;" id="faq">
+      <details class="info-card reveal" style="cursor: pointer; display: block;">
+        <summary style="list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+          <span class="info-value" style="font-size: 1.1rem;">Combien coûte exactement une vente gré à gré ?</span>
+          <span style="font-family: var(--display); font-size: 1.5rem; color: var(--mute);">+</span>
+        </summary>
+        <p style="margin-top: 1rem; color: var(--ink-2); line-height: 1.6;">
+          2% du prix de vente final, tout compris. Ce tarif couvre la prise de contact, l'estimation, le marketing, les photos, les annonces, les visites, la négociation, le rapport final et l'accompagnement jusqu'à la signature chez le notaire. Aucun frais caché.
+        </p>
+      </details>
+
+      <details class="info-card reveal" style="cursor: pointer; display: block;">
+        <summary style="list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+          <span class="info-value" style="font-size: 1.1rem;">Qu'est-ce qui est inclus dans le pack visites notaires à 500€ ?</span>
+          <span style="font-family: var(--display); font-size: 1.5rem; color: var(--mute);">+</span>
+        </summary>
+        <p style="margin-top: 1rem; color: var(--ink-2); line-height: 1.6;">
+          Le pack couvre 2 à 3 week-ends de permanences de visites pour une vente publique, la reconnaissance préalable du bien, l'explication de la procédure Biddit aux candidats, un rapport détaillé après chaque visite et une synthèse finale.
+        </p>
+      </details>
+
+      <details class="info-card reveal" style="cursor: pointer; display: block;">
+        <summary style="list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+          <span class="info-value" style="font-size: 1.1rem;">Intervenez-vous en dehors de Bruxelles ?</span>
+          <span style="font-family: var(--display); font-size: 1.5rem; color: var(--mute);">+</span>
+        </summary>
+        <p style="margin-top: 1rem; color: var(--ink-2); line-height: 1.6;">
+          Oui. Nous couvrons les 19 communes de Bruxelles ainsi que certaines zones wallonnes (Brabant wallon, Waterloo, La Hulpe, Wavre, Nivelles, Namur). Pour les autres localités, contactez-nous — c'est à discuter selon votre projet.
+        </p>
+      </details>
+
+      <details class="info-card reveal" style="cursor: pointer; display: block;">
+        <summary style="list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem;">
+          <span class="info-value" style="font-size: 1.1rem;">Sous combien de temps recevrai-je une réponse ?</span>
+          <span style="font-family: var(--display); font-size: 1.5rem; color: var(--mute);">+</span>
+        </summary>
+        <p style="margin-top: 1rem; color: var(--ink-2); line-height: 1.6;">
+          Nous répondons à tous les messages sous 48h. Pour une réponse immédiate, l'appel au +32 471 85 39 25 reste la voie la plus rapide — y compris en soirée et le week-end.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+          </svg>
+          <span>Diamant Consult</span>
+        </a>
+        <p>Vente immobilière à Bruxelles &amp; en Wallonie. 2% tout compris pour les particuliers, 500€ le pack visites pour les notaires.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Offres</h5>
+        <ul>
+          <li><a href="index.html#offres">Gré à gré · 2%</a></li>
+          <li><a href="index.html#offres">Ventes publiques · 500€</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Maison</h5>
+        <ul>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><span>Av. du Diamant 138</span></li>
+          <li><span>1030 Schaerbeek</span></li>
+          <li><a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a></li>
+          <li><a href="tel:+32471853925">+32 471 85 39 25</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Diamant Consult · TVA BE 1014.120.350</div>
+      <div class="legal"><a href="#">Mentions légales</a><a href="#">Confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) nav.classList.add('solid'); else nav.classList.remove('solid');
+  }, { passive: true });
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach((el) => obs.observe(el));
+
+  // FAQ : changer + en − quand ouvert
+  document.querySelectorAll('#faq details').forEach((d) => {
+    d.addEventListener('toggle', () => {
+      const plus = d.querySelector('summary > span:last-child');
+      if (plus) plus.textContent = d.open ? '−' : '+';
+    });
+  });
+</script>
+
+</body>
+</html>
