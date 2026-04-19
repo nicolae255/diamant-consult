@@ -21,6 +21,26 @@
 <link rel="stylesheet" href="styles.css" />
 
 <style>
+  .projet-img-link { display: block; }
+  .projet-img-link .projet-img { transition: opacity 0.3s; }
+  .projet-img-link:hover .projet-img { opacity: 0.92; }
+
+  .immoweb-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line-2);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+  }
+  .immoweb-link svg { width: 13px; height: 13px; transition: transform 0.3s; }
+  .immoweb-link:hover { border-color: var(--ink); }
+  .immoweb-link:hover svg { transform: translate(2px, -2px); }
+
   /* Empty state for "En cours" */
   .empty-state {
     grid-column: 1 / -1;
@@ -100,11 +120,11 @@
     <div class="projets-filter">
       <button class="filter-btn active" data-filter="all">
         Tous
-        <span class="count">8</span>
+        <span class="count">9</span>
       </button>
       <button class="filter-btn" data-filter="en-cours">
         En cours
-        <span class="count">0</span>
+        <span class="count">1</span>
       </button>
       <button class="filter-btn" data-filter="vendu">
         Conclus
@@ -122,12 +142,34 @@
 
     <div class="projets-grid" id="projets-grid">
 
+      <!-- 0 — Maison, Rixensart, EN COURS -->
+      <article class="projet-card reveal" data-status="en-cours" data-mode="gg">
+        <a href="https://www.immoweb.be/fr/annonce/maison/a-vendre/rixensart/1332/21497735?s=s_L" target="_blank" rel="noopener noreferrer" class="projet-img-link">
+          <div class="projet-img">
+            <span class="projet-status en-cours">En cours</span>
+            <span class="projet-type">Gré à gré</span>
+            <img src="img/projets/maison-rixensart.png" alt="Maison à Rixensart" loading="lazy" />
+          </div>
+        </a>
+        <div class="projet-body">
+          <div class="projet-addr">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>
+            Rixensart
+          </div>
+          <h3 class="projet-title">Maison</h3>
+          <a href="https://www.immoweb.be/fr/annonce/maison/a-vendre/rixensart/1332/21497735?s=s_L" target="_blank" rel="noopener noreferrer" class="immoweb-link">
+            Voir sur Immoweb
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
       <!-- 1 — Atelier + Habitation, Schaerbeek, VP -->
       <article class="projet-card reveal" data-status="vendu" data-mode="vp">
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Vente publique</span>
-          <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Atelier et habitation à Schaerbeek" loading="lazy" />
+          <img src="img/projets/atelier-schaerbeek.png" alt="Atelier et habitation à Schaerbeek" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -143,7 +185,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Vente publique</span>
-          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80" alt="Maison à Schaerbeek" loading="lazy" />
+          <img src="img/projets/maison-schaerbeek-1.png" alt="Maison à Schaerbeek" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -159,7 +201,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Vente publique</span>
-          <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Appartement à Uccle" loading="lazy" />
+          <img src="img/projets/appart-uccle.png" alt="Appartement à Uccle" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -175,7 +217,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Gré à gré</span>
-          <img src="https://images.unsplash.com/photo-1555636222-cae831e670b3?auto=format&fit=crop&w=800&q=80" alt="Commerce et habitation à Woluwé-Saint-Lambert" loading="lazy" />
+          <img src="img/projets/commerce-woluwe.png" alt="Commerce et habitation à Woluwé-Saint-Lambert" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -207,7 +249,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Vente publique</span>
-          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Maison à Anderlecht" loading="lazy" />
+          <img src="img/projets/maison-anderlecht.png" alt="Maison à Anderlecht" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -223,7 +265,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Gré à gré</span>
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80" alt="Maison à Haren" loading="lazy" />
+          <img src="img/projets/maison-haren.png" alt="Maison à Haren" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -239,7 +281,7 @@
         <div class="projet-img">
           <span class="projet-status vendu">Conclu</span>
           <span class="projet-type">Gré à gré</span>
-          <img src="https://images.unsplash.com/photo-1605146769289-440113cc3d00?auto=format&fit=crop&w=800&q=80" alt="Maison à Schaerbeek" loading="lazy" />
+          <img src="img/projets/maison-schaerbeek-2.png" alt="Maison à Schaerbeek" loading="lazy" />
         </div>
         <div class="projet-body">
           <div class="projet-addr">
@@ -250,7 +292,7 @@
         </div>
       </article>
 
-      <!-- Empty state pour "En cours" -->
+      <!-- Empty state pour "En cours" (masqué car on a 1 projet) -->
       <div class="empty-state" id="empty-state" style="display: none;">
         <svg class="empty-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M50 8 L90 40 L50 92 L10 40 Z" stroke="currentColor" stroke-width="3" fill="none"/>
