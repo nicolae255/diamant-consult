@@ -81,14 +81,14 @@
           Estimation, visites, vente publique — dites-nous ce qu'il vous faut, on vous recontacte rapidement.
         </p>
 
-        <!--
-          IMPORTANT : pour que ce formulaire envoie des messages, il faut :
-          1. Créer un compte gratuit sur https://formspree.io
-          2. Créer un nouveau form, copier l'endpoint (du type https://formspree.io/f/xyzabcde)
-          3. Remplacer "VOTRE_ID_FORMSPREE" ci-dessous par cet ID
-          Tant que ce n'est pas fait, le formulaire ne fonctionne pas.
-        -->
-        <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
+        <form action="https://formsubmit.co/nicolascojocari@yahoo.fr" method="POST">
+
+          <!-- Formsubmit config -->
+          <input type="hidden" name="_subject" value="Nouveau message — Diamant Consult" />
+          <input type="hidden" name="_next" value="https://nicolae255.github.io/diamant-consult/contact.html?merci=1" />
+          <input type="hidden" name="_captcha" value="false" />
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="field-row">
             <div class="field">
@@ -130,9 +130,6 @@
             <label for="message">Votre message <span class="req">*</span></label>
             <textarea id="message" name="message" required placeholder="Décrivez votre projet, vos questions, vos contraintes..."></textarea>
           </div>
-
-          <!-- Honeypot anti-spam -->
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 
           <button type="submit" class="contact-submit">
             Envoyer le message
