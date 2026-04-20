@@ -6,31 +6,31 @@
 <title>PEB avant la vente : ce qu'on vérifie pour vous · Diamant Consult</title>
 <meta name="description" content="Comment Diamant Consult intègre le certificat PEB dans la stratégie de mise en vente à Bruxelles pour éviter les mauvaises surprises." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://www.diamantconsult.com/blog-certificat-peb.html" />
+<link rel="canonical" href="https://www.diamantconsult.com/certificat-peb-vente-immobiliere/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand" aria-label="Diamant Consult — Accueil">
+    <a href="../" class="brand" aria-label="Diamant Consult — Accueil">
       <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
       <span>Diamant Consult</span>
     </a>
     <nav aria-label="Navigation">
       <ul class="nav-menu">
-        <li><a href="index.html#offres">Offres</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../#offres">Offres</a></li>
+        <li><a href="../projets/">Projets</a></li>
+        <li><a href="../blog/" class="active">Blog</a></li>
+        <li><a href="../contact/">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
       <div class="lang"><button class="active">FR</button><button>NL</button><button>EN</button></div>
-      <a href="contact.html" class="nav-cta">Vendre mon bien<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../contact/" class="nav-cta">Vendre mon bien<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <button class="burger" aria-label="Menu"><span></span><span></span></button>
     </div>
   </div>
@@ -39,8 +39,8 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb">
-      <a href="index.html">Accueil</a><span class="sep">/</span>
-      <a href="blog.html">Blog</a><span class="sep">/</span>
+      <a href="../">Accueil</a><span class="sep">/</span>
+      <a href="../blog/">Blog</a><span class="sep">/</span>
       <span>PEB avant la vente</span>
     </div>
     <div class="page-hero-inner">
@@ -112,14 +112,14 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand">
+        <a href="../" class="brand">
           <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
           <span>Diamant Consult</span>
         </a>
         <p>Vente immobilière à Bruxelles &amp; en Wallonie. 2% tout compris pour les particuliers, 600€ le pack visites pour les notaires.</p>
       </div>
-      <div class="footer-col"><h5>Offres</h5><ul><li><a href="index.html#offres">Gré à gré · 2%</a></li><li><a href="index.html#offres">Ventes publiques · 600€</a></li><li><a href="projets.html">Projets</a></li></ul></div>
-      <div class="footer-col"><h5>Maison</h5><ul><li><a href="projets.html">Projets</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Offres</h5><ul><li><a href="../#offres">Gré à gré · 2%</a></li><li><a href="../#offres">Ventes publiques · 600€</a></li><li><a href="../projets/">Projets</a></li></ul></div>
+      <div class="footer-col"><h5>Maison</h5><ul><li><a href="../projets/">Projets</a></li><li><a href="../blog/">Blog</a></li><li><a href="../contact/">Contact</a></li></ul></div>
       <div class="footer-col"><h5>Contact</h5><ul><li><span>Av. du Diamant 138</span></li><li><span>1030 Schaerbeek</span></li><li><a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a></li><li><a href="tel:+32471853925">+32 471 85 39 25</a></li></ul></div>
     </div>
     <div class="footer-bottom">
@@ -133,6 +133,10 @@
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => { if (window.scrollY > 40) nav.classList.add('solid'); else nav.classList.remove('solid'); }, { passive: true });
   document.querySelectorAll('.reveal').forEach((el) => { new IntersectionObserver(([e]) => { if (e.isIntersecting) e.target.classList.add('visible'); }, { threshold: 0.1 }).observe(el); });
+
+  const lb = document.querySelectorAll('.lang button');
+  lb[1].onclick = () => location.href = '../nl/epc-attest-verkoop/';
+  lb[2].onclick = () => location.href = '../en/epc-certificate-property-sale/';
 </script>
 </body>
 </html>

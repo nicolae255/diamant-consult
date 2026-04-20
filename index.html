@@ -69,9 +69,9 @@
     <nav aria-label="Navigation">
       <ul class="nav-menu">
         <li><a href="#offres">Offres</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="projets/">Projets</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="contact/">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
@@ -80,7 +80,7 @@
         <button>NL</button>
         <button>EN</button>
       </div>
-      <a href="contact.html" class="nav-cta">
+      <a href="contact/" class="nav-cta">
         Vendre mon bien
         <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/>
@@ -110,7 +110,7 @@
         </p>
 
         <div class="hero-cta-row">
-          <a href="contact.html" class="btn-primary">
+          <a href="contact/" class="btn-primary">
             Vendre mon bien
             <span class="arr-circle">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
@@ -254,7 +254,7 @@
           </li>
         </ul>
 
-        <a href="contact.html" class="offer-cta">
+        <a href="contact/" class="offer-cta">
           Vendre mon bien
           <span class="arr-circle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -302,7 +302,7 @@
           </li>
         </ul>
 
-        <a href="contact.html" class="offer-cta">
+        <a href="contact/" class="offer-cta">
           Confier un dossier
           <span class="arr-circle">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -516,7 +516,7 @@
         <li>La Hulpe</li>
         <li>Wavre</li>
       </ul>
-      <p class="zone-note">Autres localités wallonnes : <a href="contact.html" style="color: var(--ink); text-decoration: underline;">nous contacter</a> pour discuter de votre projet.</p>
+      <p class="zone-note">Autres localités wallonnes : <a href="contact/" style="color: var(--ink); text-decoration: underline;">nous contacter</a> pour discuter de votre projet.</p>
     </div>
   </div>
 </section>
@@ -548,7 +548,7 @@
         <div class="eyebrow">Journal</div>
         <h2 class="display reveal" style="margin-top: 1rem;">Comprendre le marché.</h2>
       </div>
-      <a href="blog.html" class="all-link">
+      <a href="blog/" class="all-link">
         Tous les articles
         <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -556,7 +556,7 @@
 
     <div class="articles">
       <article class="article reveal">
-        <a href="blog.html">
+        <a href="blog/">
           <div class="article-img">
             <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Réussir une vente immobilière à Bruxelles en 2026" loading="lazy" />
           </div>
@@ -570,7 +570,7 @@
       </article>
 
       <article class="article reveal">
-        <a href="blog.html">
+        <a href="blog/">
           <div class="article-img">
             <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Erreurs à éviter dans votre vente immobilière" loading="lazy" />
           </div>
@@ -584,7 +584,7 @@
       </article>
 
       <article class="article reveal">
-        <a href="blog.html">
+        <a href="blog/">
           <div class="article-img">
             <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80" alt="Vente réussie à Schaerbeek" loading="lazy" />
           </div>
@@ -647,16 +647,16 @@
         <ul>
           <li><a href="#offres">Gré à gré · 2%</a></li>
           <li><a href="#offres">Ventes publiques · 600€</a></li>
-          <li><a href="projets.html">Projets</a></li>
+          <li><a href="projets/">Projets</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h5>Maison</h5>
         <ul>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="projets/">Projets</a></li>
+          <li><a href="blog/">Blog</a></li>
+          <li><a href="contact/">Contact</a></li>
         </ul>
       </div>
 
@@ -698,6 +698,10 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach((el) => obs.observe(el));
+
+  const lb = document.querySelectorAll('.lang button');
+  lb[1].onclick = () => location.href = 'nl/';
+  lb[2].onclick = () => location.href = 'en/';
 </script>
 
 </body>

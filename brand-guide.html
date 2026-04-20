@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Charte graphique · Diamant Consult</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Inter Tight", sans-serif;
+    background: #F4F2ED;
+    color: #0A0A0A;
+    padding: 4rem 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(10,10,10,0.1);
+  }
+  .header-brand { display: flex; align-items: center; gap: 1rem; }
+  .header-brand svg { width: 36px; height: 36px; }
+  .header-brand span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.4rem; font-weight: 700; letter-spacing: -0.02em; }
+  .header-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: #6B6B66; }
+
+  /* Section */
+  .section { margin-bottom: 3.5rem; }
+  .section-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #9A968D;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+  }
+
+  /* Grid */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+  .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1rem; }
+
+  /* Color swatch */
+  .swatch {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(10,10,10,0.08);
+  }
+  .swatch-color { height: 80px; }
+  .swatch-info { padding: 0.75rem 1rem; background: #fff; }
+  .swatch-name { font-weight: 600; font-size: 0.85rem; margin-bottom: 0.2rem; }
+  .swatch-hex { font-size: 0.75rem; color: #6B6B66; font-family: monospace; }
+  .swatch-use { font-size: 0.7rem; color: #9A968D; margin-top: 0.2rem; }
+
+  /* Font card */
+  .font-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(10,10,10,0.08);
+  }
+  .font-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #9A968D; margin-bottom: 1rem; }
+  .font-sample-display { font-family: "Bricolage Grotesque", sans-serif; font-size: 3rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1; margin-bottom: 0.75rem; }
+  .font-sample-sans { font-family: "Inter Tight", sans-serif; font-size: 1.5rem; font-weight: 400; line-height: 1.2; margin-bottom: 0.75rem; color: #1A1A1A; }
+  .font-name { font-size: 0.8rem; color: #6B6B66; }
+  .font-weights { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+  .font-weights span { font-size: 0.85rem; color: #6B6B66; }
+
+  /* Logo card */
+  .logo-card {
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(10,10,10,0.08);
+  }
+  .logo-bg-dark {
+    background: #0A0A0A;
+    padding: 3rem 2rem;
+    display: flex; align-items: center; gap: 1.25rem;
+  }
+  .logo-bg-dark svg { width: 48px; height: 48px; color: #fff; }
+  .logo-bg-dark span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.8rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  .logo-bg-light {
+    background: #F4F2ED;
+    padding: 3rem 2rem;
+    display: flex; align-items: center; gap: 1.25rem;
+    border-top: 1px solid rgba(10,10,10,0.08);
+  }
+  .logo-bg-light svg { width: 48px; height: 48px; color: #0A0A0A; }
+  .logo-bg-light span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.8rem; font-weight: 700; color: #0A0A0A; letter-spacing: -0.02em; }
+  .logo-bg-white {
+    background: #fff;
+    padding: 3rem 2rem;
+    display: flex; align-items: center; gap: 1.25rem;
+    border-top: 1px solid rgba(10,10,10,0.08);
+  }
+  .logo-bg-white svg { width: 48px; height: 48px; color: #0A0A0A; }
+  .logo-bg-white span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.8rem; font-weight: 700; color: #0A0A0A; letter-spacing: -0.02em; }
+
+  /* Tagline */
+  .tagline-card {
+    background: #0A0A0A;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+  }
+  .tagline-text { font-family: "Bricolage Grotesque", sans-serif; font-size: 2.5rem; font-weight: 700; color: #fff; letter-spacing: -0.03em; line-height: 1.1; }
+  .tagline-text .light { font-weight: 300; color: rgba(255,255,255,0.4); }
+  .tagline-sub { font-size: 0.85rem; color: rgba(255,255,255,0.35); margin-top: 1rem; letter-spacing: 0.02em; }
+
+  /* Radius */
+  .radius-row { display: flex; gap: 1rem; align-items: flex-end; }
+  .radius-item { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+  .radius-box { background: #0A0A0A; width: 72px; height: 72px; }
+  .radius-label { font-size: 0.75rem; color: #6B6B66; text-align: center; }
+
+  /* Type scale */
+  .type-row { display: flex; flex-direction: column; gap: 0.75rem; background: #fff; border-radius: 16px; padding: 1.75rem; border: 1px solid rgba(10,10,10,0.08); }
+  .type-item { display: flex; align-items: baseline; gap: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid rgba(10,10,10,0.06); }
+  .type-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .type-meta { font-size: 0.7rem; color: #9A968D; width: 120px; flex-shrink: 0; line-height: 1.4; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-brand">
+    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+    </svg>
+    <span>Diamant Consult</span>
+  </div>
+  <div class="header-label">Charte graphique · 2026</div>
+</div>
+
+<!-- LOGO -->
+<div class="section">
+  <div class="section-title">Logo</div>
+  <div class="grid-2">
+    <div class="logo-card">
+      <div class="logo-bg-dark">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+        <span>Diamant Consult</span>
+      </div>
+      <div class="logo-bg-light">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+        <span>Diamant Consult</span>
+      </div>
+      <div class="logo-bg-white">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+        <span>Diamant Consult</span>
+      </div>
+    </div>
+    <div class="tagline-card">
+      <div class="tagline-text">Vendez<br><span class="light">sans</span><br>surprise.</div>
+      <div class="tagline-sub">Tagline principale · toujours en Bricolage Grotesque<br>Jamais de majuscules excessives · ton direct</div>
+    </div>
+  </div>
+</div>
+
+<!-- COULEURS -->
+<div class="section">
+  <div class="section-title">Couleurs</div>
+  <div class="grid-5">
+    <div class="swatch">
+      <div class="swatch-color" style="background:#0A0A0A;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Ink</div>
+        <div class="swatch-hex">#0A0A0A</div>
+        <div class="swatch-use">Fond dark · texte principal</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#1A1A1A;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Ink 2</div>
+        <div class="swatch-hex">#1A1A1A</div>
+        <div class="swatch-use">Texte secondaire</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#6B6B66;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Mute</div>
+        <div class="swatch-hex">#6B6B66</div>
+        <div class="swatch-use">Texte discret · labels</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#FFFFFF; border-bottom: 1px solid #eee;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Blanc</div>
+        <div class="swatch-hex">#FFFFFF</div>
+        <div class="swatch-use">Fond principal</div>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background:#F4F2ED;"></div>
+      <div class="swatch-info">
+        <div class="swatch-name">Bg Soft</div>
+        <div class="swatch-hex">#F4F2ED</div>
+        <div class="swatch-use">Fond cards · sections</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHIE -->
+<div class="section">
+  <div class="section-title">Typographie</div>
+  <div class="grid-2">
+    <div class="font-card">
+      <div class="font-label">Display — Titres, logo, CTA</div>
+      <div class="font-sample-display">Bricolage<br>Grotesque</div>
+      <div class="font-name">Bricolage Grotesque · Google Fonts</div>
+      <div class="font-weights">
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:300;">Light 300</span>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:400;">Regular 400</span>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;">Bold 700</span>
+        <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;">Extra 800</span>
+      </div>
+    </div>
+    <div class="font-card">
+      <div class="font-label">Corps — Textes, labels, nav</div>
+      <div class="font-sample-sans">Inter Tight<br>pour tout le reste.</div>
+      <div class="font-name">Inter Tight · Google Fonts</div>
+      <div class="font-weights">
+        <span style="font-weight:300;">Light 300</span>
+        <span style="font-weight:400;">Regular 400</span>
+        <span style="font-weight:500;">Medium 500</span>
+        <span style="font-weight:600;">Semi 600</span>
+        <span style="font-weight:700;">Bold 700</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ÉCHELLE TYPO -->
+<div class="section">
+  <div class="section-title">Échelle typographique</div>
+  <div class="type-row">
+    <div class="type-item">
+      <div class="type-meta">H1 · Display<br>clamp 3–5rem</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:2.8rem;font-weight:700;letter-spacing:-0.03em;line-height:1;">Vendez sans surprise.</div>
+    </div>
+    <div class="type-item">
+      <div class="type-meta">H2 · Display<br>clamp 1.8–2.5rem</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:2rem;font-weight:700;letter-spacing:-0.02em;">Tout compris à 2%</div>
+    </div>
+    <div class="type-item">
+      <div class="type-meta">H3 · Display<br>clamp 1.2–1.6rem</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-size:1.4rem;font-weight:600;letter-spacing:-0.01em;">Maison · Schaerbeek</div>
+    </div>
+    <div class="type-item">
+      <div class="type-meta">Corps · Sans<br>1rem / line-height 1.6</div>
+      <div style="font-size:1rem;line-height:1.6;color:#1A1A1A;">Un seul interlocuteur, de la prise de contact à la signature chez le notaire. Marketing, visites, offres, négociation et rapport final détaillé.</div>
+    </div>
+    <div class="type-item">
+      <div class="type-meta">Label · Sans<br>0.75rem · uppercase</div>
+      <div style="font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:600;color:#6B6B66;">Gré à gré · 2% tout compris</div>
+    </div>
+  </div>
+</div>
+
+<!-- RAYONS -->
+<div class="section">
+  <div class="section-title">Rayons des coins</div>
+  <div class="radius-row">
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius:12px;"></div>
+      <div class="radius-label">sm<br>12px</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius:20px;width:88px;height:88px;"></div>
+      <div class="radius-label">md<br>20px</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius:28px;width:104px;height:104px;"></div>
+      <div class="radius-label">lg<br>28px</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius:40px;width:120px;height:120px;"></div>
+      <div class="radius-label">xl<br>40px</div>
+    </div>
+    <div class="radius-item">
+      <div class="radius-box" style="border-radius:9999px;width:140px;height:48px;margin-bottom:12px;"></div>
+      <div class="radius-label">pill<br>9999px</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

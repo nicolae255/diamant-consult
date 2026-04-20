@@ -6,26 +6,26 @@
 <title>Contact · Diamant Consult — Free valuation &amp; no obligation</title>
 <meta name="description" content="Contact Diamant Consult to value your property or commission a viewing service. Phone, email and contact form. Based in Schaerbeek, Brussels." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://www.diamantconsult.com/en/contact.html" />
+<link rel="canonical" href="https://www.diamantconsult.com/en/contact/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
-<link rel="stylesheet" href="../styles.css" />
+<link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand" aria-label="Diamant Consult — Home">
+    <a href="../" class="brand" aria-label="Diamant Consult — Home">
       <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
       <span>Diamant Consult</span>
     </a>
     <nav aria-label="Navigation">
       <ul class="nav-menu">
-        <li><a href="index.html#offres">Services</a></li>
-        <li><a href="projets.html">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="../#offres">Services</a></li>
+        <li><a href="../projects/">Projects</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../contact/" class="active">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
@@ -38,7 +38,7 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
+    <div class="breadcrumb"><a href="../">Home</a><span class="sep">/</span><span>Contact</span></div>
     <div class="page-hero-inner">
       <h1 class="display">Let's talk about <span style="color: var(--mute);">your project.</span></h1>
       <p class="page-hero-sub">Free first meeting, no strings attached. We respond to all messages within 48 hours. For urgent enquiries, a direct call is the fastest option.</p>
@@ -62,7 +62,7 @@
 
         <form action="https://formsubmit.co/nicolascojocari@yahoo.fr" method="POST">
           <input type="hidden" name="_subject" value="New message — Diamant Consult (EN)" />
-          <input type="hidden" name="_next" value="https://www.diamantconsult.com/en/contact.html?merci=1" />
+          <input type="hidden" name="_next" value="https://www.diamantconsult.com/en/contact/?merci=1" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="field-row">
@@ -118,9 +118,9 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
-      <div class="footer-brand"><a href="index.html" class="brand"><svg class="brand-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg><span>Diamant Consult</span></a><p>Property sales in Brussels &amp; Wallonia. 2% all in for private sellers, €600 viewing pack for notaries.</p></div>
-      <div class="footer-col"><h5>Services</h5><ul><li><a href="index.html#offres">Private sale · 2%</a></li><li><a href="index.html#offres">Public auctions · €600</a></li><li><a href="projets.html">Projects</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="projets.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-brand"><a href="../" class="brand"><svg class="brand-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg><span>Diamant Consult</span></a><p>Property sales in Brussels &amp; Wallonia. 2% all in for private sellers, €600 viewing pack for notaries.</p></div>
+      <div class="footer-col"><h5>Services</h5><ul><li><a href="../#offres">Private sale · 2%</a></li><li><a href="../#offres">Public auctions · €600</a></li><li><a href="../projects/">Projects</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="../projects/">Projects</a></li><li><a href="../blog/">Blog</a></li><li><a href="../contact/">Contact</a></li></ul></div>
       <div class="footer-col"><h5>Contact</h5><ul><li><span>Av. du Diamant 138</span></li><li><span>1030 Schaerbeek</span></li><li><a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a></li><li><a href="tel:+32471853925">+32 471 85 39 25</a></li></ul></div>
     </div>
     <div class="footer-bottom"><div>© 2026 Diamant Consult · VAT BE 1014.120.350</div><div class="legal"><a href="#">Legal notice</a><a href="#">Privacy</a></div></div>
@@ -134,8 +134,8 @@
   const obs = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach((el) => obs.observe(el));
   const lb = document.querySelectorAll('.lang button');
-  lb[0].onclick = () => location.href = '../contact.html';
-  lb[1].onclick = () => location.href = '../nl/contact.html';
+  lb[0].onclick = () => location.href = '../../contact/';
+  lb[1].onclick = () => location.href = '../../nl/contact/';
   if (new URLSearchParams(window.location.search).get('merci') === '1') {
     const form = document.querySelector('.contact-form form');
     const success = document.getElementById('form-success');

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Asset Notaires · Diamant Consult</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Inter Tight", sans-serif; background: #F4F2ED; padding: 3rem 2rem; color: #0A0A0A; }
+  .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #9A968D; margin-bottom: 1rem; }
+  .note { font-size: 0.8rem; color: #9A968D; margin-top: 0.75rem; }
+  .row { display: flex; gap: 2rem; flex-wrap: wrap; margin-bottom: 4rem; }
+
+  /* ── POST CARRÉ 1080×1080 (affiché à 50%) ── */
+  .post {
+    width: 540px; height: 540px;
+    background: #0A0A0A;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    padding: 52px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .post::before {
+    content: '';
+    position: absolute;
+    right: -40px; top: -40px;
+    width: 260px; height: 260px;
+    border: 1px solid rgba(255,255,255,0.06);
+    transform: rotate(15deg);
+  }
+  .post::after {
+    content: '';
+    position: absolute;
+    left: -60px; bottom: -60px;
+    width: 220px; height: 220px;
+    border: 1px solid rgba(255,255,255,0.04);
+    transform: rotate(30deg);
+  }
+  .post-top { display: flex; align-items: center; gap: 1rem; position: relative; z-index: 1; }
+  .post-top svg { width: 32px; height: 32px; color: #fff; }
+  .post-top span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.1rem; font-weight: 600; color: #fff; letter-spacing: -0.01em; }
+  .post-mid { position: relative; z-index: 1; }
+  .post-eyebrow { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.35); margin-bottom: 1rem; }
+  .post-headline { font-family: "Bricolage Grotesque", sans-serif; font-size: 2.8rem; font-weight: 700; color: #fff; letter-spacing: -0.04em; line-height: 1.05; }
+  .post-headline .light { font-weight: 300; color: rgba(255,255,255,0.35); }
+  .post-bottom { display: flex; justify-content: space-between; align-items: flex-end; position: relative; z-index: 1; }
+  .post-pills { display: flex; flex-direction: column; gap: 0.5rem; }
+  .pill {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.7);
+    font-size: 0.78rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    width: fit-content;
+  }
+  .pill svg { width: 12px; height: 12px; }
+  .post-url { font-size: 0.75rem; color: rgba(255,255,255,0.25); }
+
+  /* ── BANNIÈRE HORIZONTALE 1200×400 ── */
+  .banner {
+    width: 1200px; height: 400px;
+    background: #0A0A0A;
+    display: flex; align-items: center;
+    padding: 0 80px;
+    gap: 80px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .banner::before {
+    content: '';
+    position: absolute;
+    right: 60px; top: 50%;
+    transform: translateY(-50%) rotate(15deg);
+    width: 320px; height: 320px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .banner-divider { width: 1px; height: 160px; background: rgba(255,255,255,0.1); flex-shrink: 0; }
+  .banner-left { flex-shrink: 0; }
+  .banner-logo { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .banner-logo svg { width: 40px; height: 40px; color: #fff; }
+  .banner-logo span { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.4rem; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+  .banner-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.35); }
+  .banner-mid { flex: 1; position: relative; z-index: 1; }
+  .banner-mid .eyebrow { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.35); margin-bottom: 0.75rem; }
+  .banner-mid h2 { font-family: "Bricolage Grotesque", sans-serif; font-size: 2.6rem; font-weight: 700; color: #fff; letter-spacing: -0.04em; line-height: 1.05; margin-bottom: 1.25rem; }
+  .banner-mid h2 .light { font-weight: 300; color: rgba(255,255,255,0.35); }
+  .banner-mid .desc { font-size: 0.9rem; color: rgba(255,255,255,0.45); line-height: 1.5; max-width: 38ch; }
+  .banner-right { flex-shrink: 0; text-align: right; position: relative; z-index: 1; }
+  .price-block { margin-bottom: 1.5rem; }
+  .price-num { font-family: "Bricolage Grotesque", sans-serif; font-size: 4rem; font-weight: 800; color: #fff; letter-spacing: -0.05em; line-height: 1; }
+  .price-label { font-size: 0.8rem; color: rgba(255,255,255,0.35); margin-top: 0.25rem; }
+  .banner-url { font-size: 0.8rem; color: rgba(255,255,255,0.2); }
+</style>
+</head>
+<body>
+
+<!-- POST CARRÉ -->
+<div class="label">Post carré — réseaux sociaux (1080×1080, affiché à 50%)</div>
+<div class="row">
+  <div>
+    <div class="post">
+      <div class="post-top">
+        <svg viewBox="0 0 100 100" fill="none"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+        <span>Diamant Consult</span>
+      </div>
+      <div class="post-mid">
+        <div class="post-eyebrow">Pour les notaires</div>
+        <div class="post-headline">
+          On gère<br>les visites.<br><span class="light">Vous signez.</span>
+        </div>
+      </div>
+      <div class="post-bottom">
+        <div class="post-pills">
+          <div class="pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            600€ par dossier
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Ventes publiques Biddit
+          </div>
+          <div class="pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Rapport après chaque visite
+          </div>
+        </div>
+        <div class="post-url">diamantconsult.com</div>
+      </div>
+    </div>
+    <p class="note">Screenshot à 100% pour export 1080×1080</p>
+  </div>
+</div>
+
+<!-- BANNIÈRE -->
+<div class="label">Bannière Google Business / LinkedIn (1200×400) — zoomer pour screenshot</div>
+<div style="overflow-x:auto; display:block; margin-bottom: 0.75rem;">
+  <div class="banner">
+    <div class="banner-left">
+      <div class="banner-logo">
+        <svg viewBox="0 0 100 100" fill="none"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+        <span>Diamant Consult</span>
+      </div>
+      <div class="banner-tag">Bruxelles &amp; Brabant wallon</div>
+    </div>
+    <div class="banner-divider"></div>
+    <div class="banner-mid">
+      <div class="eyebrow">Pour les notaires</div>
+      <h2>On gère les visites.<br><span class="light">Vous signez.</span></h2>
+      <div class="desc">Permanences de visites, accueil des candidats, explication Biddit et rapport détaillé après chaque séance.</div>
+    </div>
+    <div class="banner-divider"></div>
+    <div class="banner-right">
+      <div class="price-block">
+        <div class="price-num">600€</div>
+        <div class="price-label">par dossier · tout compris</div>
+      </div>
+      <div class="banner-url">diamantconsult.com</div>
+    </div>
+  </div>
+</div>
+<p class="note">Zoom navigateur à 100% pour screenshot fidèle</p>
+
+</body>
+</html>

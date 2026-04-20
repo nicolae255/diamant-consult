@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brand Assets · Diamant Consult</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Inter Tight", sans-serif; background: #F4F2ED; padding: 3rem 2rem; color: #0A0A0A; }
+  h1 { font-family: "Bricolage Grotesque", sans-serif; font-size: 1.2rem; font-weight: 500; color: #888; margin-bottom: 3rem; letter-spacing: 0.05em; text-transform: uppercase; }
+  .section { margin-bottom: 4rem; }
+  .section-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 1rem; }
+  .asset-wrap { display: inline-block; }
+  .note { font-size: 0.8rem; color: #888; margin-top: 0.75rem; }
+
+  /* ── FAVICON 32×32 ── */
+  .favicon {
+    width: 32px; height: 32px;
+    background: #0A0A0A;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .favicon svg { width: 20px; height: 20px; color: #fff; }
+
+  /* ── LOGO CARRÉ 1:1 (Google Business profile photo) ── */
+  .logo-square {
+    width: 400px; height: 400px;
+    background: #0A0A0A;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 1.5rem;
+  }
+  .logo-square svg { width: 80px; height: 80px; color: #fff; }
+  .logo-square .brand-name {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+  }
+
+  /* ── LOGO CARRÉ FOND CLAIR ── */
+  .logo-square-light {
+    width: 400px; height: 400px;
+    background: #F4F2ED;
+    border: 1px solid #ddd;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    gap: 1.5rem;
+  }
+  .logo-square-light svg { width: 80px; height: 80px; color: #0A0A0A; }
+  .logo-square-light .brand-name {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0A0A0A;
+    letter-spacing: -0.02em;
+  }
+
+  /* ── BANNIÈRE GOOGLE BUSINESS 1200×300 ── */
+  .banner {
+    width: 1200px; height: 300px;
+    background: #0A0A0A;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .banner::before {
+    content: '';
+    position: absolute;
+    right: -80px; top: -80px;
+    width: 400px; height: 400px;
+    background: rgba(255,255,255,0.03);
+    transform: rotate(15deg);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  .banner-left { display: flex; align-items: center; gap: 2rem; }
+  .banner-left svg { width: 60px; height: 60px; color: #fff; flex-shrink: 0; }
+  .banner-left .brand-name {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.03em;
+  }
+  .banner-right { text-align: right; position: relative; z-index: 1; }
+  .banner-right .tagline {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+  .banner-right .tagline strong { font-weight: 700; }
+  .banner-right .sub {
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.45);
+    letter-spacing: 0.02em;
+  }
+
+  /* ── POST CARRÉ RÉSEAUX SOCIAUX 1080×1080 ── */
+  .post-square {
+    width: 540px; height: 540px; /* affiché à 50% */
+    background: #0A0A0A;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    padding: 52px;
+    position: relative;
+    overflow: hidden;
+  }
+  .post-square::after {
+    content: '';
+    position: absolute;
+    right: -60px; bottom: -60px;
+    width: 280px; height: 280px;
+    background: rgba(255,255,255,0.04);
+    transform: rotate(20deg);
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+  .post-top { display: flex; align-items: center; gap: 1rem; }
+  .post-top svg { width: 36px; height: 36px; color: #fff; }
+  .post-top span {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+  .post-middle {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    position: relative; z-index: 1;
+  }
+  .post-middle .muted { color: rgba(255,255,255,0.35); font-weight: 300; }
+  .post-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative; z-index: 1;
+  }
+  .post-pill {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: rgba(255,255,255,0.7);
+    font-size: 0.8rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    letter-spacing: 0.02em;
+  }
+  .post-url {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.3);
+  }
+
+  /* ── VARIANTE FOND CLAIR ── */
+  .post-square-light {
+    width: 540px; height: 540px;
+    background: #F4F2ED;
+    border: 1px solid #ddd;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    padding: 52px;
+    position: relative;
+    overflow: hidden;
+  }
+  .post-square-light .post-top svg { color: #0A0A0A; }
+  .post-square-light .post-top span { color: #0A0A0A; }
+  .post-square-light .post-middle { color: #0A0A0A; }
+  .post-square-light .post-middle .muted { color: rgba(10,10,10,0.3); }
+  .post-square-light .post-pill {
+    background: rgba(10,10,10,0.06);
+    border-color: rgba(10,10,10,0.1);
+    color: rgba(10,10,10,0.5);
+  }
+  .post-square-light .post-url { color: rgba(10,10,10,0.3); }
+
+  .row { display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start; }
+</style>
+</head>
+<body>
+
+<h1>Diamant Consult — Brand Assets</h1>
+
+<!-- FAVICON -->
+<div class="section">
+  <div class="section-label">Favicon (32×32)</div>
+  <div class="asset-wrap">
+    <div class="favicon">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+      </svg>
+    </div>
+  </div>
+  <p class="note">Déjà intégré sur le site. Pour exporter : screenshot 32×32 et sauvegarder en .ico ou .png</p>
+</div>
+
+<!-- LOGO CARRÉ -->
+<div class="section">
+  <div class="section-label">Logo carré — Google Business Profile Photo (400×400)</div>
+  <div class="row">
+    <div class="asset-wrap">
+      <div class="logo-square">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+        </svg>
+        <div class="brand-name">Diamant Consult</div>
+      </div>
+      <p class="note">Version fond noir</p>
+    </div>
+    <div class="asset-wrap">
+      <div class="logo-square-light">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+        </svg>
+        <div class="brand-name">Diamant Consult</div>
+      </div>
+      <p class="note">Version fond clair</p>
+    </div>
+  </div>
+</div>
+
+<!-- BANNIÈRE GOOGLE BUSINESS -->
+<div class="section">
+  <div class="section-label">Bannière Google Business (1200×300) — zoomer pour screenshot</div>
+  <div class="asset-wrap" style="overflow-x:auto; display:block;">
+    <div class="banner">
+      <div class="banner-left">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+        </svg>
+        <div class="brand-name">Diamant Consult</div>
+      </div>
+      <div class="banner-right">
+        <div class="tagline">Vendez <strong>sans surprise.</strong></div>
+        <div class="sub">2% tout compris · Bruxelles &amp; Wallonie</div>
+      </div>
+    </div>
+  </div>
+  <p class="note">Pour exporter : ouvrir en plein écran, zoom navigateur à 100%, screenshot de ce bloc</p>
+</div>
+
+<!-- POST CARRÉ -->
+<div class="section">
+  <div class="section-label">Post carré réseaux sociaux (1080×1080, affiché à 50%)</div>
+  <div class="row">
+    <div class="asset-wrap">
+      <div class="post-square">
+        <div class="post-top">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+          </svg>
+          <span>Diamant Consult</span>
+        </div>
+        <div class="post-middle">
+          Vendez<br><span class="muted">sans</span><br>surprise.
+        </div>
+        <div class="post-bottom">
+          <div class="post-pill">2% tout compris</div>
+          <div class="post-url">diamantconsult.com</div>
+        </div>
+      </div>
+      <p class="note">Version fond noir</p>
+    </div>
+    <div class="asset-wrap">
+      <div class="post-square-light">
+        <div class="post-top">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
+          </svg>
+          <span>Diamant Consult</span>
+        </div>
+        <div class="post-middle">
+          Vendez<br><span class="muted">sans</span><br>surprise.
+        </div>
+        <div class="post-bottom">
+          <div class="post-pill">2% tout compris</div>
+          <div class="post-url">diamantconsult.com</div>
+        </div>
+      </div>
+      <p class="note">Version fond clair</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -6,18 +6,18 @@
 <title>Réussir une vente immobilière à Bruxelles en 2026 · Diamant Consult</title>
 <meta name="description" content="Préparation, évaluation, stratégie de visites : les points essentiels pour maximiser votre prix de vente dans un marché bruxellois en mutation." />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://www.diamantconsult.com/blog-vendre-bruxelles-2026.html" />
+<link rel="canonical" href="https://www.diamantconsult.com/vendre-maison-bruxelles-2026/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand" aria-label="Diamant Consult — Accueil">
+    <a href="../" class="brand" aria-label="Diamant Consult — Accueil">
       <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
       </svg>
@@ -25,15 +25,15 @@
     </a>
     <nav aria-label="Navigation">
       <ul class="nav-menu">
-        <li><a href="index.html#offres">Offres</a></li>
-        <li><a href="projets.html">Projets</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../#offres">Offres</a></li>
+        <li><a href="../projets/">Projets</a></li>
+        <li><a href="../blog/" class="active">Blog</a></li>
+        <li><a href="../contact/">Contact</a></li>
       </ul>
     </nav>
     <div class="nav-right">
       <div class="lang"><button class="active">FR</button><button>NL</button><button>EN</button></div>
-      <a href="contact.html" class="nav-cta">Vendre mon bien<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="../contact/" class="nav-cta">Vendre mon bien<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       <button class="burger" aria-label="Menu"><span></span><span></span></button>
     </div>
   </div>
@@ -42,9 +42,9 @@
 <section class="page-hero">
   <div class="container">
     <div class="breadcrumb">
-      <a href="index.html">Accueil</a>
+      <a href="../">Accueil</a>
       <span class="sep">/</span>
-      <a href="blog.html">Blog</a>
+      <a href="../blog/">Blog</a>
       <span class="sep">/</span>
       <span>Réussir une vente à Bruxelles en 2026</span>
     </div>
@@ -129,7 +129,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand">
+        <a href="../" class="brand">
           <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/>
           </svg>
@@ -140,17 +140,17 @@
       <div class="footer-col">
         <h5>Offres</h5>
         <ul>
-          <li><a href="index.html#offres">Gré à gré · 2%</a></li>
-          <li><a href="index.html#offres">Ventes publiques · 600€</a></li>
-          <li><a href="projets.html">Projets</a></li>
+          <li><a href="../#offres">Gré à gré · 2%</a></li>
+          <li><a href="../#offres">Ventes publiques · 600€</a></li>
+          <li><a href="../projets/">Projets</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Maison</h5>
         <ul>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="../projets/">Projets</a></li>
+          <li><a href="../blog/">Blog</a></li>
+          <li><a href="../contact/">Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -178,6 +178,10 @@
   document.querySelectorAll('.reveal').forEach((el) => {
     new IntersectionObserver(([e]) => { if (e.isIntersecting) { e.target.classList.add('visible'); } }, { threshold: 0.1 }).observe(el);
   });
+
+  const lb = document.querySelectorAll('.lang button');
+  lb[1].onclick = () => location.href = '../nl/woning-verkopen-brussel-2026/';
+  lb[2].onclick = () => location.href = '../en/selling-property-brussels-2026/';
 </script>
 </body>
 </html>
