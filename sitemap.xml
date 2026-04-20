@@ -51,6 +51,9 @@
   <!-- ── Contact ── -->
   <url>
     <loc>https://www.diamantconsult.com/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/contact/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/contact/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/contact/"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -71,6 +74,9 @@
   <!-- ── Blog index ── -->
   <url>
     <loc>https://www.diamantconsult.com/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/blog/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/blog/"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -127,18 +133,54 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/woning-verkopen-schaarbeek/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- ── Article: vendre Ixelles/Uccle ── -->
   <url>
     <loc>https://www.diamantconsult.com/vendre-appartement-ixelles-uccle/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/vendre-appartement-ixelles-uccle/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/sell-apartment-ixelles-uccle/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/"/>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/sell-apartment-ixelles-uccle/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- ── Article: vente publique Biddit ── -->
   <url>
     <loc>https://www.diamantconsult.com/vente-publique-biddit/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/vente-publique-biddit/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/public-auction-biddit-belgium/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/openbare-verkoop-biddit/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/public-auction-biddit-belgium/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/openbare-verkoop-biddit/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -147,6 +189,21 @@
   <!-- ── Article: certificat PEB ── -->
   <url>
     <loc>https://www.diamantconsult.com/certificat-peb-vente-immobiliere/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/certificat-peb-vente-immobiliere/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/epc-certificate-property-sale/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/epc-attest-verkoop/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/epc-certificate-property-sale/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/epc-attest-verkoop/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -155,6 +212,21 @@
   <!-- ── Article: vendre Brabant Wallon ── -->
   <url>
     <loc>https://www.diamantconsult.com/vendre-maison-brabant-wallon/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.diamantconsult.com/vendre-maison-brabant-wallon/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.diamantconsult.com/en/selling-property-brabant-wallon/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://www.diamantconsult.com/nl/woning-verkopen-waals-brabant/"/>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/selling-property-brabant-wallon/</loc>
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/woning-verkopen-waals-brabant/</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
