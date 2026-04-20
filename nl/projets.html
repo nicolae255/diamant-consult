@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projecten · Diamant Consult — Verkochte woningen in Brussel</title>
+<meta name="description" content="Een selectie van woningen die Diamant Consult succesvol heeft begeleid tot aan de verkoop in Brussel: Schaarbeek, Ukkel, Woluwe, Etterbeek, Anderlecht, Haren." />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://www.diamantconsult.com/nl/projets.html" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><path d='M50 8 L90 40 L50 92 L10 40 Z' fill='%23000'/></svg>" />
+<link rel="stylesheet" href="../styles.css" />
+<style>
+  .projet-img-link { display: block; }
+  .projet-img-link .projet-img { transition: opacity 0.3s; }
+  .projet-img-link:hover .projet-img { opacity: 0.92; }
+  .immoweb-link { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.75rem; font-size: 0.85rem; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-2); padding-bottom: 2px; transition: border-color 0.3s; }
+  .immoweb-link svg { width: 13px; height: 13px; transition: transform 0.3s; }
+  .immoweb-link:hover { border-color: var(--ink); }
+  .immoweb-link:hover svg { transform: translate(2px, -2px); }
+  .empty-state { grid-column: 1 / -1; padding: clamp(3rem, 6vw, 5rem) 2rem; text-align: center; background: var(--bg-soft); border: 1px dashed var(--line-2); border-radius: var(--r-lg); }
+  .empty-state .empty-icon { width: 64px; height: 64px; margin: 0 auto 1.5rem; opacity: 0.2; }
+  .empty-state h3 { font-family: var(--display); font-size: clamp(1.5rem, 2.5vw, 2rem); margin-bottom: 0.75rem; }
+  .empty-state p { color: var(--mute); max-width: 44ch; margin: 0 auto 2rem; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand" aria-label="Diamant Consult — Startpagina">
+      <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg>
+      <span>Diamant Consult</span>
+    </a>
+    <nav aria-label="Navigatie">
+      <ul class="nav-menu">
+        <li><a href="index.html#offres">Formules</a></li>
+        <li><a href="projets.html" class="active">Projecten</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <div class="lang"><button>FR</button><button class="active">NL</button><button>EN</button></div>
+      <a href="contact.html" class="nav-cta">Mijn woning verkopen<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Startpagina</a><span class="sep">/</span><span>Projecten</span></div>
+    <div class="page-hero-inner">
+      <h1 class="display">Afgeronde projecten <span style="color: var(--mute);">&amp; actieve dossiers.</span></h1>
+      <p class="page-hero-sub">Een selectie van woningen die wij succesvol hebben begeleid tot aan de verkoop. Elke afgeronde transactie weerspiegelt onze inzet voor een persoonlijke, resultaatgerichte aanpak voor zowel kopers als verkopers.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0;">
+  <div class="container">
+    <div class="projets-filter">
+      <button class="filter-btn active" data-filter="all">Alle <span class="count">10</span></button>
+      <button class="filter-btn" data-filter="en-cours">Actief <span class="count">2</span></button>
+      <button class="filter-btn" data-filter="vendu">Verkocht <span class="count">8</span></button>
+      <button class="filter-btn" data-filter="vp">Openbare verkoop <span class="count">6</span></button>
+      <button class="filter-btn" data-filter="gg">Onderhands <span class="count">3</span></button>
+    </div>
+    <div class="projets-grid" id="projets-grid">
+      <article class="projet-card reveal" data-status="en-cours" data-mode="gg">
+        <a href="https://www.immoweb.be/fr/annonce/maison/a-vendre/rixensart/1332/21497735?s=s_L" target="_blank" rel="noopener noreferrer" class="projet-img-link">
+          <div class="projet-img"><span class="projet-status en-cours">Actief</span><span class="projet-type">Onderhands</span><img src="../img/projets/maison-rixensart.jpg" alt="Woning in Rixensart" loading="lazy" /></div>
+        </a>
+        <div class="projet-body">
+          <div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Rixensart</div>
+          <h3 class="projet-title">Woning</h3>
+          <a href="https://www.immoweb.be/fr/annonce/maison/a-vendre/rixensart/1332/21497735?s=s_L" target="_blank" rel="noopener noreferrer" class="immoweb-link">Bekijk op Immoweb<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+      <article class="projet-card reveal" data-status="en-cours" data-mode="vp">
+        <a href="https://www.biddit.be/nl/catalog/detail/295303" target="_blank" rel="noopener noreferrer" class="projet-img-link">
+          <div class="projet-img"><span class="projet-status en-cours">Actief</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/appart-woluwe-lambert-vp.jpg" alt="Appartement in Sint-Lambrechts-Woluwe" loading="lazy" /></div>
+        </a>
+        <div class="projet-body">
+          <div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Sint-Lambrechts-Woluwe</div>
+          <h3 class="projet-title">Appartement</h3>
+          <a href="https://www.biddit.be/nl/catalog/detail/295303" target="_blank" rel="noopener noreferrer" class="immoweb-link">Bekijk op Biddit<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/atelier-schaerbeek.png" alt="Atelier en woning in Schaarbeek" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Schaarbeek</div><h3 class="projet-title">Atelier + Woning</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/maison-schaerbeek-1.png" alt="Woning in Schaarbeek" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Schaarbeek</div><h3 class="projet-title">Woning</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/appart-uccle.png" alt="Appartement in Ukkel" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Ukkel</div><h3 class="projet-title">Appartement</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Onderhands</span><img src="../img/projets/commerce-woluwe.png" alt="Handelspand en woning in Sint-Lambrechts-Woluwe" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Sint-Lambrechts-Woluwe</div><h3 class="projet-title">Handelspand + Woning</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/appart-etterbeek.png" alt="Appartement in Etterbeek" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Etterbeek</div><h3 class="projet-title">Appartement</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="vp"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Openbare verkoop</span><img src="../img/projets/maison-anderlecht.png" alt="Woning in Anderlecht" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Anderlecht</div><h3 class="projet-title">Woning</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Onderhands</span><img src="../img/projets/maison-haren.png" alt="Woning in Haren" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Haren</div><h3 class="projet-title">Woning</h3></div></article>
+      <article class="projet-card reveal" data-status="vendu" data-mode="gg"><div class="projet-img"><span class="projet-status vendu">Verkocht</span><span class="projet-type">Onderhands</span><img src="../img/projets/maison-schaerbeek-2.png" alt="Woning in Schaarbeek" loading="lazy" /></div><div class="projet-body"><div class="projet-addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 1 8 8c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 8-8z"/><circle cx="12" cy="10" r="3"/></svg>Schaarbeek</div><h3 class="projet-title">Woning</h3></div></article>
+      <div class="empty-state" id="empty-state" style="display: none;"><svg class="empty-icon" viewBox="0 0 100 100" fill="none"><path d="M50 8 L90 40 L50 92 L10 40 Z" stroke="currentColor" stroke-width="3" fill="none"/><path d="M10 40 L90 40" stroke="currentColor" stroke-width="2.5"/><path d="M50 8 L30 40 L50 92 L70 40 Z" stroke="currentColor" stroke-width="2" fill="none"/></svg><h3 class="display">Nieuwe projecten komen eraan.</h3><p>We bereiden momenteel meerdere woningen voor die binnenkort te koop worden aangeboden. Wil u als eerste op de hoogte zijn?</p><a href="contact.html" class="btn-primary">Op de hoogte blijven<span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="container">
+    <div class="cta-box reveal">
+      <div>
+        <div class="eyebrow light">Uw woning hier?</div>
+        <h2 class="display" style="margin-top: 1rem;">Klaar om uw project toe te voegen?</h2>
+        <p>Eerste afspraak gratis en vrijblijvend. Wij schatten uw woning en bepalen samen de beste strategie — onderhands aan 2% of openbare verkoop.</p>
+      </div>
+      <div class="cta-box-actions">
+        <a href="mailto:borremans.helpinfo@gmail.com" class="cta-btn"><span>borremans.helpinfo@gmail.com</span><span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a href="tel:+32471853925" class="cta-btn-ghost"><span>+32 471 85 39 25</span><svg style="width: 16px; height: 16px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="brand"><svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M50 8 L90 40 L50 92 L10 40 Z" fill="currentColor"/></svg><span>Diamant Consult</span></a><p>Vastgoedverkoop in Brussel &amp; Wallonië. 2% alles inbegrepen voor particulieren, €600 bezoekenpakket voor notarissen.</p></div>
+      <div class="footer-col"><h5>Formules</h5><ul><li><a href="index.html#offres">Onderhandse verkoop · 2%</a></li><li><a href="index.html#offres">Openbare verkopen · €600</a></li><li><a href="projets.html">Projecten</a></li></ul></div>
+      <div class="footer-col"><h5>Navigatie</h5><ul><li><a href="projets.html">Projecten</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h5>Contact</h5><ul><li><span>Diamantlaan 138</span></li><li><span>1030 Schaarbeek</span></li><li><a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a></li><li><a href="tel:+32471853925">+32 471 85 39 25</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>© 2026 Diamant Consult · BTW BE 1014.120.350</div><div class="legal"><a href="#">Juridische vermeldingen</a><a href="#">Privacybeleid</a></div></div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => { if (window.scrollY > 40) nav.classList.add('solid'); else nav.classList.remove('solid'); }, { passive: true });
+  const reveals = document.querySelectorAll('.reveal');
+  const obs = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach((el) => obs.observe(el));
+  const lb = document.querySelectorAll('.lang button');
+  lb[0].onclick = () => location.href = '../projets.html';
+  lb[2].onclick = () => location.href = '../en/projets.html';
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.projet-card');
+  const emptyState = document.getElementById('empty-state');
+  filterBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      let visibleCount = 0;
+      cards.forEach((c) => {
+        let show = filter === 'all' || (filter === 'en-cours' && c.dataset.status === 'en-cours') || (filter === 'vendu' && c.dataset.status === 'vendu') || (filter === 'vp' && c.dataset.mode === 'vp') || (filter === 'gg' && c.dataset.mode === 'gg');
+        if (show) { c.style.display = ''; setTimeout(() => c.style.opacity = '1', 10); visibleCount++; }
+        else { c.style.opacity = '0'; setTimeout(() => c.style.display = 'none', 300); }
+      });
+      emptyState.style.display = (filter === 'en-cours' && visibleCount === 0) ? '' : 'none';
+    });
+  });
+</script>
+</body>
+</html>
