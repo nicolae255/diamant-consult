@@ -81,6 +81,13 @@
           Estimation, visites, vente publique — dites-nous ce qu'il vous faut, on vous recontacte rapidement.
         </p>
 
+        <!-- Message de succès (affiché après redirection avec ?merci=1) -->
+        <div id="form-success" style="display:none; padding: 2.5rem; background: var(--bg-soft); border: 1px solid var(--line-2); border-radius: var(--r-lg); text-align: center;">
+          <svg style="width:48px;height:48px;margin:0 auto 1.25rem;display:block;color:var(--ink)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 4L12 14.01l-3-3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3 class="display" style="font-size:1.6rem;margin-bottom:0.75rem;">Merci pour votre message !</h3>
+          <p style="color:var(--ink-2);">Nous vous contacterons dans les plus brefs délais.</p>
+        </div>
+
         <form action="https://formsubmit.co/nicolascojocari@yahoo.fr" method="POST">
 
           <!-- Formsubmit config -->
@@ -305,6 +312,17 @@
     entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach((el) => obs.observe(el));
+
+  // Afficher le message de succès si ?merci=1 dans l'URL
+  if (new URLSearchParams(window.location.search).get('merci') === '1') {
+    const form = document.querySelector('.contact-form form');
+    const success = document.getElementById('form-success');
+    if (form) form.style.display = 'none';
+    if (success) {
+      success.style.display = 'block';
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
 
   // FAQ : changer + en − quand ouvert
   document.querySelectorAll('#faq details').forEach((d) => {
