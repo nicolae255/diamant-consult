@@ -1704,3 +1704,38 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
     scroll-behavior: auto !important;
   }
 }
+
+/* ===========================================================
+   ARTICLE CONTENT (blog posts)
+   =========================================================== */
+.article-content {
+  max-width: 72ch;
+  margin: 0 auto;
+  font-size: clamp(1rem, 1.05vw, 1.1rem);
+  line-height: 1.75;
+  color: var(--ink-2);
+}
+.article-content h2 {
+  font-family: var(--display);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  color: var(--ink);
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+.article-content p {
+  margin-bottom: 1.25rem;
+}
+.article-content ul,
+.article-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.article-content li {
+  margin-bottom: 0.5rem;
+}
+.article-content strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+}
