@@ -1089,6 +1089,31 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
 .testi-who strong { display: block; font-weight: 600; font-size: 0.95rem; }
 .testi-who span { font-size: 0.82rem; color: rgba(250,250,247,0.6); }
 
+/* Carousel */
+.testi-track { overflow: hidden; }
+.testi-slides { display: flex; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); will-change: transform; }
+.testi-slide { min-width: 100%; }
+.testi-stars { color: #E8C840; font-size: 1rem; letter-spacing: 0.08em; margin-bottom: 1.5rem; position: relative; z-index: 2; }
+.testi-google { font-size: 0.75rem; color: rgba(250,250,247,0.45); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 0.2rem; }
+.testi-nav { display: flex; align-items: center; justify-content: center; gap: 1.5rem; margin-top: 2.5rem; }
+.testi-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid rgba(10,10,8,0.18); background: transparent;
+  color: var(--fg); cursor: pointer;
+  display: grid; place-items: center;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.testi-btn svg { width: 20px; height: 20px; pointer-events: none; }
+.testi-btn:hover { background: var(--ink); border-color: var(--ink); color: var(--dark-fg); }
+.testi-dots { display: flex; gap: 0.5rem; align-items: center; }
+.testi-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: rgba(10,10,8,0.2); border: none; cursor: pointer; padding: 0;
+  transition: background 0.25s, width 0.3s, border-radius 0.3s;
+}
+.testi-dot.active { background: var(--ink); width: 22px; border-radius: 3px; }
+
 /* ===========================================================
    JOURNAL / ARTICLES
    =========================================================== */
