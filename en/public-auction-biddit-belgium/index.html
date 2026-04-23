@@ -65,6 +65,22 @@
       <p>Public auctions via Biddit are often chosen in the context of inheritance, divorce or forced sales. They guarantee process transparency and protect all parties against any accusation of favouritism. The final price can surprise on the upside when multiple buyers compete — that's the advantage of an open auction.</p>
       <p>On the other hand, it is less suited to sellers who have time and prefer to control the process. A well-managed private sale generally gives the seller more control over the terms (timeline, property condition, signing date).</p>
 
+      <h2>Biddit public auction costs: who pays what?</h2>
+      <p>This is the question sellers and buyers ask every time. Here is the breakdown:</p>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">For the buyer</h3>
+      <ul>
+        <li><strong>Registration duties</strong>: 12.5% of the hammer price (Brussels and Wallonia). A reduction on the first €175,000 is available for first-time buyers in Brussels who meet the conditions.</li>
+        <li><strong>Notary fees</strong>: calculated on the price per the legal scale (approximately 1–2%).</li>
+        <li><strong>Biddit fees</strong>: a flat processing fee charged to the buyer — typically a few hundred euros, specified in the sale conditions published by the notary.</li>
+      </ul>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">For the seller</h3>
+      <ul>
+        <li><strong>Notary fees</strong>: included in the deed costs, generally borne in whole or in part by the seller depending on the agreement.</li>
+        <li><strong>Advertising and organisational costs</strong>: depending on the notary, part of the publication costs may be charged back to the seller.</li>
+        <li><strong>Diamant Consult viewing pack</strong>: €600 per file, ordered directly by the notary and invoiced separately.</li>
+      </ul>
+      <p>In practice, total costs for the buyer represent around 15–17% of the hammer price — a crucial figure to factor into any budget before bidding.</p>
+
       <h2>Diamant Consult's role in public auctions</h2>
       <p>We work on behalf of notaries to manage the viewing phase: welcoming candidates on-site, explaining the Biddit procedure, handling questions, and producing a detailed report after each open house. All for a flat fee of €600 per file. This service allows the notary to focus on the legal side while we handle everything on the ground.</p>
 
@@ -93,6 +109,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[0].onclick = () => location.href = '../../vente-publique-biddit/';
   lb[1].onclick = () => location.href = '../../nl/openbare-verkoop-biddit/';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

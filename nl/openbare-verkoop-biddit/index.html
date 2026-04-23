@@ -64,6 +64,22 @@
       <p>De openbare verkoop via Biddit wordt vaak gekozen in nalatenschaps-, echtscheidings- of gedwongen verkoopcontexten. Ze garandeert de transparantie van het proces en beschermt alle partijen tegen beschuldigingen van favoritisme. De uiteindelijke prijs kan verrassen aan de bovenkant wanneer meerdere kopers concurreren — dat is het voordeel van een open veiling.</p>
       <p>Anderzijds is ze minder geschikt voor verkopers die tijd hebben en de voorkeur geven aan controle over het proces. Een goed geleide onderhandse verkoop geeft de verkoper doorgaans meer controle over de voorwaarden (termijn, staat van het goed, ondertekeningsdatum).</p>
 
+      <h2>Frais bij een Biddit openbare verkoop: wie betaalt wat?</h2>
+      <p>Dit is de vraag die verkopers en kopers systematisch stellen. Hier is het overzicht:</p>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">Voor de koper</h3>
+      <ul>
+        <li><strong>Registratierechten</strong>: 12,5% van de toegewezen prijs (Brussel en Wallonië). Een vermindering op de eerste €175.000 is mogelijk voor Brusselse starters die aan de voorwaarden voldoen.</li>
+        <li><strong>Notariskosten</strong>: berekend op de prijs volgens het wettelijk tarief (ongeveer 1 à 2%).</li>
+        <li><strong>Biddit-dossierkosten</strong>: een forfaitaire bijdrage ten laste van de koper — doorgaans enkele honderden euro's, vermeld in de verkoopvoorwaarden die de notaris publiceert.</li>
+      </ul>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">Voor de verkoper</h3>
+      <ul>
+        <li><strong>Notariskosten</strong>: inbegrepen in de aktekosten, over het algemeen geheel of gedeeltelijk gedragen door de verkoper afhankelijk van de overeenkomst.</li>
+        <li><strong>Publicatie- en organisatiekosten</strong>: afhankelijk van de notaris kunnen een deel van de publicatiekosten worden doorgerekend aan de verkoper.</li>
+        <li><strong>Bezoekenpakket Diamant Consult</strong>: €600 per dossier, rechtstreeks besteld door de notaris en apart gefactureerd.</li>
+      </ul>
+      <p>In de praktijk vertegenwoordigen de totale kosten voor de koper ongeveer 15 à 17% van de toegewezen prijs — een cruciaal gegeven om in het budget te verrekenen vóór het bieden.</p>
+
       <h2>De rol van Diamant Consult bij openbare verkopen</h2>
       <p>Wij treden op voor notarissen voor het beheer van de bezichtigingsfase: kandidaten ter plaatse ontvangen, de Biddit-procedure uitleggen, vragen behandelen en na elke ronde een gedetailleerd rapport opstellen. Dit alles voor een forfait van €600 per dossier. Deze dienst laat de notaris toe zich op het juridische te concentreren terwijl wij alles op het terrein regelen.</p>
     </div>
@@ -91,6 +107,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[0].onclick = () => location.href = '../../vente-publique-biddit/';
   lb[2].onclick = () => location.href = '../../en/public-auction-biddit-belgium/';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

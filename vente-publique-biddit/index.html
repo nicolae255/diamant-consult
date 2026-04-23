@@ -83,6 +83,22 @@
       <p>La vente publique via Biddit est souvent choisie dans des contextes de succession, de divorce ou de vente forcée. Elle garantit la transparence du processus et protège les parties contre toute accusation de favoritisme. Le prix final peut surprendre à la hausse si plusieurs acheteurs sont en compétition — c'est l'avantage d'une enchère ouverte.</p>
       <p>En revanche, elle est moins adaptée aux vendeurs qui ont le temps et préfèrent maîtriser le processus. Une vente de gré à gré bien menée donne généralement au vendeur plus de contrôle sur les conditions (délai, état du bien, date de signature).</p>
 
+      <h2>Frais d'une vente publique Biddit : qui paie quoi ?</h2>
+      <p>C'est la question que posent systématiquement les vendeurs et les acheteurs. Voici le détail :</p>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">Du côté de l'acheteur</h3>
+      <ul>
+        <li><strong>Droits d'enregistrement</strong> : 12,5% du prix d'adjudication (Bruxelles et Wallonie). Un abattement sur les premiers €175 000 est possible pour les primo-acquéreurs bruxellois remplissant les conditions.</li>
+        <li><strong>Honoraires du notaire</strong> : calculés sur le prix, selon le barème légal (environ 1 à 2%).</li>
+        <li><strong>Frais Biddit</strong> : une contribution forfaitaire de dossier est prélevée sur l'acheteur — typiquement quelques centaines d'euros, précisée dans les conditions de vente publiées par le notaire.</li>
+      </ul>
+      <h3 style="font-size:1rem; font-weight:600; margin:1.5rem 0 0.5rem;">Du côté du vendeur</h3>
+      <ul>
+        <li><strong>Honoraires du notaire</strong> : inclus dans les frais de l'acte, généralement supportés en tout ou en partie par le vendeur selon la convention.</li>
+        <li><strong>Frais de publicité et d'organisation</strong> : selon les notaires, une partie des frais de publication peut être refacturée au vendeur.</li>
+        <li><strong>Pack visites Diamant Consult</strong> : 600€ par dossier, commandé directement par le notaire et facturé séparément.</li>
+      </ul>
+      <p>En pratique, les frais totaux pour l'acheteur représentent environ 15 à 17% du prix d'adjudication. C'est un élément crucial à intégrer dans son budget avant d'enchérir.</p>
+
       <h2>Le rôle de Diamant Consult dans les ventes publiques</h2>
       <p>Nous intervenons pour le compte des notaires sur l'organisation des visites : accueil des candidats sur place, explication de la procédure Biddit, gestion des questions, et rapport détaillé après chaque permanence. Le tout pour un forfait de 600€ par dossier. Ce service permet au notaire de se concentrer sur le juridique pendant que nous gérons l'aspect terrain.</p>
 
@@ -141,6 +157,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[1].onclick = () => location.href = '../nl/openbare-verkoop-biddit/';
   lb[2].onclick = () => location.href = '../en/public-auction-biddit-belgium/';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

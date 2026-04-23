@@ -2,8 +2,8 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Verkopen in Schaarbeek: de sleutels tot een succesvolle verkoop · Diamant Consult</title>
-<meta name="description" content="Marktspecificiteiten, verwachtingen van kopers en vastgoedtypes die het snelst verkopen in Schaarbeek." />
+<title>Vastgoedexpert Schaarbeek: verkopen aan de juiste prijs in 2026 · Diamant Consult</title>
+<meta name="description" content="Prijs per m² in Schaarbeek 2026, kopersprofiel en verkoopstrategie. Gratis schatting door uw lokale vastgoedexpert in Schaarbeek." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://www.diamantconsult.com/nl/woning-verkopen-schaarbeek/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,6 +91,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[0].onclick = () => location.href = '../../vendre-maison-schaerbeek/';
   lb[2].onclick = () => location.href = '../../en/sell-house-schaerbeek-brussels/';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

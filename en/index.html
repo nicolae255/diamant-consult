@@ -258,9 +258,9 @@
       <a href="blog/" class="all-link">All articles<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
     <div class="articles">
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Selling property in Brussels in 2026" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Guide</span><span>4 min</span></div><h3>Selling property in Brussels in 2026</h3><p>Preparation, valuation, viewing strategy: the essentials for maximising your sale price in today's market.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Understanding Biddit" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Public auction</span><span>5 min</span></div><h3>Understanding Biddit: Belgium's online public auction</h3><p>How the platform works, key steps, and what buyers and sellers need to know.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80" alt="Selling in Schaerbeek" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Local market</span><span>4 min</span></div><h3>Selling in Schaerbeek: the keys to a successful sale</h3><p>Market specifics, buyer expectations, and property types that move fast.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="selling-property-brussels-2026/"><div class="article-img"><img src="https://images.pexels.com/photos/28847023/pexels-photo-28847023.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Selling property in Brussels in 2026" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Guide</span><span>4 min</span></div><h3>Selling property in Brussels in 2026</h3><p>Preparation, valuation, viewing strategy: the essentials for maximising your sale price in today's market.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="sell-house-schaerbeek-brussels/"><div class="article-img"><img src="https://images.pexels.com/photos/14599371/pexels-photo-14599371.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Selling in Schaerbeek" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Local market</span><span>4 min</span></div><h3>Selling in Schaerbeek: the keys to a successful sale</h3><p>Market specifics, buyer expectations, and property types that move fast.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="public-auction-biddit-belgium/"><div class="article-img"><img src="https://images.pexels.com/photos/16922919/pexels-photo-16922919.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Understanding Biddit public auction Belgium" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Public auction</span><span>5 min</span></div><h3>Understanding Biddit: Belgium's online public auction</h3><p>How the platform works, costs, and what buyers and sellers need to know.</p><span class="article-readmore">Read <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
     </div>
   </div>
 </section>
@@ -308,6 +308,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[0].onclick = () => location.href = '../index.html';
   lb[1].onclick = () => location.href = '../nl/index.html';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

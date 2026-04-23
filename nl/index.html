@@ -258,9 +258,9 @@
       <a href="blog/" class="all-link">Alle artikels<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
     <div class="articles">
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Uw woning verkopen in Brussel in 2026" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Gids</span><span>4 min</span></div><h3>Uw woning verkopen in Brussel in 2026</h3><p>Voorbereiding, schatting, bezoekensstrategie: de essentials voor de beste verkoopprijs op de huidige markt.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Biddit begrijpen" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Openbare verkoop</span><span>5 min</span></div><h3>Biddit begrijpen: de online openbare verkoop</h3><p>Hoe het platform werkt, de belangrijkste stappen, en wat kopers en verkopers moeten weten.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
-      <article class="article reveal"><a href="blog/"><div class="article-img"><img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80" alt="Verkopen in Schaarbeek" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Lokale markt</span><span>4 min</span></div><h3>Verkopen in Schaarbeek: de sleutels tot succes</h3><p>Marktspecificiteiten, verwachtingen van kopers en woningtypes die snel verkopen.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="woning-verkopen-brussel-2026/"><div class="article-img"><img src="https://images.pexels.com/photos/28847023/pexels-photo-28847023.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Uw woning verkopen in Brussel in 2026" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Gids</span><span>4 min</span></div><h3>Uw woning verkopen in Brussel in 2026</h3><p>Voorbereiding, schatting, bezoekensstrategie: de essentials voor de beste verkoopprijs op de huidige markt.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="woning-verkopen-schaarbeek/"><div class="article-img"><img src="https://images.pexels.com/photos/14599371/pexels-photo-14599371.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Verkopen in Schaarbeek" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Lokale markt</span><span>4 min</span></div><h3>Verkopen in Schaarbeek: de sleutels tot succes</h3><p>Marktspecificiteiten, verwachtingen van kopers en woningtypes die snel verkopen.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
+      <article class="article reveal"><a href="openbare-verkoop-biddit/"><div class="article-img"><img src="https://images.pexels.com/photos/16922919/pexels-photo-16922919.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Biddit begrijpen openbare verkoop" loading="lazy" /></div><div class="article-body"><div class="article-meta"><span>Openbare verkoop</span><span>5 min</span></div><h3>Biddit begrijpen: de online openbare verkoop</h3><p>Hoe het platform werkt, kosten en wat kopers en verkopers moeten weten.</p><span class="article-readmore">Lees <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div></a></article>
     </div>
   </div>
 </section>
@@ -308,6 +308,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[0].onclick = () => location.href = '../index.html';
   lb[2].onclick = () => location.href = '../en/index.html';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>

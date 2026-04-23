@@ -705,9 +705,9 @@
 
     <div class="articles">
       <article class="article reveal">
-        <a href="blog/">
+        <a href="vendre-maison-bruxelles-2026/">
           <div class="article-img">
-            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80" alt="Réussir une vente immobilière à Bruxelles en 2026" loading="lazy" />
+            <img src="https://images.pexels.com/photos/28847023/pexels-photo-28847023.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Réussir une vente immobilière à Bruxelles en 2026" loading="lazy" />
           </div>
           <div class="article-body">
             <div class="article-meta"><span>Guide</span><span>4 min</span></div>
@@ -719,28 +719,28 @@
       </article>
 
       <article class="article reveal">
-        <a href="blog/">
+        <a href="vendre-maison-schaerbeek/">
           <div class="article-img">
-            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80" alt="Erreurs à éviter dans votre vente immobilière" loading="lazy" />
+            <img src="https://images.pexels.com/photos/14599371/pexels-photo-14599371.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Vente réussie à Schaerbeek" loading="lazy" />
           </div>
           <div class="article-body">
-            <div class="article-meta"><span>Conseils</span><span>3 min</span></div>
-            <h3>Évitez les erreurs dans votre vente immobilière</h3>
-            <p>Les pièges classiques qui ralentissent les ventes ou en réduisent le prix — et comment les contourner.</p>
+            <div class="article-meta"><span>Marché local</span><span>4 min</span></div>
+            <h3>Les clés d'une vente réussie à Schaerbeek</h3>
+            <p>Spécificités du marché schaerbeekois, attentes des acquéreurs, typologies qui partent vite.</p>
             <span class="article-readmore">Lire <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
         </a>
       </article>
 
       <article class="article reveal">
-        <a href="blog/">
+        <a href="vente-publique-biddit/">
           <div class="article-img">
-            <img src="https://images.unsplash.com/photo-1571055107559-3e67626fa8be?auto=format&fit=crop&w=800&q=80" alt="Vente réussie à Schaerbeek" loading="lazy" />
+            <img src="https://images.pexels.com/photos/16922919/pexels-photo-16922919.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" alt="Comprendre Biddit — vente publique Belgique" loading="lazy" />
           </div>
           <div class="article-body">
-            <div class="article-meta"><span>Marché local</span><span>4 min</span></div>
-            <h3>Les clés d'une vente réussie à Schaerbeek</h3>
-            <p>Spécificités du marché schaerbeekois, attentes des acquéreurs, typologies qui partent vite.</p>
+            <div class="article-meta"><span>Vente publique</span><span>5 min</span></div>
+            <h3>Comprendre Biddit : la vente publique en ligne</h3>
+            <p>Fonctionnement de la plateforme, étapes clés, frais et stratégies pour vendeurs et notaires.</p>
             <span class="article-readmore">Lire <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           </div>
         </a>
@@ -890,7 +890,31 @@
       if (Math.abs(dx) > 50) go(cur + (dx < 0 ? 1 : -1));
     });
   })();
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
 </script>
 
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
+</script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Les clés d'une vente réussie à Schaerbeek · Diamant Consult</title>
-<meta name="description" content="Spécificités du marché schaerbeekois, attentes des acquéreurs, typologies qui partent vite." />
+<title>Expert immobilier Schaerbeek : vendre au bon prix en 2026 · Diamant Consult</title>
+<meta name="description" content="Prix m² à Schaerbeek en 2026, profil des acheteurs et stratégie de vente. Estimation gratuite par votre expert immobilier Schaerbeek." />
 <meta name="robots" content="index, follow" />
 <link rel="canonical" href="https://www.diamantconsult.com/vendre-maison-schaerbeek/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -141,6 +141,30 @@
   const lb = document.querySelectorAll('.lang button');
   lb[1].onclick = () => location.href = '../nl/woning-verkopen-schaarbeek/';
   lb[2].onclick = () => location.href = '../en/sell-house-schaerbeek-brussels/';
+  const burger = document.querySelector(".burger");
+  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
+</script>
+<div id="cookie-banner" style="display:none;">
+  <p><strong>Cookies</strong> — Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
+  <div class="cookie-actions">
+    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
+    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
+  </div>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem("dc_cookie_consent")){
+    document.getElementById("cookie-banner").style.display="flex";
+  }
+})();
+function cookieConsent(v){
+  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
+  var b=document.getElementById("cookie-banner");
+  b.style.opacity="0";
+  b.style.transition="opacity 0.3s";
+  setTimeout(function(){b.style.display="none";},300);
+}
 </script>
 </body>
 </html>
