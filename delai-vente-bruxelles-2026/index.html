@@ -213,11 +213,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div>
         <div class="eyebrow light">Contact</div>
         <h2 class="display" style="margin-top: 1rem;">Tu veux savoir où se situe ton bien ?</h2>
-        <p>On en discute en 30 minutes, gratuitement. Estimation offerte, sans engagement.</p>
+        <p>Estimation gratuite, sans engagement. Nous répondons par email dans les meilleurs délais.</p>
       </div>
       <div class="cta-box-actions">
         <a href="../contact/" class="cta-btn">
-          <span>Prendre rendez-vous</span>
+          <span>Nous contacter</span>
           <span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
         </a>
         <a href="mailto:borremans.helpinfo@gmail.com" class="cta-btn-ghost">
@@ -278,6 +278,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.querySelectorAll('.reveal').forEach((el) => {
     new IntersectionObserver(([e]) => { if (e.isIntersecting) { e.target.classList.add('visible'); } }, { threshold: 0.1 }).observe(el);
   });
+  const lb = document.querySelectorAll('.lang button');
+  lb[1].onclick = () => location.href = '../nl/hoelang-verkopen-brussel-2026/';
+  lb[2].onclick = () => location.href = '../en/how-long-to-sell-brussels-2026/';
   const burger = document.querySelector(".burger");
   burger.addEventListener("click", () => nav.classList.toggle("open"));
   document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
