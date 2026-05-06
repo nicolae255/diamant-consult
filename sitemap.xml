@@ -232,6 +232,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- ── Article: délai vente Bruxelles 2026 ── -->
+  <url>
+    <loc>https://www.diamantconsult.com/delai-vente-bruxelles-2026/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- ── Pages légales ── -->
   <url>
     <loc>https://www.diamantconsult.com/mentions-legales/</loc>
