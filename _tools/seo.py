@@ -182,7 +182,7 @@ Key facts:
 - Legal name: Diamant Consult Immobilier (brand: Diamant Consult), VAT BE 1014.120.350
 - Private sale (gré à gré): 2% of the sale price, all inclusive, only paid if the property sells
 - Notaries: viewing pack for public auctions
-- Contact: borremans.helpinfo@gmail.com, https://www.diamantconsult.com/contact/
+- Contact: +32 471 85 39 25, borremans.helpinfo@gmail.com, https://www.diamantconsult.com/contact/
 """
 
 
