@@ -82,7 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="brand" aria-label="Diamant Consult — Startpagina">
+    <a href="./" class="brand" aria-label="Diamant Consult — Startpagina">
       <svg class="brand-mark" viewBox="0 0 120.00 136.00" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M69.42 19.40 L80.00 19.40 L92.00 19.40 L102.58 19.40 L96.00 12.00 L76.00 12.00 Z M82.26 22.60 L86.00 33.19 L89.74 22.60 Z M69.69 22.60 L83.45 35.60 L78.87 22.60 Z M102.31 22.60 L93.13 22.60 L88.55 35.60 Z M92.00 66.67 L92.00 44.00 L80.00 44.00 L80.00 56.67 L60.00 40.00 L12.00 80.00 L20.00 80.00 L20.00 124.00 L52.00 124.00 L52.00 102.00 L68.00 102.00 L68.00 124.00 L100.00 124.00 L100.00 80.00 L108.00 80.00 Z"/></svg><span class="brand-text"><span class="brand-name">Diamant</span><span class="brand-sub">Consult · Immobilier</span></span>
     </a>
     <nav aria-label="Navigatie">
@@ -364,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="brand"><svg class="brand-mark" viewBox="0 0 120.00 136.00" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M69.42 19.40 L80.00 19.40 L92.00 19.40 L102.58 19.40 L96.00 12.00 L76.00 12.00 Z M82.26 22.60 L86.00 33.19 L89.74 22.60 Z M69.69 22.60 L83.45 35.60 L78.87 22.60 Z M102.31 22.60 L93.13 22.60 L88.55 35.60 Z M92.00 66.67 L92.00 44.00 L80.00 44.00 L80.00 56.67 L60.00 40.00 L12.00 80.00 L20.00 80.00 L20.00 124.00 L52.00 124.00 L52.00 102.00 L68.00 102.00 L68.00 124.00 L100.00 124.00 L100.00 80.00 L108.00 80.00 Z"/></svg><span class="brand-text"><span class="brand-name">Diamant</span><span class="brand-sub">Consult · Immobilier</span></span></a>
+        <a href="./" class="brand"><svg class="brand-mark" viewBox="0 0 120.00 136.00" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M69.42 19.40 L80.00 19.40 L92.00 19.40 L102.58 19.40 L96.00 12.00 L76.00 12.00 Z M82.26 22.60 L86.00 33.19 L89.74 22.60 Z M69.69 22.60 L83.45 35.60 L78.87 22.60 Z M102.31 22.60 L93.13 22.60 L88.55 35.60 Z M92.00 66.67 L92.00 44.00 L80.00 44.00 L80.00 56.67 L60.00 40.00 L12.00 80.00 L20.00 80.00 L20.00 124.00 L52.00 124.00 L52.00 102.00 L68.00 102.00 L68.00 124.00 L100.00 124.00 L100.00 80.00 L108.00 80.00 Z"/></svg><span class="brand-text"><span class="brand-name">Diamant</span><span class="brand-sub">Consult · Immobilier</span></span></a>
         <p>Vastgoedverkoop in Brussel &amp; Wallonië. 2% excl. btw, alles inbegrepen voor particulieren, €600 excl. btw bezoekenpakket voor notarissen.</p>
       </div>
       <div class="footer-col"><h5>Formules</h5><ul><li><a href="#offres">Onderhandse verkoop · 2% excl. btw</a></li><li><a href="#offres">Openbare verkopen · €600 excl. btw</a></li><li><a href="projecten/">Projecten</a></li></ul></div>
@@ -385,8 +385,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   const obs = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach((el) => obs.observe(el));
   const lb = document.querySelectorAll('.lang button');
-  lb[0].onclick = () => location.href = '../index.html';
-  lb[2].onclick = () => location.href = '../en/index.html';
+  lb[0].onclick = () => location.href = '../';
+  lb[2].onclick = () => location.href = '../en/';
   const burger = document.querySelector(".burger");
   burger.addEventListener("click", () => nav.classList.toggle("open"));
   document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
