@@ -6,7 +6,7 @@ Folders starting with `_` are not published by GitHub Pages.
 ## Goal
 Each article must bring in **Brussels property owners who might sell** (houses and apartments, all 19
 communes). Every article targets one search a seller would type, uses recent news as the hook,
-and ends by pointing to a free valuation / the 2% all-inclusive sale.
+and ends by pointing to a free first meeting / the 2% excl. VAT all-inclusive sale. Never promise a free valuation or estimate: it is not a service on its own.
 
 Every article is published in **three languages**: French (main market), English (expats, very present
 in Ixelles, Etterbeek, Woluwe, Uccle) and Dutch (Dutch-speaking Brussels owners). Same facts, same
@@ -46,7 +46,7 @@ for word: use the words people actually type into Google in that language
   same facts and figures (use local number formats: FR 609 227 €, EN €609,227, NL € 609.227).
 - **Price rule: the commission is always written with "excluding VAT"**: FR "2% HTVA", EN "2% excl. VAT",
   NL "2% excl. btw" (e.g. "2% HTVA, tout compris"). Never write "2%" alone for the commission.
-- Mention Diamant Consult naturally: 2% all-inclusive, free valuation, works with notaire Stephan Borremans,
+- Mention Diamant Consult naturally: 2% excl. VAT all-inclusive, free first meeting (where the asking price is set), works with notaire Stephan Borremans,
   based in Schaerbeek (Av. du Diamant 138), covers all Brussels and Brabant wallon. No exaggerated promises.
 - Link to 2-4 existing articles **in the same language** (relative links `../slug/`):
 
