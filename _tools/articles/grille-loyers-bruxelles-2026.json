@@ -1,0 +1,24 @@
+{
+  "slug": "grille-loyers-bruxelles-2026",
+  "seo_title": "Grille des loyers Bruxelles 2026 : loyer de référence et indexation · Diamant Consult",
+  "description": "Grille indicative des loyers à Bruxelles en 2026 : loyer de référence, règle des 20 %, indexation et PEB. Et pour les propriétaires : louer ou vendre ?",
+  "h1": "Grille des loyers Bruxelles 2026 :<br><span style=\"color: var(--mute);\">ce que tout propriétaire doit savoir.</span>",
+  "hero_sub": "Loyer de référence, loyer abusif, indexation limitée selon le PEB : les règles ont changé pour les bailleurs bruxellois. Le point complet, et les bonnes questions à se poser si vous hésitez entre louer et vendre.",
+  "breadcrumb": "Grille des loyers Bruxelles 2026",
+  "category": "Conseils",
+  "read_min": 6,
+  "date": "2026-11-10",
+  "image": "https://images.pexels.com/photos/28847023/pexels-photo-28847023.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80",
+  "image_alt": "Immeubles résidentiels à Bruxelles, grille des loyers 2026",
+  "card_title": "Grille des loyers Bruxelles 2026 : ce que tout propriétaire doit savoir",
+  "card_excerpt": "Loyer de référence, règle des 20 %, indexation et PEB : les règles 2026 pour les bailleurs bruxellois — et comment choisir entre louer et vendre.",
+  "faq": [
+    {"q": "La grille des loyers est-elle obligatoire à Bruxelles ?",
+     "a": "Le loyer de référence reste indicatif, mais il doit être mentionné dans le bail. Depuis le 1er mai 2025, un loyer qui dépasse de plus de 20 % le loyer de référence est présumé abusif, sauf justification par des éléments de confort particuliers."},
+    {"q": "Peut-on indexer un loyer à Bruxelles en 2026 ?",
+     "a": "Oui, si le bail est enregistré, si un certificat PEB a été remis au locataire et si le bailleur en fait la demande écrite. Pour les logements PEB E, F ou G, un facteur de correction réduit l'indexation."},
+    {"q": "Vaut-il mieux louer ou vendre son bien à Bruxelles ?",
+     "a": "Cela dépend du rendement réel du bien, des travaux PEB à prévoir et de votre projet. Avec des prix de vente élevés en 2026 et une indexation limitée pour les logements énergivores, beaucoup de propriétaires comparent les deux options à partir d'une estimation de la valeur de vente."}
+  ],
+  "body": "_tools/articles/grille-loyers-bruxelles-2026.html"
+}

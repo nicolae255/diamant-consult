@@ -1,0 +1,24 @@
+{
+  "slug": "marche-immobilier-bruxelles-2026",
+  "seo_title": "Marché immobilier Bruxelles 2026 : prix T3 et faut-il vendre ? · Diamant Consult",
+  "description": "Prix des maisons à Bruxelles : 609 227 € (+4,8 %) au 3e trimestre 2026. Ce que les chiffres des notaires et la hausse des taux changent pour les vendeurs.",
+  "h1": "Marché immobilier Bruxelles 2026 :<br><span style=\"color: var(--mute);\">faut-il vendre maintenant ?</span>",
+  "hero_sub": "Les notaires ont publié les chiffres du 3e trimestre 2026 : les prix bruxellois continuent de monter alors que le crédit devient plus cher. Voici ce que cela signifie si vous pensez à vendre votre maison ou votre appartement.",
+  "breadcrumb": "Marché immobilier Bruxelles 2026",
+  "category": "Marché local",
+  "read_min": 6,
+  "date": "2026-11-10",
+  "image": "img/brussels-old-city.webp",
+  "image_alt": "Rue commerçante dans le centre de Bruxelles, marché immobilier 2026",
+  "card_title": "Marché immobilier Bruxelles 2026 : faut-il vendre maintenant ?",
+  "card_excerpt": "Maisons à 609 227 € (+4,8 %), appartements à 301 666 € (+1,7 %) : ce que le baromètre des notaires du 3e trimestre et la hausse des taux changent pour les vendeurs.",
+  "faq": [
+    {"q": "Les prix de l'immobilier baissent-ils à Bruxelles en 2026 ?",
+     "a": "Non. Selon le baromètre des notaires du 3e trimestre 2026, le prix moyen d'une maison à Bruxelles atteint 609 227 € (+4,8 %) et celui d'un appartement 301 666 € (+1,7 %) sur les neuf premiers mois de l'année."},
+    {"q": "Est-ce le bon moment pour vendre à Bruxelles ?",
+     "a": "Les prix bruxellois sont à un niveau élevé et le nombre de ventes reste stable, contrairement à la Wallonie. La hausse des taux réduit en revanche le budget des acheteurs : si votre projet de vente est décidé, il y a peu d'intérêt à le reporter."},
+    {"q": "Combien vaut ma maison à Bruxelles ?",
+     "a": "La moyenne régionale ne suffit pas : la valeur dépend de la commune, du quartier, de l'état, du PEB et des ventes comparables récentes. Diamant Consult réalise une estimation gratuite et sans engagement partout à Bruxelles."}
+  ],
+  "body": "_tools/articles/marche-immobilier-bruxelles-2026.html"
+}
