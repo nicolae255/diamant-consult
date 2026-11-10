@@ -104,8 +104,21 @@ def hreflang_block(group):
     return "\n".join(lines) + "\n"
 
 
+def article_groups():
+    """Language groups of articles built with new_article.py (multilingual specs)."""
+    import json, glob
+    out = []
+    for fn in sorted(glob.glob(os.path.join(ROOT, "_tools", "articles", "*.json"))):
+        spec = json.load(open(fn, encoding="utf-8"))
+        if "fr" in spec:
+            out.append(tuple(
+                (f"/{pre}{spec[l]['slug']}/" if l in spec else None)
+                for l, pre in (("fr", ""), ("en", "en/"), ("nl", "nl/"))))
+    return out
+
+
 def apply_hreflang():
-    grouped = {p: g for g in GROUPS for p in g if p}
+    grouped = {p: g for g in GROUPS + article_groups() for p in g if p}
     for p in pages():
         if not indexable(p):
             continue

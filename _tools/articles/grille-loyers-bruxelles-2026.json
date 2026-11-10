@@ -1,24 +1,86 @@
 {
-  "slug": "grille-loyers-bruxelles-2026",
-  "seo_title": "Grille des loyers Bruxelles 2026 : loyer de référence et indexation · Diamant Consult",
-  "description": "Grille indicative des loyers à Bruxelles en 2026 : loyer de référence, règle des 20 %, indexation et PEB. Et pour les propriétaires : louer ou vendre ?",
-  "h1": "Grille des loyers Bruxelles 2026 :<br><span style=\"color: var(--mute);\">ce que tout propriétaire doit savoir.</span>",
-  "hero_sub": "Loyer de référence, loyer abusif, indexation limitée selon le PEB : les règles ont changé pour les bailleurs bruxellois. Le point complet, et les bonnes questions à se poser si vous hésitez entre louer et vendre.",
-  "breadcrumb": "Grille des loyers Bruxelles 2026",
-  "category": "Conseils",
-  "read_min": 6,
   "date": "2026-11-10",
+  "read_min": 6,
   "image": "https://images.pexels.com/photos/28847023/pexels-photo-28847023.jpeg?auto=compress&cs=tinysrgb&w=1200&q=80",
-  "image_alt": "Immeubles résidentiels à Bruxelles, grille des loyers 2026",
-  "card_title": "Grille des loyers Bruxelles 2026 : ce que tout propriétaire doit savoir",
-  "card_excerpt": "Loyer de référence, règle des 20 %, indexation et PEB : les règles 2026 pour les bailleurs bruxellois — et comment choisir entre louer et vendre.",
-  "faq": [
-    {"q": "La grille des loyers est-elle obligatoire à Bruxelles ?",
-     "a": "Le loyer de référence reste indicatif, mais il doit être mentionné dans le bail. Depuis le 1er mai 2025, un loyer qui dépasse de plus de 20 % le loyer de référence est présumé abusif, sauf justification par des éléments de confort particuliers."},
-    {"q": "Peut-on indexer un loyer à Bruxelles en 2026 ?",
-     "a": "Oui, si le bail est enregistré, si un certificat PEB a été remis au locataire et si le bailleur en fait la demande écrite. Pour les logements PEB E, F ou G, un facteur de correction réduit l'indexation."},
-    {"q": "Vaut-il mieux louer ou vendre son bien à Bruxelles ?",
-     "a": "Cela dépend du rendement réel du bien, des travaux PEB à prévoir et de votre projet. Avec des prix de vente élevés en 2026 et une indexation limitée pour les logements énergivores, beaucoup de propriétaires comparent les deux options à partir d'une estimation de la valeur de vente."}
-  ],
-  "body": "_tools/articles/grille-loyers-bruxelles-2026.html"
+  "fr": {
+    "slug": "grille-loyers-bruxelles-2026",
+    "seo_title": "Grille des loyers Bruxelles 2026 : loyer de référence et indexation · Diamant Consult",
+    "description": "Grille indicative des loyers à Bruxelles en 2026 : loyer de référence, règle des 20 %, indexation et PEB. Et pour les propriétaires : louer ou vendre ?",
+    "h1": "Grille des loyers Bruxelles 2026 :<br><span style=\"color: var(--mute);\">ce que tout propriétaire doit savoir.</span>",
+    "hero_sub": "Loyer de référence, loyer abusif, indexation limitée selon le PEB : les règles ont changé pour les bailleurs bruxellois. Le point complet, et les bonnes questions à se poser si vous hésitez entre louer et vendre.",
+    "breadcrumb": "Grille des loyers Bruxelles 2026",
+    "category": "Conseils",
+    "image_alt": "Immeubles résidentiels à Bruxelles, grille des loyers 2026",
+    "card_title": "Grille des loyers Bruxelles 2026 : ce que tout propriétaire doit savoir",
+    "card_excerpt": "Loyer de référence, règle des 20 %, indexation et PEB : les règles 2026 pour les bailleurs bruxellois — et comment choisir entre louer et vendre.",
+    "faq": [
+      {
+        "q": "La grille des loyers est-elle obligatoire à Bruxelles ?",
+        "a": "Le loyer de référence reste indicatif, mais il doit être mentionné dans le bail. Depuis le 1er mai 2025, un loyer qui dépasse de plus de 20 % le loyer de référence est présumé abusif, sauf justification par des éléments de confort particuliers."
+      },
+      {
+        "q": "Peut-on indexer un loyer à Bruxelles en 2026 ?",
+        "a": "Oui, si le bail est enregistré, si un certificat PEB a été remis au locataire et si le bailleur en fait la demande écrite. Pour les logements PEB E, F ou G, un facteur de correction réduit l'indexation."
+      },
+      {
+        "q": "Vaut-il mieux louer ou vendre son bien à Bruxelles ?",
+        "a": "Cela dépend du rendement réel du bien, des travaux PEB à prévoir et de votre projet. Avec des prix de vente élevés en 2026 et une indexation limitée pour les logements énergivores, beaucoup de propriétaires comparent les deux options à partir d'une estimation de la valeur de vente."
+      }
+    ],
+    "body": "_tools/articles/grille-loyers-bruxelles-2026.fr.html"
+  },
+  "en": {
+    "slug": "brussels-rent-grid-2026",
+    "seo_title": "Brussels rent grid 2026: reference rent and indexation · Diamant Consult",
+    "description": "Brussels indicative rent grid in 2026: reference rent, the 20% rule, indexation and EPC. And for landlords: keep renting or sell?",
+    "h1": "Brussels rent grid 2026:<br><span style=\"color: var(--mute);\">what every landlord should know.</span>",
+    "hero_sub": "Reference rent, abusive rent, indexation limited by EPC rating: the rules have changed for Brussels landlords. A complete overview, and the right questions to ask if you are torn between renting and selling.",
+    "breadcrumb": "Brussels rent grid 2026",
+    "category": "Advice",
+    "image_alt": "Residential buildings in Brussels, rent grid 2026",
+    "card_title": "Brussels rent grid 2026: what every landlord should know",
+    "card_excerpt": "Reference rent, the 20% rule, indexation and EPC: the 2026 rules for Brussels landlords, and how to choose between renting and selling.",
+    "faq": [
+      {
+        "q": "Is the rent grid mandatory in Brussels?",
+        "a": "The reference rent is indicative, but it must be stated in the lease. Since 1 May 2025, a rent more than 20% above the reference rent is presumed abusive, unless justified by specific comfort features."
+      },
+      {
+        "q": "Can you index a rent in Brussels in 2026?",
+        "a": "Yes, if the lease is registered, an EPC certificate has been given to the tenant and the landlord requests it in writing. For homes rated EPC E, F or G, a correction factor reduces the indexation."
+      },
+      {
+        "q": "Is it better to rent out or sell a property in Brussels?",
+        "a": "It depends on the real return of the property, the EPC works ahead and your plans. With high sale prices in 2026 and limited indexation for energy-inefficient homes, many owners compare both options based on a valuation of the sale price."
+      }
+    ],
+    "body": "_tools/articles/grille-loyers-bruxelles-2026.en.html"
+  },
+  "nl": {
+    "slug": "huurprijzenrooster-brussel-2026",
+    "seo_title": "Huurprijzenrooster Brussel 2026: referentiehuur en indexering · Diamant Consult",
+    "description": "Het indicatieve huurprijzenrooster in Brussel in 2026: referentiehuurprijs, de 20%-regel, indexering en EPB. En voor verhuurders: verhuren of verkopen?",
+    "h1": "Huurprijzenrooster Brussel 2026:<br><span style=\"color: var(--mute);\">wat elke verhuurder moet weten.</span>",
+    "hero_sub": "Referentiehuurprijs, onredelijke huur, indexering beperkt volgens het EPB: de regels voor Brusselse verhuurders zijn veranderd. Een volledig overzicht, en de juiste vragen als u twijfelt tussen verhuren en verkopen.",
+    "breadcrumb": "Huurprijzenrooster Brussel 2026",
+    "category": "Advies",
+    "image_alt": "Woongebouwen in Brussel, huurprijzenrooster 2026",
+    "card_title": "Huurprijzenrooster Brussel 2026: wat elke verhuurder moet weten",
+    "card_excerpt": "Referentiehuurprijs, de 20%-regel, indexering en EPB: de regels van 2026 voor Brusselse verhuurders, en hoe u kiest tussen verhuren en verkopen.",
+    "faq": [
+      {
+        "q": "Is het huurprijzenrooster verplicht in Brussel?",
+        "a": "De referentiehuurprijs blijft indicatief, maar moet in de huurovereenkomst vermeld worden. Sinds 1 mei 2025 wordt een huurprijs die meer dan 20% boven de referentiehuurprijs ligt vermoed onredelijk te zijn, tenzij bijzondere comfortelementen dat rechtvaardigen."
+      },
+      {
+        "q": "Mag je een huur in Brussel indexeren in 2026?",
+        "a": "Ja, als de huurovereenkomst geregistreerd is, de huurder een EPB-certificaat kreeg en de verhuurder de indexering schriftelijk aanvraagt. Voor woningen met EPB-klasse E, F of G beperkt een correctiefactor de indexering."
+      },
+      {
+        "q": "Is het beter om een woning in Brussel te verhuren of te verkopen?",
+        "a": "Dat hangt af van het reële rendement, de EPB-werken die eraan komen en uw plannen. Met hoge verkoopprijzen in 2026 en een beperkte indexering voor energieverslindende woningen vergelijken veel eigenaars beide opties op basis van een schatting van de verkoopwaarde."
+      }
+    ],
+    "body": "_tools/articles/grille-loyers-bruxelles-2026.nl.html"
+  }
 }

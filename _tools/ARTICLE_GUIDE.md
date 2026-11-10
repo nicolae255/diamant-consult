@@ -1,4 +1,4 @@
-# Diamant Consult: how to write and publish a blog article
+# Diamant Consult: how to write and publish a blog article (FR + EN + NL)
 
 This is the playbook for the automated twice-weekly article (and for anyone writing by hand).
 Folders starting with `_` are not published by GitHub Pages.
@@ -7,6 +7,12 @@ Folders starting with `_` are not published by GitHub Pages.
 Each article must bring in **Brussels property owners who might sell** (houses and apartments, all 19
 communes). Every article targets one search a seller would type, uses recent news as the hook,
 and ends by pointing to a free valuation / the 2% all-inclusive sale.
+
+Every article is published in **three languages**: French (main market), English (expats, very present
+in Ixelles, Etterbeek, Woluwe, Uccle) and Dutch (Dutch-speaking Brussels owners). Same facts, same
+sources, same structure, but each version is **written natively for its readers**, not translated word
+for word: use the words people actually type into Google in that language
+(FR "vendre sa maison Uccle", EN "sell my house Brussels", NL "huis verkopen Ukkel").
 
 ## 1. Pick the topic
 1. Read `_tools/articles/LOG.md` so you never repeat a topic or the same commune twice in a row.
@@ -21,47 +27,74 @@ and ends by pointing to a free valuation / the 2% all-inclusive sale.
      Ixelles, Jette, Koekelberg, Molenbeek-Saint-Jean, Saint-Gilles, Saint-Josse-ten-Noode, Schaerbeek,
      Uccle, Watermael-Boitsfort, Woluwe-Saint-Lambert, Woluwe-Saint-Pierre (+ Brabant wallon now and then).
      Schaerbeek, Ixelles/Uccle/Etterbeek already have pages: link to them rather than duplicating.
+     Use the official name in each language (NL: Elsene, Ukkel, Schaarbeek, Watermaal-Bosvoorde,
+     Sint-Lambrechts-Woluwe, Sint-Pieters-Woluwe, Oudergem, Vorst, Sint-Gillis, Sint-Joost-ten-Node,
+     Sint-Agatha-Berchem, Molenbeek, Brussel-Stad; EN usually keeps the French names).
    - **Seller life situations**: succession / inheritance, divorce/separation, selling a rented property,
      selling to buy another home, downsizing for retirees, selling a property needing renovation, joint ownership.
    - **Costs and process**: agency fees 2% vs 3-4%, documents, PEB, soil certificate, timelines, valuation.
-4. Prefer topics where a real search exists (people type it into Google): include the commune name
-   or "Bruxelles" and the year in the title.
+4. Prefer topics where a real search exists: include the commune name or "Bruxelles / Brussels / Brussel"
+   and the year in the title of each language.
 
-## 2. Write (French, Belgian usage, "vous")
-- 900-1,500 words, 4-7 `<h2>` sections, short paragraphs, bullet lists where useful.
+## 2. Write
+- Write the French version first (vous), then the English (you, British spelling) and Dutch (u, Belgian
+  Dutch: "EPB-certificaat", "notaris", "onderhandse verkoop", "openbare verkoop", "schatting").
+- 900-1,500 words per language, 4-7 `<h2>` sections, short paragraphs, bullet lists where useful.
 - **Never invent figures.** Every number must come from a source you actually read; cite it with a link
   (`target="_blank" rel="noopener"`). If a commune-level price isn't available from a reliable source,
-  speak qualitatively. Do not invent client stories, quotes or testimonials.
+  speak qualitatively. Do not invent client stories, quotes or testimonials. All three versions contain the
+  same facts and figures (use local number formats: FR 609 227 €, EN €609,227, NL € 609.227).
 - Mention Diamant Consult naturally: 2% all-inclusive, free valuation, works with notaire Stephan Borremans,
   based in Schaerbeek (Av. du Diamant 138), covers all Brussels and Brabant wallon. No exaggerated promises.
-- Link to 2-4 existing articles (relative links `../slug/`): `vendre-gre-a-gre-bruxelles`,
-  `delai-vente-bruxelles-2026`, `certificat-peb-vente-immobiliere`, `vendre-maison-schaerbeek`,
-  `vendre-appartement-ixelles-uccle`, `vente-publique-biddit`, `vendre-maison-brabant-wallon`,
-  `marche-immobilier-bruxelles-2026`, `grille-loyers-bruxelles-2026`, plus any newer ones in LOG.md.
-- 2-4 FAQ entries (plain text answers, 1-3 sentences): they become Google rich results.
-- The template already adds a closing call to action and contact block. Don't add another one.
+- Link to 2-4 existing articles **in the same language** (relative links `../slug/`):
+
+  | FR | EN | NL |
+  |---|---|---|
+  | `vendre-maison-bruxelles-2026` | `selling-property-brussels-2026` | `woning-verkopen-brussel-2026` |
+  | `delai-vente-bruxelles-2026` | `how-long-to-sell-brussels-2026` | `hoelang-verkopen-brussel-2026` |
+  | `certificat-peb-vente-immobiliere` | `epc-certificate-property-sale` | `epc-attest-verkoop` |
+  | `vendre-maison-schaerbeek` | `sell-house-schaerbeek-brussels` | `woning-verkopen-schaarbeek` |
+  | `vendre-appartement-ixelles-uccle` | `sell-apartment-ixelles-uccle` | `appartement-verkopen-elsene-ukkel` |
+  | `vente-publique-biddit` | `public-auction-biddit-belgium` | `openbare-verkoop-biddit` |
+  | `vendre-maison-brabant-wallon` | `selling-property-brabant-wallon` | `woning-verkopen-waals-brabant` |
+  | `marche-immobilier-bruxelles-2026` | `brussels-property-market-2026` | `vastgoedmarkt-brussel-2026` |
+  | `grille-loyers-bruxelles-2026` | `brussels-rent-grid-2026` | `huurprijzenrooster-brussel-2026` |
+  | `vendre-gre-a-gre-bruxelles` | (none: use `../#offres`) | (none: use `../#offres`) |
+
+  plus any newer articles listed in LOG.md (each line gives the three slugs).
+- 2-4 FAQ entries per language (plain text answers, 1-3 sentences): they become Google rich results.
+- The templates already add a closing call to action and contact block. Don't add another one.
 
 ## 3. Files
-Create two files in `_tools/articles/`:
-- `<slug>.html`: the body fragment only (`<h2>`, `<p>`, `<ul>`, `<a>`), indented 6 spaces.
-- `<slug>.json`: the spec (see the header of `_tools/new_article.py`; copy `grille-loyers-bruxelles-2026.json`).
-  - slug: lowercase, no accents, hyphens, contains the main keyword (e.g. `vendre-maison-uccle-2026`)
+In `_tools/articles/`, named after the **French slug**:
+- `<fr-slug>.fr.html`, `<fr-slug>.en.html`, `<fr-slug>.nl.html`: body fragments only
+  (`<h2>`, `<p>`, `<ul>`, `<a>`), indented 6 spaces.
+- `<fr-slug>.json`: the spec. Copy `marche-immobilier-bruxelles-2026.json` and replace everything.
+  Shared fields: `date` (today, ISO), `read_min`, `image`. Then one block per language (`fr`, `en`, `nl`) with:
+  - slug: lowercase, no accents, hyphens, main keyword **in that language** (e.g. `vendre-maison-uccle-2026`,
+    `sell-house-uccle-2026`, `huis-verkopen-ukkel-2026`). Must not already exist.
   - seo_title: keyword first, max ~65 characters + ` · Diamant Consult`
-  - description: 140-160 characters, contains the keyword + a reason to click
-  - date: today's date (ISO)
-  - category: `Marché local`, `Guide vendeur`, `Conseils` or `Actualité`
-  - image: reuse one that fits: `img/brussels-old-city.webp`, `img/delai-vente-cles.webp`, a real project photo
-    from `img/projets/*.webp` (only when the commune matches, and describe it neutrally), or a Pexels URL already
-    used on the site (`grep -rho 'images.pexels.com/photos/[0-9]*/[^"]*' --include='*.html' .`). Never hotlink other sites.
+  - description: 140-160 characters, keyword + a reason to click
+  - category: FR `Marché local` / `Guide vendeur` / `Conseils` / `Actualité`;
+    EN `Local market` / `Seller guide` / `Advice` / `News`; NL `Lokale markt` / `Verkopersgids` / `Advies` / `Nieuws`
+  - h1, hero_sub, breadcrumb, image_alt, card_title, card_excerpt, faq, body (path to that language's fragment)
+- image: reuse one that fits: `img/brussels-old-city.webp`, `img/delai-vente-cles.webp`, a real project photo
+  from `img/projets/*.webp` (only when the commune matches, and describe it neutrally), or a Pexels URL already
+  used on the site (`grep -rho 'images.pexels.com/photos/[0-9]*/[^"]*' --include='*.html' .`). Never hotlink other sites.
 
 ## 4. Build, check, publish
 ```
-python3 _tools/new_article.py _tools/articles/<slug>.json
+python3 _tools/new_article.py _tools/articles/<fr-slug>.json
+python3 _tools/check_links.py
 ```
-This creates `<slug>/index.html`, adds the card to `/blog/` and the homepage (keeps 3), updates the sitemap.
+The builder validates all three languages before writing anything, then creates `/<fr-slug>/`,
+`/en/<en-slug>/` and `/nl/<nl-slug>/`, adds the cards to the three blogs and three homepages (keeps 3 there),
+links the versions together (hreflang + language buttons) and updates the sitemap.
 Then check:
-- `grep -c '{{' <slug>/index.html` returns 0
-- the JSON-LD parses (`python3 -c "import json,re;s=open('<slug>/index.html').read();json.loads(re.search(r'ld\+json\">(.*?)</script>',s,re.S).group(1))"`)
-- `git diff --stat` only touches: the new folder, `blog/index.html`, `index.html`, `sitemap.xml`, `_tools/articles/*`
-Append a line to `_tools/articles/LOG.md`: `- YYYY-MM-DD · /<slug>/ · <type> · <commune or theme> · <main source>`
-Commit (`Article: <title>`) and push to `main`. GitHub Pages deploys automatically.
+- `check_links.py` prints "all internal links OK" (fix any broken link and rebuild)
+- `git status` only shows: the three new article folders, `blog/index.html`, `en/blog/index.html`,
+  `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, and files in `_tools/articles/`
+Append a line to `_tools/articles/LOG.md`:
+`- YYYY-MM-DD · /<fr-slug>/ · /en/<en-slug>/ · /nl/<nl-slug>/ · <type> · <commune or theme> · <main source>`
+Commit (`Article: <French title>`) and push to `main`. GitHub Pages deploys automatically.
+If any language fails, publish nothing: do not push a partial article.

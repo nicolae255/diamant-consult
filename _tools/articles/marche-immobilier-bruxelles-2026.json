@@ -1,24 +1,86 @@
 {
-  "slug": "marche-immobilier-bruxelles-2026",
-  "seo_title": "Marché immobilier Bruxelles 2026 : prix T3 et faut-il vendre ? · Diamant Consult",
-  "description": "Prix des maisons à Bruxelles : 609 227 € (+4,8 %) au 3e trimestre 2026. Ce que les chiffres des notaires et la hausse des taux changent pour les vendeurs.",
-  "h1": "Marché immobilier Bruxelles 2026 :<br><span style=\"color: var(--mute);\">faut-il vendre maintenant ?</span>",
-  "hero_sub": "Les notaires ont publié les chiffres du 3e trimestre 2026 : les prix bruxellois continuent de monter alors que le crédit devient plus cher. Voici ce que cela signifie si vous pensez à vendre votre maison ou votre appartement.",
-  "breadcrumb": "Marché immobilier Bruxelles 2026",
-  "category": "Marché local",
-  "read_min": 6,
   "date": "2026-11-10",
+  "read_min": 6,
   "image": "img/brussels-old-city.webp",
-  "image_alt": "Rue commerçante dans le centre de Bruxelles, marché immobilier 2026",
-  "card_title": "Marché immobilier Bruxelles 2026 : faut-il vendre maintenant ?",
-  "card_excerpt": "Maisons à 609 227 € (+4,8 %), appartements à 301 666 € (+1,7 %) : ce que le baromètre des notaires du 3e trimestre et la hausse des taux changent pour les vendeurs.",
-  "faq": [
-    {"q": "Les prix de l'immobilier baissent-ils à Bruxelles en 2026 ?",
-     "a": "Non. Selon le baromètre des notaires du 3e trimestre 2026, le prix moyen d'une maison à Bruxelles atteint 609 227 € (+4,8 %) et celui d'un appartement 301 666 € (+1,7 %) sur les neuf premiers mois de l'année."},
-    {"q": "Est-ce le bon moment pour vendre à Bruxelles ?",
-     "a": "Les prix bruxellois sont à un niveau élevé et le nombre de ventes reste stable, contrairement à la Wallonie. La hausse des taux réduit en revanche le budget des acheteurs : si votre projet de vente est décidé, il y a peu d'intérêt à le reporter."},
-    {"q": "Combien vaut ma maison à Bruxelles ?",
-     "a": "La moyenne régionale ne suffit pas : la valeur dépend de la commune, du quartier, de l'état, du PEB et des ventes comparables récentes. Diamant Consult réalise une estimation gratuite et sans engagement partout à Bruxelles."}
-  ],
-  "body": "_tools/articles/marche-immobilier-bruxelles-2026.html"
+  "fr": {
+    "slug": "marche-immobilier-bruxelles-2026",
+    "seo_title": "Marché immobilier Bruxelles 2026 : prix T3 et faut-il vendre ? · Diamant Consult",
+    "description": "Prix des maisons à Bruxelles : 609 227 € (+4,8 %) au 3e trimestre 2026. Ce que les chiffres des notaires et la hausse des taux changent pour les vendeurs.",
+    "h1": "Marché immobilier Bruxelles 2026 :<br><span style=\"color: var(--mute);\">faut-il vendre maintenant ?</span>",
+    "hero_sub": "Les notaires ont publié les chiffres du 3e trimestre 2026 : les prix bruxellois continuent de monter alors que le crédit devient plus cher. Voici ce que cela signifie si vous pensez à vendre votre maison ou votre appartement.",
+    "breadcrumb": "Marché immobilier Bruxelles 2026",
+    "category": "Marché local",
+    "image_alt": "Rue commerçante dans le centre de Bruxelles, marché immobilier 2026",
+    "card_title": "Marché immobilier Bruxelles 2026 : faut-il vendre maintenant ?",
+    "card_excerpt": "Maisons à 609 227 € (+4,8 %), appartements à 301 666 € (+1,7 %) : ce que le baromètre des notaires du 3e trimestre et la hausse des taux changent pour les vendeurs.",
+    "faq": [
+      {
+        "q": "Les prix de l'immobilier baissent-ils à Bruxelles en 2026 ?",
+        "a": "Non. Selon le baromètre des notaires du 3e trimestre 2026, le prix moyen d'une maison à Bruxelles atteint 609 227 € (+4,8 %) et celui d'un appartement 301 666 € (+1,7 %) sur les neuf premiers mois de l'année."
+      },
+      {
+        "q": "Est-ce le bon moment pour vendre à Bruxelles ?",
+        "a": "Les prix bruxellois sont à un niveau élevé et le nombre de ventes reste stable, contrairement à la Wallonie. La hausse des taux réduit en revanche le budget des acheteurs : si votre projet de vente est décidé, il y a peu d'intérêt à le reporter."
+      },
+      {
+        "q": "Combien vaut ma maison à Bruxelles ?",
+        "a": "La moyenne régionale ne suffit pas : la valeur dépend de la commune, du quartier, de l'état, du PEB et des ventes comparables récentes. Diamant Consult réalise une estimation gratuite et sans engagement partout à Bruxelles."
+      }
+    ],
+    "body": "_tools/articles/marche-immobilier-bruxelles-2026.fr.html"
+  },
+  "en": {
+    "slug": "brussels-property-market-2026",
+    "seo_title": "Brussels property market 2026: Q3 prices and should you sell? · Diamant Consult",
+    "description": "Average house price in Brussels: €609,227 (+4.8%) in Q3 2026. What the notaries' figures and rising interest rates mean for property sellers.",
+    "h1": "Brussels property market 2026:<br><span style=\"color: var(--mute);\">should you sell now?</span>",
+    "hero_sub": "The notaries have published their Q3 2026 figures: Brussels prices keep rising while credit gets more expensive. Here is what it means if you are thinking of selling your house or apartment.",
+    "breadcrumb": "Brussels property market 2026",
+    "category": "Local market",
+    "image_alt": "Shopping street in central Brussels, property market 2026",
+    "card_title": "Brussels property market 2026: should you sell now?",
+    "card_excerpt": "Houses at €609,227 (+4.8%), apartments at €301,666 (+1.7%): what the Q3 notaries' barometer and rising rates mean for sellers.",
+    "faq": [
+      {
+        "q": "Are property prices falling in Brussels in 2026?",
+        "a": "No. According to the notaries' Q3 2026 barometer, the average house price in Brussels reached €609,227 (+4.8%) and the average apartment price €301,666 (+1.7%) over the first nine months of the year."
+      },
+      {
+        "q": "Is it a good time to sell in Brussels?",
+        "a": "Brussels prices are high and the number of sales is stable, unlike in Wallonia. Rising interest rates do reduce buyers' budgets, so if your decision to sell is made, there is little point in postponing it."
+      },
+      {
+        "q": "How much is my house in Brussels worth?",
+        "a": "The regional average is not enough: value depends on the municipality, neighbourhood, condition, EPC and recent comparable sales. Diamant Consult provides a free, no-obligation valuation anywhere in Brussels."
+      }
+    ],
+    "body": "_tools/articles/marche-immobilier-bruxelles-2026.en.html"
+  },
+  "nl": {
+    "slug": "vastgoedmarkt-brussel-2026",
+    "seo_title": "Vastgoedmarkt Brussel 2026: prijzen Q3 en nu verkopen? · Diamant Consult",
+    "description": "Gemiddelde huizenprijs in Brussel: € 609.227 (+4,8%) in het derde kwartaal 2026. Wat de notariscijfers en de stijgende rente betekenen voor verkopers.",
+    "h1": "Vastgoedmarkt Brussel 2026:<br><span style=\"color: var(--mute);\">nu verkopen of wachten?</span>",
+    "hero_sub": "De notarissen publiceerden de cijfers van het derde kwartaal 2026: de Brusselse prijzen blijven stijgen terwijl krediet duurder wordt. Dit betekent het als u overweegt uw huis of appartement te verkopen.",
+    "breadcrumb": "Vastgoedmarkt Brussel 2026",
+    "category": "Lokale markt",
+    "image_alt": "Winkelstraat in het centrum van Brussel, vastgoedmarkt 2026",
+    "card_title": "Vastgoedmarkt Brussel 2026: nu verkopen of wachten?",
+    "card_excerpt": "Huizen aan € 609.227 (+4,8%), appartementen aan € 301.666 (+1,7%): wat de notarisbarometer van Q3 en de stijgende rente betekenen voor verkopers.",
+    "faq": [
+      {
+        "q": "Dalen de vastgoedprijzen in Brussel in 2026?",
+        "a": "Nee. Volgens de notarisbarometer van het derde kwartaal 2026 bedraagt de gemiddelde huizenprijs in Brussel € 609.227 (+4,8%) en die van een appartement € 301.666 (+1,7%) over de eerste negen maanden van het jaar."
+      },
+      {
+        "q": "Is het een goed moment om in Brussel te verkopen?",
+        "a": "De Brusselse prijzen liggen hoog en het aantal verkopen blijft stabiel, in tegenstelling tot Wallonië. De stijgende rente verkleint wel het budget van kopers: is uw beslissing genomen, dan heeft uitstellen weinig zin."
+      },
+      {
+        "q": "Hoeveel is mijn huis in Brussel waard?",
+        "a": "Het regionale gemiddelde volstaat niet: de waarde hangt af van de gemeente, de wijk, de staat, het EPB en recente vergelijkbare verkopen. Diamant Consult maakt een gratis en vrijblijvende schatting, overal in Brussel."
+      }
+    ],
+    "body": "_tools/articles/marche-immobilier-bruxelles-2026.nl.html"
+  }
 }

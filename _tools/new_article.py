@@ -1,35 +1,51 @@
 #!/usr/bin/env python3
-"""Create a new FR blog article from a JSON spec + an HTML body fragment.
+"""Create a new blog article in French, English and Dutch from one JSON spec.
 
-Usage:  python3 _tools/new_article.py _tools/articles/<slug>.json
+Usage:  python3 _tools/new_article.py _tools/articles/<fr-slug>.json
 
-The JSON spec (see _tools/ARTICLE_GUIDE.md for the full rules):
+Spec format (see _tools/ARTICLE_GUIDE.md and the existing specs in _tools/articles/):
 {
-  "slug": "marche-immobilier-bruxelles-2026",          # folder name, lowercase, no accents
-  "seo_title": "... · Diamant Consult",                 # <title>, max ~65 chars before the brand
-  "description": "...",                                 # meta description, 140-160 chars
-  "h1": "Ligne 1 :<br><span style=\"color: var(--mute);\">ligne 2.</span>",
-  "hero_sub": "...",                                    # 1-2 sentence intro under the H1
-  "breadcrumb": "Short label",
-  "category": "Marché local",                           # Guide vendeur | Marché local | Conseils | Actualité
-  "read_min": 6,
-  "date": "2026-11-10",                                 # ISO publish date
-  "image": "img/xxx.webp" or "https://images.pexels.com/...",
+  "date": "2026-11-12",            # ISO publish date (shared)
+  "read_min": 6,                   # shared
+  "image": "img/xxx.webp" or "https://images.pexels.com/...",   # shared
+  "fr": { ...language block... },
+  "en": { ...language block... },
+  "nl": { ...language block... }
+}
+Language block:
+{
+  "slug": "vendre-maison-uccle-2026",           # lowercase, no accents, keyword in the language
+  "seo_title": "... · Diamant Consult",
+  "description": "...",                          # 140-160 characters
+  "h1": "Line 1:<br><span style=\"color: var(--mute);\">line 2.</span>",
+  "hero_sub": "...",
+  "breadcrumb": "...",
+  "category": "...",
   "image_alt": "...",
   "card_title": "...", "card_excerpt": "...",
-  "faq": [{"q": "...", "a": "..."}],                    # 2-4 questions, plain text answers
-  "body": "_tools/articles/<slug>.html"                 # body fragment: <h2>, <p>, <ul>, links
+  "faq": [{"q": "...", "a": "..."}],
+  "body": "_tools/articles/<fr-slug>.<lang>.html"
 }
-It writes <slug>/index.html, adds the card at the top of /blog/ and the homepage journal
-(keeping 3 there), then runs seo.py (hreflang + sitemap).
+Pages: FR /<slug>/, EN /en/<slug>/, NL /nl/<slug>/. For each language the card is added to that
+language's blog and homepage (keeping 3 there). Then seo.py links the three versions (hreflang)
+and rebuilds the sitemap. Nothing is written if any language fails validation.
 """
-import json, os, sys, html, subprocess
+import json, os, re, sys, html, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://www.diamantconsult.com"
-MONTHS = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août",
-          "Septembre", "Octobre", "Novembre", "Décembre"]
 ARR = '<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+LANG = {
+    "fr": dict(prefix="", depth="../", months=["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
+               faq="Questions fréquentes", read_blog="Lire l'article", read_home="Lire", locale="fr_BE", in_lang="fr-BE", btn=0),
+    "en": dict(prefix="en/", depth="../../", months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+               faq="Frequently asked questions", read_blog="Read", read_home="Read", locale="en_GB", in_lang="en", btn=2),
+    "nl": dict(prefix="nl/", depth="../../", months=["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
+               faq="Veelgestelde vragen", read_blog="Lees", read_home="Lees", locale="nl_BE", in_lang="nl-BE", btn=1),
+}
+REQUIRED = ["slug", "seo_title", "description", "h1", "hero_sub", "breadcrumb", "category",
+            "image_alt", "card_title", "card_excerpt", "faq", "body"]
 
 
 def esc(s):
@@ -38,7 +54,7 @@ def esc(s):
 
 def img_src(image, prefix, width):
     if image.startswith("http"):
-        return image.replace("w=1200", f"w={width}") if width != 1200 else image
+        return re.sub(r"w=\d+", f"w={width}", image, count=1)
     return prefix + image
 
 
@@ -46,109 +62,130 @@ def abs_img(image):
     return image if image.startswith("http") else f"{BASE}/{image}"
 
 
-def build(spec):
-    slug = spec["slug"]
+def page_path(lang, slug):
+    return f"/{LANG[lang]['prefix']}{slug}/"
+
+
+def normalize(spec):
+    """Accept the old FR-only format too."""
+    if "fr" not in spec:
+        spec = {"date": spec["date"], "read_min": spec["read_min"], "image": spec["image"],
+                "fr": {k: v for k, v in spec.items() if k not in ("date", "read_min", "image")}}
+    return spec
+
+
+def render(spec, lang):
+    b = spec[lang]
+    L = LANG[lang]
+    missing = [k for k in REQUIRED if k not in b]
+    if missing:
+        raise SystemExit(f"[{lang}] missing fields: {missing}")
+    if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", b["slug"]):
+        raise SystemExit(f"[{lang}] bad slug: {b['slug']}")
     y, m, _ = spec["date"].split("-")
-    month_label = f"{MONTHS[int(m) - 1]} {y}"
-    url = f"{BASE}/{slug}/"
-    with open(os.path.join(ROOT, spec["body"]), encoding="utf-8") as f:
+    url = BASE + page_path(lang, b["slug"])
+    with open(os.path.join(ROOT, b["body"]), encoding="utf-8") as f:
         body = f.read().strip()
-    title_plain = spec["seo_title"].split(" · Diamant Consult")[0]
-    ld = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "BlogPosting",
-                "headline": title_plain,
-                "description": spec["description"],
-                "datePublished": spec["date"],
-                "dateModified": spec["date"],
-                "inLanguage": "fr-BE",
-                "mainEntityOfPage": url,
-                "image": abs_img(spec["image"]),
-                "author": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/"},
-                "publisher": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/",
-                              "logo": {"@type": "ImageObject", "url": BASE + "/favicon-180.png"}},
-            },
-            {
-                "@type": "FAQPage",
-                "mainEntity": [
-                    {"@type": "Question", "name": q["q"],
-                     "acceptedAnswer": {"@type": "Answer", "text": q["a"]}}
-                    for q in spec.get("faq", [])
-                ],
-            },
-        ],
-    }
+    title_plain = b["seo_title"].split(" · Diamant Consult")[0]
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "BlogPosting", "headline": title_plain, "description": b["description"],
+         "datePublished": spec["date"], "dateModified": spec["date"], "inLanguage": L["in_lang"],
+         "mainEntityOfPage": url, "image": abs_img(spec["image"]),
+         "author": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/"},
+         "publisher": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/",
+                       "logo": {"@type": "ImageObject", "url": BASE + "/favicon-180.png"}}},
+        {"@type": "FAQPage", "mainEntity": [
+            {"@type": "Question", "name": q["q"], "acceptedAnswer": {"@type": "Answer", "text": q["a"]}}
+            for q in b["faq"]]},
+    ]}
     faq_html = ""
-    if spec.get("faq"):
-        faq_html = "\n\n      <h2>Questions fréquentes</h2>\n" + "\n".join(
-            f"      <h3>{esc(q['q'])}</h3>\n      <p>{esc(q['a'])}</p>" for q in spec["faq"])
-
-    with open(os.path.join(ROOT, "_tools", "article_template.html"), encoding="utf-8") as f:
+    if b["faq"]:
+        faq_html = f"\n\n      <h2>{L['faq']}</h2>\n" + "\n".join(
+            f"      <h3>{esc(q['q'])}</h3>\n      <p>{esc(q['a'])}</p>" for q in b["faq"])
+    # language switcher buttons: order in the header is FR, NL, EN
+    others = []
+    for ol in ("fr", "nl", "en"):
+        if ol != lang and ol in spec:
+            others.append(f"  lb[{LANG[ol]['btn']}].onclick = () => location.href = '{page_path(ol, spec[ol]['slug'])}';")
+        elif ol != lang:
+            others.append(f"  lb[{LANG[ol]['btn']}].onclick = () => location.href = '/{LANG[ol]['prefix']}blog/';")
+    with open(os.path.join(ROOT, "_tools", f"article_template_{lang}.html"), encoding="utf-8") as f:
         tpl = f.read()
-    page = (tpl.replace("{{SEO_TITLE}}", esc(spec["seo_title"]))
-               .replace("{{DESCRIPTION}}", esc(spec["description"]))
-               .replace("{{URL}}", url)
-               .replace("{{OG_TITLE}}", esc(title_plain))
-               .replace("{{OG_IMAGE}}", abs_img(spec["image"]))
-               .replace("{{JSONLD}}", json.dumps(ld, ensure_ascii=False, indent=2))
-               .replace("{{BREADCRUMB}}", esc(spec["breadcrumb"]))
-               .replace("{{CATEGORY}}", esc(spec["category"]))
-               .replace("{{READ_MIN}}", str(spec["read_min"]))
-               .replace("{{MONTH}}", month_label)
-               .replace("{{H1}}", spec["h1"])
-               .replace("{{HERO_SUB}}", esc(spec["hero_sub"]))
-               .replace("{{IMG}}", img_src(spec["image"], "../", 1200))
-               .replace("{{IMG_ALT}}", esc(spec["image_alt"]))
-               .replace("{{BODY}}", body + faq_html))
-    os.makedirs(os.path.join(ROOT, slug), exist_ok=True)
-    with open(os.path.join(ROOT, slug, "index.html"), "w", encoding="utf-8") as f:
-        f.write(page)
-    print("  page:", f"/{slug}/")
+    rep = {
+        "{{SEO_TITLE}}": esc(b["seo_title"]), "{{DESCRIPTION}}": esc(b["description"]), "{{URL}}": url,
+        "{{OG_TITLE}}": esc(title_plain), "{{OG_IMAGE}}": abs_img(spec["image"]), "{{OG_LOCALE}}": L["locale"],
+        "{{JSONLD}}": json.dumps(ld, ensure_ascii=False, indent=2), "{{BREADCRUMB}}": esc(b["breadcrumb"]),
+        "{{CATEGORY}}": esc(b["category"]), "{{READ_MIN}}": str(spec["read_min"]),
+        "{{MONTH}}": f"{L['months'][int(m) - 1]} {y}", "{{H1}}": b["h1"], "{{HERO_SUB}}": esc(b["hero_sub"]),
+        "{{IMG}}": img_src(spec["image"], L["depth"], 1200), "{{IMG_ALT}}": esc(b["image_alt"]),
+        "{{LANG_JS}}": "\n".join(others), "{{BODY}}": body + faq_html,
+    }
+    page = tpl
+    for k, v in rep.items():
+        page = page.replace(k, v)
+    if "{{" in page:
+        raise SystemExit(f"[{lang}] unreplaced placeholder: {re.findall(r'{{[A-Z_]+}}', page)}")
+    json.loads(re.search(r'ld\+json">\s*(.*?)\s*</script>', page, re.S).group(1))
+    return page
 
-    def card(prefix, long_meta):
-        meta = f'<span>{esc(spec["category"])}</span><span>{spec["read_min"]} min</span>'
-        return f'''
-      <article class="article reveal">
-        <a href="{prefix}{slug}/">
+
+def card(spec, lang, prefix, img_prefix, readmore):
+    b = spec[lang]
+    return f'''      <article class="article reveal">
+        <a href="{prefix}{b["slug"]}/">
           <div class="article-img">
-            <img src="{img_src(spec["image"], prefix, 800)}" alt="{esc(spec["image_alt"])}" loading="lazy" />
+            <img src="{img_src(spec["image"], img_prefix, 800)}" alt="{esc(b["image_alt"])}" loading="lazy" />
           </div>
           <div class="article-body">
-            <div class="article-meta">{meta}</div>
-            <h3>{esc(spec["card_title"])}</h3>
-            <p>{esc(spec["card_excerpt"])}</p>
-            <span class="article-readmore">{"Lire l'article" if long_meta else "Lire"} {ARR}</span>
+            <div class="article-meta"><span>{esc(b["category"])}</span><span>{spec["read_min"]} min</span></div>
+            <h3>{esc(b["card_title"])}</h3>
+            <p>{esc(b["card_excerpt"])}</p>
+            <span class="article-readmore">{readmore} {ARR}</span>
           </div>
         </a>
       </article>
 '''
 
-    # blog index: newest first, right after the featured article
-    p = os.path.join(ROOT, "blog", "index.html")
+
+def add_cards(spec, lang):
+    L = LANG[lang]
+    slug = spec[lang]["slug"]
+    up = "../" if lang == "fr" else "../../"      # from /xx/blog/ to site root
+    # blog index
+    p = os.path.join(ROOT, L["prefix"], "blog", "index.html")
     s = open(p, encoding="utf-8").read()
     if f'href="../{slug}/"' not in s:
-        s = s.replace("<!-- NEW-ARTICLES -->", "<!-- NEW-ARTICLES -->\n" + card("../", True), 1)
+        s = s.replace("<!-- NEW-ARTICLES -->", "<!-- NEW-ARTICLES -->\n" + card(spec, lang, "../", up, L["read_blog"]), 1)
         open(p, "w", encoding="utf-8").write(s)
-        print("  card added to /blog/")
-
     # homepage journal: newest first, keep 3
-    p = os.path.join(ROOT, "index.html")
+    p = os.path.join(ROOT, L["prefix"], "index.html")
     s = open(p, encoding="utf-8").read()
     if f'href="{slug}/"' not in s:
         marker = "<!-- JOURNAL-ARTICLES -->"
         start = s.index(marker) + len(marker)
         end = s.index("    </div>\n  </div>\n</section>", start)
-        block = s[start:end]
-        arts = [a + "</article>\n" for a in block.split("</article>\n") if "<article" in a]
-        arts = [card("", False)] + arts
+        arts = [a + "</article>\n" for a in s[start:end].split("</article>\n") if "<article" in a]
+        home_img = "" if lang == "fr" else "../"
+        arts = [card(spec, lang, "", home_img, L["read_home"])] + arts
         s = s[:start] + "\n" + "".join(a.strip("\n") + "\n" for a in arts[:3]) + s[end:]
         open(p, "w", encoding="utf-8").write(s)
-        print("  card added to homepage journal")
+
+
+def main(path):
+    spec = normalize(json.load(open(path, encoding="utf-8")))
+    langs = [l for l in ("fr", "en", "nl") if l in spec]
+    pages = {l: render(spec, l) for l in langs}          # validate everything before writing
+    for l in langs:
+        d = os.path.join(ROOT, LANG[l]["prefix"], spec[l]["slug"])
+        os.makedirs(d, exist_ok=True)
+        with open(os.path.join(d, "index.html"), "w", encoding="utf-8") as f:
+            f.write(pages[l])
+        add_cards(spec, l)
+        print(f"  [{l}] {page_path(l, spec[l]['slug'])}")
+    subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "seo.py")], check=True,
+                   stdout=subprocess.DEVNULL)
+    print("  hreflang + sitemap updated")
 
 
 if __name__ == "__main__":
-    spec = json.load(open(sys.argv[1], encoding="utf-8"))
-    build(spec)
-    subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "seo.py")], check=True)
+    main(sys.argv[1])
