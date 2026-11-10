@@ -62,22 +62,41 @@ for word: use the words people actually type into Google in that language
   | `vendre-gre-a-gre-bruxelles` | (none: use `../#offres`) | (none: use `../#offres`) |
 
   plus any newer articles listed in LOG.md (each line gives the three slugs).
-- 2-4 FAQ entries per language (plain text answers, 1-3 sentences): they become Google rich results.
 - The templates already add a closing call to action and contact block. Don't add another one.
+
+### Written for Google AND answer engines (SEO + AEO + GEO)
+AI answers (Google AI Overviews, ChatGPT, Perplexity, Copilot) quote pages that answer clearly, with facts
+and sources. Every article must therefore have:
+- **summary** (3-5 points, required, shown at the top as "En bref / Key points / In het kort"): each point is one
+  self-contained sentence that directly answers part of the question, with the key figure and the place/date
+  ("In Q3 2026, the average house price in Brussels reached €609,227 (+4.8%)."). No teasers.
+- **H2s phrased as the questions people ask** where natural ("Combien vaut une maison à Uccle en 2026 ?",
+  "Faut-il vendre maintenant ?"), and the **first sentence under each H2 answers it directly**; details follow.
+- **Concrete, dated facts**: numbers with their period and source, named places, named institutions. Avoid vague
+  claims ("prices are rising") without a figure. Name the entity often: "Diamant Consult", "Bruxelles / Brussels / Brussel",
+  the commune.
+- **faq** (3-5 questions, required): the exact questions sellers type, answered in 1-3 self-contained sentences.
+  Google no longer shows FAQ rich results for most sites, but answer engines reuse these Q&A pairs heavily.
+- **sources** (required, shared by the 3 languages): every source you used, as `{"name": "...", "url": "..."}`.
+  They are listed at the bottom of each version and added to the structured data. The same sources must also be
+  linked inline where the figures appear.
+- A short comparison table (`<table>`) when it genuinely helps (e.g. 2% vs 3.5% commission on a given price).
 
 ## 3. Files
 In `_tools/articles/`, named after the **French slug**:
 - `<fr-slug>.fr.html`, `<fr-slug>.en.html`, `<fr-slug>.nl.html`: body fragments only
   (`<h2>`, `<p>`, `<ul>`, `<a>`), indented 6 spaces.
 - `<fr-slug>.json`: the spec. Copy `marche-immobilier-bruxelles-2026.json` and replace everything.
-  Shared fields: `date` (today, ISO), `read_min`, `image`. Then one block per language (`fr`, `en`, `nl`) with:
+  Shared fields: `date` (today, ISO), `read_min`, `image`, `sources`. Then one block per language (`fr`, `en`, `nl`) with:
   - slug: lowercase, no accents, hyphens, main keyword **in that language** (e.g. `vendre-maison-uccle-2026`,
     `sell-house-uccle-2026`, `huis-verkopen-ukkel-2026`). Must not already exist.
   - seo_title: keyword first, max ~65 characters + ` · Diamant Consult`
   - description: 140-160 characters, keyword + a reason to click
   - category: FR `Marché local` / `Guide vendeur` / `Conseils` / `Actualité`;
     EN `Local market` / `Seller guide` / `Advice` / `News`; NL `Lokale markt` / `Verkopersgids` / `Advies` / `Nieuws`
-  - h1, hero_sub, breadcrumb, image_alt, card_title, card_excerpt, faq, body (path to that language's fragment)
+  - h1, hero_sub, breadcrumb, image_alt, card_title, card_excerpt, summary (3-5), faq (3-5),
+    body (path to that language's fragment)
+  The builder refuses to build if summary, faq or sources are missing or have the wrong count.
 - image: reuse one that fits: `img/brussels-old-city.webp`, `img/delai-vente-cles.webp`, a real project photo
   from `img/projets/*.webp` (only when the commune matches, and describe it neutrally), or a Pexels URL already
   used on the site (`grep -rho 'images.pexels.com/photos/[0-9]*/[^"]*' --include='*.html' .`). Never hotlink other sites.
@@ -89,11 +108,11 @@ python3 _tools/check_links.py
 ```
 The builder validates all three languages before writing anything, then creates `/<fr-slug>/`,
 `/en/<en-slug>/` and `/nl/<nl-slug>/`, adds the cards to the three blogs and three homepages (keeps 3 there),
-links the versions together (hreflang + language buttons) and updates the sitemap.
+links the versions together (hreflang + language buttons), updates the sitemap and `llms.txt`.
 Then check:
 - `check_links.py` prints "all internal links OK" (fix any broken link and rebuild)
 - `git status` only shows: the three new article folders, `blog/index.html`, `en/blog/index.html`,
-  `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, and files in `_tools/articles/`
+  `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, `llms.txt`, and files in `_tools/articles/`
 Append a line to `_tools/articles/LOG.md`:
 `- YYYY-MM-DD · /<fr-slug>/ · /en/<en-slug>/ · /nl/<nl-slug>/ · <type> · <commune or theme> · <main source>`
 Commit (`Article: <French title>`) and push to `main`. GitHub Pages deploys automatically.

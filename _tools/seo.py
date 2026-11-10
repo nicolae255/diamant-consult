@@ -170,7 +170,48 @@ def build_sitemap():
     print(f"  sitemap.xml: {len(entries)} URLs")
 
 
+LLMS_HEAD = """# Diamant Consult Immobilier
+
+> Estate agent in Brussels (Avenue du Diamant 138, 1030 Schaerbeek, Belgium). Sells houses and apartments
+> for private owners for 2% of the sale price, all inclusive (valuation, photos, Immoweb listing, viewings,
+> offers, negotiation, follow-up to the notary deed), working with notary Stephan Borremans. Also organises
+> viewings for notarial public auctions (Biddit) for notaries. Covers the 19 Brussels municipalities and
+> Brabant wallon. Free, no-obligation valuation. Languages: French, Dutch, English.
+
+Key facts:
+- Legal name: Diamant Consult Immobilier (brand: Diamant Consult), VAT BE 1014.120.350
+- Private sale (gré à gré): 2% of the sale price, all inclusive, only paid if the property sells
+- Notaries: viewing pack for public auctions
+- Contact: borremans.helpinfo@gmail.com, https://www.diamantconsult.com/contact/
+"""
+
+
+def page_meta(p):
+    html = open(path_file(p), encoding="utf-8").read()
+    t = re.search(r"<title>([^<]*)</title>", html)
+    d = re.search(r'<meta name="description" content="([^"]*)"', html)
+    unesc = lambda s: s.replace("&amp;", "&").replace("&#x27;", "'").replace("&quot;", '"')
+    return (unesc(t.group(1)).split(" · Diamant Consult")[0] if t else p), (unesc(d.group(1)) if d else "")
+
+
+def build_llms_txt():
+    sections = {"fr": [], "en": [], "nl": []}
+    for p in pages():
+        if not indexable(p) or "mentions-legales" in p or "confidentialite" in p:
+            continue
+        lang = "en" if p.startswith("/en/") else "nl" if p.startswith("/nl/") else "fr"
+        title, desc = page_meta(p)
+        sections[lang].append(f"- [{title}]({BASE}{p}): {desc}")
+    out = LLMS_HEAD
+    for lang, name in (("fr", "Pages in French (main site)"), ("en", "Pages in English"), ("nl", "Pages in Dutch")):
+        out += f"\n## {name}\n\n" + "\n".join(sections[lang]) + "\n"
+    with open(os.path.join(ROOT, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(out)
+    print(f"  llms.txt: {sum(len(v) for v in sections.values())} pages")
+
+
 if __name__ == "__main__":
     write_redirects()
     apply_hreflang()
     build_sitemap()
+    build_llms_txt()

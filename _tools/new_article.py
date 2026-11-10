@@ -8,6 +8,7 @@ Spec format (see _tools/ARTICLE_GUIDE.md and the existing specs in _tools/articl
   "date": "2026-11-12",            # ISO publish date (shared)
   "read_min": 6,                   # shared
   "image": "img/xxx.webp" or "https://images.pexels.com/...",   # shared
+  "sources": [{"name": "notaire.be: baromètre T3 2026", "url": "https://..."}],  # shared, every source used
   "fr": { ...language block... },
   "en": { ...language block... },
   "nl": { ...language block... }
@@ -23,7 +24,8 @@ Language block:
   "category": "...",
   "image_alt": "...",
   "card_title": "...", "card_excerpt": "...",
-  "faq": [{"q": "...", "a": "..."}],
+  "summary": ["3-5 short direct answers with the key figures", "..."],   # shown at the top
+  "faq": [{"q": "...", "a": "..."}],                                       # 3-5 questions
   "body": "_tools/articles/<fr-slug>.<lang>.html"
 }
 Pages: FR /<slug>/, EN /en/<slug>/, NL /nl/<slug>/. For each language the card is added to that
@@ -38,14 +40,15 @@ ARR = '<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" st
 
 LANG = {
     "fr": dict(prefix="", depth="../", months=["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-               faq="Questions fréquentes", read_blog="Lire l'article", read_home="Lire", locale="fr_BE", in_lang="fr-BE", btn=0),
+               faq="Questions fréquentes", summary="En bref", sources="Sources", home="Accueil", read_blog="Lire l'article", read_home="Lire", locale="fr_BE", in_lang="fr-BE", btn=0),
     "en": dict(prefix="en/", depth="../../", months=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-               faq="Frequently asked questions", read_blog="Read", read_home="Read", locale="en_GB", in_lang="en", btn=2),
+               faq="Frequently asked questions", summary="Key points", sources="Sources", home="Home", read_blog="Read", read_home="Read", locale="en_GB", in_lang="en", btn=2),
     "nl": dict(prefix="nl/", depth="../../", months=["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"],
-               faq="Veelgestelde vragen", read_blog="Lees", read_home="Lees", locale="nl_BE", in_lang="nl-BE", btn=1),
+               faq="Veelgestelde vragen", summary="In het kort", sources="Bronnen", home="Startpagina", read_blog="Lees", read_home="Lees", locale="nl_BE", in_lang="nl-BE", btn=1),
 }
 REQUIRED = ["slug", "seo_title", "description", "h1", "hero_sub", "breadcrumb", "category",
-            "image_alt", "card_title", "card_excerpt", "faq", "body"]
+            "image_alt", "card_title", "card_excerpt", "summary", "faq", "body"]
+SHARED_REQUIRED = ["date", "read_min", "image", "sources"]
 
 
 def esc(s):
@@ -77,9 +80,15 @@ def normalize(spec):
 def render(spec, lang):
     b = spec[lang]
     L = LANG[lang]
-    missing = [k for k in REQUIRED if k not in b]
+    missing = [k for k in REQUIRED if k not in b] + [k for k in SHARED_REQUIRED if k not in spec]
     if missing:
         raise SystemExit(f"[{lang}] missing fields: {missing}")
+    if not 3 <= len(b["summary"]) <= 5:
+        raise SystemExit(f"[{lang}] summary needs 3-5 points")
+    if not 3 <= len(b["faq"]) <= 5:
+        raise SystemExit(f"[{lang}] faq needs 3-5 questions")
+    if not spec["sources"] or not all(x.get("url", "").startswith("http") for x in spec["sources"]):
+        raise SystemExit(f"[{lang}] sources: at least one {{name, url}} with a real URL")
     if not re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", b["slug"]):
         raise SystemExit(f"[{lang}] bad slug: {b['slug']}")
     y, m, _ = spec["date"].split("-")
@@ -91,9 +100,15 @@ def render(spec, lang):
         {"@type": "BlogPosting", "headline": title_plain, "description": b["description"],
          "datePublished": spec["date"], "dateModified": spec["date"], "inLanguage": L["in_lang"],
          "mainEntityOfPage": url, "image": abs_img(spec["image"]),
+         "abstract": " ".join(b["summary"]),
+         "citation": [{"@type": "CreativeWork", "name": x["name"], "url": x["url"]} for x in spec["sources"]],
          "author": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/"},
          "publisher": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/",
                        "logo": {"@type": "ImageObject", "url": BASE + "/favicon-180.png"}}},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": L["home"], "item": f"{BASE}/{L['prefix']}"},
+            {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{BASE}/{L['prefix']}blog/"},
+            {"@type": "ListItem", "position": 3, "name": b["breadcrumb"], "item": url}]},
         {"@type": "FAQPage", "mainEntity": [
             {"@type": "Question", "name": q["q"], "acceptedAnswer": {"@type": "Answer", "text": q["a"]}}
             for q in b["faq"]]},
@@ -102,6 +117,14 @@ def render(spec, lang):
     if b["faq"]:
         faq_html = f"\n\n      <h2>{L['faq']}</h2>\n" + "\n".join(
             f"      <h3>{esc(q['q'])}</h3>\n      <p>{esc(q['a'])}</p>" for q in b["faq"])
+    summary_html = (
+        '      <div class="key-points" style="background: var(--bg-soft); border-radius: 1rem; padding: 1.5rem 1.75rem; margin-bottom: 3rem;">\n'
+        f'        <h2 style="margin-top: 0;">{L["summary"]}</h2>\n        <ul>\n'
+        + "".join(f"          <li>{esc(x)}</li>\n" for x in b["summary"])
+        + "        </ul>\n      </div>\n\n")
+    sources_html = (f"\n\n      <h2>{L['sources']}</h2>\n      <ul>\n"
+        + "".join(f'        <li><a href="{esc(x["url"])}" target="_blank" rel="noopener">{esc(x["name"])}</a></li>\n'
+                  for x in spec["sources"]) + "      </ul>")
     # language switcher buttons: order in the header is FR, NL, EN
     others = []
     for ol in ("fr", "nl", "en"):
@@ -118,7 +141,7 @@ def render(spec, lang):
         "{{CATEGORY}}": esc(b["category"]), "{{READ_MIN}}": str(spec["read_min"]),
         "{{MONTH}}": f"{L['months'][int(m) - 1]} {y}", "{{H1}}": b["h1"], "{{HERO_SUB}}": esc(b["hero_sub"]),
         "{{IMG}}": img_src(spec["image"], L["depth"], 1200), "{{IMG_ALT}}": esc(b["image_alt"]),
-        "{{LANG_JS}}": "\n".join(others), "{{BODY}}": body + faq_html,
+        "{{LANG_JS}}": "\n".join(others), "{{BODY}}": summary_html + body + faq_html + sources_html,
     }
     page = tpl
     for k, v in rep.items():
