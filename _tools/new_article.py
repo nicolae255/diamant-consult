@@ -104,7 +104,7 @@ def render(spec, lang):
          "citation": [{"@type": "CreativeWork", "name": x["name"], "url": x["url"]} for x in spec["sources"]],
          "author": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/"},
          "publisher": {"@type": "Organization", "name": "Diamant Consult", "url": BASE + "/",
-                       "logo": {"@type": "ImageObject", "url": BASE + "/favicon-180.png"}}},
+                       "logo": {"@type": "ImageObject", "url": BASE + "/icon-512.png"}}},
         {"@type": "BreadcrumbList", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": L["home"], "item": f"{BASE}/{L['prefix']}"},
             {"@type": "ListItem", "position": 2, "name": "Blog", "item": f"{BASE}/{L['prefix']}blog/"},
