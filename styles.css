@@ -1743,6 +1743,34 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
   .nav.open .nav-menu li { border-bottom: 1px solid rgba(10,10,8,0.06); }
   .nav.open .nav-menu li:last-child { border-bottom: none; }
   .nav.open .nav-menu a { display: block; padding: 0.85rem 0.25rem; font-size: 1rem; color: var(--ink); }
+  /* Language switcher: shown inside the open mobile menu, on its own row under the links */
+  .nav.open .nav-inner { position: relative; padding-bottom: 4.25rem; }
+  .nav.open .lang {
+    display: inline-flex !important;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    animation: mobileNavIn 0.18s ease;
+  }
+  .nav.open .lang button { padding: 0.55rem 1.25rem; }
+  .brand { white-space: nowrap; }
+}
+
+/* Small phones: header = logo + burger only; the "sell" button moves into the open menu */
+@media (max-width: 600px) {
+  .nav-cta { display: none; }
+  .nav.open .nav-inner { padding-bottom: 8rem; }
+  .nav.open .nav-cta {
+    display: inline-flex;
+    position: absolute;
+    left: 50%;
+    bottom: 4.6rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    animation: mobileNavIn 0.18s ease;
+  }
 }
 
 @media (max-width: 900px) {
