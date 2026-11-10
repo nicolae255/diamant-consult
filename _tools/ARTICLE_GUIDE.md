@@ -44,8 +44,8 @@ for word: use the words people actually type into Google in that language
   (`target="_blank" rel="noopener"`). If a commune-level price isn't available from a reliable source,
   speak qualitatively. Do not invent client stories, quotes or testimonials. All three versions contain the
   same facts and figures (use local number formats: FR 609 227 €, EN €609,227, NL € 609.227).
-- **Price rule: the commission is always written with "excluding VAT"**: FR "2% HTVA", EN "2% excl. VAT",
-  NL "2% excl. btw" (e.g. "2% HTVA, tout compris"). Never write "2%" alone for the commission.
+- **Price rule: the commission is always written with "excluding VAT"**: FR "2% HTVA", EN "2% excl. VAT",
+  NL "2% excl. btw" (e.g. "2% HTVA, tout compris"). Never write "2%" alone for the commission.
 - Mention Diamant Consult naturally: 2% all-inclusive, free valuation, works with notaire Stephan Borremans,
   based in Schaerbeek (Av. du Diamant 138), covers all Brussels and Brabant wallon. No exaggerated promises.
 - Link to 2-4 existing articles **in the same language** (relative links `../slug/`):
