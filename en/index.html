@@ -28,7 +28,6 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <meta property="og:image" content="https://www.diamantconsult.com/img/og-default.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://www.diamantconsult.com/img/og-default.jpg" />
-<link rel="preload" as="image" href="../img/brussels-old-city.webp" type="image/webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -110,29 +109,46 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <h1 class="display">Sell your property,<span class="highlight"><span>no surprises.</span></span></h1>
         <p class="hero-sub">One point of contact for marketing and viewings — our notary handles the sale and all offers. Everything included at 2% of the sale price excl. VAT for private sellers.</p>
         <div class="hero-cta-row">
-          <a href="contact/" class="btn-primary">Sell my property<span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+          <a href="#demande" class="btn-primary">Sell my property<span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
           <a href="#offres" class="btn-ghost">I'm a notary</a>
         </div>
         <div class="hero-stats">
           <div class="hero-stat"><div class="num">2<sup>%</sup></div><div class="lbl">Private sale excl. VAT, all in</div></div>
           <div class="hero-stat"><div class="num">600<sup>€</sup></div><div class="lbl">Notary viewing pack excl. VAT</div></div>
-          <div class="hero-stat"><div class="num">19+</div><div class="lbl">Districts · BXL &amp; Wallonia</div></div>
+          <div class="hero-stat"><div class="num">23</div><div class="lbl">Municipalities · Brussels &amp; Walloon Brabant</div></div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-main-img">
-          <picture><source srcset="../img/brussels-old-city.webp" type="image/webp"><img src="../img/brussels-old-city.jpg" alt="Brussels — Diamant Consult" fetchpriority="high"></picture>
-          <span class="img-label">Brussels</span>
+      <div class="hero-lead" id="demande">
+        <div class="hl-calc">
+          <p class="hl-kicker">What does our service cost?</p>
+          <label class="hl-range"><span>Expected sale price <output id="hl-price">400 000 €</output></span>
+            <input type="range" id="hl-slider" min="100000" max="1500000" step="10000" value="400000" aria-label="Expected sale price">
+          </label>
+          <div class="hl-fee">
+            <span>Our commission</span>
+            <strong><output id="hl-fee">8 000 €</output> <small>excl. VAT</small></strong>
+          </div>
+          <p class="hl-sub" id="hl-tvac" data-tpl="i.e. {x} incl. VAT (21% VAT)">i.e. 9 680 € incl. VAT (21% VAT)</p>
+          <p class="hl-incl"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Photos, listings, viewings, negotiation and follow-up until the deed: all included.</span></p>
         </div>
-        <div class="float-card mini">
-          <div class="mini-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12l9-9 9 9M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="mini-txt"><strong>50+ properties</strong><span>successfully guided</span></div>
-        </div>
-        <div class="float-card price">
-          <div class="pc-label">Commission</div>
-          <div class="pc-val">2% of price excl. VAT</div>
-          <div class="pc-sub">All in · No hidden fees</div>
-        </div>
+        <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">
+          <p class="hl-title">Tell us about your property</p>
+          <p class="hl-thanks" id="hl-thanks" hidden>Thank you! Your request has been sent. We will reply by e-mail.</p>
+          <input type="hidden" name="access_key" value="ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9">
+          <input type="hidden" name="subject" value="Meeting request · homepage (EN)">
+          <input type="hidden" name="from_name" value="Site Diamant Consult">
+          <input type="hidden" name="redirect" value="https://www.diamantconsult.com/en/?merci=1#demande">
+          <input type="hidden" name="prix_envisage" id="hl-hidden-price" value="400 000 €">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+          <fieldset class="hl-radios"><legend>Property type</legend><label><input type="radio" name="type" value="House" checked> House</label><label><input type="radio" name="type" value="Apartment"> Apartment</label><label><input type="radio" name="type" value="Other"> Other</label></fieldset>
+          <div class="hl-pair">
+            <label>Municipality<input type="text" name="commune" list="hl-communes" placeholder="e.g. Schaerbeek" autocomplete="address-level2"></label>
+            <label>Your e-mail<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <datalist id="hl-communes"><option value="Anderlecht"><option value="Auderghem"><option value="Berchem-Sainte-Agathe"><option value="Bruxelles-Ville"><option value="Etterbeek"><option value="Evere"><option value="Forest"><option value="Ganshoren"><option value="Ixelles"><option value="Jette"><option value="Koekelberg"><option value="Molenbeek-Saint-Jean"><option value="Saint-Gilles"><option value="Saint-Josse-ten-Noode"><option value="Schaerbeek"><option value="Uccle"><option value="Watermael-Boitsfort"><option value="Woluwe-Saint-Lambert"><option value="Woluwe-Saint-Pierre"><option value="Waterloo"><option value="La Hulpe"><option value="Wavre"><option value="Rixensart"></datalist>
+          <button type="submit" class="hl-btn">Book a free first meeting</button>
+          <p class="hl-note">No obligation · We reply by e-mail</p>
+        </form>
       </div>
     </div>
   </div>
@@ -408,6 +424,7 @@ function cookieConsent(v){
   setTimeout(function(){b.style.display="none";},300);
 }
 </script>
+<script src="/hero-lead.js?v=1" defer></script>
 <script src="/chatbot.js?v=2" defer></script>
 </body>
 </html>

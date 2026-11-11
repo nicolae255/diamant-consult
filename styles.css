@@ -1891,3 +1891,61 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
   .cookie-actions { width: 100%; }
   .cookie-btn { flex: 1; text-align: center; }
 }
+
+/* ===========================================================
+   HERO LEAD CARD (home): calculator + appointment form
+   =========================================================== */
+.hero-lead {
+  width: 100%;
+  max-width: 560px;
+  justify-self: center;
+  background: var(--ink);
+  color: var(--dark-fg);
+  border-radius: var(--r-lg);
+  padding: clamp(1.25rem, 2.6vw, 2rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 30px 60px -30px rgba(10,10,10,.45);
+  scroll-margin-top: 6rem;
+  box-sizing: border-box;
+}
+.hl-calc { display: flex; flex-direction: column; gap: .85rem; padding-bottom: 1.5rem; border-bottom: 1px solid #2E2D2A; }
+.hl-kicker { margin: 0; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: #A9A59C; font-weight: 600; }
+.hl-range { display: flex; flex-direction: column; gap: .7rem; font-size: .9rem; color: #CFCBC2; }
+.hl-range span { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.hl-range output { color: var(--dark-fg); font-weight: 600; }
+.hl-range input[type=range] {
+  -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 99px; outline-offset: 6px;
+  background: linear-gradient(to right, var(--dark-fg) var(--p, 21%), #3A3936 var(--p, 21%));
+}
+.hl-range input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%; background: var(--dark-fg); border: 4px solid var(--ink); box-shadow: 0 0 0 1px var(--dark-fg); cursor: grab; }
+.hl-range input[type=range]::-moz-range-thumb { width: 16px; height: 16px; border-radius: 50%; background: var(--dark-fg); border: 4px solid var(--ink); box-shadow: 0 0 0 1px var(--dark-fg); cursor: grab; }
+.hl-fee { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.hl-fee span { color: #CFCBC2; font-size: .95rem; }
+.hl-fee strong { font-family: var(--display); font-weight: 500; font-size: clamp(2rem, 3.6vw, 2.6rem); letter-spacing: -0.04em; line-height: 1; }
+.hl-fee small { font-family: var(--sans); font-size: .85rem; letter-spacing: 0; color: #A9A59C; font-weight: 500; }
+.hl-sub { margin: -.4rem 0 0; text-align: right; font-size: .8rem; color: #A9A59C; }
+.hl-incl { margin: 0; display: flex; gap: .55rem; align-items: flex-start; font-size: .88rem; color: #CFCBC2; line-height: 1.45; }
+.hl-incl svg { flex-shrink: 0; margin-top: .15rem; color: var(--success); }
+.hl-form { display: flex; flex-direction: column; gap: .9rem; }
+.hl-title { margin: 0; font-family: var(--display); font-size: 1.45rem; font-weight: 500; letter-spacing: -0.02em; }
+.hl-thanks { margin: 0; background: #E7F3EA; color: #1F5130; border-radius: 12px; padding: .8rem 1rem; font-weight: 600; font-size: .9rem; }
+.hl-radios { display: flex; gap: .5rem; flex-wrap: wrap; border: 0; padding: 0; margin: 0; }
+.hl-radios legend { font-size: .82rem; color: #CFCBC2; margin-bottom: .4rem; padding: 0; }
+.hl-radios label { flex: 1 1 0; min-width: 0; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: .4rem; border: 1px solid #3A3936; border-radius: 12px; padding: .65rem .6rem; font-size: .9rem; cursor: pointer; transition: border-color .2s, background .2s; }
+.hl-radios input { accent-color: var(--dark-fg); margin: 0; }
+.hl-radios label:has(input:checked) { border-color: var(--dark-fg); background: #1C1C1B; }
+.hl-pair { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; }
+.hl-pair label { display: flex; flex-direction: column; gap: .35rem; font-size: .82rem; color: #CFCBC2; min-width: 0; }
+.hl-pair input { font: inherit; font-size: .95rem; color: var(--dark-fg); background: #1C1C1B; border: 1px solid #3A3936; border-radius: 12px; padding: .75rem .85rem; min-width: 0; }
+.hl-pair input::placeholder { color: #75726B; }
+.hl-pair input:focus { outline: none; border-color: var(--dark-fg); }
+.hl-btn { font: inherit; font-weight: 600; font-size: 1rem; padding: 1rem 1.25rem; border: 0; border-radius: 999px; background: var(--dark-fg); color: var(--ink); cursor: pointer; transition: transform .2s var(--ease); }
+.hl-btn:hover { transform: translateY(-2px); }
+.hl-note { margin: 0; text-align: center; font-size: .8rem; color: #A9A59C; }
+@media (max-width: 600px) {
+  .hl-pair { grid-template-columns: 1fr; }
+  .hl-radios label { padding: .65rem .35rem; font-size: .85rem; gap: .3rem; }
+  .hero-lead { border-radius: var(--r-md); }
+}
