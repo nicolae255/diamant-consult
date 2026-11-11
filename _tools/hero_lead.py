@@ -21,7 +21,7 @@ T = {
                incl="Photos, annonces, visites, négociation et suivi jusqu’à l’acte : tout est compris.",
                form_t="Parlons de votre bien", type="Type de bien", types=["Maison", "Appartement", "Autre"],
                commune="Commune", commune_ph="Ex. Schaerbeek", email="Votre e-mail",
-               send="Demander un rendez-vous", form_t2="Premier rendez-vous gratuit pour en parler", trust=["Notaire partenaire : Me Stephan Borremans", "Bureau à Schaerbeek", "23 communes · Bruxelles &amp; Brabant wallon"],
+               send="Demander un rendez-vous", form_t2="Premier rendez-vous gratuit pour en parler", trust=["Notaire partenaire : Stephan Borremans", "Bureau à Schaerbeek", "23 communes · Bruxelles &amp; Brabant wallon"],
                note="Sans engagement · Réponse par e-mail",
                thanks="Merci ! Votre demande est bien envoyée. Nous vous répondons par e-mail.",
                subject="Demande de rendez-vous · page d’accueil", stat="Communes · Bruxelles &amp; Brabant wallon",
