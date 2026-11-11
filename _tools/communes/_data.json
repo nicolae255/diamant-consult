@@ -58,14 +58,14 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/anderlecht/main.webp",
+     "src": "img/communes/anderlecht/anderlecht-immobilier.webp",
      "author": "Trougnouf (Benoit Brummer)",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Anderlecht_(DSC_2233).jpg",
      "title": "Town hall of Anderlecht (DSC 2233).jpg"
     },
     "street": {
-     "src": "img/communes/anderlecht/street.webp",
+     "src": "img/communes/anderlecht/anderlecht-rue.webp",
      "author": "Jacquesverlaeken",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:20180725_Anderlecht_architecture_Rue_Walcourt_031.jpg",
@@ -126,14 +126,14 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/auderghem/main.webp",
+     "src": "img/communes/auderghem/auderghem-immobilier.webp",
      "author": "Horst J. Meuter",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Auderghem_-_Region_Bruxelloise_-_Rouge-Clo%C3%AEtre_-_Das_Haus_des_M%C3%BCllers_-_P1010269.jpg",
      "title": "Auderghem - Region Bruxelloise - Rouge-Cloître - Das Haus des Müllers - P1010269.jpg"
     },
     "street": {
-     "src": "img/communes/auderghem/street.webp",
+     "src": "img/communes/auderghem/auderghem-rue.webp",
      "author": "Aranjarret",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Avenue_Th%C3%A9o_Vanp%C3%A9,_1160_Auderghem,_Bruxelles,_Belgique.jpg",
@@ -170,7 +170,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/berchem-sainte-agathe/main.webp",
+     "src": "img/communes/berchem-sainte-agathe/berchem-sainte-agathe-immobilier.webp",
      "author": "Bernard Lee",
      "license": "CC0",
      "url": "https://commons.wikimedia.org/wiki/File:Berchem-Sainte-Agathe_Town_Hall_(1).jpg",
@@ -202,7 +202,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/bruxelles-ville/main.webp",
+     "src": "img/communes/bruxelles-ville/bruxelles-ville-immobilier.webp",
      "author": "Zairon",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Bruxelles_Grand-Place_H%C3%B4tel_de_Ville_09.jpg",
@@ -243,7 +243,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/etterbeek/main.webp",
+     "src": "img/communes/etterbeek/etterbeek-immobilier.webp",
      "author": "Trougnouf (Benoit Brummer)",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Etterbeek_(DSC_2183).jpg",
@@ -275,7 +275,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/evere/main.webp",
+     "src": "img/communes/evere/evere-immobilier.webp",
      "author": "Flocci Nivis",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:20180906_Evere_02.jpg",
@@ -307,7 +307,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/forest/main.webp",
+     "src": "img/communes/forest/forest-immobilier.webp",
      "author": "Falken",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:MaisonCommunaleForest.jpg",
@@ -344,7 +344,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/ganshoren/main.webp",
+     "src": "img/communes/ganshoren/ganshoren-immobilier.webp",
      "author": "Edison McCullen",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Marais_de_Ganshoren.jpg",
@@ -405,7 +405,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/ixelles/main.webp",
+     "src": "img/communes/ixelles/ixelles-immobilier.webp",
      "author": "Jopparn",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:Town_Hall_Ixelles_1.jpg",
@@ -454,7 +454,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/jette/main.webp",
+     "src": "img/communes/jette/jette-immobilier.webp",
      "author": "Goris",
      "license": "CC0",
      "url": "https://commons.wikimedia.org/wiki/File:Maison_communale_-_Gemeentehuis_Jette.jpg",
@@ -486,7 +486,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/koekelberg/main.webp",
+     "src": "img/communes/koekelberg/koekelberg-immobilier.webp",
      "author": "Romaine",
      "license": "CC0",
      "url": "https://commons.wikimedia.org/wiki/File:Koekelberg-Gemeentehuis_(1).jpg",
@@ -543,7 +543,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/molenbeek-saint-jean/main.webp",
+     "src": "img/communes/molenbeek-saint-jean/molenbeek-saint-jean-immobilier.webp",
      "author": "Sally V",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Gemeentehuis_St_Jans_Molenbeek.jpg",
@@ -584,7 +584,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/saint-gilles/main.webp",
+     "src": "img/communes/saint-gilles/saint-gilles-immobilier.webp",
      "author": "Nenea hartia",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Saint-Gilles_Town_Hall_(Brussels).01.jpg",
@@ -625,7 +625,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/saint-josse-ten-noode/main.webp",
+     "src": "img/communes/saint-josse-ten-noode/saint-josse-ten-noode-immobilier.webp",
      "author": "Nenea hartia",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Saint-Josse-ten-Noode.01.jpg",
@@ -686,14 +686,14 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/schaerbeek/main.webp",
+     "src": "img/communes/schaerbeek/schaerbeek-immobilier.webp",
      "author": "Nenea hartia",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Schaerbeek_town_hall,_Brussels.01.jpg",
      "title": "Schaerbeek town hall, Brussels.01.jpg"
     },
     "street": {
-     "src": "img/communes/schaerbeek/street.webp",
+     "src": "img/communes/schaerbeek/schaerbeek-rue.webp",
      "author": "Maltebruessel",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Avenue_Mar%C3%A9chal_Foch,_Schaerbeek,_view_onto_town_hall,_june_2026.jpg",
@@ -754,7 +754,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/uccle/main.webp",
+     "src": "img/communes/uccle/uccle-immobilier.webp",
      "author": "David Edgar",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:3557uccleTownHall.jpg",
@@ -795,7 +795,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/watermael-boitsfort/main.webp",
+     "src": "img/communes/watermael-boitsfort/watermael-boitsfort-immobilier.webp",
      "author": "Zinneke",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:Town_hall_Watermael_Boitsfort_2017-06_--1.jpg",
@@ -864,14 +864,14 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/woluwe-saint-pierre/main.webp",
+     "src": "img/communes/woluwe-saint-pierre/woluwe-saint-pierre-immobilier.webp",
      "author": "User:Ben2",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:Mais.Comm.W-S-P.01.JPG",
      "title": "Mais.Comm.W-S-P.01.JPG"
     },
     "street": {
-     "src": "img/communes/woluwe-saint-pierre/street.webp",
+     "src": "img/communes/woluwe-saint-pierre/woluwe-saint-pierre-rue.webp",
      "author": "Sjenghai",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:SP-Woluwe-SP_-_Clos_du_Manoir-Burchtgaarde_-_2024-10-19.jpg",
@@ -905,7 +905,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/waterloo/main.webp",
+     "src": "img/communes/waterloo/waterloo-immobilier.webp",
      "author": "Alta Falisa",
      "license": "CC BY-SA 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:18_June_1815_%E2%80%93_Waterloo_%E2%80%93_Saint_Joseph%27s_Church.jpg",
@@ -940,7 +940,7 @@
    "hoods": [],
    "photos": {
     "main": {
-     "src": "img/communes/la-hulpe/main.webp",
+     "src": "img/communes/la-hulpe/la-hulpe-immobilier.webp",
      "author": "Trougnouf (Benoit Brummer)",
      "license": "CC BY 4.0",
      "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_La_Hulpe_(DSC_2902).jpg",
@@ -989,7 +989,7 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/wavre/main.webp",
+     "src": "img/communes/wavre/wavre-immobilier.webp",
      "author": "EmDee",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:Wavre_-_Saint-Jean-Baptiste_-_vue_d%27ensemble.JPG",
@@ -1038,14 +1038,14 @@
    ],
    "photos": {
     "main": {
-     "src": "img/communes/rixensart/main.webp",
+     "src": "img/communes/rixensart/rixensart-immobilier.webp",
      "author": "EmDee",
      "license": "CC BY-SA 3.0",
      "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Rixensart_-_Ch%C3%A2teau_vu_depuis_la_cour_-_01.jpg",
      "title": "Château de Rixensart - Château vu depuis la cour - 01.jpg"
     },
     "street": {
-     "src": "img/communes/rixensart/street.webp",
+     "src": "img/communes/rixensart/rixensart-rue.webp",
      "author": "David Edgar",
      "license": "CC BY 2.5",
      "url": "https://commons.wikimedia.org/wiki/File:LacDeGenvalComposite.jpg",

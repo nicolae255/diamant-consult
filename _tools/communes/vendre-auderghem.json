@@ -13,7 +13,7 @@
  },
  "photos": {
   "house": {
-   "src": "img/communes/auderghem/main.webp",
+   "src": "img/communes/auderghem/auderghem-immobilier.webp",
    "author": "Horst J. Meuter",
    "license": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Auderghem_-_Region_Bruxelloise_-_Rouge-Clo%C3%AEtre_-_Das_Haus_des_M%C3%BCllers_-_P1010269.jpg",
@@ -29,7 +29,7 @@
    }
   },
   "apartment": {
-   "src": "img/communes/auderghem/street.webp",
+   "src": "img/communes/auderghem/auderghem-rue.webp",
    "author": "Aranjarret",
    "license": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Avenue_Th%C3%A9o_Vanp%C3%A9,_1160_Auderghem,_Bruxelles,_Belgique.jpg",

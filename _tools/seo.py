@@ -149,6 +149,31 @@ def lastmod(p):
     return d or datetime.date.today().isoformat()
 
 
+def page_images(p):
+    """Absolute URLs of the content photos of a page (image sitemap); logos, icons and SVGs are skipped."""
+    html = open(os.path.join(ROOT, p.lstrip("/"), "index.html"), encoding="utf-8").read()
+    html = html.split("<footer", 1)[0]
+    out = []
+    for src in re.findall(r'<img[^>]+src="([^"]+)"', html):
+        src = src.split("?")[0]
+        if src.startswith("http") and not src.startswith(BASE):
+            continue
+        if src.startswith(BASE):
+            path = src[len(BASE):]
+        elif src.startswith("/"):
+            path = src
+        else:
+            path = os.path.normpath(os.path.join(p, src)).replace(os.sep, "/")
+        if any(k in path for k in ("/brand/", "logo", "icon", "favicon")) or path.endswith(".svg"):
+            continue
+        if not os.path.exists(os.path.join(ROOT, path.lstrip("/"))):
+            continue
+        u = BASE + "/" + path.lstrip("/")
+        if u not in out:
+            out.append(u)
+    return out[:20]
+
+
 def build_sitemap():
     def prio(p):
         if p in ("/", "/en/", "/nl/"):
@@ -162,9 +187,11 @@ def build_sitemap():
     for p in pages():
         if not indexable(p):
             continue
-        entries.append(f"  <url>\n    <loc>{BASE}{p}</loc>\n    <lastmod>{lastmod(p)}</lastmod>\n    <priority>{prio(p)}</priority>\n  </url>")
+        imgs = "".join(f"\n    <image:image><image:loc>{u}</image:loc></image:image>" for u in page_images(p))
+        entries.append(f"  <url>\n    <loc>{BASE}{p}</loc>\n    <lastmod>{lastmod(p)}</lastmod>\n    <priority>{prio(p)}</priority>{imgs}\n  </url>")
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n")
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n'
+           + "\n".join(entries) + "\n</urlset>\n")
     with open(os.path.join(ROOT, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(xml)
     print(f"  sitemap.xml: {len(entries)} URLs")

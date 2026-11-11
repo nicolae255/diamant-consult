@@ -13,7 +13,7 @@
  },
  "photos": {
   "house": {
-   "src": "img/communes/schaerbeek/main.webp",
+   "src": "img/communes/schaerbeek/schaerbeek-immobilier.webp",
    "author": "Nenea hartia",
    "license": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Schaerbeek_town_hall,_Brussels.01.jpg",
@@ -29,7 +29,7 @@
    }
   },
   "apartment": {
-   "src": "img/communes/schaerbeek/street.webp",
+   "src": "img/communes/schaerbeek/schaerbeek-rue.webp",
    "author": "Maltebruessel",
    "license": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Avenue_Mar%C3%A9chal_Foch,_Schaerbeek,_view_onto_town_hall,_june_2026.jpg",

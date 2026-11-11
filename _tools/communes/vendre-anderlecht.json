@@ -13,7 +13,7 @@
  },
  "photos": {
   "house": {
-   "src": "img/communes/anderlecht/main.webp",
+   "src": "img/communes/anderlecht/anderlecht-immobilier.webp",
    "author": "Trougnouf (Benoit Brummer)",
    "license": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Anderlecht_(DSC_2233).jpg",
@@ -29,7 +29,7 @@
    }
   },
   "apartment": {
-   "src": "img/communes/anderlecht/street.webp",
+   "src": "img/communes/anderlecht/anderlecht-rue.webp",
    "author": "Jacquesverlaeken",
    "license": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:20180725_Anderlecht_architecture_Rue_Walcourt_031.jpg",

@@ -18,7 +18,7 @@
  },
  "photos": {
   "house": {
-   "src": "img/communes/rixensart/main.webp",
+   "src": "img/communes/rixensart/rixensart-immobilier.webp",
    "author": "EmDee",
    "license": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Rixensart_-_Ch%C3%A2teau_vu_depuis_la_cour_-_01.jpg",
@@ -34,7 +34,7 @@
    }
   },
   "apartment": {
-   "src": "img/communes/rixensart/street.webp",
+   "src": "img/communes/rixensart/rixensart-rue.webp",
    "author": "David Edgar",
    "license": "CC BY 2.5",
    "url": "https://commons.wikimedia.org/wiki/File:LacDeGenvalComposite.jpg",

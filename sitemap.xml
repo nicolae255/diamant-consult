@@ -1,24 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.diamantconsult.com/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/blog/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cuisine-equipee.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/certificat-peb-vente-immobiliere/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/combien-coute-agence-immobiliere-bruxelles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/contact/</loc>
@@ -29,26 +45,42 @@
     <loc>https://www.diamantconsult.com/delai-vente-bruxelles-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/blog/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/brussels-property-market-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/brussels-rent-grid-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/contact/</loc>
@@ -59,186 +91,300 @@
     <loc>https://www.diamantconsult.com/en/epc-certificate-property-sale/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/estate-agent-fees-brussels/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/how-long-to-sell-brussels-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/projects/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/public-auction-biddit-belgium/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-apartment-ixelles-uccle/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-house-schaerbeek-brussels/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-anderlecht/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-auderghem/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-berchem-sainte-agathe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/berchem-sainte-agathe/berchem-sainte-agathe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-brussels-city/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/bruxelles-ville/bruxelles-ville-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-etterbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/etterbeek/etterbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-evere/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/evere/evere-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-forest/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/forest/forest-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-ganshoren/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ganshoren/ganshoren-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-ixelles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ixelles/ixelles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-jette/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/jette/jette-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-koekelberg/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/koekelberg/koekelberg-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-la-hulpe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/la-hulpe/la-hulpe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-molenbeek-saint-jean/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/molenbeek-saint-jean/molenbeek-saint-jean-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-rixensart/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-saint-gilles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-gilles/saint-gilles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-saint-josse-ten-noode/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-josse-ten-noode/saint-josse-ten-noode-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-schaerbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-uccle/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/uccle/uccle-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-waterloo/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/waterloo/waterloo-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-watermael-boitsfort/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/watermael-boitsfort/watermael-boitsfort-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-wavre/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/wavre/wavre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-woluwe-saint-lambert/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/kapelleveld.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/maison-communale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/moulin-lindekemale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-woluwe-saint-pierre/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/selling-property-brabant-wallon/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/selling-property-brussels-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/grille-loyers-bruxelles-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/marche-immobilier-bruxelles-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/blog/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/contact/</loc>
@@ -249,315 +395,510 @@
     <loc>https://www.diamantconsult.com/nl/epc-attest-verkoop/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/hoelang-verkopen-brussel-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/huurprijzenrooster-brussel-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/kosten-makelaar-brussel/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/openbare-verkoop-biddit/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/projecten/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/vastgoedmarkt-brussel-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-anderlecht/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-brussel-stad/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/bruxelles-ville/bruxelles-ville-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-elsene/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ixelles/ixelles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-etterbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/etterbeek/etterbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-evere/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/evere/evere-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-ganshoren/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ganshoren/ganshoren-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-jette/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/jette/jette-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-koekelberg/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/koekelberg/koekelberg-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-oudergem/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-rixensart/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-schaarbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-agatha-berchem/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/berchem-sainte-agathe/berchem-sainte-agathe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-gillis/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-gilles/saint-gilles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-jans-molenbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/molenbeek-saint-jean/molenbeek-saint-jean-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-joost-ten-node/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-josse-ten-noode/saint-josse-ten-noode-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-lambrechts-woluwe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/kapelleveld.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/maison-communale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/moulin-lindekemale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-sint-pieters-woluwe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-terhulpen/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/la-hulpe/la-hulpe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-ukkel/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/uccle/uccle-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-vorst/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/forest/forest-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-waterloo/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/waterloo/waterloo-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-watermaal-bosvoorde/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/watermael-boitsfort/watermael-boitsfort-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-waver/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/wavre/wavre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/woning-verkopen-brussel-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/woning-verkopen-schaarbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/woning-verkopen-waals-brabant/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/projets/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.png</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-anderlecht/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/anderlecht/anderlecht-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-appartement-ixelles-uccle/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maisons-guildes.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-auderghem/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/auderghem/auderghem-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-berchem-sainte-agathe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/berchem-sainte-agathe/berchem-sainte-agathe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-bruxelles-ville/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/bruxelles-ville/bruxelles-ville-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-etterbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/etterbeek/etterbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-evere/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/evere/evere-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-forest/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/forest/forest-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-ganshoren/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ganshoren/ganshoren-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-gre-a-gre-bruxelles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cuisine-equipee.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-ixelles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/ixelles/ixelles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-etterbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-jette/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/jette/jette-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-koekelberg/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/koekelberg/koekelberg-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-la-hulpe/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/la-hulpe/la-hulpe-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-maison-brabant-wallon/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/butte-du-lion.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-maison-bruxelles-2026/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-maison-schaerbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-molenbeek-saint-jean/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/molenbeek-saint-jean/molenbeek-saint-jean-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-haren.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-rixensart/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/rixensart/rixensart-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-saint-gilles/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-gilles/saint-gilles-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-saint-josse-ten-noode/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/saint-josse-ten-noode/saint-josse-ten-noode-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-schaerbeek/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/schaerbeek/schaerbeek-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/atelier-schaerbeek.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-2.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-uccle/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/uccle/uccle-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-waterloo/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/waterloo/waterloo-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-watermael-boitsfort/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/watermael-boitsfort/watermael-boitsfort-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-uccle.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-wavre/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/wavre/wavre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-rixensart.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-boitsfort.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-woluwe-saint-lambert/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/kapelleveld.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/maison-communale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-lambert/moulin-lindekemale.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-woluwe-saint-pierre/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-immobilier.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/communes/woluwe-saint-pierre/woluwe-saint-pierre-rue.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/appart-woluwe-lambert-vp.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vente-publique-biddit/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-maison-du-roi.webp</image:loc></image:image>
   </url>
 </urlset>

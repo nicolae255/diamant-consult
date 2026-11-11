@@ -13,7 +13,7 @@
  },
  "photos": {
   "house": {
-   "src": "img/communes/woluwe-saint-pierre/main.webp",
+   "src": "img/communes/woluwe-saint-pierre/woluwe-saint-pierre-immobilier.webp",
    "author": "User:Ben2",
    "license": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/File:Mais.Comm.W-S-P.01.JPG",
@@ -29,7 +29,7 @@
    }
   },
   "apartment": {
-   "src": "img/communes/woluwe-saint-pierre/street.webp",
+   "src": "img/communes/woluwe-saint-pierre/woluwe-saint-pierre-rue.webp",
    "author": "Sjenghai",
    "license": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/File:SP-Woluwe-SP_-_Clos_du_Manoir-Burchtgaarde_-_2024-10-19.jpg",
