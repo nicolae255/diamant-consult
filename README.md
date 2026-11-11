@@ -8,7 +8,6 @@ Site web officiel de Diamant Consult — vente immobilière à Bruxelles et en W
 
 ## Contact
 - 📧 borremans.helpinfo@gmail.com
-- 📞 +32 471 85 39 25
 - 📍 Avenue du Diamant 138, 1030 Schaerbeek
 
 ## Structure du site
