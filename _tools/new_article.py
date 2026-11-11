@@ -208,6 +208,7 @@ def main(path):
             f.write(pages[l])
         add_cards(spec, l)
         print(f"  [{l}] {page_path(l, spec[l]['slug'])}")
+    subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "commune_links.py")], check=True)
     subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "seo.py")], check=True,
                    stdout=subprocess.DEVNULL)
     print("  hreflang + sitemap updated")
