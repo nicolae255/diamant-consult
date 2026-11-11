@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="icon" href="/favicon.ico" sizes="48x48" /><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" /><link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png" />
-<link rel="stylesheet" href="../styles.css?v=7" />
+<link rel="stylesheet" href="../styles.css?v=8" />
 <meta property="og:image" content="https://www.diamantconsult.com/img/og-default.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -88,16 +88,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="blog-filter">
       <button class="filter-btn active">Tous les articles</button>
-      <button class="filter-btn">Guides</button>
-      <button class="filter-btn">Conseils</button>
-      <button class="filter-btn">Marché local</button>
-      <button class="filter-btn">Vente publique</button>
+      <button class="filter-btn" data-match="guide|frais">Guides</button>
+      <button class="filter-btn" data-match="conseil">Conseils</button>
+      <button class="filter-btn" data-match="march">Marché local</button>
+      <button class="filter-btn" data-match="vente publique|biddit">Vente publique</button>
     </div>
 
     <div class="blog-grid">
 
       <!-- FEATURED -->
-      <article class="blog-featured reveal">
+      <article class="blog-featured reveal" data-cat="guide gids">
         <a href="../delai-vente-bruxelles-2026/" style="display: contents;">
           <div class="article-img">
             <img src="/img/delai-vente-cles.webp" alt="Combien de temps pour vendre à Bruxelles en 2026" loading="lazy" />
@@ -345,7 +345,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   reveals.forEach((el) => obs.observe(el));
 
   // Filter (cosmetic for now)
-  document.querySelectorAll('.blog-filter .filter-btn').forEach((btn) => {
+  (function () {
+    var btns = document.querySelectorAll('.blog-filter .filter-btn');
+    var cards = document.querySelectorAll('.blog-grid article, .blog-grid .blog-featured');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var m = btn.getAttribute('data-match');
+        var re = m ? new RegExp(m, 'i') : null;
+        cards.forEach(function (c) {
+          var cat = c.querySelector('.article-meta span');
+          var txt = (cat ? cat.textContent : '') + ' ' + (c.getAttribute('data-cat') || '');
+          c.hidden = re ? !re.test(txt) : false;
+        });
+      });
+    });
+  })();
     btn.addEventListener('click', () => {
       document.querySelectorAll('.blog-filter .filter-btn').forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');

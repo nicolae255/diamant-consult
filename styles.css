@@ -1991,3 +1991,4 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
   .hl-embed .hl-row.us { grid-template-columns: 1fr auto; }
   .hl-embed .hl-row.us strong { grid-column: auto; }
 }
+.blog-grid [hidden] { display: none !important; }

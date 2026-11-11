@@ -10,6 +10,12 @@ and ends by pointing to a free first meeting / the 2% excl. VAT all-inclusive sa
 Style: never use em dashes (—) or en dashes (–) anywhere (text, titles, alt, FAQ, sources). The owner finds them
 "too AI". Use a comma, a colon, parentheses or two sentences instead; for source names write `notaire.be · Title`.
 Write smoothly and simply, like a person talking to a seller, without slogans.
+Blog filter categories: `category` must be exactly one of these, so the blog filter buttons work:
+FR `Marché local` · `Guide vendeur` · `Frais de vente` · `Conseils` · `Vente publique`;
+EN `Local market` · `Seller guide` · `Selling costs` · `Advice` · `Public auction`;
+NL `Lokale markt` · `Verkopersgids` · `Verkoopkosten` · `Advies` · `Openbare verkoop`.
+Never describe negotiation as part of our service (the notary handles offers); describing the market ("buyers negotiate harder") is fine.
+
 
 Every article is published in **three languages**: French (main market), English (expats, very present
 in Ixelles, Etterbeek, Woluwe, Uccle) and Dutch (Dutch-speaking Brussels owners). Same facts, same
