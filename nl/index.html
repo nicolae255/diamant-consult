@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="icon" href="/favicon.ico" sizes="48x48" /><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" /><link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png" />
-<link rel="stylesheet" href="../styles.css?v=3" />
+<link rel="stylesheet" href="../styles.css?v=4" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -116,15 +116,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       <div class="hero-lead" id="demande">
         <div class="hl-calc">
-          <p class="hl-kicker">Wat kost onze dienst?</p>
+          <p class="hl-kicker">Wat kost de verkoop?</p>
           <label class="hl-range"><span>Beoogde verkoopprijs <output id="hl-price">400 000 €</output></span>
             <input type="range" id="hl-slider" min="100000" max="1500000" step="10000" value="400000" aria-label="Beoogde verkoopprijs">
           </label>
-          <div class="hl-fee">
-            <span>Onze commissie</span>
-            <strong><output id="hl-fee">8 000 €</output> <small>excl. btw</small></strong>
+          <div class="hl-compare">
+            <div class="hl-row us"><span class="r">Diamant Consult · 2 %</span><span class="bar"><i data-rate="2"></i></span><strong data-rate="2">8 000 €</strong></div>
+            <p class="hl-cmp-t">Met een commissie van:</p>
+            <div class="hl-row"><span class="r">3 %</span><span class="bar"><i data-rate="3"></i></span><strong data-rate="3">12 000 €</strong><em data-diff="3">+4 000 €</em></div>
+            <div class="hl-row"><span class="r">4 %</span><span class="bar"><i data-rate="4"></i></span><strong data-rate="4">16 000 €</strong><em data-diff="4">+8 000 €</em></div>
+            <div class="hl-row"><span class="r">5 %</span><span class="bar"><i data-rate="5"></i></span><strong data-rate="5">20 000 €</strong><em data-diff="5">+12 000 €</em></div>
           </div>
-          <p class="hl-sub" id="hl-tvac" data-tpl="of {x} incl. btw (21% btw)">of 9 680 € incl. btw (21% btw)</p>
+          <p class="hl-sub">Bedragen excl. btw (21 % btw bovenop). Verschil met onze 2 %.</p>
           <p class="hl-incl"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Foto’s, advertenties, bezoeken, onderhandeling en opvolging tot de akte: alles inbegrepen.</span></p>
         </div>
         <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">
@@ -417,7 +420,7 @@ function cookieConsent(v){
   setTimeout(function(){b.style.display="none";},300);
 }
 </script>
-<script src="/hero-lead.js?v=1" defer></script>
+<script src="/hero-lead.js?v=2" defer></script>
 <script src="/chatbot.js?v=3" defer></script>
 </body>
 </html>

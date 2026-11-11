@@ -7,6 +7,7 @@ Usage:  python3 _tools/hero_lead.py
 import os, re, html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RATES = [3, 4, 5]          # comparison rates shown under our 2% (hypothetical, not attributed to anyone)
 KEY = "ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9"
 COMMUNES = ["Anderlecht", "Auderghem", "Berchem-Sainte-Agathe", "Bruxelles-Ville", "Etterbeek", "Evere", "Forest",
             "Ganshoren", "Ixelles", "Jette", "Koekelberg", "Molenbeek-Saint-Jean", "Saint-Gilles", "Saint-Josse-ten-Noode",
@@ -16,8 +17,8 @@ CHECK = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="cur
 
 T = {
     "fr": dict(file="index.html", url="https://www.diamantconsult.com/",
-               calc_t="Combien coûte notre service ?", price="Prix de vente envisagé",
-               fee="Notre commission", htva="HTVA", tvac="soit {x} TVAC (TVA 21 %)",
+               calc_t="Combien coûte la vente ?", price="Prix de vente envisagé",
+               us="Diamant Consult · 2\u00a0%", cmp="Avec une commission de :", vat_note="Montants HTVA, TVA de 21\u00a0% en sus. Écart par rapport à nos 2\u00a0%.",
                incl="Photos, annonces, visites, négociation et suivi jusqu’à l’acte : tout est compris.",
                form_t="Parlons de votre bien", type="Type de bien", types=["Maison", "Appartement", "Autre"],
                commune="Commune", commune_ph="Ex. Schaerbeek", email="Votre e-mail",
@@ -27,8 +28,8 @@ T = {
                subject="Demande de rendez-vous · page d’accueil", stat="Communes · Bruxelles &amp; Brabant wallon",
                cta="Vendre mon bien"),
     "en": dict(file="en/index.html", url="https://www.diamantconsult.com/en/",
-               calc_t="What does our service cost?", price="Expected sale price",
-               fee="Our commission", htva="excl. VAT", tvac="i.e. {x} incl. VAT (21% VAT)",
+               calc_t="What does selling cost?", price="Expected sale price",
+               us="Diamant Consult · 2%", cmp="With a commission of:", vat_note="Amounts excl. VAT (21% VAT on top). Difference compared with our 2%.",
                incl="Photos, listings, viewings, negotiation and follow-up until the deed: all included.",
                form_t="Tell us about your property", type="Property type", types=["House", "Apartment", "Other"],
                commune="Municipality", commune_ph="e.g. Schaerbeek", email="Your e-mail",
@@ -38,8 +39,8 @@ T = {
                subject="Meeting request · homepage (EN)", stat="Municipalities · Brussels &amp; Walloon Brabant",
                cta="Sell my property"),
     "nl": dict(file="nl/index.html", url="https://www.diamantconsult.com/nl/",
-               calc_t="Wat kost onze dienst?", price="Beoogde verkoopprijs",
-               fee="Onze commissie", htva="excl. btw", tvac="of {x} incl. btw (21% btw)",
+               calc_t="Wat kost de verkoop?", price="Beoogde verkoopprijs",
+               us="Diamant Consult · 2\u00a0%", cmp="Met een commissie van:", vat_note="Bedragen excl. btw (21\u00a0% btw bovenop). Verschil met onze 2\u00a0%.",
                incl="Foto’s, advertenties, bezoeken, onderhandeling en opvolging tot de akte: alles inbegrepen.",
                form_t="Vertel ons over uw woning", type="Type woning", types=["Huis", "Appartement", "Ander"],
                commune="Gemeente", commune_ph="Bv. Schaarbeek", email="Uw e-mailadres",
@@ -53,17 +54,20 @@ T = {
 
 def card(t):
     e = html.escape
+    rows = "".join(
+        f'''            <div class="hl-row"><span class="r">{r}{"\u00a0" if t is not T["en"] else ""}%</span><span class="bar"><i data-rate="{r}"></i></span><strong data-rate="{r}">{400000 * r // 100:,} €</strong><em data-diff="{r}">+{400000 * (r - 2) // 100:,} €</em></div>
+'''.replace(",", "\u202f") for r in RATES)
     return f'''<div class="hero-lead" id="demande">
         <div class="hl-calc">
           <p class="hl-kicker">{t["calc_t"]}</p>
           <label class="hl-range"><span>{t["price"]} <output id="hl-price">400 000 €</output></span>
             <input type="range" id="hl-slider" min="100000" max="1500000" step="10000" value="400000" aria-label="{e(t["price"])}">
           </label>
-          <div class="hl-fee">
-            <span>{t["fee"]}</span>
-            <strong><output id="hl-fee">8 000 €</output> <small>{t["htva"]}</small></strong>
-          </div>
-          <p class="hl-sub" id="hl-tvac" data-tpl="{e(t["tvac"])}">{e(t["tvac"].replace("{x}", "9 680 €"))}</p>
+          <div class="hl-compare">
+            <div class="hl-row us"><span class="r">{t["us"]}</span><span class="bar"><i data-rate="2"></i></span><strong data-rate="2">8 000 €</strong></div>
+            <p class="hl-cmp-t">{t["cmp"]}</p>
+{rows}          </div>
+          <p class="hl-sub">{t["vat_note"]}</p>
           <p class="hl-incl">{CHECK}<span>{t["incl"]}</span></p>
         </div>
         <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">
@@ -101,7 +105,7 @@ def main():
         s = re.sub(r'<a href="contact/" class="btn-primary">(\s*)' + re.escape(t["cta"]),
                    rf'<a href="#demande" class="btn-primary">\1{t["cta"]}', s, count=1)
         if "/hero-lead.js" not in s:
-            s = s.replace('<script src="/chatbot.js', '<script src="/hero-lead.js?v=1" defer></script>\n<script src="/chatbot.js', 1)
+            s = s.replace('<script src="/chatbot.js', '<script src="/hero-lead.js?v=2" defer></script>\n<script src="/chatbot.js', 1)
         open(p, "w", encoding="utf-8").write(s)
         print("updated", t["file"])
 

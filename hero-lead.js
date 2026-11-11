@@ -1,4 +1,4 @@
-/* Homepage lead card: commission calculator (2% HTVA) + thank-you message after the form redirect. */
+/* Homepage lead card: commission comparison (our 2% HTVA vs other rates) + thank-you message after the form redirect. */
 (function () {
   var slider = document.getElementById('hl-slider');
   if (!slider) return;
@@ -6,15 +6,18 @@
   var loc = lang === 'nl' ? 'nl-BE' : lang === 'en' ? 'en-GB' : 'fr-BE';
   var fmt = new Intl.NumberFormat(loc, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
   var price = document.getElementById('hl-price');
-  var fee = document.getElementById('hl-fee');
-  var tvac = document.getElementById('hl-tvac');
+  var amounts = document.querySelectorAll('.hl-compare strong[data-rate]');
+  var diffs = document.querySelectorAll('.hl-compare em[data-diff]');
+  var bars = document.querySelectorAll('.hl-compare .bar i[data-rate]');
+  var maxRate = 0;
+  bars.forEach(function (b) { maxRate = Math.max(maxRate, +b.getAttribute('data-rate')); });
   var hidden = document.getElementById('hl-hidden-price');
   function update() {
     var v = +slider.value;
-    var f = Math.round(v * 0.02);
     price.textContent = fmt.format(v);
-    fee.textContent = fmt.format(f);
-    tvac.textContent = tvac.getAttribute('data-tpl').replace('{x}', fmt.format(Math.round(f * 1.21)));
+    amounts.forEach(function (a) { a.textContent = fmt.format(Math.round(v * a.getAttribute('data-rate') / 100)); });
+    diffs.forEach(function (d) { d.textContent = '+' + fmt.format(Math.round(v * (d.getAttribute('data-diff') - 2) / 100)); });
+    bars.forEach(function (b) { b.style.width = (b.getAttribute('data-rate') / maxRate * 100) + '%'; });
     hidden.value = fmt.format(v);
     slider.style.setProperty('--p', ((v - slider.min) / (slider.max - slider.min) * 100) + '%');
   }
