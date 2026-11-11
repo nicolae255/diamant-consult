@@ -306,8 +306,6 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
   .hero-inner {
     grid-template-columns: 1.05fr 1fr;
     gap: 3rem;
-    min-height: calc(100vh - 8rem);
-    min-height: calc(100svh - 8rem);
   }
 }
 
@@ -1955,8 +1953,9 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
 .hl-inline input { flex: 1 1 auto; min-width: 0; font: inherit; font-size: .95rem; color: var(--dark-fg); background: transparent; border: 0; padding: .6rem .9rem; outline: none; }
 .hl-inline input::placeholder { color: #8A867E; }
 .hl-inline .hl-btn { flex: 0 0 auto; padding: .8rem 1.2rem; font-size: .92rem; white-space: nowrap; }
-.hero-trust { list-style: none; margin: 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .6rem 1.5rem; max-width: 560px; }
-.hero-trust li { display: flex; align-items: center; gap: .45rem; font-size: .88rem; color: var(--ink-2); }
+.hero-trust { list-style: none; margin: 0; padding: 1.5rem 0 0; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; }
+.hero-trust li { display: flex; align-items: center; gap: .4rem; font-size: .85rem; color: var(--ink-2); white-space: nowrap; }
+@media (max-width: 600px) { .hero-trust { flex-direction: column; } }
 .hero-trust svg { color: var(--success); flex-shrink: 0; }
 @media (max-width: 480px) {
   .hl-inline { flex-direction: column; border-radius: 16px; }
