@@ -1,0 +1,883 @@
+{
+ "source": "Statbel FR_immo_statbel_semestre.xlsx, sheet 'Par commune', S1 2025 and S1 2026",
+ "region": {
+  "house": 570000,
+  "apt": 275000
+ },
+ "communes": {
+  "anderlecht": {
+   "statbel": {
+    "2025": {
+     "house_n": 112,
+     "house": 336750,
+     "h23_n": 110,
+     "apt_n": 406,
+     "apt": 215000,
+     "apt_q1": 175000,
+     "apt_q3": 265000
+    },
+    "2026": {
+     "house_n": 84,
+     "house": 356500,
+     "h23_n": 81,
+     "apt_n": 392,
+     "apt": 199000,
+     "apt_q1": 160000,
+     "apt_q3": 257500
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Bon Air",
+     "nl": "Goede Lucht"
+    },
+    {
+     "fr": "Broeck",
+     "nl": "Broek"
+    },
+    {
+     "fr": "Cureghem",
+     "nl": "Kuregem"
+    },
+    {
+     "fr": "La Roue",
+     "nl": "Het Rad"
+    },
+    {
+     "fr": "Meir",
+     "nl": "Meir"
+    },
+    {
+     "fr": "Meylemeersch",
+     "nl": "Mijlemeers"
+    },
+    {
+     "fr": "Moortebeek",
+     "nl": "Moortebeek"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/anderlecht/main.webp",
+     "author": "Trougnouf (Benoit Brummer)",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Anderlecht_(DSC_2233).jpg",
+     "title": "Town hall of Anderlecht (DSC 2233).jpg"
+    },
+    "street": {
+     "src": "img/communes/anderlecht/street.webp",
+     "author": "Jacquesverlaeken",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:20180725_Anderlecht_architecture_Rue_Walcourt_031.jpg",
+     "title": "20180725 Anderlecht architecture Rue Walcourt 031.jpg"
+    }
+   }
+  },
+  "auderghem": {
+   "statbel": {
+    "2025": {
+     "house_n": 69,
+     "house": 570000,
+     "h23_n": 65,
+     "apt_n": 114,
+     "apt": 315000,
+     "apt_q1": 240000,
+     "apt_q3": 400000
+    },
+    "2026": {
+     "house_n": 59,
+     "house": 549000,
+     "h23_n": 56,
+     "apt_n": 146,
+     "apt": 315000,
+     "apt_q1": 260000,
+     "apt_q3": 430000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Chant d'Oiseau",
+     "nl": "Vogelzang"
+    },
+    {
+     "fr": "Chasse Royale",
+     "nl": "Koninklijke Jacht"
+    },
+    {
+     "fr": "Cité Van Lindt",
+     "nl": "Van Lindtwijk"
+    },
+    {
+     "fr": "Kalkhoven",
+     "nl": "Kalkhoven"
+    },
+    {
+     "fr": "Parc des Princes",
+     "nl": "Prinsenpark"
+    },
+    {
+     "fr": "Transvaal",
+     "nl": "Transvaal"
+    },
+    {
+     "fr": "Val Duchesse",
+     "nl": "Hertoginnedal"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/auderghem/main.webp",
+     "author": "Horst J. Meuter",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Auderghem_-_Region_Bruxelloise_-_Rouge-Clo%C3%AEtre_-_Das_Haus_des_M%C3%BCllers_-_P1010269.jpg",
+     "title": "Auderghem - Region Bruxelloise - Rouge-Cloître - Das Haus des Müllers - P1010269.jpg"
+    },
+    "street": {
+     "src": "img/communes/auderghem/street.webp",
+     "author": "Aranjarret",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Avenue_Th%C3%A9o_Vanp%C3%A9,_1160_Auderghem,_Bruxelles,_Belgique.jpg",
+     "title": "Avenue Théo Vanpé, 1160 Auderghem, Bruxelles, Belgique.jpg"
+    }
+   }
+  },
+  "berchem-sainte-agathe": {
+   "statbel": {
+    "2025": {
+     "house_n": 45,
+     "house": 400000,
+     "h23_n": 42,
+     "apt_n": 81,
+     "apt": 219000,
+     "apt_q1": 190000,
+     "apt_q3": 250000
+    },
+    "2026": {
+     "house_n": 32,
+     "house": 420500,
+     "h23_n": 32,
+     "apt_n": 87,
+     "apt": 225000,
+     "apt_q1": 189500,
+     "apt_q3": 275000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Cité Moderne",
+     "nl": "Moderne Wijk"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/berchem-sainte-agathe/main.webp",
+     "author": "Bernard Lee",
+     "license": "CC0",
+     "url": "https://commons.wikimedia.org/wiki/File:Berchem-Sainte-Agathe_Town_Hall_(1).jpg",
+     "title": "Berchem-Sainte-Agathe Town Hall (1).jpg"
+    }
+   }
+  },
+  "bruxelles-ville": {
+   "statbel": {
+    "2025": {
+     "house_n": 96,
+     "house": 413750,
+     "h23_n": 90,
+     "apt_n": 803,
+     "apt": 260000,
+     "apt_q1": 195250,
+     "apt_q3": 360000
+    },
+    "2026": {
+     "house_n": 102,
+     "house": 425500,
+     "h23_n": 99,
+     "apt_n": 748,
+     "apt": 269000,
+     "apt_q1": 209000,
+     "apt_q3": 385000
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/bruxelles-ville/main.webp",
+     "author": "Zairon",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Bruxelles_Grand-Place_H%C3%B4tel_de_Ville_09.jpg",
+     "title": "Bruxelles Grand-Place Hôtel de Ville 09.jpg"
+    }
+   }
+  },
+  "etterbeek": {
+   "statbel": {
+    "2025": {
+     "house_n": 30,
+     "house": 585000,
+     "h23_n": 30,
+     "apt_n": 227,
+     "apt": 310000,
+     "apt_q1": 230000,
+     "apt_q3": 398000
+    },
+    "2026": {
+     "house_n": 29,
+     "house": 637500,
+     "h23_n": 29,
+     "apt_n": 209,
+     "apt": 314000,
+     "apt_q1": 240000,
+     "apt_q3": 420000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Arsenal",
+     "nl": "Arsenaal"
+    },
+    {
+     "fr": "Cité Jouët-Rey",
+     "nl": "Jouët-Rey Wijk"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/etterbeek/main.webp",
+     "author": "Trougnouf (Benoit Brummer)",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Etterbeek_(DSC_2183).jpg",
+     "title": "Town hall of Etterbeek (DSC 2183).jpg"
+    }
+   }
+  },
+  "evere": {
+   "statbel": {
+    "2025": {
+     "house_n": 23,
+     "house": 400000,
+     "h23_n": 23,
+     "apt_n": 198,
+     "apt": 250000,
+     "apt_q1": 192000,
+     "apt_q3": 295000
+    },
+    "2026": {
+     "house_n": 33,
+     "house": 455000,
+     "h23_n": 33,
+     "apt_n": 221,
+     "apt": 249000,
+     "apt_q1": 210000,
+     "apt_q3": 300000
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/evere/main.webp",
+     "author": "Flocci Nivis",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:20180906_Evere_02.jpg",
+     "title": "20180906 Evere 02.jpg"
+    }
+   }
+  },
+  "forest": {
+   "statbel": {
+    "2025": {
+     "house_n": 34,
+     "house": 597100,
+     "h23_n": 33,
+     "apt_n": 282,
+     "apt": 280000,
+     "apt_q1": 220000,
+     "apt_q3": 340000
+    },
+    "2026": {
+     "house_n": 29,
+     "house": 530000,
+     "h23_n": 29,
+     "apt_n": 301,
+     "apt": 270000,
+     "apt_q1": 212500,
+     "apt_q3": 345000
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/forest/main.webp",
+     "author": "Falken",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:MaisonCommunaleForest.jpg",
+     "title": "MaisonCommunaleForest.jpg"
+    }
+   }
+  },
+  "ganshoren": {
+   "statbel": {
+    "2025": {
+     "house_n": 32,
+     "house": 387500,
+     "h23_n": 32,
+     "apt_n": 113,
+     "apt": 225000,
+     "apt_q1": 192500,
+     "apt_q3": 250000
+    },
+    "2026": {
+     "house_n": 22,
+     "house": 394500,
+     "h23_n": 22,
+     "apt_n": 107,
+     "apt": 228750,
+     "apt_q1": 180000,
+     "apt_q3": 270000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Het Heideken",
+     "nl": "Het Heideken"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/ganshoren/main.webp",
+     "author": "Edison McCullen",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Marais_de_Ganshoren.jpg",
+     "title": "Marais de Ganshoren.jpg"
+    }
+   }
+  },
+  "ixelles": {
+   "statbel": {
+    "2025": {
+     "house_n": 53,
+     "house": 845000,
+     "h23_n": 53,
+     "apt_n": 499,
+     "apt": 343638,
+     "apt_q1": 245000,
+     "apt_q3": 450000
+    },
+    "2026": {
+     "house_n": 60,
+     "house": 815000,
+     "h23_n": 60,
+     "apt_n": 474,
+     "apt": 350000,
+     "apt_q1": 257540,
+     "apt_q3": 470000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Berkendael",
+     "nl": "Berkendael"
+    },
+    {
+     "fr": "Boondael",
+     "nl": "Boondaal"
+    },
+    {
+     "fr": "La Cambre",
+     "nl": "Ter Kameren"
+    },
+    {
+     "fr": "Ma Campagne",
+     "nl": "Ma Campagne"
+    },
+    {
+     "fr": "Matongé",
+     "nl": "Matongé"
+    },
+    {
+     "fr": "Quartier des étangs d'Ixelles",
+     "nl": "Quartier des étangs d'Ixelles"
+    },
+    {
+     "fr": "Saint-Boniface",
+     "nl": "Sint-Bonifatius"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/ixelles/main.webp",
+     "author": "Jopparn",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Town_Hall_Ixelles_1.jpg",
+     "title": "Town Hall Ixelles 1.jpg"
+    }
+   }
+  },
+  "jette": {
+   "statbel": {
+    "2025": {
+     "house_n": 29,
+     "house": 425000,
+     "h23_n": 22,
+     "apt_n": 235,
+     "apt": 215000,
+     "apt_q1": 165000,
+     "apt_q3": 280000
+    },
+    "2026": {
+     "house_n": 35,
+     "house": 415000,
+     "h23_n": 35,
+     "apt_n": 240,
+     "apt": 225000,
+     "apt_q1": 185000,
+     "apt_q3": 279000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Dieleghem",
+     "nl": "Dielegem"
+    },
+    {
+     "fr": "Esseghem",
+     "nl": "Essegem"
+    },
+    {
+     "fr": "Jardins de Jette",
+     "nl": "Tuinen van Jette"
+    },
+    {
+     "fr": "Miroir",
+     "nl": "Spiegel"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/jette/main.webp",
+     "author": "Goris",
+     "license": "CC0",
+     "url": "https://commons.wikimedia.org/wiki/File:Maison_communale_-_Gemeentehuis_Jette.jpg",
+     "title": "Maison communale - Gemeentehuis Jette.jpg"
+    }
+   }
+  },
+  "koekelberg": {
+   "statbel": {
+    "2025": {
+     "house_n": 7,
+     "house": null,
+     "h23_n": 7,
+     "apt_n": 103,
+     "apt": 217750,
+     "apt_q1": 185675,
+     "apt_q3": 255000
+    },
+    "2026": {
+     "house_n": 9,
+     "house": null,
+     "h23_n": 9,
+     "apt_n": 100,
+     "apt": 225000,
+     "apt_q1": 172658,
+     "apt_q3": 276000
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/koekelberg/main.webp",
+     "author": "Romaine",
+     "license": "CC0",
+     "url": "https://commons.wikimedia.org/wiki/File:Koekelberg-Gemeentehuis_(1).jpg",
+     "title": "Koekelberg-Gemeentehuis (1).jpg"
+    }
+   }
+  },
+  "molenbeek-saint-jean": {
+   "statbel": {
+    "2025": {
+     "house_n": 33,
+     "house": 350000,
+     "h23_n": 33,
+     "apt_n": 393,
+     "apt": 215000,
+     "apt_q1": 179000,
+     "apt_q3": 255000
+    },
+    "2026": {
+     "house_n": 24,
+     "house": 318000,
+     "h23_n": 24,
+     "apt_n": 344,
+     "apt": 220000,
+     "apt_q1": 177000,
+     "apt_q3": 270000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Cité Diongre",
+     "nl": "Diongrewijk"
+    },
+    {
+     "fr": "Heyvaert",
+     "nl": "Heyvaert"
+    },
+    {
+     "fr": "Karreveld",
+     "nl": "Karreveld"
+    },
+    {
+     "fr": "Osseghem",
+     "nl": "Ossegem"
+    },
+    {
+     "fr": "Quartier Maritime",
+     "nl": "Maritiemwijk"
+    },
+    {
+     "fr": "Étangs Noirs",
+     "nl": "Zwarte Vijvers"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/molenbeek-saint-jean/main.webp",
+     "author": "Sally V",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Gemeentehuis_St_Jans_Molenbeek.jpg",
+     "title": "Gemeentehuis St Jans Molenbeek.jpg"
+    }
+   }
+  },
+  "saint-gilles": {
+   "statbel": {
+    "2025": {
+     "house_n": 15,
+     "house": null,
+     "h23_n": 15,
+     "apt_n": 163,
+     "apt": 295000,
+     "apt_q1": 215000,
+     "apt_q3": 420000
+    },
+    "2026": {
+     "house_n": 15,
+     "house": null,
+     "h23_n": 15,
+     "apt_n": 219,
+     "apt": 288500,
+     "apt_q1": 206000,
+     "apt_q3": 405000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Albert",
+     "nl": "Albert"
+    },
+    {
+     "fr": "Ma Campagne",
+     "nl": "Ma Campagne"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/saint-gilles/main.webp",
+     "author": "Nenea hartia",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Saint-Gilles_Town_Hall_(Brussels).01.jpg",
+     "title": "Saint-Gilles Town Hall (Brussels).01.jpg"
+    }
+   }
+  },
+  "saint-josse-ten-noode": {
+   "statbel": {
+    "2025": {
+     "house_n": 10,
+     "house": null,
+     "h23_n": 10,
+     "apt_n": 93,
+     "apt": 216000,
+     "apt_q1": 159000,
+     "apt_q3": 270000
+    },
+    "2026": {
+     "house_n": 10,
+     "house": null,
+     "h23_n": 10,
+     "apt_n": 94,
+     "apt": 250000,
+     "apt_q1": 170000,
+     "apt_q3": 375000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Quartier Nord",
+     "nl": "Noordwijk"
+    },
+    {
+     "fr": "Petite Anatolie",
+     "nl": "Klein-Anatolië"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/saint-josse-ten-noode/main.webp",
+     "author": "Nenea hartia",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Town_hall_of_Saint-Josse-ten-Noode.01.jpg",
+     "title": "Town hall of Saint-Josse-ten-Noode.01.jpg"
+    }
+   }
+  },
+  "schaerbeek": {
+   "statbel": {
+    "2025": {
+     "house_n": 72,
+     "house": 470000,
+     "h23_n": 72,
+     "apt_n": 486,
+     "apt": 260000,
+     "apt_q1": 210000,
+     "apt_q3": 330000
+    },
+    "2026": {
+     "house_n": 76,
+     "house": 591250,
+     "h23_n": 76,
+     "apt_n": 538,
+     "apt": 270000,
+     "apt_q1": 220000,
+     "apt_q3": 335000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Cage aux Ours",
+     "nl": "Berenkuil"
+    },
+    {
+     "fr": "Helmet",
+     "nl": "Helmet"
+    },
+    {
+     "fr": "Linthout",
+     "nl": "Linthout"
+    },
+    {
+     "fr": "Monplaisir",
+     "nl": "Monplaisir"
+    },
+    {
+     "fr": "Monrose",
+     "nl": "Monrose"
+    },
+    {
+     "fr": "Quartier Nord",
+     "nl": "Noordwijk"
+    },
+    {
+     "fr": "Petite Anatolie",
+     "nl": "Klein-Anatolië"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/schaerbeek/main.webp",
+     "author": "Nenea hartia",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Schaerbeek_town_hall,_Brussels.01.jpg",
+     "title": "Schaerbeek town hall, Brussels.01.jpg"
+    },
+    "street": {
+     "src": "img/communes/schaerbeek/street.webp",
+     "author": "Maltebruessel",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Avenue_Mar%C3%A9chal_Foch,_Schaerbeek,_view_onto_town_hall,_june_2026.jpg",
+     "title": "Avenue Maréchal Foch, Schaerbeek, view onto town hall, june 2026.jpg"
+    }
+   }
+  },
+  "uccle": {
+   "statbel": {
+    "2025": {
+     "house_n": 148,
+     "house": 680000,
+     "h23_n": 127,
+     "apt_n": 486,
+     "apt": 332500,
+     "apt_q1": 250000,
+     "apt_q3": 475000
+    },
+    "2026": {
+     "house_n": 165,
+     "house": 745000,
+     "h23_n": 134,
+     "apt_n": 438,
+     "apt": 345000,
+     "apt_q1": 255000,
+     "apt_q3": 490000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Calevoet",
+     "nl": "Kalevoet"
+    },
+    {
+     "fr": "Fort Jaco",
+     "nl": "Fort Jaco"
+    },
+    {
+     "fr": "Globe",
+     "nl": "Globe"
+    },
+    {
+     "fr": "Petite-Espinette",
+     "nl": "Kleine Hut"
+    },
+    {
+     "fr": "Quartier du Prince d'Orange",
+     "nl": "Prins van Oranjewijk"
+    },
+    {
+     "fr": "Saint-Job",
+     "nl": "Sint-Job"
+    },
+    {
+     "fr": "Stalle",
+     "nl": "Stalle"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/uccle/main.webp",
+     "author": "David Edgar",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:3557uccleTownHall.jpg",
+     "title": "3557uccleTownHall.jpg"
+    }
+   }
+  },
+  "watermael-boitsfort": {
+   "statbel": {
+    "2025": {
+     "house_n": 60,
+     "house": 647500,
+     "h23_n": 54,
+     "apt_n": 69,
+     "apt": 345000,
+     "apt_q1": 277000,
+     "apt_q3": 435000
+    },
+    "2026": {
+     "house_n": 60,
+     "house": 630000,
+     "h23_n": 56,
+     "apt_n": 74,
+     "apt": 300000,
+     "apt_q1": 260000,
+     "apt_q3": 375000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Floréal",
+     "nl": "Floréal"
+    },
+    {
+     "fr": "Le Logis",
+     "nl": "Le Logis"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/watermael-boitsfort/main.webp",
+     "author": "Zinneke",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Town_hall_Watermael_Boitsfort_2017-06_--1.jpg",
+     "title": "Town hall Watermael Boitsfort 2017-06 --1.jpg"
+    }
+   }
+  },
+  "woluwe-saint-lambert": {
+   "statbel": {
+    "2025": {
+     "house_n": 65,
+     "house": 665000,
+     "h23_n": 62,
+     "apt_n": 288,
+     "apt": 341500,
+     "apt_q1": 255000,
+     "apt_q3": 436000
+    },
+    "2026": {
+     "house_n": 65,
+     "house": 660000,
+     "h23_n": 64,
+     "apt_n": 329,
+     "apt": 348750,
+     "apt_q1": 269000,
+     "apt_q3": 425000
+    }
+   },
+   "hoods": [],
+   "photos": {}
+  },
+  "woluwe-saint-pierre": {
+   "statbel": {
+    "2025": {
+     "house_n": 100,
+     "house": 720000,
+     "h23_n": 86,
+     "apt_n": 162,
+     "apt": 387000,
+     "apt_q1": 290000,
+     "apt_q3": 550000
+    },
+    "2026": {
+     "house_n": 103,
+     "house": 750000,
+     "h23_n": 87,
+     "apt_n": 143,
+     "apt": 400000,
+     "apt_q1": 300000,
+     "apt_q3": 500000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Joli-Bois",
+     "nl": "Mooi-Bos"
+    },
+    {
+     "fr": "Stockel",
+     "nl": "Stokkel"
+    },
+    {
+     "fr": "Val Duchesse",
+     "nl": "Hertoginnedal"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/woluwe-saint-pierre/main.webp",
+     "author": "User:Ben2",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Mais.Comm.W-S-P.01.JPG",
+     "title": "Mais.Comm.W-S-P.01.JPG"
+    },
+    "street": {
+     "src": "img/communes/woluwe-saint-pierre/street.webp",
+     "author": "Sjenghai",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:SP-Woluwe-SP_-_Clos_du_Manoir-Burchtgaarde_-_2024-10-19.jpg",
+     "title": "SP-Woluwe-SP - Clos du Manoir-Burchtgaarde - 2024-10-19.jpg"
+    }
+   }
+  }
+ }
+}

@@ -28,7 +28,7 @@ L = {
                faq_title="Questions fréquentes", near_title="Nous vendons aussi dans d'autres communes",
                cta_btn="Envoyer une demande", stat_house="Prix médian maison", stat_apt="Prix médian appartement",
                stat_trend="Évolution sur 1 an", stat_region="Médiane Région bruxelloise", sales_n="ventes",
-               trend_sub="maisons · appartements", region_sub="maisons · appartements", photo="Photo", mail_subject="Demande — page commune"),
+               trend_sub="maisons · appartements", region_sub="maisons · appartements", photo="Photo", mail_subject="Demande — page commune", few="trop peu de ventes pour une médiane"),
     "en": dict(home="Home", locale="en_GB", in_lang="en", type_label="Property type", house="House", apt="Apartment",
                address="Property address", address_ph="Street, number", email="Email", message="Your request",
                message_ph="Your project, your questions, your timing…", send="Send my request",
@@ -38,7 +38,7 @@ L = {
                faq_title="Frequently asked questions", near_title="We also sell in other municipalities",
                cta_btn="Send a request", stat_house="Median house price", stat_apt="Median apartment price",
                stat_trend="1-year change", stat_region="Brussels Region median", sales_n="sales",
-               trend_sub="houses · apartments", region_sub="houses · apartments", photo="Photo", mail_subject="Request — commune page"),
+               trend_sub="houses · apartments", region_sub="houses · apartments", photo="Photo", mail_subject="Request — commune page", few="too few sales for a median"),
     "nl": dict(home="Startpagina", locale="nl_BE", in_lang="nl-BE", type_label="Type woning", house="Huis", apt="Appartement",
                address="Adres van de woning", address_ph="Straat, nummer", email="E-mail", message="Uw vraag",
                message_ph="Uw project, uw vragen, uw timing…", send="Verstuur mijn aanvraag",
@@ -48,7 +48,7 @@ L = {
                faq_title="Veelgestelde vragen", near_title="We verkopen ook in andere gemeenten",
                cta_btn="Verstuur een aanvraag", stat_house="Mediaanprijs huis", stat_apt="Mediaanprijs appartement",
                stat_trend="Evolutie op 1 jaar", stat_region="Mediaan Brussels Gewest", sales_n="verkopen",
-               trend_sub="huizen · appartementen", region_sub="huizen · appartementen", photo="Foto", mail_subject="Aanvraag — gemeentepagina"),
+               trend_sub="huizen · appartementen", region_sub="huizen · appartementen", photo="Foto", mail_subject="Aanvraag — gemeentepagina", few="te weinig verkopen voor een mediaan"),
 }
 CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'
 
@@ -128,6 +128,7 @@ def build(spec, lang):
     pre = PREFIX[lang]; url = f"{BASE}/{pre}{b['slug']}/"
     up = "../" if lang == "fr" else "../../"
     name = b["commune"]
+    name = name[0].upper() + name[1:]
     st = spec["stats"]
     # ---------- hero + form
     checks = "".join(f"<li>{CHECK}<span>{esc_nb(x)}</span></li>" for x in b["checks"])
@@ -167,13 +168,15 @@ def build(spec, lang):
         f"<div><strong>{esc_nb(a)}</strong><span>{esc_nb(c)}</span></div>" for a, c in b["trust"]) + "</div></div></section>"
     # ---------- house / apartment
     def fig(key):
-        p = spec["photos"][key]
+        p = spec["photos"].get(key)
+        if not p:
+            return ""
         return (f'<figure class="cm-fig"><img src="{up}{p["src"]}" alt="{esc(p["alt"][lang])}" loading="lazy" width="1400" height="1050">'
                 f'<figcaption>{esc(p["caption"][lang])} · {t["photo"]} {esc(p["author"])}, <a href="{p["url"]}" target="_blank" rel="noopener">Wikimedia Commons</a>, {p["license"]}</figcaption></figure>')
     def paras(lst): return "".join(f'<p class="cm-p">{x}</p>' for x in lst)
     hv = f'''<section class="cm-sec"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:clamp(3rem,6vw,4.5rem)">
-  <div class="cm-row"><div class="cm-col"><h2 class="cm-h2">{esc_nb(b["house_h2"])}</h2>{paras(b["house_p"])}<a href="#demande" style="font-weight:600;color:var(--ink)">{esc(b["house_link"])} →</a></div><div class="cm-col">{fig("house")}</div></div>
-  <div class="cm-row" style="flex-wrap:wrap-reverse"><div class="cm-col">{fig("apartment")}</div><div class="cm-col"><h2 class="cm-h2">{esc_nb(b["apt_h2"])}</h2>{paras(b["apt_p"])}<a href="#demande" style="font-weight:600;color:var(--ink)">{esc(b["apt_link"])} →</a></div></div>
+  <div class="cm-row"><div class="cm-col"><h2 class="cm-h2">{esc_nb(b["house_h2"])}</h2>{paras(b["house_p"])}<a href="#demande" style="font-weight:600;color:var(--ink)">{esc(b["house_link"])} →</a></div>{('<div class="cm-col">' + fig("house") + '</div>') if fig("house") else ''}</div>
+  <div class="cm-row" style="flex-wrap:wrap-reverse">{('<div class="cm-col">' + fig("apartment") + '</div>') if fig("apartment") else ''}<div class="cm-col"><h2 class="cm-h2">{esc_nb(b["apt_h2"])}</h2>{paras(b["apt_p"])}<a href="#demande" style="font-weight:600;color:var(--ink)">{esc(b["apt_link"])} →</a></div></div>
 </div></section>'''
     # ---------- price block
     pr = b["price"]
@@ -189,23 +192,27 @@ def build(spec, lang):
     steps = "".join(f'<li><div class="n">{i+1:02d}</div><h3>{esc(h)}</h3><p>{esc_nb(p)}</p></li>' for i, (h, p) in enumerate(b["steps"]))
     steps_sec = f'<section class="cm-sec"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:2rem"><h2 class="cm-h2" style="max-width:40rem">{esc(t["steps_title"])}</h2><ol class="cm-steps">{steps}</ol></div></section>'
     # ---------- local market
-    def money(v): return {"fr": f"{v:,} €".replace(",", " "), "en": f"€{v:,}", "nl": f"€ {v:,}".replace(",", ".")}[lang]
+    def money(v):
+        if v is None: return "—"
+        return {"fr": f"{v:,} €".replace(",", " "), "en": f"€{v:,}", "nl": f"€ {v:,}".replace(",", ".")}[lang]
     def pct(v):
+        if v is None: return "—"
         s = f"{v:+.1f}%" if lang == "en" else f"{v:+.1f} %".replace(".", ",")
         return s.replace("-", "−")
     chips = "".join(f"<span>{esc(q)}</span>" for q in b["quartiers"])
     stats = f'''<div class="cm-stats">
-      <div class="cm-stat"><div class="k">{t["stat_house"]}</div><div class="v">{esc_nb(money(st["house"]))}</div><div class="s">{st["house_n"]} {t["sales_n"]}</div></div>
+      <div class="cm-stat"><div class="k">{t["stat_house"]}</div><div class="v">{esc_nb(money(st["house"]))}</div><div class="s">{(str(st["house_n"]) + " " + t["sales_n"]) if st["house"] else t["few"]}</div></div>
       <div class="cm-stat"><div class="k">{t["stat_apt"]}</div><div class="v">{esc_nb(money(st["apt"]))}</div><div class="s">{st["apt_n"]} {t["sales_n"]}</div></div>
-      <div class="cm-stat"><div class="k">{t["stat_trend"]}</div><div class="v">{esc_nb(pct(st["house_trend"]))} · {esc_nb(pct(st["apt_trend"]))}</div><div class="s">{t["trend_sub"]}</div></div>
+      <div class="cm-stat"><div class="k">{t["stat_trend"]}</div>{(f'<div class="v">{esc_nb(pct(st["house_trend"]))} · {esc_nb(pct(st["apt_trend"]))}</div><div class="s">{t["trend_sub"]}</div>') if st["house_trend"] is not None else (f'<div class="v">{esc_nb(pct(st["apt_trend"]))}</div><div class="s">{t["trend_sub"].split(" · ")[1]}</div>')}</div>
       <div class="cm-stat"><div class="k">{t["stat_region"]}</div><div class="v">{esc_nb(money(st["region_house"]))}</div><div class="s">{t["region_sub"].split(" · ")[1]} {esc_nb(money(st["region_apt"]))}</div></div>
       <p class="cm-src">{b["stats_source"]}</p></div>'''
     market = f'''<section class="cm-sec cm-soft"><div class="cm-wrap"><div class="cm-row" style="align-items:flex-start">
-  <div class="cm-col"><h2 class="cm-h2">{esc_nb(b["market_h2"])}</h2>{paras(b["market_p"])}<div class="cm-chips">{chips}</div>{fig("market")}</div>
+  <div class="cm-col"><h2 class="cm-h2">{esc_nb(b["market_h2"])}</h2>{paras(b["market_p"])}{('<div class="cm-chips">' + chips + '</div>') if chips else ''}{fig("market")}</div>
   {stats}
 </div></div></section>'''
     # ---------- sales
-    sales = "".join(f'<div class="cm-sale"><img src="{up}{s["img"]}" alt="{esc(s["title"][lang])} · {esc(s["commune"])}" loading="lazy"><div><div class="m">{esc(s["commune"])} · {esc(s["meta"][lang])}</div><div class="t">{esc(s["title"][lang])}</div></div></div>' for s in spec["sales"])
+    cname = lambda s: s["commune"][lang] if isinstance(s["commune"], dict) else s["commune"]
+    sales = "".join(f'<div class="cm-sale"><img src="{up}{s["img"]}" alt="{esc(s["title"][lang])} · {esc(cname(s))}" loading="lazy"><div><div class="m">{esc(cname(s))} · {esc(s["meta"][lang])}</div><div class="t">{esc(s["title"][lang])}</div></div></div>' for s in spec["sales"])
     sales_sec = f'<section class="cm-sec"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:1.75rem"><h2 class="cm-h2">{esc(t["sales_title"])}</h2><div class="cm-sales">{sales}</div></div></section>'
     # ---------- FAQ
     faq = "".join(f'<details{" open" if i < 3 else ""}><summary>{esc_nb(q)}</summary><p>{esc_nb(a)}</p></details>' for i, (q, a) in enumerate(b["faq"]))

@@ -64,6 +64,10 @@ for word: use the words people actually type into Google in that language
   | `vendre-gre-a-gre-bruxelles` | (none: use `../#offres`) | (none: use `../#offres`) |
 
   plus any newer articles listed in LOG.md (each line gives the three slugs).
+- **Commune landing pages exist for all 19 Brussels communes**: whenever an article mentions a commune, link its
+  page in the same language: FR `../vendre-<commune>/` (e.g. `vendre-uccle`, `vendre-bruxelles-ville`), EN
+  `../sell-property-<commune>/` (`sell-property-brussels-city` for the City of Brussels), NL `../verkopen-<nl-name>/`
+  (e.g. `verkopen-ukkel`, `verkopen-sint-jans-molenbeek`). Exact slugs: the `slug` fields in `_tools/communes/*.json`.
 - The templates already add a closing call to action and contact block. Don't add another one.
 
 ### Written for Google AND answer engines (SEO + AEO + GEO)
