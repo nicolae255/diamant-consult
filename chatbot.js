@@ -1,4 +1,4 @@
-/* Diamant Consult Immobilier — chat assistant (scripted, no AI).
+/* Diamant Consult Immobilier · chat assistant (scripted, no AI).
    Flow: e-mail -> topic -> message -> sent by e-mail (Web3Forms, same inbox as the contact forms).
    Contact is by e-mail only: never add a phone number here. Language follows <html lang>. */
 (function () {
@@ -18,7 +18,7 @@
           you: 'Vous', ok: 'Merci, votre demande est bien envoyée.<br>Nous vous répondons par e-mail dans les plus brefs délais.',
           done_t: 'Demande envoyée', done_p: 'Premier rendez-vous gratuit et sans engagement.',
           err: 'L’envoi n’a pas fonctionné. Vous pouvez nous écrire via la <a href="/contact/">page contact</a> ou à <a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a>.',
-          subject: 'Chat site — ' },
+          subject: 'Chat site, ' },
     en: { teaser: 'A question about selling your property?', open: 'Open chat', close: 'Close chat',
           title: 'Diamant Consult', status: 'We reply by email',
           hello: 'Hello! Thinking of selling a house or an apartment?<br>First, enter your email address so we can reply to you.',
@@ -28,7 +28,7 @@
           you: 'You', ok: 'Thank you, your request has been sent.<br>We will reply by email as soon as possible.',
           done_t: 'Request sent', done_p: 'Free first meeting, no obligation.',
           err: 'Sending failed. You can write to us via the <a href="/en/contact/">contact page</a> or at <a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a>.',
-          subject: 'Website chat — ' },
+          subject: 'Website chat, ' },
     nl: { teaser: 'Een vraag over de verkoop van uw woning?', open: 'Chat openen', close: 'Chat sluiten',
           title: 'Diamant Consult', status: 'Antwoord per e-mail',
           hello: 'Hallo! Denkt u erover een huis of appartement te verkopen?<br>Vul eerst uw e-mailadres in, zodat we u kunnen antwoorden.',
@@ -38,7 +38,7 @@
           you: 'U', ok: 'Bedankt, uw aanvraag is verstuurd.<br>We antwoorden zo snel mogelijk per e-mail.',
           done_t: 'Aanvraag verstuurd', done_p: 'Gratis eerste afspraak, vrijblijvend.',
           err: 'Het versturen is mislukt. U kunt ons schrijven via de <a href="/nl/contact/">contactpagina</a> of op <a href="mailto:borremans.helpinfo@gmail.com">borremans.helpinfo@gmail.com</a>.',
-          subject: 'Chat website — ' }
+          subject: 'Chat website, ' }
   }[lang] || null;
   if (!T) return;
 

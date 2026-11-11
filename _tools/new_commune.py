@@ -29,7 +29,7 @@ L = {
                faq_title="Questions fréquentes", near_title="Nous vendons aussi dans d'autres communes",
                cta_btn="Envoyer une demande", stat_house="Prix médian maison", stat_apt="Prix médian appartement",
                stat_trend="Évolution sur 1 an", stat_region="Médiane Région bruxelloise", sales_n="ventes",
-               trend_sub="maisons · appartements", region_sub="maisons · appartements", photo="Photo", mail_subject="Demande — page commune", few="trop peu de ventes pour une médiane"),
+               trend_sub="maisons · appartements", region_sub="maisons · appartements", photo="Photo", mail_subject="Demande, page commune", few="trop peu de ventes pour une médiane"),
     "en": dict(home="Home", locale="en_GB", in_lang="en", type_label="Property type", house="House", apt="Apartment",
                address="Property address", address_ph="Street, number", email="Email", message="Your request",
                message_ph="Your project, your questions, your timing…", send="Send my request",
@@ -39,7 +39,7 @@ L = {
                faq_title="Frequently asked questions", near_title="We also sell in other municipalities",
                cta_btn="Send a request", stat_house="Median house price", stat_apt="Median apartment price",
                stat_trend="1-year change", stat_region="Brussels Region median", sales_n="sales",
-               trend_sub="houses · apartments", region_sub="houses · apartments", photo="Photo", mail_subject="Request — commune page", few="too few sales for a median"),
+               trend_sub="houses · apartments", region_sub="houses · apartments", photo="Photo", mail_subject="Request, commune page", few="too few sales for a median"),
     "nl": dict(home="Startpagina", locale="nl_BE", in_lang="nl-BE", type_label="Type woning", house="Huis", apt="Appartement",
                address="Adres van de woning", address_ph="Straat, nummer", email="E-mail", message="Uw vraag",
                message_ph="Uw project, uw vragen, uw timing…", send="Verstuur mijn aanvraag",
@@ -49,7 +49,7 @@ L = {
                faq_title="Veelgestelde vragen", near_title="We verkopen ook in andere gemeenten",
                cta_btn="Verstuur een aanvraag", stat_house="Mediaanprijs huis", stat_apt="Mediaanprijs appartement",
                stat_trend="Evolutie op 1 jaar", stat_region="Mediaan Brussels Gewest", sales_n="verkopen",
-               trend_sub="huizen · appartementen", region_sub="huizen · appartementen", photo="Foto", mail_subject="Aanvraag — gemeentepagina", few="te weinig verkopen voor een mediaan"),
+               trend_sub="huizen · appartementen", region_sub="huizen · appartementen", photo="Foto", mail_subject="Aanvraag, gemeentepagina", few="te weinig verkopen voor een mediaan"),
 }
 CHECK = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>'
 
@@ -194,10 +194,10 @@ def build(spec, lang):
     steps_sec = f'<section class="cm-sec"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:2rem"><h2 class="cm-h2" style="max-width:40rem">{esc(t["steps_title"])}</h2><ol class="cm-steps">{steps}</ol></div></section>'
     # ---------- local market
     def money(v):
-        if v is None: return "—"
+        if v is None: return {"fr": "n.d.", "en": "n/a", "nl": "n.b."}[lang]
         return {"fr": f"{v:,} €".replace(",", " "), "en": f"€{v:,}", "nl": f"€ {v:,}".replace(",", ".")}[lang]
     def pct(v):
-        if v is None: return "—"
+        if v is None: return {"fr": "n.d.", "en": "n/a", "nl": "n.b."}[lang]
         s = f"{v:+.1f}%" if lang == "en" else f"{v:+.1f} %".replace(".", ",")
         return s.replace("-", "−")
     chips = "".join(f"<span>{esc(q)}</span>" for q in b["quartiers"])

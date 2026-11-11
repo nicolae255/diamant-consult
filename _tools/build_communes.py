@@ -123,7 +123,7 @@ LI = {"fr": 0, "en": 1, "nl": 2}
 
 
 def money(v, l):
-    if v is None: return "—"
+    if v is None: return {"fr": "n.d.", "en": "n/a", "nl": "n.b."}[l]
     if l == "fr": return f"{v:,}".replace(",", NB) + NB + "€"
     if l == "en": return f"€{v:,}"
     return "€" + NB + f"{v:,}".replace(",", ".")

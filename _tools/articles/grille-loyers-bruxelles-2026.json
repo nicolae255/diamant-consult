@@ -12,7 +12,7 @@
     "category": "Conseils",
     "image_alt": "Immeubles résidentiels à Bruxelles, grille des loyers 2026",
     "card_title": "Grille des loyers Bruxelles 2026 : ce que tout propriétaire doit savoir",
-    "card_excerpt": "Loyer de référence, règle des 20 %, indexation et PEB : les règles 2026 pour les bailleurs bruxellois — et comment choisir entre louer et vendre.",
+    "card_excerpt": "Loyer de référence, règle des 20 %, indexation et PEB : les règles 2026 pour les bailleurs bruxellois et comment choisir entre louer et vendre.",
     "faq": [
       {
         "q": "La grille des loyers est-elle obligatoire à Bruxelles ?",
@@ -103,11 +103,11 @@
   },
   "sources": [
     {
-      "name": "loyers.brussels — À propos des loyers de référence (Région de Bruxelles-Capitale)",
+      "name": "loyers.brussels · À propos des loyers de référence (Région de Bruxelles-Capitale)",
       "url": "https://loyers.brussels/a-propos-des-loyers-de-reference"
     },
     {
-      "name": "notaire.be — Immobilier du 3e trimestre 2026 (baromètre des notaires, 13/10/2026)",
+      "name": "notaire.be · Immobilier du 3e trimestre 2026 (baromètre des notaires, 13/10/2026)",
       "url": "https://www.notaire.be/actualites/immobilier-du-3e-trimestre-2026-le-marche-se-rafraichit-la-moyenne-des-prix-en-hausse"
     }
   ]
