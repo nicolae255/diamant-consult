@@ -36,36 +36,183 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "@id": "https://www.diamantconsult.com/#organization",
-  "name": "Diamant Consult Immobilier",
-  "alternateName": "Diamant Consult",
-  "description": "Estate agent in Brussels (Schaerbeek). Houses and apartments sold for 2% excl. VAT, all in, free first meeting. Public auction viewings for notaries.",
-  "url": "https://www.diamantconsult.com/",
-  "logo": "https://www.diamantconsult.com/icon-512.png",
-  "image": "https://www.diamantconsult.com/img/og-default.jpg",
-  "email": "borremans.helpinfo@gmail.com",
-  "vatID": "BE1014120350",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Avenue du Diamant 138",
-    "addressLocality": "Schaerbeek",
-    "postalCode": "1030",
-    "addressRegion": "Bruxelles",
-    "addressCountry": "BE"
-  },
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Bruxelles"
+      "@type": "RealEstateAgent",
+      "@id": "https://www.diamantconsult.com/#organization",
+      "name": "Diamant Consult Immobilier",
+      "alternateName": "Diamant Consult",
+      "description": "Estate agent in Brussels (Schaerbeek). Houses and apartments sold for 2% excl. VAT, all in, free first meeting. Public auction viewings for notaries.",
+      "url": "https://www.diamantconsult.com/",
+      "logo": "https://www.diamantconsult.com/icon-512.png",
+      "image": "https://www.diamantconsult.com/img/og-default.jpg",
+      "email": "borremans.helpinfo@gmail.com",
+      "vatID": "BE1014120350",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue du Diamant 138",
+        "addressLocality": "Schaerbeek",
+        "postalCode": "1030",
+        "addressRegion": "Bruxelles",
+        "addressCountry": "BE"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anderlecht"
+        },
+        {
+          "@type": "City",
+          "name": "Auderghem"
+        },
+        {
+          "@type": "City",
+          "name": "Berchem-Sainte-Agathe"
+        },
+        {
+          "@type": "City",
+          "name": "Bruxelles-Ville"
+        },
+        {
+          "@type": "City",
+          "name": "Etterbeek"
+        },
+        {
+          "@type": "City",
+          "name": "Evere"
+        },
+        {
+          "@type": "City",
+          "name": "Forest"
+        },
+        {
+          "@type": "City",
+          "name": "Ganshoren"
+        },
+        {
+          "@type": "City",
+          "name": "Ixelles"
+        },
+        {
+          "@type": "City",
+          "name": "Jette"
+        },
+        {
+          "@type": "City",
+          "name": "Koekelberg"
+        },
+        {
+          "@type": "City",
+          "name": "Molenbeek-Saint-Jean"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Gilles"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Josse-ten-Noode"
+        },
+        {
+          "@type": "City",
+          "name": "Schaerbeek"
+        },
+        {
+          "@type": "City",
+          "name": "Uccle"
+        },
+        {
+          "@type": "City",
+          "name": "Watermael-Boitsfort"
+        },
+        {
+          "@type": "City",
+          "name": "Woluwe-Saint-Lambert"
+        },
+        {
+          "@type": "City",
+          "name": "Woluwe-Saint-Pierre"
+        },
+        {
+          "@type": "City",
+          "name": "Waterloo"
+        },
+        {
+          "@type": "City",
+          "name": "La Hulpe"
+        },
+        {
+          "@type": "City",
+          "name": "Wavre"
+        },
+        {
+          "@type": "City",
+          "name": "Rixensart"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Brabant wallon"
+        }
+      ],
+      "priceRange": "€",
+      "inLanguage": "en",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Private sale, all inclusive",
+          "description": "Commission of 2% of the sale price excl. VAT: marketing, photos, listings, viewings, negotiation and follow-up until the deed at the notary. Free first meeting, no obligation.",
+          "url": "https://www.diamantconsult.com/vendre-gre-a-gre-bruxelles/",
+          "seller": {
+            "@id": "https://www.diamantconsult.com/#organization"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 2,
+            "unitText": "percent of the sale price excl. VAT",
+            "valueAddedTaxIncluded": false
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Viewing pack for notarial public auctions",
+          "description": "Viewings for a property sold at public auction (Biddit) for notaries: 3 weekends of open viewings, visitor reception and detailed report.",
+          "url": "https://www.diamantconsult.com/en/#offres",
+          "seller": {
+            "@id": "https://www.diamantconsult.com/#organization"
+          },
+          "price": 600,
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": 600,
+            "priceCurrency": "EUR",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "knowsAbout": [
+        "selling property in Brussels",
+        "private property sale",
+        "notarial public auction",
+        "Biddit",
+        "EPC certificate"
+      ]
     },
     {
-      "@type": "AdministrativeArea",
-      "name": "Brabant wallon"
+      "@type": "WebSite",
+      "@id": "https://www.diamantconsult.com/#website",
+      "url": "https://www.diamantconsult.com/",
+      "name": "Diamant Consult Immobilier",
+      "inLanguage": [
+        "fr-BE",
+        "en",
+        "nl-BE"
+      ],
+      "publisher": {
+        "@id": "https://www.diamantconsult.com/#organization"
+      }
     }
-  ],
-  "priceRange": "€",
-  "inLanguage": "en"
+  ]
 }
 </script>
 </head>

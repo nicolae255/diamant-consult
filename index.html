@@ -47,36 +47,183 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  "@id": "https://www.diamantconsult.com/#organization",
-  "name": "Diamant Consult Immobilier",
-  "alternateName": "Diamant Consult",
-  "description": "Agence immobilière à Bruxelles (Schaerbeek). Vente de maisons et appartements à 2% HTVA, tout compris, premier rendez-vous gratuit. Organisation de ventes publiques pour les notaires.",
-  "url": "https://www.diamantconsult.com/",
-  "logo": "https://www.diamantconsult.com/icon-512.png",
-  "image": "https://www.diamantconsult.com/img/og-default.jpg",
-  "email": "borremans.helpinfo@gmail.com",
-  "vatID": "BE1014120350",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Avenue du Diamant 138",
-    "addressLocality": "Schaerbeek",
-    "postalCode": "1030",
-    "addressRegion": "Bruxelles",
-    "addressCountry": "BE"
-  },
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "Bruxelles"
+      "@type": "RealEstateAgent",
+      "@id": "https://www.diamantconsult.com/#organization",
+      "name": "Diamant Consult Immobilier",
+      "alternateName": "Diamant Consult",
+      "description": "Agence immobilière à Bruxelles (Schaerbeek). Vente de maisons et appartements à 2% HTVA, tout compris, premier rendez-vous gratuit. Organisation de ventes publiques pour les notaires.",
+      "url": "https://www.diamantconsult.com/",
+      "logo": "https://www.diamantconsult.com/icon-512.png",
+      "image": "https://www.diamantconsult.com/img/og-default.jpg",
+      "email": "borremans.helpinfo@gmail.com",
+      "vatID": "BE1014120350",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenue du Diamant 138",
+        "addressLocality": "Schaerbeek",
+        "postalCode": "1030",
+        "addressRegion": "Bruxelles",
+        "addressCountry": "BE"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Anderlecht"
+        },
+        {
+          "@type": "City",
+          "name": "Auderghem"
+        },
+        {
+          "@type": "City",
+          "name": "Berchem-Sainte-Agathe"
+        },
+        {
+          "@type": "City",
+          "name": "Bruxelles-Ville"
+        },
+        {
+          "@type": "City",
+          "name": "Etterbeek"
+        },
+        {
+          "@type": "City",
+          "name": "Evere"
+        },
+        {
+          "@type": "City",
+          "name": "Forest"
+        },
+        {
+          "@type": "City",
+          "name": "Ganshoren"
+        },
+        {
+          "@type": "City",
+          "name": "Ixelles"
+        },
+        {
+          "@type": "City",
+          "name": "Jette"
+        },
+        {
+          "@type": "City",
+          "name": "Koekelberg"
+        },
+        {
+          "@type": "City",
+          "name": "Molenbeek-Saint-Jean"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Gilles"
+        },
+        {
+          "@type": "City",
+          "name": "Saint-Josse-ten-Noode"
+        },
+        {
+          "@type": "City",
+          "name": "Schaerbeek"
+        },
+        {
+          "@type": "City",
+          "name": "Uccle"
+        },
+        {
+          "@type": "City",
+          "name": "Watermael-Boitsfort"
+        },
+        {
+          "@type": "City",
+          "name": "Woluwe-Saint-Lambert"
+        },
+        {
+          "@type": "City",
+          "name": "Woluwe-Saint-Pierre"
+        },
+        {
+          "@type": "City",
+          "name": "Waterloo"
+        },
+        {
+          "@type": "City",
+          "name": "La Hulpe"
+        },
+        {
+          "@type": "City",
+          "name": "Wavre"
+        },
+        {
+          "@type": "City",
+          "name": "Rixensart"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Brabant wallon"
+        }
+      ],
+      "priceRange": "€",
+      "inLanguage": "fr-BE",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Vente de gré à gré, tout compris",
+          "description": "Commission de 2 % HTVA du prix de vente : marketing, photos, annonces, visites, négociation et suivi jusqu'à l'acte chez le notaire. Premier rendez-vous gratuit et sans engagement.",
+          "url": "https://www.diamantconsult.com/vendre-gre-a-gre-bruxelles/",
+          "seller": {
+            "@id": "https://www.diamantconsult.com/#organization"
+          },
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": 2,
+            "unitText": "pourcentage du prix de vente HTVA",
+            "valueAddedTaxIncluded": false
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Pack visites pour ventes publiques notariales",
+          "description": "Organisation des visites d'un bien en vente publique (Biddit) pour les notaires : 3 week-ends de permanences, accueil et rapport détaillé.",
+          "url": "https://www.diamantconsult.com/#offres",
+          "seller": {
+            "@id": "https://www.diamantconsult.com/#organization"
+          },
+          "price": 600,
+          "priceCurrency": "EUR",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "price": 600,
+            "priceCurrency": "EUR",
+            "valueAddedTaxIncluded": false
+          }
+        }
+      ],
+      "knowsAbout": [
+        "vente immobilière à Bruxelles",
+        "vente de gré à gré",
+        "vente publique notariale",
+        "Biddit",
+        "certificat PEB"
+      ]
     },
     {
-      "@type": "AdministrativeArea",
-      "name": "Brabant wallon"
+      "@type": "WebSite",
+      "@id": "https://www.diamantconsult.com/#website",
+      "url": "https://www.diamantconsult.com/",
+      "name": "Diamant Consult Immobilier",
+      "inLanguage": [
+        "fr-BE",
+        "en",
+        "nl-BE"
+      ],
+      "publisher": {
+        "@id": "https://www.diamantconsult.com/#organization"
+      }
     }
-  ],
-  "priceRange": "€",
-  "inLanguage": "fr-BE"
+  ]
 }
 </script>
 </head>
