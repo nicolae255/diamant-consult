@@ -18,7 +18,7 @@ CHECK = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="cur
 T = {
     "fr": dict(file="index.html", url="https://www.diamantconsult.com/",
                calc_t="Combien coûte la vente ?", price="Prix de vente envisagé",
-               ag="Commission à", us="Diamant Consult · 2\u00a0%", cmp="Comparez avec d’autres taux :", vat_note="Montants HTVA, TVA de 21\u00a0% en sus. Simulation indicative.",
+               ag="", us="Avec Diamant Consult · 2\u00a0%", cmp="Si vous payiez une commission de :", vat_note="Montants HTVA, TVA de 21\u00a0% en sus. En rouge : ce que vous paieriez en plus.",
                incl="Photos, annonces, visites, négociation et suivi jusqu’à l’acte : tout est compris.",
                form_t="Parlons de votre bien", type="Type de bien", types=["Maison", "Appartement", "Autre"],
                commune="Commune", commune_ph="Ex. Schaerbeek", email="Votre e-mail",
@@ -29,7 +29,7 @@ T = {
                cta="Vendre mon bien"),
     "en": dict(file="en/index.html", url="https://www.diamantconsult.com/en/",
                calc_t="What does selling cost?", price="Expected sale price",
-               ag="Commission at", us="Diamant Consult · 2%", cmp="Compare with other rates:", vat_note="Amounts excl. VAT (21% VAT on top). Indicative simulation.",
+               ag="", us="With Diamant Consult · 2%", cmp="If you paid a commission of:", vat_note="Amounts excl. VAT (21% VAT on top). In red: what you would pay on top.",
                incl="Photos, listings, viewings, negotiation and follow-up until the deed: all included.",
                form_t="Tell us about your property", type="Property type", types=["House", "Apartment", "Other"],
                commune="Municipality", commune_ph="e.g. Schaerbeek", email="Your e-mail",
@@ -40,7 +40,7 @@ T = {
                cta="Sell my property"),
     "nl": dict(file="nl/index.html", url="https://www.diamantconsult.com/nl/",
                calc_t="Wat kost de verkoop?", price="Beoogde verkoopprijs",
-               ag="Commissie van", us="Diamant Consult · 2\u00a0%", cmp="Vergelijk met andere tarieven:", vat_note="Bedragen excl. btw (21\u00a0% btw bovenop). Indicatieve simulatie.",
+               ag="", us="Met Diamant Consult · 2\u00a0%", cmp="Als u een commissie zou betalen van:", vat_note="Bedragen excl. btw (21\u00a0% btw bovenop). In het rood: wat u meer zou betalen.",
                incl="Foto’s, advertenties, bezoeken, onderhandeling en opvolging tot de akte: alles inbegrepen.",
                form_t="Vertel ons over uw woning", type="Type woning", types=["Huis", "Appartement", "Ander"],
                commune="Gemeente", commune_ph="Bv. Schaarbeek", email="Uw e-mailadres",
@@ -55,7 +55,7 @@ T = {
 def card(t):
     e = html.escape
     rows = "".join(
-        f'''            <div class="hl-row"><span class="r">{t["ag"]} {r}{"\u00a0" if t is not T["en"] else ""}%</span><span class="bar"><i data-rate="{r}"></i></span><strong data-rate="{r}">{400000 * r // 100:,} €</strong><em data-diff="{r}">+{400000 * (r - 2) // 100:,} €</em></div>
+        f'''            <div class="hl-row"><span class="r">{r}{"\u00a0" if t is not T["en"] else ""}%</span><span class="bar"><i data-rate="{r}"></i></span><strong data-rate="{r}">{400000 * r // 100:,} €</strong><em data-diff="{r}">+{400000 * (r - 2) // 100:,} €</em></div>
 '''.replace(",", "\u202f") for r in RATES)
     return f'''<div class="hero-lead" id="demande">
         <div class="hl-calc">

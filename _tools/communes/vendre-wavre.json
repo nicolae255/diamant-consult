@@ -116,22 +116,22 @@
   ],
   "apt_link": "Vendre mon appartement",
   "price": {
-   "h2": "Une agence pas chère ? Non : un tarif juste, 2 % HTVA.",
-   "p": "Le même service complet qu'une agence traditionnelle, sans frais de dossier ni supplément pour les photos ou les visites. La commission est calculée sur le prix de vente réel et n'est due qu'en cas de vente.",
-   "example": "EXEMPLE · BIEN VENDU 400 000 €",
+   "h2": "Un tarif clair : 2 % HTVA, tout compris.",
+   "p": "Pas de frais de dossier, pas de supplément pour les photos ou les visites. La commission est calculée sur le prix de vente réel et n'est due qu'en cas de vente.",
+   "example": "COMBIEN VOUS COÛTE LA VENTE ? EXEMPLE POUR UN BIEN VENDU 400 000 €",
    "ours": [
-    "Diamant Consult · 2 %",
-    "8 000 € HTVA"
+    "Avec Diamant Consult (2 %)",
+    "8 000 € HTVA"
    ],
    "other": [
-    "Avec une commission de 3,5 %",
-    "14 000 € HTVA"
+    "Si vous payiez 3,5 % de commission",
+    "14 000 € HTVA"
    ],
    "diff": [
-    "Écart en votre faveur",
-    "6 000 €"
+    "Vous économisez",
+    "6 000 €"
    ],
-   "note": "Simulation indicative, montants hors TVA."
+   "note": "Exemple indicatif, montants hors TVA."
   },
   "steps": [
    [
@@ -278,22 +278,22 @@
   ],
   "apt_link": "Sell my apartment",
   "price": {
-   "h2": "A cheap estate agent? No: a fair fee, 2% excl. VAT.",
-   "p": "The same complete service as a traditional agency, with no admin fees and no extra charge for photos or viewings. The commission is calculated on the actual sale price and is only due if your property sells.",
-   "example": "EXAMPLE · PROPERTY SOLD FOR €400,000",
+   "h2": "A clear fee: 2% excl. VAT, all inclusive.",
+   "p": "No admin fees, no extra charge for photos or viewings. The commission is calculated on the actual sale price and is only due if your property sells.",
+   "example": "WHAT DOES THE SALE COST YOU? EXAMPLE FOR A PROPERTY SOLD AT €400,000",
    "ours": [
-    "Diamant Consult · 2%",
+    "With Diamant Consult (2%)",
     "€8,000 excl. VAT"
    ],
    "other": [
-    "With a 3.5% commission",
+    "If you paid a 3.5% commission",
     "€14,000 excl. VAT"
    ],
    "diff": [
-    "Difference in your favour",
+    "You save",
     "€6,000"
    ],
-   "note": "Indicative simulation, amounts excluding VAT."
+   "note": "Indicative example, amounts excluding VAT."
   },
   "steps": [
    [
@@ -440,22 +440,22 @@
   ],
   "apt_link": "Mijn appartement verkopen",
   "price": {
-   "h2": "Een goedkope makelaar? Nee: een eerlijk tarief, 2% excl. btw.",
-   "p": "Dezelfde volledige dienstverlening als een traditioneel kantoor, zonder dossierkosten of supplement voor foto's of bezoeken. De commissie wordt berekend op de werkelijke verkoopprijs en is alleen verschuldigd als uw woning verkocht wordt.",
-   "example": "VOORBEELD · WONING VERKOCHT VOOR € 400.000",
+   "h2": "Een duidelijk tarief: 2 % excl. btw, alles inbegrepen.",
+   "p": "Geen dossierkosten, geen supplement voor foto's of bezoeken. De commissie wordt berekend op de werkelijke verkoopprijs en is alleen verschuldigd als uw woning verkocht wordt.",
+   "example": "WAT KOST DE VERKOOP U? VOORBEELD VOOR EEN WONING VERKOCHT AAN € 400.000",
    "ours": [
-    "Diamant Consult · 2%",
-    "€ 8.000 excl. btw"
+    "Met Diamant Consult (2 %)",
+    "€ 8.000 excl. btw"
    ],
    "other": [
-    "Met een commissie van 3,5%",
-    "€ 14.000 excl. btw"
+    "Als u 3,5 % commissie zou betalen",
+    "€ 14.000 excl. btw"
    ],
    "diff": [
-    "Verschil in uw voordeel",
-    "€ 6.000"
+    "U bespaart",
+    "€ 6.000"
    ],
-   "note": "Indicatieve simulatie, bedragen exclusief btw."
+   "note": "Indicatief voorbeeld, bedragen exclusief btw."
   },
   "steps": [
    [
