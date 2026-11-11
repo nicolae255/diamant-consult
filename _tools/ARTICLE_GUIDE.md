@@ -107,8 +107,7 @@ In `_tools/articles/`, named after the **French slug**:
     `sell-house-uccle-2026`, `huis-verkopen-ukkel-2026`). Must not already exist.
   - seo_title: keyword first, max ~65 characters + ` · Diamant Consult`
   - description: 140-160 characters, keyword + a reason to click
-  - category: FR `Marché local` / `Guide vendeur` / `Conseils` / `Actualité`;
-    EN `Local market` / `Seller guide` / `Advice` / `News`; NL `Lokale markt` / `Verkopersgids` / `Advies` / `Nieuws`
+  - category: one of the blog filter categories listed at the top of this guide (news goes under `Marché local` / `Local market` / `Lokale markt`)
   - h1, hero_sub, breadcrumb, image_alt, card_title, card_excerpt, summary (3-5), faq (3-5),
     body (path to that language's fragment)
   The builder refuses to build if summary, faq or sources are missing or have the wrong count.
