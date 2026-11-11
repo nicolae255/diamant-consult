@@ -1981,3 +1981,13 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
   .hl-row.us strong { grid-column: auto; }
   .hl-row.us .bar { display: none; }
 }
+.hero-lead.hl-embed { max-width: none; margin: 2rem 0 2.5rem; }
+.hl-embed p, .hl-embed label, .hl-embed span { margin: 0; }
+.hl-embed .hl-row { grid-template-columns: 15rem 1fr 6rem 5.4rem; }
+.hl-embed .hl-row.us { grid-template-columns: 15rem 1fr 6rem 5.4rem; }
+@media (max-width: 700px) {
+  .hl-embed .hl-row { grid-template-columns: 1fr auto auto; }
+  .hl-embed .hl-row .bar { display: none; }
+  .hl-embed .hl-row.us { grid-template-columns: 1fr auto; }
+  .hl-embed .hl-row.us strong { grid-column: auto; }
+}

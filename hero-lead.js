@@ -18,7 +18,7 @@
     amounts.forEach(function (a) { a.textContent = fmt.format(Math.round(v * a.getAttribute('data-rate') / 100)); });
     diffs.forEach(function (d) { d.textContent = '+' + fmt.format(Math.round(v * (d.getAttribute('data-diff') - 2) / 100)); });
     bars.forEach(function (b) { b.style.width = (b.getAttribute('data-rate') / maxRate * 100) + '%'; });
-    hidden.value = fmt.format(v);
+    if (hidden) hidden.value = fmt.format(v);
     slider.style.setProperty('--p', ((v - slider.min) / (slider.max - slider.min) * 100) + '%');
   }
   slider.addEventListener('input', update);

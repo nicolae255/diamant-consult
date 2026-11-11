@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-11",
+  "read_min": 6,
+  "image": "img/banque/calculatrice-budget.webp",
+  "sources": [
+    {
+      "name": "Business AM · Près de deux Belges sur trois font appel à une agence immobilière (enquête Immoweb, 11/07/2025)",
+      "url": "https://fr.businessam.be/?p=168290"
+    },
+    {
+      "name": "notaire.be · Checklist des documents à prévoir pour le vendeur",
+      "url": "https://www.notaire.be/immobilier/comment-acheter-ou-vendre-un-bien/checklist-des-documents-a-prevoir-pour-le-vendeur"
+    },
+    {
+      "name": "Bruxelles Environnement · Demander une attestation du sol",
+      "url": "https://environnement.brussels/citoyen/services-et-demandes/demande-de-permis-denvironnement/demander-une-attestation-du-sol"
+    },
+    {
+      "name": "notaire.be · Droits d'enregistrement, réduction et abattement à Bruxelles",
+      "url": "https://www.notaire.be/immobilier/acheter-et-vendre-un-bien-immobilier/les-frais-lies-lachat/droits-denregistrement-reduction-et-abattement-bruxelles"
+    },
+    {
+      "name": "notaire.be · Brochure « Je vends mon bien » (2025)",
+      "url": "https://www.notaire.be/sites/default/files/files/2025-07/Brochure-Je-vends-2025-LD.pdf"
+    },
+    {
+      "name": "notaire.be · Taxes sur les plus-values immobilières",
+      "url": "https://www.notaire.be/immobilier/aspects-fiscaux-de-lachat-la-vente-dun-bien/taxes-sur-les-plus-values-immobilieres-1"
+    }
+  ],
+  "fr": {
+    "slug": "combien-coute-agence-immobiliere-bruxelles",
+    "seo_title": "Combien coûte une agence immobilière à Bruxelles ? Frais de vente 2026 · Diamant Consult",
+    "description": "Commission moyenne de 2,4 % à Bruxelles et 3,1 % en Belgique (Immoweb), PEB, attestation du sol à 48 €, plus-value : tous les frais du vendeur, avec simulateur.",
+    "h1": "Combien coûte une agence immobilière à Bruxelles ?<br><span style=\"color: var(--mute);\">Tous les frais du vendeur.</span>",
+    "hero_sub": "Commission, documents obligatoires, frais de notaire et plus-value : ce que coûte vraiment une vente à Bruxelles, chiffres sourcés et simulateur à l'appui.",
+    "breadcrumb": "Frais de vente à Bruxelles",
+    "category": "Frais de vente",
+    "image_alt": "Calculatrice et budget, frais de vente d'un bien à Bruxelles",
+    "card_title": "Combien coûte une agence immobilière à Bruxelles ?",
+    "card_excerpt": "Commission moyenne, documents à payer, frais de notaire et plus-value : le coût réel d'une vente, avec simulateur.",
+    "summary": [
+      "Il n'y a pas de tarif légal : la commission moyenne est de 2,4 % à Bruxelles et de 3,1 % en Belgique (enquête Immoweb 2025), TVA de 21 % en sus.",
+      "Diamant Consult vend votre bien pour 2 % HTVA du prix, tout compris, payable uniquement en cas de vente.",
+      "Le vendeur paie les documents obligatoires : PEB, contrôle électrique, attestation du sol (48 € par parcelle), renseignements urbanistiques.",
+      "Les droits d'enregistrement (12,5 % à Bruxelles) et les frais de l'acte d'achat sont réglés par l'acheteur.",
+      "Pas d'impôt sur la plus-value pour votre habitation ; 16,5 % pour un autre bien bâti revendu en moins de 5 ans."
+    ],
+    "faq": [
+      {
+        "q": "Combien coûte une agence immobilière à Bruxelles ?",
+        "a": "Le tarif est libre. Selon l'enquête Immoweb 2025, la commission moyenne est de 2,4 % du prix de vente à Bruxelles et de 3,1 % en Belgique, hors TVA. Chez Diamant Consult, elle est de 2 % HTVA, tout compris."
+      },
+      {
+        "q": "La commission de l'agence est-elle TVA comprise ?",
+        "a": "Le plus souvent non : les pourcentages annoncés s'entendent hors TVA, et la TVA de 21 % s'ajoute. Sur une commission de 8 000 € HTVA, vous payez donc 9 680 € TVAC."
+      },
+      {
+        "q": "Quels documents le vendeur doit-il payer à Bruxelles ?",
+        "a": "Le certificat PEB, le contrôle de l'installation électrique, l'attestation du sol de Bruxelles Environnement (48 € par parcelle cadastrale), les renseignements urbanistiques et, pour un appartement, les documents de la copropriété."
+      },
+      {
+        "q": "Le vendeur paie-t-il les frais de notaire ?",
+        "a": "Pour une vente de gré à gré, les droits d'enregistrement et les frais de l'acte d'achat sont réglés par l'acheteur. Le vendeur paie certains frais, comme la mainlevée de l'hypothèque s'il reste un crédit sur le bien."
+      },
+      {
+        "q": "Paie-t-on un impôt sur la plus-value en vendant sa maison ?",
+        "a": "Non pour la maison que vous occupez comme logement familial. Pour un autre bien bâti revendu moins de 5 ans après l'achat, la plus-value est taxée à 16,5 %."
+      }
+    ],
+    "body": "_tools/articles/combien-coute-agence-immobiliere-bruxelles.fr.html"
+  },
+  "en": {
+    "slug": "estate-agent-fees-brussels",
+    "seo_title": "Estate agent fees in Brussels: what does selling cost in 2026? · Diamant Consult",
+    "description": "Average commission of 2.4% in Brussels and 3.1% in Belgium (Immoweb), EPC, €48 soil certificate, capital gains: every seller cost explained, with a calculator.",
+    "h1": "Estate agent fees in Brussels:<br><span style=\"color: var(--mute);\">every cost for the seller.</span>",
+    "hero_sub": "Commission, mandatory documents, notary fees and capital gains tax: what selling in Brussels really costs, with sourced figures and a calculator.",
+    "breadcrumb": "Selling costs in Brussels",
+    "category": "Selling costs",
+    "image_alt": "Calculator and budget, costs of selling a property in Brussels",
+    "card_title": "Estate agent fees in Brussels: what does selling cost?",
+    "card_excerpt": "Average commission, documents to pay for, notary fees and capital gains: the real cost of a sale, with a calculator.",
+    "summary": [
+      "There is no legal rate: the average commission is 2.4% in Brussels and 3.1% in Belgium (Immoweb 2025 survey), plus 21% VAT.",
+      "Diamant Consult sells your property for 2% of the price excl. VAT, all inclusive, payable only if it sells.",
+      "The seller pays for the mandatory documents: EPC, electrical inspection, soil certificate (€48 per parcel), urban planning information.",
+      "Registration duties (12.5% in Brussels) and the purchase deed costs are paid by the buyer.",
+      "No capital gains tax on your own home; 16.5% on another built property resold within 5 years."
+    ],
+    "faq": [
+      {
+        "q": "How much does an estate agent charge in Brussels?",
+        "a": "Fees are free to set. According to Immoweb's 2025 survey, the average commission is 2.4% of the sale price in Brussels and 3.1% in Belgium, excluding VAT. At Diamant Consult it is 2% excl. VAT, all inclusive."
+      },
+      {
+        "q": "Does the agency commission include VAT?",
+        "a": "Usually not: quoted percentages exclude VAT, and 21% VAT is added. On a commission of €8,000 excl. VAT you therefore pay €9,680 incl. VAT."
+      },
+      {
+        "q": "Which documents does the seller pay for in Brussels?",
+        "a": "The EPC certificate, the electrical inspection, the Brussels Environment soil certificate (€48 per cadastral parcel), urban planning information and, for an apartment, the co-ownership documents."
+      },
+      {
+        "q": "Does the seller pay the notary fees?",
+        "a": "In a private sale, registration duties and the purchase deed costs are paid by the buyer. The seller pays some costs, such as releasing the mortgage if a loan is still secured on the property."
+      },
+      {
+        "q": "Do you pay capital gains tax when selling your home?",
+        "a": "Not on the house you live in as your family home. For another built property resold less than 5 years after purchase, the gain is taxed at 16.5%."
+      }
+    ],
+    "body": "_tools/articles/combien-coute-agence-immobiliere-bruxelles.en.html"
+  },
+  "nl": {
+    "slug": "kosten-makelaar-brussel",
+    "seo_title": "Wat kost een vastgoedmakelaar in Brussel? Verkoopkosten 2026 · Diamant Consult",
+    "description": "Gemiddelde commissie van 2,4 % in Brussel en 3,1 % in België (Immoweb), EPB, bodemattest van € 48, meerwaarde: alle kosten van de verkoper, met rekenhulp.",
+    "h1": "Wat kost een vastgoedmakelaar in Brussel?<br><span style=\"color: var(--mute);\">Alle kosten van de verkoper.</span>",
+    "hero_sub": "Commissie, verplichte documenten, notariskosten en meerwaardebelasting: wat een verkoop in Brussel echt kost, met bronnen en een rekenhulp.",
+    "breadcrumb": "Verkoopkosten in Brussel",
+    "category": "Verkoopkosten",
+    "image_alt": "Rekenmachine en budget, kosten van een woningverkoop in Brussel",
+    "card_title": "Wat kost een vastgoedmakelaar in Brussel?",
+    "card_excerpt": "Gemiddelde commissie, te betalen documenten, notariskosten en meerwaarde: de echte kost van een verkoop, met rekenhulp.",
+    "summary": [
+      "Er is geen wettelijk tarief: de gemiddelde commissie bedraagt 2,4 % in Brussel en 3,1 % in België (enquête Immoweb 2025), plus 21 % btw.",
+      "Diamant Consult verkoopt uw woning voor 2 % van de prijs excl. btw, alles inbegrepen, alleen te betalen bij verkoop.",
+      "De verkoper betaalt de verplichte documenten: EPB, elektrische keuring, bodemattest (€ 48 per perceel), stedenbouwkundige inlichtingen.",
+      "De registratierechten (12,5 % in Brussel) en de kosten van de aankoopakte zijn voor de koper.",
+      "Geen meerwaardebelasting op uw eigen woning; 16,5 % op een ander bebouwd goed dat binnen 5 jaar wordt verkocht."
+    ],
+    "faq": [
+      {
+        "q": "Hoeveel vraagt een vastgoedmakelaar in Brussel?",
+        "a": "Het tarief is vrij. Volgens de Immoweb-enquête van 2025 bedraagt de gemiddelde commissie 2,4 % van de verkoopprijs in Brussel en 3,1 % in België, exclusief btw. Bij Diamant Consult is dat 2 % excl. btw, alles inbegrepen."
+      },
+      {
+        "q": "Is de commissie van het kantoor inclusief btw?",
+        "a": "Meestal niet: de vermelde percentages zijn exclusief btw, en daar komt 21 % btw bij. Op een commissie van € 8.000 excl. btw betaalt u dus € 9.680 incl. btw."
+      },
+      {
+        "q": "Welke documenten betaalt de verkoper in Brussel?",
+        "a": "Het EPB-certificaat, de keuring van de elektrische installatie, het bodemattest van Leefmilieu Brussel (€ 48 per kadastraal perceel), de stedenbouwkundige inlichtingen en, voor een appartement, de documenten van de mede-eigendom."
+      },
+      {
+        "q": "Betaalt de verkoper de notariskosten?",
+        "a": "Bij een onderhandse verkoop betaalt de koper de registratierechten en de kosten van de aankoopakte. De verkoper betaalt enkele kosten, zoals de doorhaling van de hypotheek als er nog een lening op de woning rust."
+      },
+      {
+        "q": "Betaalt u meerwaardebelasting bij de verkoop van uw woning?",
+        "a": "Niet voor de woning die u als gezinswoning bewoont. Voor een ander bebouwd goed dat minder dan 5 jaar na de aankoop wordt verkocht, wordt de meerwaarde belast tegen 16,5 %."
+      }
+    ],
+    "body": "_tools/articles/combien-coute-agence-immobiliere-bruxelles.nl.html"
+  }
+}

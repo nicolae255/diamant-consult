@@ -105,7 +105,7 @@ def main():
         s = re.sub(r'<a href="contact/" class="btn-primary">(\s*)' + re.escape(t["cta"]),
                    rf'<a href="#demande" class="btn-primary">\1{t["cta"]}', s, count=1)
         if "/hero-lead.js" not in s:
-            s = s.replace('<script src="/chatbot.js', '<script src="/hero-lead.js?v=2" defer></script>\n<script src="/chatbot.js', 1)
+            s = s.replace('<script src="/chatbot.js', '<script src="/hero-lead.js?v=3" defer></script>\n<script src="/chatbot.js', 1)
         open(p, "w", encoding="utf-8").write(s)
         print("updated", t["file"])
 
