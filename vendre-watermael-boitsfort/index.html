@@ -3,6 +3,10 @@
 <head>
 <script>if(/\/index\.html$/.test(location.pathname))history.replaceState(null,"",location.pathname.replace(/index\.html$/,"")+location.search+location.hash);</script>
 
+<!-- Consent Mode v2: nothing is stored before the visitor accepts -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied",wait_for_update:500});
+try{if(localStorage.getItem("dc_cookie_consent")==="accepted")gtag("consent","update",{ad_storage:"granted",ad_user_data:"granted",ad_personalization:"granted",analytics_storage:"granted"});}catch(e){}</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
 new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
@@ -24,7 +28,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="icon" href="/favicon.ico" sizes="48x48" /><link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png" /><link rel="apple-touch-icon" sizes="180x180" href="../favicon-180.png" />
-<link rel="stylesheet" href="../styles.css?v=8" />
+<link rel="stylesheet" href="../styles.css?v=12" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="fr_BE" />
 <meta property="og:title" content="Vendre maison ou appartement à Watermael-Boitsfort | 2% HTVA" />
@@ -369,27 +373,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   burger.addEventListener("click", () => nav.classList.toggle("open"));
   document.querySelectorAll(".nav-menu a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); }));
 </script>
-<div id="cookie-banner" style="display:none;">
-  <p><strong>Cookies :</strong> Ce site utilise uniquement des cookies essentiels au fonctionnement. Aucun cookie de tracking tiers sans votre accord.</p>
-  <div class="cookie-actions">
-    <button class="cookie-btn cookie-btn-accept" onclick="cookieConsent(true)">Accepter</button>
-    <button class="cookie-btn cookie-btn-decline" onclick="cookieConsent(false)">Refuser</button>
-  </div>
-</div>
-<script>
-(function(){
-  if(!localStorage.getItem("dc_cookie_consent")){
-    document.getElementById("cookie-banner").style.display="flex";
-  }
-})();
-function cookieConsent(v){
-  localStorage.setItem("dc_cookie_consent", v ? "accepted" : "declined");
-  var b=document.getElementById("cookie-banner");
-  b.style.opacity="0";
-  b.style.transition="opacity 0.3s";
-  setTimeout(function(){b.style.display="none";},300);
-}
-</script>
-<script src="/chatbot.js?v=3" defer></script>
+<script src="/chatbot.js?v=4" defer></script>
+<script src="/consent.js?v=1" defer></script>
 </body>
 </html>
