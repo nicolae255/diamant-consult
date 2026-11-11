@@ -108,7 +108,7 @@ def article_groups():
     """Language groups of articles built with new_article.py (multilingual specs)."""
     import json, glob
     out = []
-    for fn in sorted(glob.glob(os.path.join(ROOT, "_tools", "articles", "*.json"))):
+    for fn in sorted(glob.glob(os.path.join(ROOT, "_tools", "articles", "*.json")) + glob.glob(os.path.join(ROOT, "_tools", "communes", "*.json"))):
         spec = json.load(open(fn, encoding="utf-8"))
         if "fr" in spec:
             out.append(tuple(
