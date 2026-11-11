@@ -1,11 +1,12 @@
 /* Diamant Consult Immobilier — chat assistant (scripted, no AI).
-   Flow: e-mail -> topic -> message -> sent by e-mail (FormSubmit, same inbox as the contact forms).
+   Flow: e-mail -> topic -> message -> sent by e-mail (Web3Forms, same inbox as the contact forms).
    Contact is by e-mail only: never add a phone number here. Language follows <html lang>. */
 (function () {
   'use strict';
   if (window.__dcChat) return; window.__dcChat = true;
 
-  var ENDPOINT = 'https://formsubmit.co/ajax/nicolascojocari@yahoo.fr';
+  var ENDPOINT = 'https://api.web3forms.com/submit';
+  var KEY = 'ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9';
   var lang = (document.documentElement.lang || 'fr').slice(0, 2);
   var T = {
     fr: { teaser: 'Une question sur la vente de votre bien ?', open: 'Ouvrir le chat', close: 'Fermer le chat',
@@ -172,9 +173,9 @@
     function send(m) {
       return fetch(ENDPOINT, {
         method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify({ _subject: T.subject + (topic || 'demande'), _template: 'table', email: email, sujet: topic || '-', message: m, page: location.href, langue: lang })
-      }).then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
-        .then(function (j) { if (j && (j.success === false || j.success === 'false')) throw new Error('fail'); });
+        body: JSON.stringify({ access_key: KEY, subject: T.subject + (topic || 'demande'), from_name: 'Chat diamantconsult.com', email: email, sujet: topic || '-', message: m, page: location.href, langue: lang, botcheck: '' })
+      }).then(function (r) { return r.json(); })
+        .then(function (j) { if (!j || j.success !== true) throw new Error((j && j.message) || 'fail'); });
     }
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

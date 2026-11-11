@@ -5,7 +5,7 @@ Usage:  python3 _tools/new_commune.py _tools/communes/<fr-slug>.json
 
 Pages: FR /<fr-slug>/, NL /nl/<nl-slug>/, EN /en/<en-slug>/. The page shell (head, header, footer,
 language buttons) comes from _tools/article_template_<lang>.html; the content sections are built here.
-Contact is by e-mail request only (FormSubmit, like the contact page): no phone number on these pages.
+Contact is by e-mail request only (Web3Forms, like the contact page): no phone number on these pages.
 Only sourced figures (Statbel) in "stats"; photos need their credit (author, licence, link).
 After building, seo.py links the three versions (hreflang) and updates sitemap + llms.txt.
 """
@@ -13,7 +13,8 @@ import html, json, os, re, subprocess, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://www.diamantconsult.com"
-FORM_ACTION = "https://formsubmit.co/nicolascojocari@yahoo.fr"
+FORM_ACTION = "https://api.web3forms.com/submit"
+FORM_KEY = "ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9"
 PREFIX = {"fr": "", "en": "en/", "nl": "nl/"}
 BTN = {"fr": 0, "nl": 1, "en": 2}
 esc = lambda s: html.escape(s, quote=True)
@@ -135,12 +136,12 @@ def build(spec, lang):
     form = f'''<form class="cm-form" id="demande" action="{FORM_ACTION}" method="POST">
         <h2>{esc_nb(b["form_title"])}</h2>
         <p class="cm-thanks" id="cm-thanks" hidden>{esc(t["thanks"])}</p>
-        <input type="hidden" name="_subject" value="{esc(t["mail_subject"])} · {esc(name)}">
-        <input type="hidden" name="_next" value="{url}?merci=1#demande">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="access_key" value="{FORM_KEY}">
+        <input type="hidden" name="subject" value="{esc(t["mail_subject"])} · {esc(name)}">
+        <input type="hidden" name="from_name" value="Site Diamant Consult">
+        <input type="hidden" name="redirect" value="{url}?merci=1#demande">
         <input type="hidden" name="commune" value="{esc(name)}">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <fieldset class="cm-radios"><legend>{t["type_label"]}</legend>
           <label><input type="radio" name="type" value="{t["house"]}" checked> {t["house"]}</label>
           <label><input type="radio" name="type" value="{t["apt"]}"> {t["apt"]}</label>

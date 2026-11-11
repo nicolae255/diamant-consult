@@ -259,15 +259,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="cm-lead">Maison ou appartement : un premier rendez-vous gratuit pour faire le point, puis une vente de A à Z pour <strong>2&nbsp;% HTVA, tout compris</strong>. Vous ne payez qu'en cas de vente.</p>
         <ul class="cm-checks"><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Prix de mise en vente fixé à partir des ventes comparables du quartier</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Photos, Immoweb, visites, offres, négociation et suivi jusqu&#x27;à l&#x27;acte</span></li><li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>En collaboration directe avec le notaire Stephan Borremans</span></li></ul>
       </div>
-      <form class="cm-form" id="demande" action="https://formsubmit.co/nicolascojocari@yahoo.fr" method="POST">
+      <form class="cm-form" id="demande" action="https://api.web3forms.com/submit" method="POST">
         <h2>Parlons de votre vente</h2>
         <p class="cm-thanks" id="cm-thanks" hidden>Merci, votre demande est bien envoyée. Nous vous répondons par e-mail.</p>
-        <input type="hidden" name="_subject" value="Demande — page commune · Woluwe-Saint-Pierre">
-        <input type="hidden" name="_next" value="https://www.diamantconsult.com/vendre-woluwe-saint-pierre/?merci=1#demande">
-        <input type="hidden" name="_captcha" value="true">
-        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="access_key" value="ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9">
+        <input type="hidden" name="subject" value="Demande — page commune · Woluwe-Saint-Pierre">
+        <input type="hidden" name="from_name" value="Site Diamant Consult">
+        <input type="hidden" name="redirect" value="https://www.diamantconsult.com/vendre-woluwe-saint-pierre/?merci=1#demande">
         <input type="hidden" name="commune" value="Woluwe-Saint-Pierre">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <fieldset class="cm-radios"><legend>Type de bien</legend>
           <label><input type="radio" name="type" value="Maison" checked> Maison</label>
           <label><input type="radio" name="type" value="Appartement"> Appartement</label>

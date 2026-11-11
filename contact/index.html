@@ -103,14 +103,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p style="color:var(--ink-2);">Nous vous contacterons dans les plus brefs délais.</p>
         </div>
 
-        <form action="https://formsubmit.co/nicolascojocari@yahoo.fr" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
 
-          <!-- Formsubmit config -->
-          <input type="hidden" name="_subject" value="Nouveau message — Diamant Consult" />
-          <input type="hidden" name="_next" value="https://www.diamantconsult.com/contact/?merci=1" />
-          <input type="hidden" name="_captcha" value="true" />
+          <!-- Web3Forms config -->
+          <input type="hidden" name="access_key" value="ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9" />
+          <input type="hidden" name="subject" value="Nouveau message — Diamant Consult" />
+          <input type="hidden" name="from_name" value="Site Diamant Consult" />
+          <input type="hidden" name="redirect" value="https://www.diamantconsult.com/contact/?merci=1" />
           <!-- Honeypot anti-spam -->
-          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="field-row">
             <div class="field">
