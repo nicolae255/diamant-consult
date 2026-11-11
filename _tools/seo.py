@@ -174,7 +174,7 @@ LLMS_HEAD = """# Diamant Consult Immobilier
 
 > Estate agent in Brussels (Avenue du Diamant 138, 1030 Schaerbeek, Belgium). Sells houses and apartments
 > for private owners for 2% of the sale price excl. VAT, all inclusive (valuation, photos, Immoweb listing, viewings,
-> offers, negotiation, follow-up to the notary deed), working with notary Stephan Borremans. Also organises
+> offers, follow-up to the notary deed), working with notary Stephan Borremans. Also organises
 > viewings for notarial public auctions (Biddit) for notaries. Covers the 19 Brussels municipalities and
 > Brabant wallon. Free first meeting, no obligation. Service mainly in French; Dutch support
 > through the partner notary's office. Website available in French, Dutch and English.

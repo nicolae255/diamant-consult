@@ -200,9 +200,9 @@ def build_spec(k, data, base):
         b["seo_title"] = {"fr": f"Vendre maison ou appartement à {title_x} | 2% HTVA",
                           "en": f"Sell your house or apartment in {title_x} | 2% excl. VAT",
                           "nl": f"Huis of appartement verkopen in {title_x} | 2% excl. btw"}[l]
-        b["description"] = {"fr": f"Vendez votre maison ou appartement à {X} : 2% HTVA tout compris, premier rendez-vous gratuit, visites et négociation jusqu'à l'acte.",
-                            "en": f"Sell your house or apartment in {X}: 2% excl. VAT, all-in, free first meeting, viewings and negotiation through to the notary deed.",
-                            "nl": f"Verkoop uw huis of appartement in {X}: 2% excl. btw, alles inbegrepen, gratis eerste afspraak, bezoeken en onderhandeling tot aan de akte."}[l]
+        b["description"] = {"fr": f"Vendez votre maison ou appartement à {X} : 2% HTVA tout compris, premier rendez-vous gratuit, visites et suivi jusqu'à l'acte.",
+                            "en": f"Sell your house or apartment in {X}: 2% excl. VAT, all-in, free first meeting, viewings and follow-up through to the notary deed.",
+                            "nl": f"Verkoop uw huis of appartement in {X}: 2% excl. btw, alles inbegrepen, gratis eerste afspraak, bezoeken en opvolging tot aan de akte."}[l]
         b["h1"] = {"fr": f"Vendre votre bien à {X}.", "en": f"Sell your property in {X}.", "nl": f"Uw woning verkopen in {X}."}[l]
         b["house_h2"] = {"fr": f"Vendre votre maison à {X}", "en": f"Selling your house in {X}", "nl": f"Uw huis verkopen in {X}"}[l]
         b["apt_h2"] = {"fr": f"Vendre votre appartement à {X}", "en": f"Selling your apartment in {X}", "nl": f"Uw appartement verkopen in {X}"}[l]

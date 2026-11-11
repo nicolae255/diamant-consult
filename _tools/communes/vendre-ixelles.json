@@ -71,12 +71,12 @@
   "slug": "vendre-ixelles",
   "commune": "Ixelles",
   "seo_title": "Vendre maison ou appartement à Ixelles | 2% HTVA",
-  "description": "Vendez votre maison ou appartement à Ixelles : 2% HTVA tout compris, premier rendez-vous gratuit, visites et négociation jusqu'à l'acte.",
+  "description": "Vendez votre maison ou appartement à Ixelles : 2% HTVA tout compris, premier rendez-vous gratuit, visites et suivi jusqu'à l'acte.",
   "h1": "Vendre votre bien à Ixelles.",
   "hero_sub": "Maison ou appartement : un premier rendez-vous gratuit pour faire le point, puis une vente de A à Z pour <strong>2&nbsp;% HTVA, tout compris</strong>. Vous ne payez qu'en cas de vente.",
   "checks": [
    "Prix de mise en vente fixé à partir des ventes comparables du quartier",
-   "Photos, Immoweb, visites, offres, négociation et suivi jusqu'à l'acte",
+   "Photos, Immoweb, visites, offres et suivi jusqu'à l'acte",
    "En collaboration directe avec le notaire Stephan Borremans"
   ],
   "form_title": "Parlons de votre vente",
@@ -146,7 +146,7 @@
     "Sur 2 à 3 week-ends, avec retour après chaque visite."
    ],
    [
-    "Offres et négociation",
+    "Réception des offres",
     "Comparaison des offres, vous décidez."
    ],
    [
@@ -233,12 +233,12 @@
   "slug": "sell-property-ixelles",
   "commune": "Ixelles",
   "seo_title": "Sell your house or apartment in Ixelles | 2% excl. VAT",
-  "description": "Sell your house or apartment in Ixelles: 2% excl. VAT, all-in, free first meeting, viewings and negotiation through to the notary deed.",
+  "description": "Sell your house or apartment in Ixelles: 2% excl. VAT, all-in, free first meeting, viewings and follow-up through to the notary deed.",
   "h1": "Sell your property in Ixelles.",
   "hero_sub": "House or apartment: a free first meeting to take stock, then a complete sale for <strong>2%&nbsp;excl.&nbsp;VAT, all-in</strong>. You only pay if your property sells.",
   "checks": [
    "Asking price set from comparable sales in the neighbourhood",
-   "Photos, Immoweb, viewings, offers, negotiation and follow-up to the deed",
+   "Photos, Immoweb, viewings, offers and follow-up to the deed",
    "Working directly with notary Stephan Borremans"
   ],
   "form_title": "Let's talk about your sale",
@@ -308,7 +308,7 @@
     "Over 2 to 3 weekends, with feedback after each viewing."
    ],
    [
-    "Offers and negotiation",
+    "Receiving offers",
     "We compare the offers, you decide."
    ],
    [
@@ -395,12 +395,12 @@
   "slug": "verkopen-elsene",
   "commune": "Elsene",
   "seo_title": "Huis of appartement verkopen in Elsene | 2% excl. btw",
-  "description": "Verkoop uw huis of appartement in Elsene: 2% excl. btw, alles inbegrepen, gratis eerste afspraak, bezoeken en onderhandeling tot aan de akte.",
+  "description": "Verkoop uw huis of appartement in Elsene: 2% excl. btw, alles inbegrepen, gratis eerste afspraak, bezoeken en opvolging tot aan de akte.",
   "h1": "Uw woning verkopen in Elsene.",
   "hero_sub": "Huis of appartement: een gratis eerste afspraak om de situatie te bekijken, daarna een volledige verkoop voor <strong>2%&nbsp;excl.&nbsp;btw, alles inbegrepen</strong>. U betaalt alleen als uw woning verkocht wordt.",
   "checks": [
    "Vraagprijs bepaald op basis van vergelijkbare verkopen in de wijk",
-   "Foto's, Immoweb, bezoeken, biedingen, onderhandeling en opvolging tot aan de akte",
+   "Foto's, Immoweb, bezoeken, biedingen en opvolging tot aan de akte",
    "In rechtstreekse samenwerking met notaris Stephan Borremans"
   ],
   "form_title": "Laten we het over uw verkoop hebben",
@@ -470,7 +470,7 @@
     "Over 2 à 3 weekends, met feedback na elk bezoek."
    ],
    [
-    "Biedingen en onderhandeling",
+    "Ontvangst van biedingen",
     "We vergelijken de biedingen, u beslist."
    ],
    [
