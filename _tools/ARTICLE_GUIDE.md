@@ -103,22 +103,32 @@ In `_tools/articles/`, named after the **French slug**:
   - h1, hero_sub, breadcrumb, image_alt, card_title, card_excerpt, summary (3-5), faq (3-5),
     body (path to that language's fragment)
   The builder refuses to build if summary, faq or sources are missing or have the wrong count.
-- image: reuse one that fits: `img/brussels-old-city.webp`, `img/delai-vente-cles.webp`, a real project photo
-  from `img/projets/*.webp` (only when the commune matches, and describe it neutrally), or a Pexels URL already
-  used on the site (`grep -rho 'images.pexels.com/photos/[0-9]*/[^"]*' --include='*.html' .`). Never hotlink other sites.
+- image: every article gets its OWN banner from the image bank (`img/banque/`, catalogue in
+  `img/banque/catalogue.json`). Run `python3 _tools/images.py free` to list the unused photos with their tags and
+  pick the one that fits the topic best; put its `file` (e.g. `"img/banque/signature-stylo.webp"`) in `image`. Use the
+  catalogue's `alt` as a starting point for each language's `image_alt` (adapt it to the article). The FR, EN and NL
+  versions share the photo; two articles never do: new_article.py refuses an image already used by another article.
+  If no free photo fits (or fewer than 5 remain), add new ones: only CC0 / public-domain images (e.g. Openverse
+  `https://api.openverse.org/v1/images/?q=...&license=cc0,pdm`), Pexels or Unsplash, about 1400 px wide, saved as
+  `img/banque/<descriptive-id>.webp`, with a catalogue entry (id, file, tags, alt fr/en/nl, source, license, author,
+  source_url, used_by []). No photos of identifiable people's private homes, no foreign skylines, no black-and-white
+  archive pictures. Never hotlink other sites. `python3 _tools/images.py check` must pass before you push.
 
 ## 4. Build, check, publish
 ```
+python3 _tools/images.py free          # pick an unused banner first
 python3 _tools/new_article.py _tools/articles/<fr-slug>.json
 python3 _tools/check_links.py
+python3 _tools/images.py check
 ```
 The builder validates all three languages before writing anything, then creates `/<fr-slug>/`,
 `/en/<en-slug>/` and `/nl/<nl-slug>/`, adds the cards to the three blogs and three homepages (keeps 3 there),
 links the versions together (hreflang + language buttons), updates the sitemap and `llms.txt`.
 Then check:
 - `check_links.py` prints "all internal links OK" (fix any broken link and rebuild)
+- `images.py check` prints "image bank OK" (every banner unique)
 - `git status` only shows: the three new article folders, `blog/index.html`, `en/blog/index.html`,
-  `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, `llms.txt`, and files in `_tools/articles/`
+  `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, `llms.txt`, `img/banque/catalogue.json` (and any new `img/banque/*.webp`), and files in `_tools/articles/`
 Append a line to `_tools/articles/LOG.md`:
 `- YYYY-MM-DD · /<fr-slug>/ · /en/<en-slug>/ · /nl/<nl-slug>/ · <type> · <commune or theme> · <main source>`
 Commit (`Article: <French title>`) and push to `main`. GitHub Pages deploys automatically.

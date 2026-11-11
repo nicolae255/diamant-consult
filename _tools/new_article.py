@@ -7,7 +7,7 @@ Spec format (see _tools/ARTICLE_GUIDE.md and the existing specs in _tools/articl
 {
   "date": "2026-11-12",            # ISO publish date (shared)
   "read_min": 6,                   # shared
-  "image": "img/xxx.webp" or "https://images.pexels.com/...",   # shared
+  "image": "img/banque/xxx.webp",  # shared; must come from the image bank and be unused (python3 _tools/images.py free)
   "sources": [{"name": "notaire.be: baromètre T3 2026", "url": "https://..."}],  # shared, every source used
   "fr": { ...language block... },
   "en": { ...language block... },
@@ -33,6 +33,8 @@ language's blog and homepage (keeping 3 there). Then seo.py links the three vers
 and rebuilds the sitemap. Nothing is written if any language fails validation.
 """
 import json, os, re, sys, html, subprocess
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import images
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://www.diamantconsult.com"
@@ -197,6 +199,7 @@ def add_cards(spec, lang):
 def main(path):
     spec = normalize(json.load(open(path, encoding="utf-8")))
     langs = [l for l in ("fr", "en", "nl") if l in spec]
+    images.check_new(spec["image"], f"{BASE}/{spec['fr']['slug']}/")   # one banner per article, from the bank
     pages = {l: render(spec, l) for l in langs}          # validate everything before writing
     for l in langs:
         d = os.path.join(ROOT, LANG[l]["prefix"], spec[l]["slug"])
@@ -208,6 +211,8 @@ def main(path):
     subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "seo.py")], check=True,
                    stdout=subprocess.DEVNULL)
     print("  hreflang + sitemap updated")
+    subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "images.py"), "sync"], check=True)
+    subprocess.run([sys.executable, os.path.join(ROOT, "_tools", "images.py"), "check"], check=True)
 
 
 if __name__ == "__main__":

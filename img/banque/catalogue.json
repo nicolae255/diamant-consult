@@ -1,0 +1,780 @@
+[
+ {
+  "id": "cles-porte",
+  "file": "img/banque/cles-porte.webp",
+  "tags": [
+   "clés",
+   "vente",
+   "remise des clés"
+  ],
+  "alt": {
+   "fr": "Clés dans la serrure d'une porte d'entrée",
+   "en": "Keys in a front door lock",
+   "nl": "Sleutels in het slot van een voordeur"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "WDnet Studio",
+  "source_url": "https://stocksnap.io/photo/keys-door-Z1TKDI29FZ",
+  "used_by": []
+ },
+ {
+  "id": "immeuble-brique",
+  "file": "img/banque/immeuble-brique.webp",
+  "tags": [
+   "immeuble",
+   "appartement",
+   "façade"
+  ],
+  "alt": {
+   "fr": "Façade d'un immeuble en brique",
+   "en": "Brick apartment building facade",
+   "nl": "Gevel van een bakstenen appartementsgebouw"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Mike Moloney",
+  "source_url": "https://stocksnap.io/photo/brick-building-CNR0WYMVJX",
+  "used_by": []
+ },
+ {
+  "id": "immeubles-colores",
+  "file": "img/banque/immeubles-colores.webp",
+  "tags": [
+   "immeuble",
+   "rue",
+   "façade"
+  ],
+  "alt": {
+   "fr": "Rangée d'immeubles colorés",
+   "en": "Row of colourful buildings",
+   "nl": "Rij kleurrijke gebouwen"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Mike Moloney",
+  "source_url": "https://stocksnap.io/photo/city-buildings-Z8N7LM9LI4",
+  "used_by": []
+ },
+ {
+  "id": "immeuble-balcons",
+  "file": "img/banque/immeuble-balcons.webp",
+  "tags": [
+   "appartement",
+   "balcons",
+   "copropriété"
+  ],
+  "alt": {
+   "fr": "Immeuble d'appartements avec balcons",
+   "en": "Apartment building with balconies",
+   "nl": "Appartementsgebouw met balkons"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "The Building Envelope",
+  "source_url": "https://stocksnap.io/photo/building-balconies-H8SXFODO3W",
+  "used_by": []
+ },
+ {
+  "id": "immeuble-moderne",
+  "file": "img/banque/immeuble-moderne.webp",
+  "tags": [
+   "appartement",
+   "neuf",
+   "façade"
+  ],
+  "alt": {
+   "fr": "Petit immeuble moderne",
+   "en": "Small modern apartment building",
+   "nl": "Klein modern appartementsgebouw"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Matt Bango",
+  "source_url": "https://stocksnap.io/photo/modern-building-PK7IF2AJDW",
+  "used_by": []
+ },
+ {
+  "id": "salon-moderne",
+  "file": "img/banque/salon-moderne.webp",
+  "tags": [
+   "intérieur",
+   "salon",
+   "présentation"
+  ],
+  "alt": {
+   "fr": "Salon moderne et lumineux",
+   "en": "Bright modern living room",
+   "nl": "Lichte moderne woonkamer"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Kristin Hardwick",
+  "source_url": "https://stocksnap.io/photo/interior-design-HIH67XC5G0",
+  "used_by": []
+ },
+ {
+  "id": "salon-appartement",
+  "file": "img/banque/salon-appartement.webp",
+  "tags": [
+   "intérieur",
+   "appartement",
+   "salon"
+  ],
+  "alt": {
+   "fr": "Salon d'un appartement",
+   "en": "Apartment living room",
+   "nl": "Woonkamer van een appartement"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/6043312/photo-image-public-domain-table-living-room",
+  "used_by": []
+ },
+ {
+  "id": "salon-poele",
+  "file": "img/banque/salon-poele.webp",
+  "tags": [
+   "intérieur",
+   "maison",
+   "chauffage"
+  ],
+  "alt": {
+   "fr": "Salon avec poêle à bois",
+   "en": "Living room with a wood stove",
+   "nl": "Woonkamer met houtkachel"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5910116/image-public-domain-minimalist-wood",
+  "used_by": []
+ },
+ {
+  "id": "cuisine-blanche",
+  "file": "img/banque/cuisine-blanche.webp",
+  "tags": [
+   "intérieur",
+   "cuisine"
+  ],
+  "alt": {
+   "fr": "Cuisine blanche équipée",
+   "en": "Fitted white kitchen",
+   "nl": "Witte ingerichte keuken"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/6039071/photo-image-public-domain-minimal-wood",
+  "used_by": []
+ },
+ {
+  "id": "cuisine-comptoir",
+  "file": "img/banque/cuisine-comptoir.webp",
+  "tags": [
+   "intérieur",
+   "cuisine"
+  ],
+  "alt": {
+   "fr": "Cuisine avec comptoir",
+   "en": "Kitchen with a counter",
+   "nl": "Keuken met toog"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5906894/photo-image-public-domain-kitchen-interior",
+  "used_by": []
+ },
+ {
+  "id": "signature-stylo",
+  "file": "img/banque/signature-stylo.webp",
+  "tags": [
+   "signature",
+   "compromis",
+   "acte",
+   "notaire"
+  ],
+  "alt": {
+   "fr": "Signature d'un document au stylo",
+   "en": "Signing a document with a pen",
+   "nl": "Een document ondertekenen met een pen"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5903963/photo-image-background-public-domain-hand",
+  "used_by": []
+ },
+ {
+  "id": "signature-contrat",
+  "file": "img/banque/signature-contrat.webp",
+  "tags": [
+   "signature",
+   "contrat",
+   "notaire"
+  ],
+  "alt": {
+   "fr": "Signature d'un contrat",
+   "en": "Signing a contract",
+   "nl": "Een contract ondertekenen"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5917619/signing-contract-free-public-domain-cc0-photo",
+  "used_by": []
+ },
+ {
+  "id": "bureau-documents",
+  "file": "img/banque/bureau-documents.webp",
+  "tags": [
+   "documents",
+   "dossier",
+   "administratif"
+  ],
+  "alt": {
+   "fr": "Documents sur un bureau",
+   "en": "Documents on a desk",
+   "nl": "Documenten op een bureau"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Ch%E2u%20Th%F4ng%20Phan",
+  "source_url": "https://stocksnap.io/photo/office-work-UP9J4EZYNJ",
+  "used_by": []
+ },
+ {
+  "id": "chantier-maison",
+  "file": "img/banque/chantier-maison.webp",
+  "tags": [
+   "travaux",
+   "construction",
+   "rénovation"
+  ],
+  "alt": {
+   "fr": "Chantier devant une maison",
+   "en": "Building work outside a house",
+   "nl": "Bouwwerf voor een huis"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Michal Jarmoluk",
+  "source_url": "https://stocksnap.io/photo/construction-builder-A5Q1BUP3OF",
+  "used_by": []
+ },
+ {
+  "id": "peintre-renovation",
+  "file": "img/banque/peintre-renovation.webp",
+  "tags": [
+   "travaux",
+   "rénovation",
+   "PEB"
+  ],
+  "alt": {
+   "fr": "Peintre en rénovation",
+   "en": "Painter renovating a room",
+   "nl": "Schilder aan het renoveren"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Michal Jarmoluk",
+  "source_url": "https://stocksnap.io/photo/guy-man-Q67DPDQSC1",
+  "used_by": []
+ },
+ {
+  "id": "calculatrice-budget",
+  "file": "img/banque/calculatrice-budget.webp",
+  "tags": [
+   "budget",
+   "frais",
+   "prix",
+   "fiscalité"
+  ],
+  "alt": {
+   "fr": "Calculatrice et budget",
+   "en": "Calculator and budget",
+   "nl": "Rekenmachine en budget"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Artsy Crafty",
+  "source_url": "https://stocksnap.io/photo/bank-finance-OLL4BSGLBE",
+  "used_by": []
+ },
+ {
+  "id": "tirelire-epargne",
+  "file": "img/banque/tirelire-epargne.webp",
+  "tags": [
+   "épargne",
+   "frais",
+   "crédit"
+  ],
+  "alt": {
+   "fr": "Tirelire et calculatrice",
+   "en": "Piggy bank and calculator",
+   "nl": "Spaarvarken en rekenmachine"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5966624/piggy-bank-finance",
+  "used_by": []
+ },
+ {
+  "id": "maison-jardin",
+  "file": "img/banque/maison-jardin.webp",
+  "tags": [
+   "maison",
+   "jardin",
+   "extérieur"
+  ],
+  "alt": {
+   "fr": "Maison avec jardin fleuri",
+   "en": "House with a flowering garden",
+   "nl": "Huis met bloementuin"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5921823/photo-image-flowers-public-domain-house",
+  "used_by": []
+ },
+ {
+  "id": "bruxelles-hotel-de-ville",
+  "file": "img/banque/bruxelles-hotel-de-ville.webp",
+  "tags": [
+   "Bruxelles",
+   "Grand-Place",
+   "marché"
+  ],
+  "alt": {
+   "fr": "Hôtel de Ville de Bruxelles",
+   "en": "Brussels City Hall",
+   "nl": "Stadhuis van Brussel"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5925478/photo-image-public-domain-free-city",
+  "used_by": []
+ },
+ {
+  "id": "bruxelles-cinquantenaire",
+  "file": "img/banque/bruxelles-cinquantenaire.webp",
+  "tags": [
+   "Bruxelles",
+   "parc",
+   "Etterbeek"
+  ],
+  "alt": {
+   "fr": "Parc du Cinquantenaire à Bruxelles",
+   "en": "Cinquantenaire Park in Brussels",
+   "nl": "Jubelpark in Brussel"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/3371538/free-photo-image-arch-arched-architecture",
+  "used_by": []
+ },
+ {
+  "id": "bruxelles-hotel-de-ville-soir",
+  "file": "img/banque/bruxelles-hotel-de-ville-soir.webp",
+  "tags": [
+   "Bruxelles",
+   "Grand-Place"
+  ],
+  "alt": {
+   "fr": "Hôtel de Ville de Bruxelles au crépuscule",
+   "en": "Brussels City Hall at dusk",
+   "nl": "Stadhuis van Brussel bij schemering"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/3338655/free-photo-image-architecture-building-cc0",
+  "used_by": []
+ },
+ {
+  "id": "bruxelles-vue-aerienne",
+  "file": "img/banque/bruxelles-vue-aerienne.webp",
+  "tags": [
+   "Bruxelles",
+   "villa",
+   "jardin",
+   "vue aérienne"
+  ],
+  "alt": {
+   "fr": "Vue aérienne d'une villa avec jardin",
+   "en": "Aerial view of a villa with garden",
+   "nl": "Luchtfoto van een villa met tuin"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/3291219/free-photo-image-minecraft-aerial-view-architecture",
+  "used_by": []
+ },
+ {
+  "id": "escalier-interieur",
+  "file": "img/banque/escalier-interieur.webp",
+  "tags": [
+   "intérieur",
+   "maison",
+   "escalier"
+  ],
+  "alt": {
+   "fr": "Escalier intérieur",
+   "en": "Indoor staircase",
+   "nl": "Binnentrap"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "donterase",
+  "source_url": "https://stocksnap.io/photo/stairs-indoor-LKY3I0WD7S",
+  "used_by": []
+ },
+ {
+  "id": "facade-brique-fenetres",
+  "file": "img/banque/facade-brique-fenetres.webp",
+  "tags": [
+   "façade",
+   "maison ancienne",
+   "brique"
+  ],
+  "alt": {
+   "fr": "Façade en brique avec fenêtres",
+   "en": "Brick facade with windows",
+   "nl": "Bakstenen gevel met ramen"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Daniel von Appen",
+  "source_url": "https://stocksnap.io/photo/architecture-old-RQK1OBH514",
+  "used_by": []
+ },
+ {
+  "id": "facade-blanche-fenetres",
+  "file": "img/banque/facade-blanche-fenetres.webp",
+  "tags": [
+   "façade",
+   "maison ancienne"
+  ],
+  "alt": {
+   "fr": "Façade blanche à fenêtres anciennes",
+   "en": "White facade with old windows",
+   "nl": "Witte gevel met oude ramen"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Freestocks.org",
+  "source_url": "https://stocksnap.io/photo/house-home-OXBTPHEYTH",
+  "used_by": []
+ },
+ {
+  "id": "poignee-de-main",
+  "file": "img/banque/poignee-de-main.webp",
+  "tags": [
+   "accord",
+   "négociation",
+   "offre"
+  ],
+  "alt": {
+   "fr": "Poignée de main autour d'une table",
+   "en": "Handshake across a table",
+   "nl": "Handdruk aan tafel"
+  },
+  "source": "rawpixel",
+  "license": "CC0",
+  "author": "",
+  "source_url": "https://www.rawpixel.com/image/5926299/photo-image-public-domain-hand-person",
+  "used_by": []
+ },
+ {
+  "id": "appartements-balcons-brique",
+  "file": "img/banque/appartements-balcons-brique.webp",
+  "tags": [
+   "appartement",
+   "balcons",
+   "location"
+  ],
+  "alt": {
+   "fr": "Appartements à balcons en brique",
+   "en": "Brick apartments with balconies",
+   "nl": "Bakstenen appartementen met balkons"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Martin Vorel",
+  "source_url": "https://stocksnap.io/photo/apartments-condos-DVE0MEACPS",
+  "used_by": [
+   "/grille-loyers-bruxelles-2026/"
+  ]
+ },
+ {
+  "id": "immeubles-haussmanniens",
+  "file": "img/banque/immeubles-haussmanniens.webp",
+  "tags": [
+   "appartement",
+   "ville",
+   "façade"
+  ],
+  "alt": {
+   "fr": "Immeubles de ville à balcons",
+   "en": "City buildings with balconies",
+   "nl": "Stadsgebouwen met balkons"
+  },
+  "source": "stocksnap",
+  "license": "CC0",
+  "author": "Leeroy",
+  "source_url": "https://stocksnap.io/photo/buildings-apartments-35720CB8E0",
+  "used_by": []
+ },
+ {
+  "id": "rue-brique-brume",
+  "file": "img/banque/rue-brique-brume.webp",
+  "tags": [
+   "rue",
+   "maisons de ville",
+   "brique",
+   "Schaerbeek"
+  ],
+  "alt": {
+   "fr": "Rue de maisons en brique",
+   "en": "Street of brick terraced houses",
+   "nl": "Straat met bakstenen rijhuizen"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/14599371/",
+  "used_by": [
+   "/vendre-maison-schaerbeek/"
+  ]
+ },
+ {
+  "id": "cuisine-equipee",
+  "file": "img/banque/cuisine-equipee.webp",
+  "tags": [
+   "intérieur",
+   "cuisine",
+   "appartement"
+  ],
+  "alt": {
+   "fr": "Cuisine équipée moderne",
+   "en": "Modern fitted kitchen",
+   "nl": "Moderne ingerichte keuken"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/1643384/",
+  "used_by": [
+   "/vendre-gre-a-gre-bruxelles/"
+  ]
+ },
+ {
+  "id": "bruxelles-maison-du-roi",
+  "file": "img/banque/bruxelles-maison-du-roi.webp",
+  "tags": [
+   "Bruxelles",
+   "Grand-Place"
+  ],
+  "alt": {
+   "fr": "Hôtel de Ville de Bruxelles",
+   "en": "Brussels City Hall",
+   "nl": "Stadhuis van Brussel"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/16922919/",
+  "used_by": [
+   "/vente-publique-biddit/"
+  ]
+ },
+ {
+  "id": "butte-du-lion",
+  "file": "img/banque/butte-du-lion.webp",
+  "tags": [
+   "Brabant wallon",
+   "Waterloo",
+   "campagne"
+  ],
+  "alt": {
+   "fr": "Butte du Lion à Waterloo",
+   "en": "Lion's Mound, Waterloo",
+   "nl": "Leeuw van Waterloo"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/18935805/",
+  "used_by": [
+   "/vendre-maison-brabant-wallon/"
+  ]
+ },
+ {
+  "id": "bruxelles-maisons-guildes",
+  "file": "img/banque/bruxelles-maisons-guildes.webp",
+  "tags": [
+   "Bruxelles",
+   "façades",
+   "patrimoine"
+  ],
+  "alt": {
+   "fr": "Façades de maisons de guildes à Bruxelles",
+   "en": "Guild house facades in Brussels",
+   "nl": "Gevels van gildehuizen in Brussel"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/20169539/",
+  "used_by": [
+   "/vendre-appartement-ixelles-uccle/"
+  ]
+ },
+ {
+  "id": "maisons-rangee-soleil",
+  "file": "img/banque/maisons-rangee-soleil.webp",
+  "tags": [
+   "maisons de ville",
+   "façade",
+   "PEB"
+  ],
+  "alt": {
+   "fr": "Rangée de maisons au soleil couchant",
+   "en": "Row of houses at sunset",
+   "nl": "Rij huizen bij zonsondergang"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/27081639/",
+  "used_by": [
+   "/certificat-peb-vente-immobiliere/"
+  ]
+ },
+ {
+  "id": "bruxelles-grand-place-foule",
+  "file": "img/banque/bruxelles-grand-place-foule.webp",
+  "tags": [
+   "Bruxelles",
+   "Grand-Place"
+  ],
+  "alt": {
+   "fr": "Grand-Place de Bruxelles",
+   "en": "Brussels Grand-Place",
+   "nl": "Grote Markt van Brussel"
+  },
+  "source": "Pexels",
+  "license": "Pexels License",
+  "author": "",
+  "source_url": "https://www.pexels.com/photo/28847023/",
+  "used_by": []
+ },
+ {
+  "id": "maquette-maison-cles",
+  "file": "img/banque/maquette-maison-cles.webp",
+  "tags": [
+   "vente",
+   "clés",
+   "maison"
+  ],
+  "alt": {
+   "fr": "Maquette de maison et clés",
+   "en": "House model and keys",
+   "nl": "Huismodel en sleutels"
+  },
+  "source": "Unsplash",
+  "license": "Unsplash License",
+  "author": "",
+  "source_url": "https://unsplash.com/photos/1560518883-ce09059eeffa",
+  "used_by": [
+   "/vendre-maison-bruxelles-2026/"
+  ]
+ },
+ {
+  "id": "immeuble-contemporain",
+  "file": "img/banque/immeuble-contemporain.webp",
+  "tags": [
+   "immeuble",
+   "neuf",
+   "architecture"
+  ],
+  "alt": {
+   "fr": "Immeuble contemporain",
+   "en": "Contemporary apartment building",
+   "nl": "Hedendaags appartementsgebouw"
+  },
+  "source": "Unsplash",
+  "license": "Unsplash License",
+  "author": "",
+  "source_url": "https://unsplash.com/photos/1515263487990-61b07816b324",
+  "used_by": []
+ },
+ {
+  "id": "maison-contemporaine",
+  "file": "img/banque/maison-contemporaine.webp",
+  "tags": [
+   "maison",
+   "neuf",
+   "architecture"
+  ],
+  "alt": {
+   "fr": "Maison contemporaine",
+   "en": "Contemporary house",
+   "nl": "Hedendaagse woning"
+  },
+  "source": "Unsplash",
+  "license": "Unsplash License",
+  "author": "",
+  "source_url": "https://unsplash.com/photos/1600566753190-17f0baa2a6c3",
+  "used_by": []
+ },
+ {
+  "id": "delai-vente-cles",
+  "file": "img/delai-vente-cles.webp",
+  "tags": [
+   "clés",
+   "délai",
+   "vente"
+  ],
+  "alt": {
+   "fr": "Remise des clés",
+   "en": "Handing over the keys",
+   "nl": "Overhandiging van de sleutels"
+  },
+  "source": "Diamant Consult",
+  "license": "Own photo",
+  "author": "Diamant Consult",
+  "source_url": "",
+  "used_by": [
+   "/delai-vente-bruxelles-2026/"
+  ]
+ },
+ {
+  "id": "brussels-old-city",
+  "file": "img/brussels-old-city.webp",
+  "tags": [
+   "Bruxelles",
+   "rue",
+   "marché"
+  ],
+  "alt": {
+   "fr": "Rue du centre de Bruxelles",
+   "en": "Street in central Brussels",
+   "nl": "Straat in het centrum van Brussel"
+  },
+  "source": "Diamant Consult",
+  "license": "Own photo",
+  "author": "Diamant Consult",
+  "source_url": "",
+  "used_by": [
+   "/marche-immobilier-bruxelles-2026/"
+  ]
+ }
+]
