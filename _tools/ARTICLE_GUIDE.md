@@ -132,6 +132,12 @@ Then check:
 - `images.py check` prints "image bank OK" (every banner unique)
 - `git status` only shows: the three new article folders, `blog/index.html`, `en/blog/index.html`,
   `nl/blog/index.html`, `index.html`, `en/index.html`, `nl/index.html`, `sitemap.xml`, `llms.txt`, `img/banque/catalogue.json` (and any new `img/banque/*.webp`), and files in `_tools/articles/`
+After the push, notify Bing (used by ChatGPT search and Copilot) once the page is live:
+```
+for i in $(seq 1 20); do curl -s -o /dev/null -w "%{http_code}" https://www.diamantconsult.com/<fr-slug>/ | grep -q 200 && break; sleep 15; done
+python3 _tools/indexnow.py https://www.diamantconsult.com/<fr-slug>/ https://www.diamantconsult.com/en/<en-slug>/ https://www.diamantconsult.com/nl/<nl-slug>/ https://www.diamantconsult.com/blog/ https://www.diamantconsult.com/en/blog/ https://www.diamantconsult.com/nl/blog/
+```
+HTTP 200 or 202 = accepted. If the network call fails, just mention it in the final message (do not retry endlessly).
 Append a line to `_tools/articles/LOG.md`:
 `- YYYY-MM-DD · /<fr-slug>/ · /en/<en-slug>/ · /nl/<nl-slug>/ · <type> · <commune or theme> · <main source>`
 Commit (`Article: <French title>`) and push to `main`. GitHub Pages deploys automatically.
