@@ -1,0 +1,577 @@
+{
+ "postcode": "1330",
+ "stats": {
+  "house": 500000,
+  "house_n": 104,
+  "apt": 320000,
+  "apt_n": 27,
+  "house_trend": 8.1,
+  "apt_trend": -4.5,
+  "region_house": 420000,
+  "region_apt": 270000,
+  "period": "S1 2026",
+  "region_label": {
+   "fr": "Médiane Brabant wallon",
+   "en": "Walloon Brabant median",
+   "nl": "Mediaan Waals-Brabant"
+  }
+ },
+ "photos": {
+  "house": {
+   "src": "img/communes/rixensart/main.webp",
+   "author": "EmDee",
+   "license": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Rixensart_-_Ch%C3%A2teau_vu_depuis_la_cour_-_01.jpg",
+   "alt": {
+    "fr": "Château de Rixensart à Rixensart",
+    "en": "Rixensart castle in Rixensart",
+    "nl": "Kasteel van Rixensart in Rixensart"
+   },
+   "caption": {
+    "fr": "Château de Rixensart",
+    "en": "Rixensart castle",
+    "nl": "Kasteel van Rixensart"
+   }
+  },
+  "apartment": {
+   "src": "img/communes/rixensart/street.webp",
+   "author": "David Edgar",
+   "license": "CC BY 2.5",
+   "url": "https://commons.wikimedia.org/wiki/File:LacDeGenvalComposite.jpg",
+   "alt": {
+    "fr": "Lac de Genval à Rixensart",
+    "en": "Lake Genval in Rixensart",
+    "nl": "Meer van Genval in Rixensart"
+   },
+   "caption": {
+    "fr": "Lac de Genval",
+    "en": "Lake Genval",
+    "nl": "Meer van Genval"
+   }
+  }
+ },
+ "sales": [
+  {
+   "img": "img/projets/maison-rixensart.webp",
+   "commune": {
+    "fr": "Rixensart",
+    "en": "Rixensart",
+    "nl": "Rixensart"
+   },
+   "meta": {
+    "fr": "Conclu · Gré à gré",
+    "en": "Sold · Private sale",
+    "nl": "Verkocht · Onderhandse verkoop"
+   },
+   "title": {
+    "fr": "Maison + terrain à bâtir",
+    "en": "House + building plot",
+    "nl": "Woning + bouwgrond"
+   }
+  },
+  {
+   "img": "img/projets/appart-boitsfort.webp",
+   "commune": {
+    "fr": "Watermael-Boitsfort",
+    "en": "Watermael-Boitsfort",
+    "nl": "Watermaal-Bosvoorde"
+   },
+   "meta": {
+    "fr": "Conclu · Gré à gré",
+    "en": "Sold · Private sale",
+    "nl": "Verkocht · Onderhandse verkoop"
+   },
+   "title": {
+    "fr": "Appartement",
+    "en": "Apartment",
+    "nl": "Appartement"
+   }
+  }
+ ],
+ "fr": {
+  "slug": "vendre-rixensart",
+  "commune": "Rixensart",
+  "seo_title": "Vendre maison ou appartement à Rixensart | 2% HTVA",
+  "description": "Vendez votre maison ou appartement à Rixensart : 2% HTVA tout compris, premier rendez-vous gratuit, visites et négociation jusqu'à l'acte.",
+  "h1": "Vendre votre bien à Rixensart.",
+  "hero_sub": "Maison ou appartement : un premier rendez-vous gratuit pour faire le point, puis une vente de A à Z pour <strong>2&nbsp;% HTVA, tout compris</strong>. Vous ne payez qu'en cas de vente.",
+  "checks": [
+   "Prix de mise en vente fixé à partir des ventes comparables du quartier",
+   "Photos, Immoweb, visites, offres, négociation et suivi jusqu'à l'acte",
+   "En collaboration directe avec le notaire Stephan Borremans"
+  ],
+  "form_title": "Parlons de votre vente",
+  "trust": [
+   [
+    "2 % HTVA",
+    "tout compris, payé uniquement en cas de vente"
+   ],
+   [
+    "0 €",
+    "pour le premier rendez-vous, sans engagement"
+   ],
+   [
+    "1 interlocuteur",
+    "de la mise en vente à la signature chez le notaire"
+   ],
+   [
+    "Notaire partenaire",
+    "du compromis à l'acte"
+   ]
+  ],
+  "house_h2": "Vendre votre maison à Rixensart",
+  "house_p": [
+   "Au 1er semestre 2026, le prix médian d'une maison à Rixensart était de <strong>500 000 €</strong>, pour 104 ventes (Statbel). Plus de la moitié sont des maisons 4 façades.",
+   "Pour fixer votre prix, nous partons des ventes comparables de votre rue et de votre quartier, de l'état de la maison et de son PEB. Le dossier vendeur (PEB, informations sur l'état du sol, renseignements urbanistiques) est prêt avant la mise en ligne."
+  ],
+  "house_link": "Vendre ma maison",
+  "apt_h2": "Vendre votre appartement à Rixensart",
+  "apt_p": [
+   "Les appartements représentent une part plus réduite du marché : 27 ventes au 1er semestre 2026, pour un prix médian de <strong>320 000 €</strong>. La moitié de ces ventes se situe entre 247 500 € et 355 000 € (Statbel).",
+   "En copropriété, nous rassemblons les PV des 3 dernières assemblées générales, les décomptes de charges et le règlement de copropriété. Appartement loué ou libre : les visites s'organisent en accord avec le locataire."
+  ],
+  "apt_link": "Vendre mon appartement",
+  "price": {
+   "h2": "Une agence pas chère ? Non : un tarif juste, 2 % HTVA.",
+   "p": "Le même service complet qu'une agence traditionnelle, sans frais de dossier ni supplément pour les photos ou les visites. La commission est calculée sur le prix de vente réel et n'est due qu'en cas de vente.",
+   "example": "EXEMPLE · BIEN VENDU 400 000 €",
+   "ours": [
+    "Diamant Consult · 2 %",
+    "8 000 € HTVA"
+   ],
+   "other": [
+    "Commission à 3,5 %",
+    "14 000 € HTVA"
+   ],
+   "diff": [
+    "Différence",
+    "6 000 €"
+   ],
+   "note": "Calcul illustratif, montants hors TVA."
+  },
+  "steps": [
+   [
+    "Premier rendez-vous",
+    "Visite du bien et prix de mise en vente basé sur les ventes comparables."
+   ],
+   [
+    "Dossier vendeur",
+    "PEB, informations sur l'état du sol, urbanisme, copropriété."
+   ],
+   [
+    "Photos et annonce",
+    "Reportage professionnel, Immoweb et portails."
+   ],
+   [
+    "Visites groupées",
+    "Sur 2 à 3 week-ends, avec retour après chaque visite."
+   ],
+   [
+    "Offres et négociation",
+    "Comparaison des offres, vous décidez."
+   ],
+   [
+    "Jusqu'à l'acte",
+    "Coordination avec le notaire, compromis et acte."
+   ]
+  ],
+  "market_h2": "Le marché immobilier à Rixensart en 2026",
+  "market_p": [
+   "Au 1er semestre 2026, le prix médian des maisons à Rixensart se situait environ 19 % au-dessus de la médiane du Brabant wallon, et celui des appartements environ 19 % au-dessus de la médiane du Brabant wallon (Statbel).",
+   "C'est avant tout un marché de maisons : 8 ventes sur 10. Sur un an, les prix médians sont en hausse pour les maisons (+8,1 %) et en baisse pour les appartements (−4,5 %). Parmi ses quartiers : Genval, Rosières, Rixensart-centre.",
+   "<a href=\"../vendre-maison-brabant-wallon/\">Lire aussi notre guide pour vendre à Rixensart →</a>"
+  ],
+  "quartiers": [
+   "Genval",
+   "Rosières",
+   "Rixensart-centre"
+  ],
+  "stats_source": "Source : <a href=\"https://statbel.fgov.be/fr/themes/construction-logement/prix-de-limmobilier\" target=\"_blank\" rel=\"noopener\">Statbel, prix de l'immobilier</a>, ventes du 1er semestre 2026 comparées au 1er semestre 2025. Médiane : la moitié des biens s'est vendue plus cher, l'autre moitié moins cher.",
+  "faq": [
+   [
+    "Combien coûte la vente de ma maison à Rixensart ?",
+    "2 % HTVA du prix de vente, tout compris, uniquement en cas de vente. Le premier rendez-vous est gratuit et sans engagement."
+   ],
+   [
+    "Ai-je besoin d'un notaire ?",
+    "Vous n'avez pas à en chercher un : nous vous mettons en relation avec le nôtre, le notaire Stephan Borremans, qui suit le dossier du compromis jusqu'à l'acte pour faire avancer les choses. En Belgique, la vente se signe toujours chez un notaire, et vous restez libre de choisir le vôtre."
+   ],
+   [
+    "Combien vaut mon bien à Rixensart ?",
+    "À titre indicatif, au 1er semestre 2026, le prix médian était de 500 000 € pour une maison et de 320 000 € pour un appartement (Statbel). Le prix de votre bien, nous le fixons avec vous lors du premier rendez-vous, à partir des ventes comparables du quartier, de son état et de son PEB."
+   ],
+   [
+    "Quels droits d'enregistrement paie l'acheteur en Wallonie ?",
+    "Depuis le 1er janvier 2025, 3 % pour l'achat d'une habitation propre et unique, au lieu de 12,5 % (wallonie.be). Ces droits sont payés par l'acheteur."
+   ],
+   [
+    "Que se passe-t-il si mon bien ne se vend pas ?",
+    "Vous ne payez rien : la commission de 2 % HTVA n'est due qu'en cas de vente."
+   ],
+   [
+    "Combien de temps faut-il pour vendre ?",
+    "Le délai jusqu'au compromis dépend surtout du prix, du dossier et de la présentation du bien. Entre le compromis et l'acte, il faut compter au maximum 4 mois (notaire.be)."
+   ],
+   [
+    "Quels documents faut-il pour vendre en Wallonie ?",
+    "Certificat PEB, informations sur l'état du sol, renseignements urbanistiques et titre de propriété ; pour un appartement, aussi les PV des 3 dernières assemblées générales, les décomptes de charges et le règlement de copropriété. Nous vous aidons à les rassembler."
+   ],
+   [
+    "Puis-je vendre un bien loué ?",
+    "Oui. Le bail en cours est transmis à l'acheteur, et les visites sont organisées en accord avec le locataire."
+   ],
+   [
+    "Peut-on être accompagné en anglais ou en néerlandais ?",
+    "Nous travaillons en français et en anglais. Pour le néerlandais, l'étude de notre notaire partenaire et notre bureau peuvent vous accompagner tout au long de la vente."
+   ]
+  ],
+  "nearby": [
+   {
+    "name": "La Hulpe",
+    "href": "vendre-la-hulpe/"
+   },
+   {
+    "name": "Wavre",
+    "href": "vendre-wavre/"
+   },
+   {
+    "name": "Waterloo",
+    "href": "vendre-waterloo/"
+   },
+   {
+    "name": "Watermael-Boitsfort",
+    "href": "vendre-watermael-boitsfort/"
+   },
+   {
+    "name": "Auderghem",
+    "href": "vendre-auderghem/"
+   }
+  ],
+  "cta_h2": "Vous vendez à Rixensart ?",
+  "cta_p": "Premier rendez-vous gratuit et sans engagement. 2 % HTVA, tout compris."
+ },
+ "en": {
+  "slug": "sell-property-rixensart",
+  "commune": "Rixensart",
+  "seo_title": "Sell your house or apartment in Rixensart | 2% excl. VAT",
+  "description": "Sell your house or apartment in Rixensart: 2% excl. VAT, all-in, free first meeting, viewings and negotiation through to the notary deed.",
+  "h1": "Sell your property in Rixensart.",
+  "hero_sub": "House or apartment: a free first meeting to take stock, then a complete sale for <strong>2%&nbsp;excl.&nbsp;VAT, all-in</strong>. You only pay if your property sells.",
+  "checks": [
+   "Asking price set from comparable sales in the neighbourhood",
+   "Photos, Immoweb, viewings, offers, negotiation and follow-up to the deed",
+   "Working directly with notary Stephan Borremans"
+  ],
+  "form_title": "Let's talk about your sale",
+  "trust": [
+   [
+    "2% excl. VAT",
+    "all-in, only paid if your property sells"
+   ],
+   [
+    "€0",
+    "for the first meeting, no obligation"
+   ],
+   [
+    "One contact",
+    "from listing to signing at the notary"
+   ],
+   [
+    "Partner notary",
+    "from sale agreement to deed"
+   ]
+  ],
+  "house_h2": "Selling your house in Rixensart",
+  "house_p": [
+   "In the first half of 2026, the median house price in Rixensart was <strong>€500,000</strong>, across 104 sales (Statbel). More than half were detached houses.",
+   "To set your price, we start from comparable sales in your street and neighbourhood, the condition of the house and its EPC. The seller's file (EPC, soil information, planning information) is ready before the listing goes online."
+  ],
+  "house_link": "Sell my house",
+  "apt_h2": "Selling your apartment in Rixensart",
+  "apt_p": [
+   "Apartments account for a smaller share of the market: 27 sales in the first half of 2026, with a median price of <strong>€320,000</strong>. Half of these sales were between €247,500 and €355,000 (Statbel).",
+   "For a co-owned building, we gather the minutes of the last 3 general meetings, the service charge statements and the co-ownership rules. Rented or vacant: viewings are arranged in agreement with the tenant."
+  ],
+  "apt_link": "Sell my apartment",
+  "price": {
+   "h2": "A cheap estate agent? No: a fair fee, 2% excl. VAT.",
+   "p": "The same complete service as a traditional agency, with no admin fees and no extra charge for photos or viewings. The commission is calculated on the actual sale price and is only due if your property sells.",
+   "example": "EXAMPLE · PROPERTY SOLD FOR €400,000",
+   "ours": [
+    "Diamant Consult · 2%",
+    "€8,000 excl. VAT"
+   ],
+   "other": [
+    "Commission at 3.5%",
+    "€14,000 excl. VAT"
+   ],
+   "diff": [
+    "Difference",
+    "€6,000"
+   ],
+   "note": "Illustrative calculation, amounts excluding VAT."
+  },
+  "steps": [
+   [
+    "First meeting",
+    "Visit of the property and asking price based on comparable sales."
+   ],
+   [
+    "Seller's file",
+    "EPC, soil information, planning, co-ownership."
+   ],
+   [
+    "Photos and listing",
+    "Professional photos, Immoweb and portals."
+   ],
+   [
+    "Grouped viewings",
+    "Over 2 to 3 weekends, with feedback after each viewing."
+   ],
+   [
+    "Offers and negotiation",
+    "We compare the offers, you decide."
+   ],
+   [
+    "Through to the deed",
+    "Coordination with the notary, sale agreement and deed."
+   ]
+  ],
+  "market_h2": "The Rixensart property market in 2026",
+  "market_p": [
+   "In the first half of 2026, the median house price in Rixensart was about 19% above the Walloon Brabant median, and the median apartment price about 19% above the Walloon Brabant median (Statbel).",
+   "It is above all a market for houses: 8 sales out of 10. Over one year, median prices are up for houses (+8.1%) and down for apartments (−4.5%). Its neighbourhoods include Genval, Rosières, Rixensart centre.",
+   "<a href=\"../selling-property-brabant-wallon/\">Read our guide to selling in Rixensart →</a>"
+  ],
+  "quartiers": [
+   "Genval",
+   "Rosières",
+   "Rixensart centre"
+  ],
+  "stats_source": "Source: <a href=\"https://statbel.fgov.be/en/themes/housing/real-estate\" target=\"_blank\" rel=\"noopener\">Statbel, real estate prices</a>, sales in the first half of 2026 compared with the first half of 2025. Median: half of the properties sold for more, half for less.",
+  "faq": [
+   [
+    "How much does it cost to sell my house in Rixensart?",
+    "2% of the sale price excl. VAT, all-in, only if your property sells. The first meeting is free and without obligation."
+   ],
+   [
+    "Do I need a notary?",
+    "You do not need to find one: we put you in touch with ours, notary Stephan Borremans, who follows the file from the sale agreement to the deed to keep things moving. In Belgium a sale is always signed at a notary's office, and you remain free to choose your own."
+   ],
+   [
+    "What is my property in Rixensart worth?",
+    "As a guide, in the first half of 2026 the median price was €500,000 for a house and €320,000 for an apartment (Statbel). We set the price of your property with you at the first meeting, based on comparable sales in the neighbourhood, its condition and its EPC."
+   ],
+   [
+    "What registration duties does the buyer pay in Wallonia?",
+    "Since 1 January 2025, 3% for the purchase of a sole own home, instead of 12.5% (wallonie.be). These duties are paid by the buyer."
+   ],
+   [
+    "What if my property does not sell?",
+    "You pay nothing: the 2% excl. VAT commission is only due if your property sells."
+   ],
+   [
+    "How long does it take to sell?",
+    "The time to a sale agreement depends mainly on the price, the file and how the property is presented. Between the sale agreement and the deed, allow at most 4 months (notaire.be)."
+   ],
+   [
+    "Which documents do I need to sell in Wallonia?",
+    "EPC certificate, soil information, planning information and title deed; for an apartment, also the minutes of the last 3 general meetings, the service charge statements and the co-ownership rules. We help you gather them."
+   ],
+   [
+    "Can I sell a rented property?",
+    "Yes. The current lease passes to the buyer, and viewings are arranged in agreement with the tenant."
+   ],
+   [
+    "Can you assist me in English or Dutch?",
+    "We work in French and English. For Dutch, our partner notary's office and our back office can assist you throughout the sale."
+   ]
+  ],
+  "nearby": [
+   {
+    "name": "La Hulpe",
+    "href": "sell-property-la-hulpe/"
+   },
+   {
+    "name": "Wavre",
+    "href": "sell-property-wavre/"
+   },
+   {
+    "name": "Waterloo",
+    "href": "sell-property-waterloo/"
+   },
+   {
+    "name": "Watermael-Boitsfort",
+    "href": "sell-property-watermael-boitsfort/"
+   },
+   {
+    "name": "Auderghem",
+    "href": "sell-property-auderghem/"
+   }
+  ],
+  "cta_h2": "Selling in Rixensart?",
+  "cta_p": "Free first meeting, no obligation. 2% excl. VAT, all-in."
+ },
+ "nl": {
+  "slug": "verkopen-rixensart",
+  "commune": "Rixensart",
+  "seo_title": "Huis of appartement verkopen in Rixensart | 2% excl. btw",
+  "description": "Verkoop uw huis of appartement in Rixensart: 2% excl. btw, alles inbegrepen, gratis eerste afspraak, bezoeken en onderhandeling tot aan de akte.",
+  "h1": "Uw woning verkopen in Rixensart.",
+  "hero_sub": "Huis of appartement: een gratis eerste afspraak om de situatie te bekijken, daarna een volledige verkoop voor <strong>2%&nbsp;excl.&nbsp;btw, alles inbegrepen</strong>. U betaalt alleen als uw woning verkocht wordt.",
+  "checks": [
+   "Vraagprijs bepaald op basis van vergelijkbare verkopen in de wijk",
+   "Foto's, Immoweb, bezoeken, biedingen, onderhandeling en opvolging tot aan de akte",
+   "In rechtstreekse samenwerking met notaris Stephan Borremans"
+  ],
+  "form_title": "Laten we het over uw verkoop hebben",
+  "trust": [
+   [
+    "2% excl. btw",
+    "alles inbegrepen, alleen betaald bij verkoop"
+   ],
+   [
+    "€ 0",
+    "voor de eerste afspraak, vrijblijvend"
+   ],
+   [
+    "Eén aanspreekpunt",
+    "van de verkoop tot de ondertekening bij de notaris"
+   ],
+   [
+    "Partnernotaris",
+    "van compromis tot akte"
+   ]
+  ],
+  "house_h2": "Uw huis verkopen in Rixensart",
+  "house_p": [
+   "In het eerste semester van 2026 bedroeg de mediaanprijs van een huis in Rixensart <strong>€ 500.000</strong>, voor 104 verkopen (Statbel). Meer dan de helft waren open bebouwing.",
+   "Om uw prijs te bepalen vertrekken we van vergelijkbare verkopen in uw straat en wijk, de staat van het huis en het EPB. Het verkoopdossier (EPB, informatie over de bodemtoestand, stedenbouwkundige inlichtingen) is klaar voordat de advertentie online gaat."
+  ],
+  "house_link": "Mijn huis verkopen",
+  "apt_h2": "Uw appartement verkopen in Rixensart",
+  "apt_p": [
+   "Appartementen vormen een kleiner deel van de markt: 27 verkopen in het eerste semester van 2026, met een mediaanprijs van <strong>€ 320.000</strong>. De helft van die verkopen lag tussen € 247.500 en € 355.000 (Statbel).",
+   "Bij mede-eigendom verzamelen we de notulen van de laatste 3 algemene vergaderingen, de afrekeningen van de lasten en het reglement van mede-eigendom. Verhuurd of vrij: de bezoeken worden in overleg met de huurder georganiseerd."
+  ],
+  "apt_link": "Mijn appartement verkopen",
+  "price": {
+   "h2": "Een goedkope makelaar? Nee: een eerlijk tarief, 2% excl. btw.",
+   "p": "Dezelfde volledige dienstverlening als een traditioneel kantoor, zonder dossierkosten of supplement voor foto's of bezoeken. De commissie wordt berekend op de werkelijke verkoopprijs en is alleen verschuldigd als uw woning verkocht wordt.",
+   "example": "VOORBEELD · WONING VERKOCHT VOOR € 400.000",
+   "ours": [
+    "Diamant Consult · 2%",
+    "€ 8.000 excl. btw"
+   ],
+   "other": [
+    "Commissie van 3,5%",
+    "€ 14.000 excl. btw"
+   ],
+   "diff": [
+    "Verschil",
+    "€ 6.000"
+   ],
+   "note": "Illustratieve berekening, bedragen exclusief btw."
+  },
+  "steps": [
+   [
+    "Eerste afspraak",
+    "Bezoek van de woning en vraagprijs op basis van vergelijkbare verkopen."
+   ],
+   [
+    "Verkoopdossier",
+    "EPB, informatie over de bodemtoestand, stedenbouw, mede-eigendom."
+   ],
+   [
+    "Foto's en advertentie",
+    "Professionele foto's, Immoweb en portalen."
+   ],
+   [
+    "Gegroepeerde bezoeken",
+    "Over 2 à 3 weekends, met feedback na elk bezoek."
+   ],
+   [
+    "Biedingen en onderhandeling",
+    "We vergelijken de biedingen, u beslist."
+   ],
+   [
+    "Tot aan de akte",
+    "Coördinatie met de notaris, compromis en akte."
+   ]
+  ],
+  "market_h2": "De vastgoedmarkt in Rixensart in 2026",
+  "market_p": [
+   "In het eerste semester van 2026 lag de mediaanprijs van huizen in Rixensart ongeveer 19% boven de mediaan van Waals-Brabant, en die van appartementen ongeveer 19% boven de mediaan van Waals-Brabant (Statbel).",
+   "Het is vooral een markt van huizen: 8 op 10 verkopen. Op een jaar zijn de mediaanprijzen gestegen voor huizen (+8,1%) en gedaald voor appartementen (−4,5%). Enkele wijken: Genval, Rosières, Rixensart-centrum.",
+   "<a href=\"../woning-verkopen-waals-brabant/\">Lees ook onze gids over verkopen in Rixensart →</a>"
+  ],
+  "quartiers": [
+   "Genval",
+   "Rosières",
+   "Rixensart-centrum"
+  ],
+  "stats_source": "Bron: <a href=\"https://statbel.fgov.be/nl/themas/bouwen-wonen/vastgoedprijzen\" target=\"_blank\" rel=\"noopener\">Statbel, vastgoedprijzen</a>, verkopen in het eerste semester van 2026 vergeleken met het eerste semester van 2025. Mediaan: de helft van de woningen werd duurder verkocht, de andere helft goedkoper.",
+  "faq": [
+   [
+    "Wat kost de verkoop van mijn huis in Rixensart?",
+    "2% van de verkoopprijs excl. btw, alles inbegrepen, alleen bij verkoop. De eerste afspraak is gratis en vrijblijvend."
+   ],
+   [
+    "Heb ik een notaris nodig?",
+    "U hoeft er geen te zoeken: we brengen u in contact met de onze, notaris Stephan Borremans, die het dossier van compromis tot akte opvolgt om de zaken vlot te laten verlopen. In België wordt een verkoop altijd bij een notaris ondertekend, en u blijft vrij om uw eigen notaris te kiezen."
+   ],
+   [
+    "Hoeveel is mijn woning in Rixensart waard?",
+    "Ter indicatie: in het eerste semester van 2026 bedroeg de mediaanprijs € 500.000 voor een huis en € 320.000 voor een appartement (Statbel). De prijs van uw woning bepalen we samen met u tijdens de eerste afspraak, op basis van vergelijkbare verkopen in de wijk, de staat en het EPB."
+   ],
+   [
+    "Welke registratierechten betaalt de koper in Wallonië?",
+    "Sinds 1 januari 2025 3% voor de aankoop van een enige eigen woning, in plaats van 12,5% (wallonie.be). Die rechten betaalt de koper."
+   ],
+   [
+    "Wat als mijn woning niet verkocht wordt?",
+    "Dan betaalt u niets: de commissie van 2% excl. btw is alleen verschuldigd bij verkoop."
+   ],
+   [
+    "Hoe lang duurt een verkoop?",
+    "De termijn tot het compromis hangt vooral af van de prijs, het dossier en de presentatie van de woning. Tussen het compromis en de akte rekent u op maximaal 4 maanden (notaris.be)."
+   ],
+   [
+    "Welke documenten heb ik nodig om in Wallonië te verkopen?",
+    "EPB-certificaat, informatie over de bodemtoestand, stedenbouwkundige inlichtingen en eigendomstitel; voor een appartement ook de notulen van de laatste 3 algemene vergaderingen, de afrekeningen van de lasten en het reglement van mede-eigendom. We helpen u ze te verzamelen."
+   ],
+   [
+    "Kan ik een verhuurde woning verkopen?",
+    "Ja. De lopende huurovereenkomst gaat over op de koper, en de bezoeken worden in overleg met de huurder georganiseerd."
+   ],
+   [
+    "Kan ik in het Nederlands begeleid worden?",
+    "Wij werken in het Frans en het Engels. Voor het Nederlands kunnen het kantoor van onze partnernotaris en ons kantoor u tijdens de hele verkoop begeleiden."
+   ]
+  ],
+  "nearby": [
+   {
+    "name": "Terhulpen",
+    "href": "verkopen-terhulpen/"
+   },
+   {
+    "name": "Waver",
+    "href": "verkopen-waver/"
+   },
+   {
+    "name": "Waterloo",
+    "href": "verkopen-waterloo/"
+   },
+   {
+    "name": "Watermaal-Bosvoorde",
+    "href": "verkopen-watermaal-bosvoorde/"
+   },
+   {
+    "name": "Oudergem",
+    "href": "verkopen-oudergem/"
+   }
+  ],
+  "cta_h2": "Verkoopt u in Rixensart?",
+  "cta_p": "Gratis eerste afspraak, vrijblijvend. 2% excl. btw, alles inbegrepen."
+ }
+}

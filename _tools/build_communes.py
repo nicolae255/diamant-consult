@@ -35,6 +35,10 @@ C = {
  "watermael-boitsfort": ("Watermael-Boitsfort", "Watermaal-Bosvoorde", "Watermael-Boitsfort", "watermael-boitsfort", "watermaal-bosvoorde", "watermael-boitsfort", "1170", "Watermael-Boitsfort"),
  "woluwe-saint-lambert": ("Woluwe-Saint-Lambert", "Sint-Lambrechts-Woluwe", "Woluwe-Saint-Lambert", "woluwe-saint-lambert", "sint-lambrechts-woluwe", "woluwe-saint-lambert", "1200", "Woluwe-St-Lambert"),
  "woluwe-saint-pierre": ("Woluwe-Saint-Pierre", "Sint-Pieters-Woluwe", "Woluwe-Saint-Pierre", "woluwe-saint-pierre", "sint-pieters-woluwe", "woluwe-saint-pierre", "1150", "Woluwe-St-Pierre"),
+ "waterloo": ("Waterloo", "Waterloo", "Waterloo", "waterloo", "waterloo", "waterloo", "1410", "Waterloo"),
+ "la-hulpe": ("La Hulpe", "Terhulpen", "La Hulpe", "la-hulpe", "terhulpen", "la-hulpe", "1310", "La Hulpe"),
+ "wavre": ("Wavre", "Waver", "Wavre", "wavre", "waver", "wavre", "1300", "Wavre"),
+ "rixensart": ("Rixensart", "Rixensart", "Rixensart", "rixensart", "rixensart", "rixensart", "1330", "Rixensart"),
 }
 NEAR = {
  "anderlecht": ["molenbeek-saint-jean", "forest", "saint-gilles", "berchem-sainte-agathe", "bruxelles-ville"],
@@ -56,8 +60,14 @@ NEAR = {
  "watermael-boitsfort": ["auderghem", "uccle", "ixelles", "woluwe-saint-pierre", "forest"],
  "woluwe-saint-lambert": ["woluwe-saint-pierre", "schaerbeek", "evere", "etterbeek", "auderghem"],
  "woluwe-saint-pierre": ["woluwe-saint-lambert", "auderghem", "etterbeek", "watermael-boitsfort", "evere"],
+ "waterloo": ["la-hulpe", "rixensart", "wavre", "uccle", "watermael-boitsfort"],
+ "la-hulpe": ["rixensart", "waterloo", "wavre", "watermael-boitsfort", "auderghem"],
+ "wavre": ["rixensart", "la-hulpe", "waterloo", "auderghem", "woluwe-saint-pierre"],
+ "rixensart": ["la-hulpe", "wavre", "waterloo", "watermael-boitsfort", "auderghem"],
 }
+BW = {"fr": "vendre-maison-brabant-wallon/", "en": "selling-property-brabant-wallon/", "nl": "woning-verkopen-waals-brabant/"}
 GUIDE = {  # existing articles to link from the market section
+ "waterloo": BW, "la-hulpe": BW, "wavre": BW, "rixensart": BW,
  "schaerbeek": {"fr": "vendre-maison-schaerbeek/", "en": "sell-house-schaerbeek-brussels/", "nl": "woning-verkopen-schaarbeek/"},
  "ixelles": {"fr": "vendre-appartement-ixelles-uccle/", "en": "sell-apartment-ixelles-uccle/", "nl": "appartement-verkopen-elsene-ukkel/"},
  "uccle": {"fr": "vendre-appartement-ixelles-uccle/", "en": "sell-apartment-ixelles-uccle/", "nl": "appartement-verkopen-elsene-ukkel/"},
@@ -78,6 +88,7 @@ P = {  # real sales (projects page)
  "haren": ("img/projets/maison-haren.webp", "haren", "gg", "house"),
  "wsl_apt": ("img/projets/appart-woluwe-lambert-vp.webp", "woluwe-saint-lambert", "vp", "apt"),
  "wsl_com": ("img/projets/commerce-woluwe.webp", "woluwe-saint-lambert", "gg", "commerce"),
+ "rix": ("img/projets/maison-rixensart.webp", "rixensart", "gg", "plot"),
 }
 SALES = {
  "anderlecht": ["and_h1", "and_h2"], "schaerbeek": ["sch_apt", "sch_at", "sch_h"], "uccle": ["ucc_apt", "wb_apt"],
@@ -86,25 +97,33 @@ SALES = {
  "ixelles": ["ett_apt", "ucc_apt"], "forest": ["ucc_apt", "and_h1"], "saint-gilles": ["ucc_apt", "and_h1"],
  "auderghem": ["wb_apt", "wsl_apt"], "molenbeek-saint-jean": ["and_h1", "haren"], "koekelberg": ["and_h1", "haren"],
  "berchem-sainte-agathe": ["and_h1", "and_h2"], "ganshoren": ["haren", "and_h1"], "jette": ["haren", "and_h1"],
+ "rixensart": ["rix", "wb_apt"], "la-hulpe": ["rix", "wb_apt"], "waterloo": ["rix", "ucc_apt"], "wavre": ["rix", "wb_apt"],
 }
 MODE = {"vp": {"fr": "Conclu · Vente publique", "en": "Sold · Public auction", "nl": "Verkocht · Openbare verkoop"},
         "gg": {"fr": "Conclu · Gré à gré", "en": "Sold · Private sale", "nl": "Verkocht · Onderhandse verkoop"}}
 KIND = {"apt": {"fr": "Appartement", "en": "Apartment", "nl": "Appartement"}, "house": {"fr": "Maison", "en": "House", "nl": "Woning"},
         "atelier": {"fr": "Atelier + habitation", "en": "Workshop + home", "nl": "Atelier + woning"},
-        "commerce": {"fr": "Commerce + habitation", "en": "Shop + home", "nl": "Handelspand + woning"}}
+        "commerce": {"fr": "Commerce + habitation", "en": "Shop + home", "nl": "Handelspand + woning"},
+        "plot": {"fr": "Maison + terrain à bâtir", "en": "House + building plot", "nl": "Woning + bouwgrond"}}
 CAP = {  # photo captions: role -> per commune override, else town hall
  "main": {"auderghem": ("Prieuré du Rouge-Cloître", "Rouge-Cloître priory", "Rood Klooster"),
           "bruxelles-ville": ("Hôtel de Ville, Grand-Place", "City Hall, Grand-Place", "Stadhuis, Grote Markt"),
           "evere": ("Rue à Evere", "Street in Evere", "Straat in Evere"),
-          "ganshoren": ("Marais de Ganshoren", "Ganshoren marsh", "Moeras van Ganshoren")},
+          "ganshoren": ("Marais de Ganshoren", "Ganshoren marsh", "Moeras van Ganshoren"),
+          "waterloo": ("Église Saint-Joseph", "Saint Joseph's Church", "Sint-Jozefskerk"),
+          "la-hulpe": ("Château de La Hulpe", "La Hulpe castle", "Kasteel van Terhulpen"),
+          "wavre": ("Église Saint-Jean-Baptiste", "St John the Baptist's Church", "Sint-Jan-de-Doperkerk"),
+          "rixensart": ("Château de Rixensart", "Rixensart castle", "Kasteel van Rixensart")},
  "street": {"anderlecht": ("Rue Walcourt", "Rue Walcourt", "Walcourtstraat"), "auderghem": ("Avenue Théo Vanpé", "Avenue Théo Vanpé", "Théo Vanpélaan"),
             "schaerbeek": ("Avenue Maréchal Foch", "Avenue Maréchal Foch", "Maarschalk Fochlaan"),
-            "woluwe-saint-pierre": ("Clos du Manoir", "Clos du Manoir", "Burchtgaarde")},
+            "woluwe-saint-pierre": ("Clos du Manoir", "Clos du Manoir", "Burchtgaarde"),
+            "rixensart": ("Lac de Genval", "Lake Genval", "Meer van Genval")},
 }
 LI = {"fr": 0, "en": 1, "nl": 2}
 
 
 def money(v, l):
+    if v is None: return "—"
     if l == "fr": return f"{v:,}".replace(",", NB) + NB + "€"
     if l == "en": return f"€{v:,}"
     return "€" + NB + f"{v:,}".replace(",", ".")
@@ -119,15 +138,20 @@ def build_spec(k, data, base):
     fr, nl, en, sfr, snl, sen, pc, short = C[k]
     nm = {"fr": fr, "en": en, "nl": nl}
     s26 = data["communes"][k]["statbel"]["2026"]; s25 = data["communes"][k]["statbel"]["2025"]
-    reg = data["region"]
+    wal = data["communes"][k].get("region") == "wal"
+    reg = data["region_wal"] if wal else data["region"]
+    RN = ({"fr": "la médiane du Brabant wallon", "en": "the Walloon Brabant median", "nl": "de mediaan van Waals-Brabant"} if wal else
+          {"fr": "la médiane régionale", "en": "the regional median", "nl": "de gewestelijke mediaan"})
     H, Hn, A, An = s26["house"], s26["house_n"] or 0, s26["apt"], s26["apt_n"]
     tr = lambda a, b: round((a / b - 1) * 100, 1) if a and b else None
     Ht, At = tr(H, s25["house"]), tr(A, s25["apt"])
     share = An / (An + Hn)
     k10 = round(share * 10)
     h23 = (s26["h23_n"] or 0) / Hn if Hn else 0
-    ranks = sorted(data["communes"], key=lambda c: -(data["communes"][c]["statbel"]["2026"]["apt"] or 0))
-    rank = ranks.index(k) + 1
+    h4 = (s26.get("h4_n") or 0) / Hn if Hn else 0
+    bxl = [c for c in data["communes"] if data["communes"][c].get("region") != "wal"]
+    ranks = sorted(bxl, key=lambda c: -(data["communes"][c]["statbel"]["2026"]["apt"] or 0))
+    rank = ranks.index(k) + 1 if k in ranks else 10
     hoods = HOODS_BXL if k == "bruxelles-ville" else data["communes"][k]["hoods"]
     photos = {}
     ph = data["communes"][k]["photos"]
@@ -140,6 +164,8 @@ def build_spec(k, data, base):
                             "alt": {l: f"{capt[l]} {where[l]}" for l in LI}, "caption": capt}
     stats = {"house": H, "house_n": Hn, "apt": A, "apt_n": An, "house_trend": Ht, "apt_trend": At,
              "region_house": reg["house"], "region_apt": reg["apt"], "period": "S1 2026"}
+    if wal:
+        stats["region_label"] = {"fr": "Médiane Brabant wallon", "en": "Walloon Brabant median", "nl": "Mediaan Waals-Brabant"}
     sales = []
     for sid in SALES.get(k, ["wb_apt", "and_h1"]):
         img, ck, mode, kind = P[sid]
@@ -150,9 +176,9 @@ def build_spec(k, data, base):
 
     def cmp(x, r, l):
         d = round((x / r - 1) * 100)
-        if d >= 3: return {"fr": f"environ {d}{NB}% au-dessus de la médiane régionale", "en": f"about {d}% above the regional median", "nl": f"ongeveer {d}% boven de gewestelijke mediaan"}[l]
-        if d <= -3: return {"fr": f"environ {-d}{NB}% en dessous de la médiane régionale", "en": f"about {-d}% below the regional median", "nl": f"ongeveer {-d}% onder de gewestelijke mediaan"}[l]
-        return {"fr": "proche de la médiane régionale", "en": "close to the regional median", "nl": "dicht bij de gewestelijke mediaan"}[l]
+        if d >= 3: return {"fr": f"environ {d}{NB}% au-dessus de {RN['fr']}", "en": f"about {d}% above {RN['en']}", "nl": f"ongeveer {d}% boven {RN['nl']}"}[l]
+        if d <= -3: return {"fr": f"environ {-d}{NB}% en dessous de {RN['fr']}", "en": f"about {-d}% below {RN['en']}", "nl": f"ongeveer {-d}% onder {RN['nl']}"}[l]
+        return {"fr": f"proche de {RN['fr']}", "en": f"close to {RN['en']}", "nl": f"dicht bij {RN['nl']}"}[l]
 
     def word(t, l):
         if t is None: return None
@@ -161,6 +187,9 @@ def build_spec(k, data, base):
 
     for l in ("fr", "en", "nl"):
         b = json.loads(json.dumps(base[l]))  # copy service texts
+        sw = {"fr": ("attestation du sol", "informations sur l'état du sol"), "en": ("soil certificate", "soil information"), "nl": ("bodemattest", "informatie over de bodemtoestand")}[l]
+        if wal:
+            b["steps"] = [[h, t.replace(*sw)] for h, t in b["steps"]]
         X = nm[l]; Xc = X[0].upper() + X[1:]
         old = base[l]["commune"]
         for f in ("checks", "trust", "steps", "price", "house_p", "apt_p"):
@@ -186,11 +215,12 @@ def build_spec(k, data, base):
                   "nl": f"In het eerste semester van 2026 bedroeg de mediaanprijs van een huis in {X} <strong>{money(H,l)}</strong>, voor {Hn} verkopen (Statbel)."}[l]
             if h23 >= 0.9: p1 += {"fr": " Presque toutes sont des maisons mitoyennes ou semi-mitoyennes, à 2 ou 3 façades.", "en": " Almost all were terraced or semi-detached houses.", "nl": " Bijna allemaal rijwoningen of halfopen bebouwing."}[l]
             elif h23 >= 0.7: p1 += {"fr": " La grande majorité sont des maisons mitoyennes ou semi-mitoyennes.", "en": " Most were terraced or semi-detached houses.", "nl": " Vooral rijwoningen of halfopen bebouwing."}[l]
+            elif h4 > 0.5: p1 += {"fr": " Plus de la moitié sont des maisons 4 façades.", "en": " More than half were detached houses.", "nl": " Meer dan de helft waren open bebouwing."}[l]
         else:
             p1 = {"fr": f"Les ventes de maisons sont rares à {X} : {Hn} au 1er semestre 2026, trop peu pour que Statbel publie un prix médian. Pour une maison, la fixation du prix repose d'autant plus sur les ventes comparables du quartier.",
                   "en": f"House sales are rare in {X}: {Hn} in the first half of 2026, too few for Statbel to publish a median price. For a house, setting the price relies even more on comparable sales in the neighbourhood.",
                   "nl": f"Huizen worden zelden verkocht in {X}: {Hn} in het eerste semester van 2026, te weinig voor een mediaanprijs van Statbel. Voor een huis steunt de prijsbepaling dus nog meer op vergelijkbare verkopen in de wijk."}[l]
-        b["house_p"] = [p1, base[l]["house_p"][1]]
+        b["house_p"] = [p1, base[l]["house_p"][1].replace(*sw) if wal else base[l]["house_p"][1]]
         sp = ("most" if share >= 0.75 else "major" if share >= 0.5 else "minor")
         lead = {"fr": {"most": "Les appartements font l'essentiel du marché", "major": "Les appartements représentent la majorité des ventes", "minor": "Les appartements représentent une part plus réduite du marché"},
                 "en": {"most": "Apartments make up most of the market", "major": "Apartments account for the majority of sales", "minor": "Apartments account for a smaller share of the market"},
@@ -200,11 +230,19 @@ def build_spec(k, data, base):
                        "en": f"{lead}: {An} sales in the first half of 2026, with a median price of <strong>{money(A,l)}</strong>. Half of these sales were between {money(q1,l)} and {money(q3,l)} (Statbel).",
                        "nl": f"{lead}: {An} verkopen in het eerste semester van 2026, met een mediaanprijs van <strong>{money(A,l)}</strong>. De helft van die verkopen lag tussen {money(q1,l)} en {money(q3,l)} (Statbel)."}[l],
                       base[l]["apt_p"][1]]
+        if not A:
+            b["apt_p"][0] = {"fr": f"Les ventes d'appartements sont rares à {X} : {An} au 1er semestre 2026, trop peu pour que Statbel publie un prix médian. La fixation du prix repose donc d'autant plus sur les ventes comparables du quartier.",
+                             "en": f"Apartment sales are rare in {X}: {An} in the first half of 2026, too few for Statbel to publish a median price. Setting the price therefore relies even more on comparable sales in the neighbourhood.",
+                             "nl": f"Appartementen worden zelden verkocht in {X}: {An} in het eerste semester van 2026, te weinig voor een mediaanprijs van Statbel. De prijsbepaling steunt dus nog meer op vergelijkbare verkopen in de wijk."}[l]
         # market paragraphs
-        if H:
+        if H and A:
             m1 = {"fr": f"Au 1er semestre 2026, le prix médian des maisons à {X} se situait {cmp(H,reg['house'],l)}, et celui des appartements {cmp(A,reg['apt'],l)} (Statbel).",
                   "en": f"In the first half of 2026, the median house price in {X} was {cmp(H,reg['house'],l)}, and the median apartment price {cmp(A,reg['apt'],l)} (Statbel).",
                   "nl": f"In het eerste semester van 2026 lag de mediaanprijs van huizen in {X} {cmp(H,reg['house'],l)}, en die van appartementen {cmp(A,reg['apt'],l)} (Statbel)."}[l]
+        elif H:
+            m1 = {"fr": f"Au 1er semestre 2026, le prix médian des maisons à {X} se situait {cmp(H,reg['house'],l)} (Statbel).",
+                  "en": f"In the first half of 2026, the median house price in {X} was {cmp(H,reg['house'],l)} (Statbel).",
+                  "nl": f"In het eerste semester van 2026 lag de mediaanprijs van huizen in {X} {cmp(H,reg['house'],l)} (Statbel)."}[l]
         else:
             m1 = {"fr": f"Au 1er semestre 2026, le prix médian des appartements à {X} se situait {cmp(A,reg['apt'],l)} (Statbel).",
                   "en": f"In the first half of 2026, the median apartment price in {X} was {cmp(A,reg['apt'],l)} (Statbel).",
@@ -213,16 +251,21 @@ def build_spec(k, data, base):
         elif rank >= 15: m1 += {"fr": f" {Xc} figure parmi les 5 communes bruxelloises où les appartements sont les plus abordables.", "en": f" {Xc} is among the 5 Brussels municipalities with the most affordable apartments.", "nl": f" {Xc} hoort bij de 5 Brusselse gemeenten met de meest betaalbare appartementen."}[l]
         if share >= 0.75: m2 = {"fr": f"C'est avant tout un marché d'appartements : {k10} ventes sur 10.", "en": f"It is above all an apartment market: {k10} sales out of 10.", "nl": f"Het is vooral een appartementsmarkt: {k10} op 10 verkopen."}[l]
         elif share >= 0.5: m2 = {"fr": f"Sur l'ensemble des ventes, {k10} sur 10 concernent des appartements.", "en": f"Out of all sales, {k10} in 10 were apartments.", "nl": f"Van alle verkopen waren er {k10} op 10 appartementen."}[l]
+        elif wal: m2 = {"fr": f"C'est avant tout un marché de maisons : {10-k10} ventes sur 10.", "en": f"It is above all a market for houses: {10-k10} sales out of 10.", "nl": f"Het is vooral een markt van huizen: {10-k10} op 10 verkopen."}[l]
         else: m2 = {"fr": f"Les maisons y pèsent plus qu'ailleurs : {10-k10} ventes sur 10.", "en": f"Houses account for more of the market than elsewhere: {10-k10} sales out of 10.", "nl": f"Huizen wegen hier zwaarder dan elders: {10-k10} op 10 verkopen."}[l]
-        if Ht is not None and word(Ht, l) == word(At, l):
+        if Ht is not None and At is not None and word(Ht, l) == word(At, l):
             m2 += {"fr": f" Sur un an, les prix médians sont {word(Ht,l)} pour les maisons ({pct(Ht,l)}) comme pour les appartements ({pct(At,l)}).",
                    "en": f" Over one year, median prices are {word(Ht,l)} for both houses ({pct(Ht,l)}) and apartments ({pct(At,l)}).",
                    "nl": f" Op een jaar zijn de mediaanprijzen {word(Ht,l)} voor huizen ({pct(Ht,l)}) en ook voor appartementen ({pct(At,l)})."}[l]
-        elif Ht is not None:
+        elif Ht is not None and At is not None:
             m2 += {"fr": f" Sur un an, les prix médians sont {word(Ht,l)} pour les maisons ({pct(Ht,l)}) et {word(At,l)} pour les appartements ({pct(At,l)}).",
                    "en": f" Over one year, median prices are {word(Ht,l)} for houses ({pct(Ht,l)}) and {word(At,l)} for apartments ({pct(At,l)}).",
                    "nl": f" Op een jaar zijn de mediaanprijzen {word(Ht,l)} voor huizen ({pct(Ht,l)}) en {word(At,l)} voor appartementen ({pct(At,l)})."}[l]
-        else:
+        elif Ht is not None:
+            m2 += {"fr": f" Sur un an, le prix médian des maisons est {word(Ht,l)[:-1] if word(Ht,l).endswith('s') else word(Ht,l)} ({pct(Ht,l)}).",
+                   "en": f" Over one year, the median house price is {word(Ht,l)} ({pct(Ht,l)}).",
+                   "nl": f" Op een jaar is de mediaanprijs van huizen {word(Ht,l)} ({pct(Ht,l)})."}[l]
+        elif At is not None:
             m2 += {"fr": f" Sur un an, le prix médian des appartements est {word(At,l)[:-1] if word(At,l).endswith('s') else word(At,l)} ({pct(At,l)}).",
                    "en": f" Over one year, the median apartment price is {word(At,l)} ({pct(At,l)}).",
                    "nl": f" Op een jaar is de mediaanprijs van appartementen {word(At,l)} ({pct(At,l)})."}[l]
@@ -249,10 +292,14 @@ def build_spec(k, data, base):
         for q, a in base[l]["faq"]:
             q = q.replace(old, X); a = a.replace(old, X)
             faq.append([q, a])
-        if H:
+        if H and A:
             val = {"fr": f"À titre indicatif, au 1er semestre 2026, le prix médian était de {money(H,l)} pour une maison et de {money(A,l)} pour un appartement (Statbel).",
                    "en": f"As a guide, in the first half of 2026 the median price was {money(H,l)} for a house and {money(A,l)} for an apartment (Statbel).",
                    "nl": f"Ter indicatie: in het eerste semester van 2026 bedroeg de mediaanprijs {money(H,l)} voor een huis en {money(A,l)} voor een appartement (Statbel)."}[l]
+        elif H:
+            val = {"fr": f"À titre indicatif, au 1er semestre 2026, le prix médian d'une maison était de {money(H,l)} (Statbel) ; les ventes d'appartements étaient trop peu nombreuses pour une médiane.",
+                   "en": f"As a guide, in the first half of 2026 the median house price was {money(H,l)} (Statbel); there were too few apartment sales for a median.",
+                   "nl": f"Ter indicatie: in het eerste semester van 2026 bedroeg de mediaanprijs van een huis {money(H,l)} (Statbel); er waren te weinig verkopen van appartementen voor een mediaan."}[l]
         else:
             val = {"fr": f"À titre indicatif, au 1er semestre 2026, le prix médian d'un appartement était de {money(A,l)} (Statbel) ; les ventes de maisons étaient trop peu nombreuses pour une médiane.",
                    "en": f"As a guide, in the first half of 2026 the median apartment price was {money(A,l)} (Statbel); there were too few house sales for a median.",
@@ -261,6 +308,13 @@ def build_spec(k, data, base):
                 "en": " We set the price of your property with you at the first meeting, based on comparable sales in the neighbourhood, its condition and its EPC.",
                 "nl": " De prijs van uw woning bepalen we samen met u tijdens de eerste afspraak, op basis van vergelijkbare verkopen in de wijk, de staat en het EPB."}[l]
         faq[2][1] = (val + rest).replace(NB, " ")
+        if wal:
+            faq[5] = {"fr": ["Quels documents faut-il pour vendre en Wallonie ?", "Certificat PEB, informations sur l'état du sol, renseignements urbanistiques et titre de propriété ; pour un appartement, aussi les PV des 3 dernières assemblées générales, les décomptes de charges et le règlement de copropriété. Nous vous aidons à les rassembler."],
+                      "en": ["Which documents do I need to sell in Wallonia?", "EPC certificate, soil information, planning information and title deed; for an apartment, also the minutes of the last 3 general meetings, the service charge statements and the co-ownership rules. We help you gather them."],
+                      "nl": ["Welke documenten heb ik nodig om in Wallonië te verkopen?", "EPB-certificaat, informatie over de bodemtoestand, stedenbouwkundige inlichtingen en eigendomstitel; voor een appartement ook de notulen van de laatste 3 algemene vergaderingen, de afrekeningen van de lasten en het reglement van mede-eigendom. We helpen u ze te verzamelen."]}[l]
+            faq.insert(3, {"fr": ["Quels droits d'enregistrement paie l'acheteur en Wallonie ?", "Depuis le 1er janvier 2025, 3 % pour l'achat d'une habitation propre et unique, au lieu de 12,5 % (wallonie.be). Ces droits sont payés par l'acheteur."],
+                           "en": ["What registration duties does the buyer pay in Wallonia?", "Since 1 January 2025, 3% for the purchase of a sole own home, instead of 12.5% (wallonie.be). These duties are paid by the buyer."],
+                           "nl": ["Welke registratierechten betaalt de koper in Wallonië?", "Sinds 1 januari 2025 3% voor de aankoop van een enige eigen woning, in plaats van 12,5% (wallonie.be). Die rechten betaalt de koper."]}[l])
         b["faq"] = faq
         b["nearby"] = [{"name": {"fr": C[n][0], "en": C[n][2].replace("the City", "City"), "nl": C[n][1]}[l],
                         "href": {"fr": "vendre-" + C[n][3], "en": "sell-property-" + C[n][5], "nl": "verkopen-" + C[n][4]}[l] + "/"} for n in NEAR[k]]

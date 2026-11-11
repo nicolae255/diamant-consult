@@ -878,6 +878,185 @@
      "title": "SP-Woluwe-SP - Clos du Manoir-Burchtgaarde - 2024-10-19.jpg"
     }
    }
+  },
+  "waterloo": {
+   "statbel": {
+    "2025": {
+     "house_n": 165,
+     "house": 540000,
+     "h23_n": 59,
+     "h4_n": 106,
+     "apt_n": 44,
+     "apt": 389500,
+     "apt_q1": 290000,
+     "apt_q3": 510000
+    },
+    "2026": {
+     "house_n": 161,
+     "house": 560000,
+     "h23_n": 61,
+     "h4_n": 100,
+     "apt_n": 62,
+     "apt": 365000,
+     "apt_q1": 290000,
+     "apt_q3": 452000
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/waterloo/main.webp",
+     "author": "Alta Falisa",
+     "license": "CC BY-SA 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:18_June_1815_%E2%80%93_Waterloo_%E2%80%93_Saint_Joseph%27s_Church.jpg",
+     "title": "18 June 1815 – Waterloo – Saint Joseph's Church.jpg"
+    }
+   },
+   "region": "wal"
+  },
+  "la-hulpe": {
+   "statbel": {
+    "2025": {
+     "house_n": 43,
+     "house": 575000,
+     "h23_n": 22,
+     "h4_n": 21,
+     "apt_n": 7,
+     "apt": null,
+     "apt_q1": null,
+     "apt_q3": null
+    },
+    "2026": {
+     "house_n": 37,
+     "house": 500000,
+     "h23_n": 14,
+     "h4_n": 23,
+     "apt_n": 7,
+     "apt": null,
+     "apt_q1": null,
+     "apt_q3": null
+    }
+   },
+   "hoods": [],
+   "photos": {
+    "main": {
+     "src": "img/communes/la-hulpe/main.webp",
+     "author": "Trougnouf (Benoit Brummer)",
+     "license": "CC BY 4.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_La_Hulpe_(DSC_2902).jpg",
+     "title": "Château de La Hulpe (DSC 2902).jpg"
+    }
+   },
+   "region": "wal"
+  },
+  "wavre": {
+   "statbel": {
+    "2025": {
+     "house_n": 152,
+     "house": 402500,
+     "h23_n": 62,
+     "h4_n": 90,
+     "apt_n": 88,
+     "apt": 240000,
+     "apt_q1": 195000,
+     "apt_q3": 295000
+    },
+    "2026": {
+     "house_n": 129,
+     "house": 445000,
+     "h23_n": 64,
+     "h4_n": 65,
+     "apt_n": 100,
+     "apt": 270000,
+     "apt_q1": 219900,
+     "apt_q3": 306000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Limal",
+     "nl": "Limal"
+    },
+    {
+     "fr": "Bierges",
+     "nl": "Bierges"
+    },
+    {
+     "fr": "Wavre-centre",
+     "nl": "Waver-centrum",
+     "en": "Wavre centre"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/wavre/main.webp",
+     "author": "EmDee",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Wavre_-_Saint-Jean-Baptiste_-_vue_d%27ensemble.JPG",
+     "title": "Wavre - Saint-Jean-Baptiste - vue d'ensemble.JPG"
+    }
+   },
+   "region": "wal"
+  },
+  "rixensart": {
+   "statbel": {
+    "2025": {
+     "house_n": 119,
+     "house": 462500,
+     "h23_n": 55,
+     "h4_n": 64,
+     "apt_n": 27,
+     "apt": 335000,
+     "apt_q1": 280000,
+     "apt_q3": 410000
+    },
+    "2026": {
+     "house_n": 104,
+     "house": 500000,
+     "h23_n": 34,
+     "h4_n": 70,
+     "apt_n": 27,
+     "apt": 320000,
+     "apt_q1": 247500,
+     "apt_q3": 355000
+    }
+   },
+   "hoods": [
+    {
+     "fr": "Genval",
+     "nl": "Genval"
+    },
+    {
+     "fr": "Rosières",
+     "nl": "Rosières"
+    },
+    {
+     "fr": "Rixensart-centre",
+     "nl": "Rixensart-centrum",
+     "en": "Rixensart centre"
+    }
+   ],
+   "photos": {
+    "main": {
+     "src": "img/communes/rixensart/main.webp",
+     "author": "EmDee",
+     "license": "CC BY-SA 3.0",
+     "url": "https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Rixensart_-_Ch%C3%A2teau_vu_depuis_la_cour_-_01.jpg",
+     "title": "Château de Rixensart - Château vu depuis la cour - 01.jpg"
+    },
+    "street": {
+     "src": "img/communes/rixensart/street.webp",
+     "author": "David Edgar",
+     "license": "CC BY 2.5",
+     "url": "https://commons.wikimedia.org/wiki/File:LacDeGenvalComposite.jpg",
+     "title": "LacDeGenvalComposite.jpg"
+    }
+   },
+   "region": "wal"
   }
+ },
+ "region_wal": {
+  "house": 420000,
+  "apt": 270000
  }
 }

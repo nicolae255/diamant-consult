@@ -202,9 +202,9 @@ def build(spec, lang):
     chips = "".join(f"<span>{esc(q)}</span>" for q in b["quartiers"])
     stats = f'''<div class="cm-stats">
       <div class="cm-stat"><div class="k">{t["stat_house"]}</div><div class="v">{esc_nb(money(st["house"]))}</div><div class="s">{(str(st["house_n"]) + " " + t["sales_n"]) if st["house"] else t["few"]}</div></div>
-      <div class="cm-stat"><div class="k">{t["stat_apt"]}</div><div class="v">{esc_nb(money(st["apt"]))}</div><div class="s">{st["apt_n"]} {t["sales_n"]}</div></div>
+      <div class="cm-stat"><div class="k">{t["stat_apt"]}</div><div class="v">{esc_nb(money(st["apt"]))}</div><div class="s">{(str(st["apt_n"]) + " " + t["sales_n"]) if st["apt"] else t["few"]}</div></div>
       <div class="cm-stat"><div class="k">{t["stat_trend"]}</div>{(f'<div class="v">{esc_nb(pct(st["house_trend"]))} · {esc_nb(pct(st["apt_trend"]))}</div><div class="s">{t["trend_sub"]}</div>') if st["house_trend"] is not None else (f'<div class="v">{esc_nb(pct(st["apt_trend"]))}</div><div class="s">{t["trend_sub"].split(" · ")[1]}</div>')}</div>
-      <div class="cm-stat"><div class="k">{t["stat_region"]}</div><div class="v">{esc_nb(money(st["region_house"]))}</div><div class="s">{t["region_sub"].split(" · ")[1]} {esc_nb(money(st["region_apt"]))}</div></div>
+      <div class="cm-stat"><div class="k">{st.get("region_label", {}).get(lang, t["stat_region"])}</div><div class="v">{esc_nb(money(st["region_house"]))}</div><div class="s">{t["region_sub"].split(" · ")[1]} {esc_nb(money(st["region_apt"]))}</div></div>
       <p class="cm-src">{b["stats_source"]}</p></div>'''
     market = f'''<section class="cm-sec cm-soft"><div class="cm-wrap"><div class="cm-row" style="align-items:flex-start">
   <div class="cm-col"><h2 class="cm-h2">{esc_nb(b["market_h2"])}</h2>{paras(b["market_p"])}{('<div class="cm-chips">' + chips + '</div>') if chips else ''}{fig("market")}</div>
