@@ -124,14 +124,14 @@
     "8 000 € HTVA"
    ],
    "other": [
-    "Une autre agence à 3,5 %",
+    "Avec une commission de 3,5 %",
     "14 000 € HTVA"
    ],
    "diff": [
-    "Vous gardez en plus",
+    "Écart en votre faveur",
     "6 000 €"
    ],
-   "note": "Exemple illustratif : 3,5 % est un taux de comparaison, pas le tarif d’une agence en particulier. Montants hors TVA."
+   "note": "Simulation indicative, montants hors TVA."
   },
   "steps": [
    [
@@ -286,14 +286,14 @@
     "€8,000 excl. VAT"
    ],
    "other": [
-    "Another agency at 3.5%",
+    "With a 3.5% commission",
     "€14,000 excl. VAT"
    ],
    "diff": [
-    "You keep in addition",
+    "Difference in your favour",
     "€6,000"
    ],
-   "note": "Illustrative example: 3.5% is a comparison rate, not the fee of any specific agency. Amounts excluding VAT."
+   "note": "Indicative simulation, amounts excluding VAT."
   },
   "steps": [
    [
@@ -448,14 +448,14 @@
     "€ 8.000 excl. btw"
    ],
    "other": [
-    "Een ander kantoor aan 3,5%",
+    "Met een commissie van 3,5%",
     "€ 14.000 excl. btw"
    ],
    "diff": [
-    "U houdt extra over",
+    "Verschil in uw voordeel",
     "€ 6.000"
    ],
-   "note": "Illustratief voorbeeld: 3,5% is een vergelijkingstarief, niet het tarief van een bepaald kantoor. Bedragen exclusief btw."
+   "note": "Indicatieve simulatie, bedragen exclusief btw."
   },
   "steps": [
    [
