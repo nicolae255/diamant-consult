@@ -7,6 +7,9 @@ Folders starting with `_` are not published by GitHub Pages.
 Each article must bring in **Brussels property owners who might sell** (houses and apartments, all 19
 communes). Every article targets one search a seller would type, uses recent news as the hook,
 and ends by pointing to a free first meeting / the 2% excl. VAT all-inclusive sale. Never promise a free valuation or estimate: it is not a service on its own.
+Style: never use em dashes (—) or en dashes (–) anywhere (text, titles, alt, FAQ, sources). The owner finds them
+"too AI". Use a comma, a colon, parentheses or two sentences instead; for source names write `notaire.be · Title`.
+Write smoothly and simply, like a person talking to a seller, without slogans.
 
 Every article is published in **three languages**: French (main market), English (expats, very present
 in Ixelles, Etterbeek, Woluwe, Uccle) and Dutch (Dutch-speaking Brussels owners). Same facts, same
