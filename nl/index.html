@@ -112,11 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="#demande" class="btn-primary">Mijn woning verkopen<span class="arr-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M7 17L17 7M17 7H9M17 7V15" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
           <a href="#offres" class="btn-ghost">Ik ben notaris</a>
         </div>
-        <div class="hero-stats">
-          <div class="hero-stat"><div class="num">2<sup>%</sup></div><div class="lbl">Onderhandse verkoop excl. btw, alles inbegrepen</div></div>
-          <div class="hero-stat"><div class="num">600<sup>€</sup></div><div class="lbl">Bezoekenpakket notarissen excl. btw</div></div>
-          <div class="hero-stat"><div class="num">23</div><div class="lbl">Gemeenten · Brussel &amp; Waals-Brabant</div></div>
-        </div>
+        <ul class="hero-trust"><li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Partnernotaris: Stephan Borremans</span></li><li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Kantoor in Schaarbeek</span></li><li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>23 gemeenten · Brussel &amp; Waals-Brabant</span></li></ul>
       </div>
       <div class="hero-lead" id="demande">
         <div class="hl-calc">
@@ -132,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="hl-incl"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Foto’s, advertenties, bezoeken, onderhandeling en opvolging tot de akte: alles inbegrepen.</span></p>
         </div>
         <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">
-          <p class="hl-title">Vertel ons over uw woning</p>
+          <p class="hl-title">Gratis eerste afspraak om erover te praten</p>
           <p class="hl-thanks" id="hl-thanks" hidden>Bedankt! Uw aanvraag is verzonden. We antwoorden per e-mail.</p>
           <input type="hidden" name="access_key" value="ac28f9a0-206e-48e7-a1b1-3e0f8be82cb9">
           <input type="hidden" name="subject" value="Afspraakaanvraag · startpagina (NL)">
@@ -140,13 +136,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="hidden" name="redirect" value="https://www.diamantconsult.com/nl/?merci=1#demande">
           <input type="hidden" name="prix_envisage" id="hl-hidden-price" value="400 000 €">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-          <fieldset class="hl-radios"><legend>Type woning</legend><label><input type="radio" name="type" value="Huis" checked> Huis</label><label><input type="radio" name="type" value="Appartement"> Appartement</label><label><input type="radio" name="type" value="Ander"> Ander</label></fieldset>
-          <div class="hl-pair">
-            <label>Gemeente<input type="text" name="commune" list="hl-communes" placeholder="Bv. Schaarbeek" autocomplete="address-level2"></label>
-            <label>Uw e-mailadres<input type="email" name="email" required autocomplete="email"></label>
+          <div class="hl-inline">
+            <input type="email" name="email" required autocomplete="email" placeholder="Uw e-mailadres" aria-label="Uw e-mailadres">
+            <button type="submit" class="hl-btn">Afspraak aanvragen</button>
           </div>
-          <datalist id="hl-communes"><option value="Anderlecht"><option value="Auderghem"><option value="Berchem-Sainte-Agathe"><option value="Bruxelles-Ville"><option value="Etterbeek"><option value="Evere"><option value="Forest"><option value="Ganshoren"><option value="Ixelles"><option value="Jette"><option value="Koekelberg"><option value="Molenbeek-Saint-Jean"><option value="Saint-Gilles"><option value="Saint-Josse-ten-Noode"><option value="Schaerbeek"><option value="Uccle"><option value="Watermael-Boitsfort"><option value="Woluwe-Saint-Lambert"><option value="Woluwe-Saint-Pierre"><option value="Waterloo"><option value="La Hulpe"><option value="Wavre"><option value="Rixensart"></datalist>
-          <button type="submit" class="hl-btn">Vraag een gratis eerste afspraak aan</button>
           <p class="hl-note">Vrijblijvend · Antwoord per e-mail (FR/EN)</p>
         </form>
       </div>

@@ -21,7 +21,7 @@ T = {
                incl="Photos, annonces, visites, négociation et suivi jusqu’à l’acte : tout est compris.",
                form_t="Parlons de votre bien", type="Type de bien", types=["Maison", "Appartement", "Autre"],
                commune="Commune", commune_ph="Ex. Schaerbeek", email="Votre e-mail",
-               send="Demander un premier rendez-vous gratuit",
+               send="Demander un rendez-vous", form_t2="Premier rendez-vous gratuit pour en parler", trust=["Notaire partenaire : Me Stephan Borremans", "Bureau à Schaerbeek", "23 communes · Bruxelles &amp; Brabant wallon"],
                note="Sans engagement · Réponse par e-mail",
                thanks="Merci ! Votre demande est bien envoyée. Nous vous répondons par e-mail.",
                subject="Demande de rendez-vous · page d’accueil", stat="Communes · Bruxelles &amp; Brabant wallon",
@@ -32,7 +32,7 @@ T = {
                incl="Photos, listings, viewings, negotiation and follow-up until the deed: all included.",
                form_t="Tell us about your property", type="Property type", types=["House", "Apartment", "Other"],
                commune="Municipality", commune_ph="e.g. Schaerbeek", email="Your e-mail",
-               send="Book a free first meeting",
+               send="Book a meeting", form_t2="Free first meeting to talk it through", trust=["Partner notary: Stephan Borremans", "Office in Schaerbeek", "23 municipalities · Brussels &amp; Walloon Brabant"],
                note="No obligation · We reply by e-mail",
                thanks="Thank you! Your request has been sent. We will reply by e-mail.",
                subject="Meeting request · homepage (EN)", stat="Municipalities · Brussels &amp; Walloon Brabant",
@@ -43,7 +43,7 @@ T = {
                incl="Foto’s, advertenties, bezoeken, onderhandeling en opvolging tot de akte: alles inbegrepen.",
                form_t="Vertel ons over uw woning", type="Type woning", types=["Huis", "Appartement", "Ander"],
                commune="Gemeente", commune_ph="Bv. Schaarbeek", email="Uw e-mailadres",
-               send="Vraag een gratis eerste afspraak aan",
+               send="Afspraak aanvragen", form_t2="Gratis eerste afspraak om erover te praten", trust=["Partnernotaris: Stephan Borremans", "Kantoor in Schaarbeek", "23 gemeenten · Brussel &amp; Waals-Brabant"],
                note="Vrijblijvend · Antwoord per e-mail (FR/EN)",
                thanks="Bedankt! Uw aanvraag is verzonden. We antwoorden per e-mail.",
                subject="Afspraakaanvraag · startpagina (NL)", stat="Gemeenten · Brussel &amp; Waals-Brabant",
@@ -53,10 +53,6 @@ T = {
 
 def card(t):
     e = html.escape
-    radios = "".join(
-        f'<label><input type="radio" name="type" value="{e(x)}"{" checked" if i == 0 else ""}> {e(x)}</label>'
-        for i, x in enumerate(t["types"]))
-    opts = "".join(f'<option value="{c}">' for c in COMMUNES)
     return f'''<div class="hero-lead" id="demande">
         <div class="hl-calc">
           <p class="hl-kicker">{t["calc_t"]}</p>
@@ -71,7 +67,7 @@ def card(t):
           <p class="hl-incl">{CHECK}<span>{t["incl"]}</span></p>
         </div>
         <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">
-          <p class="hl-title">{t["form_t"]}</p>
+          <p class="hl-title">{t["form_t2"]}</p>
           <p class="hl-thanks" id="hl-thanks" hidden>{t["thanks"]}</p>
           <input type="hidden" name="access_key" value="{KEY}">
           <input type="hidden" name="subject" value="{e(t["subject"])}">
@@ -79,13 +75,10 @@ def card(t):
           <input type="hidden" name="redirect" value="{t["url"]}?merci=1#demande">
           <input type="hidden" name="prix_envisage" id="hl-hidden-price" value="400 000 €">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
-          <fieldset class="hl-radios"><legend>{t["type"]}</legend>{radios}</fieldset>
-          <div class="hl-pair">
-            <label>{t["commune"]}<input type="text" name="commune" list="hl-communes" placeholder="{e(t["commune_ph"])}" autocomplete="address-level2"></label>
-            <label>{t["email"]}<input type="email" name="email" required autocomplete="email"></label>
+          <div class="hl-inline">
+            <input type="email" name="email" required autocomplete="email" placeholder="{e(t["email"])}" aria-label="{e(t["email"])}">
+            <button type="submit" class="hl-btn">{t["send"]}</button>
           </div>
-          <datalist id="hl-communes">{opts}</datalist>
-          <button type="submit" class="hl-btn">{t["send"]}</button>
           <p class="hl-note">{t["note"]}</p>
         </form>
       </div>'''
@@ -100,9 +93,10 @@ def main():
             start = s.index('<div class="hero-lead"')
         end = s.index("    </div>\n  </div>\n</section>", start)
         s = s[:start] + card(t) + "\n" + s[end:]
-        # stats: real number of commune pages
-        s = re.sub(r'<div class="num">19\+</div>(\s*)<div class="lbl">[^<]*</div>',
-                   rf'<div class="num">23</div>\1<div class="lbl">{t["stat"]}</div>', s)
+        # stats row -> one quiet trust line (the 2% is in the calculator, the 600 € pack in the offers section)
+        trust = "".join(f"<li>{CHECK}<span>{x}</span></li>" for x in t["trust"])
+        s = re.sub(r'<div class="hero-stats">.*?\n        </div>\n(?=      </div>)|<ul class="hero-trust">.*?</ul>\n',
+                   f'<ul class="hero-trust">{trust}</ul>\n', s, count=1, flags=re.S)
         # main CTA goes to the form
         s = re.sub(r'<a href="contact/" class="btn-primary">(\s*)' + re.escape(t["cta"]),
                    rf'<a href="#demande" class="btn-primary">\1{t["cta"]}', s, count=1)
