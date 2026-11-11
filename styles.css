@@ -1975,7 +1975,7 @@ section { padding: clamp(4rem, 8vw, 7rem) 0; position: relative; }
 .hl-cmp-t { margin: .5rem 0 0; font-size: .78rem; color: #A9A59C; }
 .hl-sub { text-align: left; margin: 0; }
 @media (max-width: 480px) {
-  .hl-row { grid-template-columns: 2.4rem 1fr auto auto; gap: .5rem; font-size: .85rem; }
+  .hl-row { grid-template-columns: 6.6rem 1fr auto auto; gap: .5rem; font-size: .82rem; }
   .hl-row em { font-size: .75rem; }
   .hl-row.us { grid-template-columns: 1fr auto; }
   .hl-row.us strong { grid-column: auto; }
