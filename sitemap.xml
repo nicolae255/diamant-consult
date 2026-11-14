@@ -4,15 +4,16 @@
     <loc>https://www.diamantconsult.com/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/blog/</loc>
-    <lastmod>2026-11-11</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
@@ -51,15 +52,16 @@
     <loc>https://www.diamantconsult.com/en/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/blog/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
@@ -140,6 +142,12 @@
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/sell-inherited-property-brussels/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-property-anderlecht/</loc>
@@ -361,9 +369,9 @@
     <loc>https://www.diamantconsult.com/nl/</loc>
     <lastmod>2026-11-11</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/appartements-balcons-brique.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/</loc>
@@ -376,6 +384,7 @@
     <lastmod>2026-11-11</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
@@ -396,6 +405,12 @@
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maisons-rangee-soleil.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/geerfde-woning-verkopen-brussel/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/hoelang-verkopen-brussel-2026/</loc>
@@ -800,6 +815,12 @@
     <lastmod>2026-11-11</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/vendre-maison-succession-bruxelles/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-molenbeek-saint-jean/</loc>

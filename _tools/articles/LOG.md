@@ -11,3 +11,4 @@
 - 2026-11-10 · /grille-loyers-bruxelles-2026/ · /en/brussels-rent-grid-2026/ · /nl/huurprijzenrooster-brussel-2026/ · seller situation · bailleurs, grille des loyers · loyers.brussels
 - 2026-11-10 · /marche-immobilier-bruxelles-2026/ · /en/brussels-property-market-2026/ · /nl/vastgoedmarkt-brussel-2026/ · news · marché T3 2026 · notaire.be baromètre T3 2026
 - 2026-11-11 · /combien-coute-agence-immobiliere-bruxelles/ · /en/estate-agent-fees-brussels/ · /nl/kosten-makelaar-brussel/ · guide evergreen · frais de vente / commission · Immoweb 2025 via Business AM, notaire.be, Bruxelles Environnement
+- 2026-11-14 · /vendre-maison-succession-bruxelles/ · /en/sell-inherited-property-brussels/ · /nl/geerfde-woning-verkopen-brussel/ · seller situation · succession / héritage · notaire.be (droits de succession Bruxelles, déclaration, indivision)
