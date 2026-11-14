@@ -18,7 +18,7 @@ CHECK = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="cur
 T = {
     "fr": dict(file="index.html", url="https://www.diamantconsult.com/",
                calc_t="Combien coûte la vente ?", price="Prix de vente envisagé",
-               ag="", us="Avec Diamant Consult · 2\u00a0%", cmp="Si vous payiez une commission de :", vat_note="Montants HTVA, TVA de 21\u00a0% en sus. En rouge : ce que vous paieriez en plus.",
+               ag="", costs_url="combien-coute-agence-immobiliere-bruxelles/", costs="Tous les frais d’une vente →", us="Avec Diamant Consult · 2\u00a0%", cmp="Si vous payiez une commission de :", vat_note="Montants HTVA, TVA de 21\u00a0% en sus. En rouge : ce que vous paieriez en plus.",
                incl="Photos, annonces, visites et suivi jusqu’à l’acte : tout est compris.",
                form_t="Parlons de votre bien", type="Type de bien", types=["Maison", "Appartement", "Autre"],
                commune="Commune", commune_ph="Ex. Schaerbeek", email="Votre e-mail",
@@ -29,7 +29,7 @@ T = {
                cta="Vendre mon bien"),
     "en": dict(file="en/index.html", url="https://www.diamantconsult.com/en/",
                calc_t="What does selling cost?", price="Expected sale price",
-               ag="", us="With Diamant Consult · 2%", cmp="If you paid a commission of:", vat_note="Amounts excl. VAT (21% VAT on top). In red: what you would pay on top.",
+               ag="", costs_url="estate-agent-fees-brussels/", costs="All the costs of a sale →", us="With Diamant Consult · 2%", cmp="If you paid a commission of:", vat_note="Amounts excl. VAT (21% VAT on top). In red: what you would pay on top.",
                incl="Photos, listings, viewings and follow-up until the deed: all included.",
                form_t="Tell us about your property", type="Property type", types=["House", "Apartment", "Other"],
                commune="Municipality", commune_ph="e.g. Schaerbeek", email="Your e-mail",
@@ -40,7 +40,7 @@ T = {
                cta="Sell my property"),
     "nl": dict(file="nl/index.html", url="https://www.diamantconsult.com/nl/",
                calc_t="Wat kost de verkoop?", price="Beoogde verkoopprijs",
-               ag="", us="Met Diamant Consult · 2\u00a0%", cmp="Als u een commissie zou betalen van:", vat_note="Bedragen excl. btw (21\u00a0% btw bovenop). In het rood: wat u meer zou betalen.",
+               ag="", costs_url="kosten-makelaar-brussel/", costs="Alle kosten van een verkoop →", us="Met Diamant Consult · 2\u00a0%", cmp="Als u een commissie zou betalen van:", vat_note="Bedragen excl. btw (21\u00a0% btw bovenop). In het rood: wat u meer zou betalen.",
                incl="Foto’s, advertenties, bezoeken en opvolging tot de akte: alles inbegrepen.",
                form_t="Vertel ons over uw woning", type="Type woning", types=["Huis", "Appartement", "Ander"],
                commune="Gemeente", commune_ph="Bv. Schaarbeek", email="Uw e-mailadres",
@@ -67,7 +67,7 @@ def card(t):
             <div class="hl-row us"><span class="r">{t["us"]}</span><span class="bar"><i data-rate="2"></i></span><strong data-rate="2">8 000 €</strong></div>
             <p class="hl-cmp-t">{t["cmp"]}</p>
 {rows}          </div>
-          <p class="hl-sub">{t["vat_note"]}</p>
+          <p class="hl-sub">{t["vat_note"]} <a href="{t["costs_url"]}" style="color:inherit;text-decoration:underline">{t["costs"]}</a></p>
           <p class="hl-incl">{CHECK}<span>{t["incl"]}</span></p>
         </div>
         <form class="hl-form" action="https://api.web3forms.com/submit" method="POST">

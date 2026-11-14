@@ -218,6 +218,13 @@ def build(spec, lang):
     # ---------- FAQ
     faq = "".join(f'<details{" open" if i < 3 else ""}><summary>{esc_nb(q)}</summary><p>{esc_nb(a)}</p></details>' for i, (q, a) in enumerate(b["faq"]))
     faq_sec = f'<section class="cm-sec" style="border-top:1px solid var(--line)"><div class="cm-wrap cm-faq" style="max-width:900px"><h2 class="cm-h2" style="margin-bottom:1rem">{esc(t["faq_title"])}</h2>{faq}</div></section>'
+    # ---------- guides (internal links to the key seller articles)
+    wal = str(spec.get("postcode", "")).startswith(("13", "14"))
+    G = {"fr": ("Guides pour bien vendre", [("combien-coute-agence-immobiliere-bruxelles", "Combien coûte une vente ?"), ("delai-vente-bruxelles-2026", "Combien de temps pour vendre ?"), ("vendre-maison-succession-bruxelles", "Vendre un bien hérité"), ("certificat-peb-vente-immobiliere", "Le certificat PEB"), ("vendre-maison-brabant-wallon", "Vendre en Brabant wallon") if wal else ("marche-immobilier-bruxelles-2026", "Le marché bruxellois en 2026")]),
+         "en": ("Guides for selling well", [("estate-agent-fees-brussels", "What does selling cost?"), ("how-long-to-sell-brussels-2026", "How long does it take to sell?"), ("sell-inherited-property-brussels", "Selling an inherited property"), ("epc-certificate-property-sale", "The EPC certificate"), ("selling-property-brabant-wallon", "Selling in Walloon Brabant") if wal else ("brussels-property-market-2026", "The Brussels market in 2026")]),
+         "nl": ("Gidsen om goed te verkopen", [("kosten-makelaar-brussel", "Wat kost een verkoop?"), ("hoelang-verkopen-brussel-2026", "Hoelang duurt een verkoop?"), ("geerfde-woning-verkopen-brussel", "Een geërfde woning verkopen"), ("epc-attest-verkoop", "Het EPB-certificaat"), ("woning-verkopen-waals-brabant", "Verkopen in Waals-Brabant") if wal else ("vastgoedmarkt-brussel-2026", "De Brusselse markt in 2026")])}[lang]
+    guides = "".join(f'<a href="{up}{pre}{g}/">{esc(n)}</a>' for g, n in G[1] if os.path.exists(os.path.join(ROOT, pre, g, "index.html")))
+    guides_sec = f'<section class="cm-sec" style="padding-block:3rem;border-top:1px solid var(--line)"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:1rem"><h2 style="margin:0;font-size:1.3rem">{esc(G[0])}</h2><div class="cm-chips">{guides}</div></div></section>' if guides else ""
     # ---------- nearby
     near = "".join((f'<a href="{up}{pre}{n["href"]}">{esc(n["name"])}</a>' if n.get("href") else f"<span>{esc(n['name'])}</span>") for n in b["nearby"])
     near_sec = f'<section class="cm-soft" style="padding-block:3rem"><div class="cm-wrap" style="display:flex;flex-direction:column;gap:1rem"><h2 style="margin:0;font-size:1.3rem">{esc(t["near_title"])}</h2><div class="cm-chips">{near}</div></div></section>'
@@ -225,7 +232,7 @@ def build(spec, lang):
   <div style="flex:1 1 420px;min-width:0"><h2 class="cm-h2" style="margin-bottom:.6rem">{esc_nb(b["cta_h2"])}</h2><p class="cm-p" style="color:#CFCBC2">{esc_nb(b["cta_p"])}</p></div>
   <a href="#demande" class="cm-btn light">{t["cta_btn"]}</a></div></div></section>'''
     thanks_js = '<script>if(/[?&]merci=1/.test(location.search)){var t=document.getElementById("cm-thanks");if(t)t.hidden=false;}</script>'
-    content = "\n".join([CSS, hero, trust, hv, price, steps_sec, market, sales_sec, faq_sec, near_sec, cta, thanks_js])
+    content = "\n".join([CSS, hero, trust, hv, price, steps_sec, market, sales_sec, faq_sec, guides_sec, near_sec, cta, thanks_js])
 
     # ---------- page shell from the article template
     tpl = open(os.path.join(ROOT, "_tools", f"article_template_{lang}.html"), encoding="utf-8").read()

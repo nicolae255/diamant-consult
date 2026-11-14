@@ -35,7 +35,21 @@ def names(lang):
     return out
 
 
-def block(lang, text):
+READ = {"fr": ("À lire aussi", [("combien-coute-agence-immobiliere-bruxelles", "Combien coûte une vente à Bruxelles ?"), ("delai-vente-bruxelles-2026", "Combien de temps pour vendre ?"), ("vendre-maison-succession-bruxelles", "Vendre un bien hérité"), ("certificat-peb-vente-immobiliere", "Le certificat PEB et la vente"), ("marche-immobilier-bruxelles-2026", "Le marché bruxellois en 2026")]),
+        "en": ("Read next", [("estate-agent-fees-brussels", "What does selling cost in Brussels?"), ("how-long-to-sell-brussels-2026", "How long does it take to sell?"), ("sell-inherited-property-brussels", "Selling an inherited property"), ("epc-certificate-property-sale", "The EPC certificate and your sale"), ("brussels-property-market-2026", "The Brussels market in 2026")]),
+        "nl": ("Lees ook", [("kosten-makelaar-brussel", "Wat kost een verkoop in Brussel?"), ("hoelang-verkopen-brussel-2026", "Hoelang duurt een verkoop?"), ("geerfde-woning-verkopen-brussel", "Een geërfde woning verkopen"), ("epc-attest-verkoop", "Het EPB-certificaat en de verkoop"), ("vastgoedmarkt-brussel-2026", "De Brusselse markt in 2026")])}
+
+
+def read_next(lang, own_slug):
+    pre = {"fr": "", "en": "en", "nl": "nl"}[lang]
+    items = [(g, n) for g, n in READ[lang][1] if g != own_slug and os.path.exists(os.path.join(ROOT, pre, g, "index.html"))][:3]
+    if not items:
+        return ""
+    lis = "".join(f'<li><a href="../{g}/">{n}</a></li>' for g, n in items)
+    return f'      <h2>{READ[lang][0]}</h2>\n      <ul>{lis}</ul>\n'
+
+
+def block(lang, text, own_slug=""):
     items = names(lang)
     low = text.lower()
     count = {i[0]: sum(len(re.findall(r"(?<![\w-])" + re.escape(a.lower()) + r"(?![\w-])", low)) for a in set(i[2])) for i in items}
@@ -44,7 +58,7 @@ def block(lang, text):
     lis = "".join(f'<li class="has-page"><a href="{u}">{n}</a></li>' for n, u, _ in mentioned + rest)
     t = T[lang]
     return (f'{START}\n      <h2>{t["h2"]}</h2>\n      <p>{t["p"]}</p>\n'
-            f'      <ul class="zone-list" style="margin:1rem 0 2.5rem;padding:0">{lis}</ul>\n      {END}\n      ')
+            f'      <ul class="zone-list" style="margin:1rem 0 2.5rem;padding:0">{lis}</ul>\n' + read_next(lang, own_slug) + f'      {END}\n      ')
 
 
 def lang_of(path):
@@ -65,7 +79,7 @@ def main():
         if not m:
             print("  no FAQ/Sources heading:", os.path.relpath(p, ROOT))
             continue
-        s = s[:m.start()] + block(lang, body) + s[m.start():]
+        s = s[:m.start()] + block(lang, body, os.path.basename(os.path.dirname(p))) + s[m.start():]
         open(p, "w", encoding="utf-8").write(s)
         n += 1
     print(f"  commune links: {n} articles")
