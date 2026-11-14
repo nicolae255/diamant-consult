@@ -348,7 +348,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   reveals.forEach((el) => obs.observe(el));
 
-  // Filter (cosmetic for now)
+  // Category filter
   (function () {
     var btns = document.querySelectorAll('.blog-filter .filter-btn');
     var cards = document.querySelectorAll('.blog-grid article, .blog-grid .blog-featured');
@@ -366,11 +366,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     });
   })();
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.blog-filter .filter-btn').forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
-    });
-  });
 
   const lb = document.querySelectorAll('.lang button');
   lb[1].onclick = () => location.href = '../nl/blog/';
