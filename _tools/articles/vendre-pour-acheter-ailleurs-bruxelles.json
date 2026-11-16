@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-16",
+  "read_min": 6,
+  "image": "img/banque/maison-jardin.webp",
+  "fr": {
+    "slug": "vendre-pour-acheter-ailleurs-bruxelles",
+    "seo_title": "Vendre à Bruxelles pour acheter ailleurs en 2026 · Diamant Consult",
+    "description": "43,6 % des Bruxellois achètent hors de Bruxelles (notaires, 2025). Vendre d'abord ou acheter d'abord, crédit-pont, condition suspensive : le guide du vendeur.",
+    "h1": "Vendre à Bruxelles pour acheter ailleurs :<br><span style=\"color: var(--mute);\">dans quel ordre, avec quel financement ?</span>",
+    "hero_sub": "Selon les notaires, plus de quatre Bruxellois sur dix achètent leur bien hors de la capitale. Si vous vendez à Bruxelles pour acheter en Flandre ou en Wallonie, voici comment organiser les deux opérations.",
+    "breadcrumb": "Vendre pour acheter ailleurs",
+    "category": "Guide vendeur",
+    "image_alt": "Maison avec jardin fleuri, projet de quitter Bruxelles pour plus de verdure",
+    "card_title": "Vendre à Bruxelles pour acheter ailleurs : dans quel ordre ?",
+    "card_excerpt": "43,6 % des Bruxellois achètent hors de la capitale : vendre d'abord ou acheter d'abord, crédit-pont, condition suspensive. Le guide du vendeur.",
+    "summary": [
+      "En 2025, 43,6 % des Bruxellois qui ont acheté un bien l'ont fait hors de Bruxelles, contre 39,9 % en 2024 (notaire.be, 29 octobre 2026).",
+      "Pour les maisons, seuls 32 % des acheteurs bruxellois restent à Bruxelles (43 % choisissent la Flandre, 25 % la Wallonie) ; pour les appartements, 86 % restent.",
+      "Une maison coûtait en moyenne environ 583 000 € à Bruxelles en 2025, contre environ 380 000 € en Flandre et 270 000 € en Wallonie.",
+      "Un crédit-pont couvre l'écart entre achat et vente, mais ses conditions peuvent être plus strictes et plus chères qu'un crédit classique.",
+      "Diamant Consult vend votre bien à Bruxelles pour 2 % HTVA, tout compris, avec un premier rendez-vous gratuit et sans engagement."
+    ],
+    "faq": [
+      {
+        "q": "Faut-il vendre avant d'acheter à Bruxelles ou ailleurs ?",
+        "a": "Cela dépend de votre capacité d'emprunt et du délai que vous pouvez supporter. Vendre d'abord donne un budget certain, acheter d'abord évite un déménagement provisoire mais fait porter deux biens à la fois."
+      },
+      {
+        "q": "Qu'est-ce qu'un crédit-pont ?",
+        "a": "Selon notaire.be, c'est un crédit qui couvre la période entre l'achat d'un nouveau bien et la vente de l'ancien : la banque avance le montant de la vente et vous la remboursez avec le prix de vente, en payant des intérêts entre-temps."
+      },
+      {
+        "q": "Peut-on mettre une condition d'achat dans le compromis de vente ?",
+        "a": "Le compromis peut contenir des conditions suspensives. Un vendeur peut prévoir de pouvoir d'abord acheter un autre bien, mais une telle clause se rédige avec le notaire et peut rendre le bien moins attractif."
+      },
+      {
+        "q": "Pourquoi tant de Bruxellois achètent-ils hors de Bruxelles ?",
+        "a": "Selon les notaires, le prix est le facteur principal (environ 583 000 € pour une maison à Bruxelles contre environ 380 000 € en Flandre), avec le besoin d'espace, la verdure et, en Wallonie, des droits d'enregistrement réduits pour les primo-accédants."
+      },
+      {
+        "q": "Combien coûte la vente avec Diamant Consult ?",
+        "a": "La commission est de 2 % HTVA, tout compris, et le premier rendez-vous est gratuit et sans engagement."
+      }
+    ],
+    "body": "_tools/articles/vendre-pour-acheter-ailleurs-bruxelles.fr.html"
+  },
+  "en": {
+    "slug": "sell-brussels-home-buy-elsewhere",
+    "seo_title": "Sell in Brussels and buy elsewhere in 2026 · Diamant Consult",
+    "description": "43.6% of Brussels residents buy outside Brussels (notaries, 2025). Sell first or buy first, bridge loan, suspensive condition: the seller's guide.",
+    "h1": "Selling in Brussels to buy elsewhere:<br><span style=\"color: var(--mute);\">in which order, with what financing?</span>",
+    "hero_sub": "According to the notaries, more than four in ten Brussels residents buy their property outside the capital. If you sell in Brussels to buy in Flanders or Wallonia, here is how to organise both transactions.",
+    "breadcrumb": "Sell and buy elsewhere",
+    "category": "Seller guide",
+    "image_alt": "House with a flowering garden, moving out of Brussels for more greenery",
+    "card_title": "Selling in Brussels to buy elsewhere: in which order?",
+    "card_excerpt": "43.6% of Brussels residents buy outside the capital: sell first or buy first, bridge loan, suspensive condition. The seller's guide.",
+    "summary": [
+      "In 2025, 43.6% of Brussels residents who bought a property did so outside Brussels, up from 39.9% in 2024 (notaire.be, 29 October 2026).",
+      "For houses, only 32% of Brussels buyers stay in Brussels (43% choose Flanders, 25% Wallonia); for apartments, 86% stay.",
+      "An average house cost about €583,000 in Brussels in 2025, against about €380,000 in Flanders and €270,000 in Wallonia.",
+      "A bridge loan covers the gap between buying and selling, but its conditions can be stricter and more expensive than a standard loan.",
+      "Diamant Consult sells your Brussels property for 2% excl. VAT, all-inclusive, with a free first meeting and no obligation."
+    ],
+    "faq": [
+      {
+        "q": "Should I sell before buying my next home?",
+        "a": "It depends on how much you can borrow and how long a gap you can live with. Selling first gives you a certain budget; buying first avoids a temporary move but means carrying two properties at once."
+      },
+      {
+        "q": "What is a bridge loan?",
+        "a": "According to notaire.be, it is a loan covering the period between buying a new property and selling the old one: the bank advances the sale amount and you repay it from the sale price, paying interest in the meantime."
+      },
+      {
+        "q": "Can I add a purchase condition to the sale agreement?",
+        "a": "The compromis can contain suspensive conditions. A seller can provide for first being able to buy another home, but such a clause is drafted with the notary and may make the property less attractive."
+      },
+      {
+        "q": "Why do so many Brussels residents buy outside Brussels?",
+        "a": "According to the notaries, price is the main factor (about €583,000 for a house in Brussels against about €380,000 in Flanders), along with space, greenery and, in Wallonia, reduced registration duties for first-time buyers."
+      },
+      {
+        "q": "How much does selling with Diamant Consult cost?",
+        "a": "The commission is 2% excl. VAT, all-inclusive, and the first meeting is free and without obligation."
+      }
+    ],
+    "body": "_tools/articles/vendre-pour-acheter-ailleurs-bruxelles.en.html"
+  },
+  "nl": {
+    "slug": "woning-brussel-verkopen-elders-kopen",
+    "seo_title": "Woning in Brussel verkopen en elders kopen 2026 · Diamant Consult",
+    "description": "43,6% van de Brusselaars koopt buiten Brussel (notarissen, 2025). Eerst verkopen of eerst kopen, overbruggingskrediet, opschortende voorwaarde: de gids.",
+    "h1": "Woning in Brussel verkopen om elders te kopen:<br><span style=\"color: var(--mute);\">in welke volgorde, met welke financiering?</span>",
+    "hero_sub": "Volgens de notarissen koopt meer dan vier op tien Brusselaars een pand buiten de hoofdstad. Verkoopt u in Brussel om in Vlaanderen of Wallonië te kopen, dan leest u hier hoe u beide operaties organiseert.",
+    "breadcrumb": "Verkopen en elders kopen",
+    "category": "Verkopersgids",
+    "image_alt": "Huis met bloeiende tuin, Brussel verlaten voor meer groen",
+    "card_title": "Woning in Brussel verkopen om elders te kopen: welke volgorde?",
+    "card_excerpt": "43,6% van de Brusselaars koopt buiten de hoofdstad: eerst verkopen of eerst kopen, overbruggingskrediet, opschortende voorwaarde. De gids voor verkopers.",
+    "summary": [
+      "In 2025 kocht 43,6% van de Brusselaars die een pand kochten dat buiten Brussel, tegenover 39,9% in 2024 (notaire.be, 29 oktober 2026).",
+      "Bij huizen blijft slechts 32% van de Brusselse kopers in Brussel (43% kiest Vlaanderen, 25% Wallonië); bij appartementen blijft 86%.",
+      "Een huis kostte in 2025 gemiddeld ongeveer € 583.000 in Brussel, tegenover ongeveer € 380.000 in Vlaanderen en € 270.000 in Wallonië.",
+      "Een overbruggingskrediet dekt de periode tussen aankoop en verkoop, maar de voorwaarden kunnen strenger en duurder zijn dan bij een gewoon krediet.",
+      "Diamant Consult verkoopt uw Brusselse pand voor 2% excl. btw, alles inbegrepen, met een gratis en vrijblijvend eerste gesprek."
+    ],
+    "faq": [
+      {
+        "q": "Moet ik verkopen voor ik mijn volgende woning koop?",
+        "a": "Dat hangt af van uw leencapaciteit en de tussentijd die u aankunt. Eerst verkopen geeft een zeker budget; eerst kopen vermijdt een tijdelijke verhuis maar betekent twee panden tegelijk dragen."
+      },
+      {
+        "q": "Wat is een overbruggingskrediet?",
+        "a": "Volgens notaire.be dekt het de periode tussen de aankoop van een nieuw pand en de verkoop van het oude: de bank schiet het verkoopbedrag voor en u betaalt het terug met de verkoopprijs, met intussen interesten."
+      },
+      {
+        "q": "Kan ik een aankoopvoorwaarde in het verkoopcompromis opnemen?",
+        "a": "Het compromis kan opschortende voorwaarden bevatten. Een verkoper kan voorzien dat hij eerst een andere woning moet kunnen kopen, maar zo'n clausule stelt u op met de notaris en kan het pand minder aantrekkelijk maken."
+      },
+      {
+        "q": "Waarom kopen zoveel Brusselaars buiten Brussel?",
+        "a": "Volgens de notarissen is de prijs de belangrijkste factor (ongeveer € 583.000 voor een huis in Brussel tegenover ongeveer € 380.000 in Vlaanderen), naast ruimte, groen en in Wallonië verlaagde registratierechten voor eerste kopers."
+      },
+      {
+        "q": "Wat kost verkopen met Diamant Consult?",
+        "a": "De commissie bedraagt 2% excl. btw, alles inbegrepen, en het eerste gesprek is gratis en vrijblijvend."
+      }
+    ],
+    "body": "_tools/articles/vendre-pour-acheter-ailleurs-bruxelles.nl.html"
+  },
+  "sources": [
+    {
+      "name": "notaire.be · Acheter à Bruxelles, en Flandre ou en Wallonie : que choisissent les Bruxellois ? (29/10/2026)",
+      "url": "https://www.notaire.be/actualites/acheter-bruxelles-en-flandre-ou-en-wallonie-que-choisissent-les-bruxellois"
+    },
+    {
+      "name": "notaire.be · Mon compromis de vente signé, dois-je encore contacter ma banque ?",
+      "url": "https://www.notaire.be/actualites/mon-compromis-de-vente-signe-dois-je-encore-contacter-ma-banque"
+    }
+  ]
+}
