@@ -2,17 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.diamantconsult.com/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
@@ -51,17 +52,18 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
@@ -150,6 +152,12 @@
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/rue-brique-brume.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/en/sell-house-woluwe-saint-pierre-2026/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/sell-inherited-property-brussels/</loc>
@@ -375,11 +383,11 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/</loc>
@@ -389,9 +397,10 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/blog/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/calculatrice-budget.webp</image:loc></image:image>
@@ -426,6 +435,12 @@
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/huis-verkopen-sint-pieters-woluwe-2026/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/huurprijzenrooster-brussel-2026/</loc>
@@ -836,6 +851,12 @@
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/vendre-maison-woluwe-saint-pierre-2026/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-molenbeek-saint-jean/</loc>

@@ -13,3 +13,4 @@
 - 2026-11-11 · /combien-coute-agence-immobiliere-bruxelles/ · /en/estate-agent-fees-brussels/ · /nl/kosten-makelaar-brussel/ · guide evergreen · frais de vente / commission · Immoweb 2025 via Business AM, notaire.be, Bruxelles Environnement
 - 2026-11-14 · /vendre-maison-succession-bruxelles/ · /en/sell-inherited-property-brussels/ · /nl/geerfde-woning-verkopen-brussel/ · seller situation · succession / héritage · notaire.be (droits de succession Bruxelles, déclaration, indivision)
 - 2026-11-16 · /vendre-pour-acheter-ailleurs-bruxelles/ · /en/sell-brussels-home-buy-elsewhere/ · /nl/woning-brussel-verkopen-elders-kopen/ · seller situation · vendre pour acheter ailleurs (Bruxellois achetant hors de Bruxelles) · notaire.be Fednot 29/10/2026
+- 2026-11-19 · /vendre-maison-woluwe-saint-pierre-2026/ · /en/sell-house-woluwe-saint-pierre-2026/ · /nl/huis-verkopen-sint-pieters-woluwe-2026/ · commune · Woluwe-Saint-Pierre · notaire.be bilan Bruxelles 2025
