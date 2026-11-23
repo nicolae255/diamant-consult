@@ -2,17 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.diamantconsult.com/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/blog/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/delai-vente-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
@@ -52,17 +53,18 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/en/blog/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
@@ -358,6 +360,12 @@
     <image:image><image:loc>https://www.diamantconsult.com/img/projets/commerce-woluwe.webp</image:loc></image:image>
   </url>
   <url>
+    <loc>https://www.diamantconsult.com/en/sell-rented-property-brussels/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://www.diamantconsult.com/en/selling-property-brabant-wallon/</loc>
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
@@ -383,11 +391,11 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>1.0</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/appartement-verkopen-elsene-ukkel/</loc>
@@ -397,9 +405,10 @@
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/blog/</loc>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maquette-maison-cles.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/bruxelles-vue-aerienne.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/maison-jardin.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/banque/cles-porte.webp</image:loc></image:image>
@@ -483,6 +492,12 @@
     <lastmod>2026-11-14</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://www.diamantconsult.com/img/brussels-old-city.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/nl/verhuurde-woning-verkopen-brussel/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/nl/verkopen-anderlecht/</loc>
@@ -749,6 +764,12 @@
     <image:image><image:loc>https://www.diamantconsult.com/img/communes/berchem-sainte-agathe/berchem-sainte-agathe-immobilier.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-anderlecht-conciliation.webp</image:loc></image:image>
     <image:image><image:loc>https://www.diamantconsult.com/img/projets/maison-schaerbeek-1.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.diamantconsult.com/vendre-bien-loue-bruxelles/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://www.diamantconsult.com/img/banque/immeuble-balcons.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.diamantconsult.com/vendre-bruxelles-ville/</loc>

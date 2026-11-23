@@ -1,0 +1,145 @@
+{
+  "date": "2026-11-23",
+  "read_min": 5,
+  "image": "img/banque/immeuble-balcons.webp",
+  "fr": {
+    "slug": "vendre-bien-loue-bruxelles",
+    "seo_title": "Vendre un bien loué à Bruxelles 2026 · Diamant Consult",
+    "description": "Vendre un appartement ou une maison loué à Bruxelles : droit de préférence du locataire (30 jours), préavis et bail. Le guide pour les propriétaires.",
+    "h1": "Vendre un bien loué à Bruxelles :<br><span style=\"color: var(--mute);\">droit de préférence, bail et étapes en 2026.</span>",
+    "hero_sub": "Vous louez un appartement ou une maison à Bruxelles et vous pensez à le vendre ? Voici ce que prévoit la loi bruxelloise pour le locataire, avec les sources officielles.",
+    "breadcrumb": "Vendre un bien loué à Bruxelles",
+    "category": "Guide vendeur",
+    "image_alt": "Immeuble d'appartements avec balcons à Bruxelles, vente d'un bien loué",
+    "card_title": "Vendre un bien loué à Bruxelles : droit de préférence du locataire et bail",
+    "card_excerpt": "Le locataire a 30 jours pour acheter en premier : ce que doit faire un propriétaire bruxellois qui vend un appartement ou une maison loué.",
+    "summary": [
+      "Depuis le 6 janvier 2024, un locataire bruxellois en bail de résidence principale de longue durée (9 ans et plus) a un droit de préférence quand le propriétaire vend.",
+      "Le propriétaire doit informer le locataire par lettre recommandée, qui dispose de 30 jours pour acheter au prix et aux conditions indiqués, puis de 7 jours de plus si une offre plus avantageuse arrive.",
+      "Le notaire et l'agent immobilier doivent vérifier que le locataire a été informé, et le droit s'applique aussi à la vente publique.",
+      "Si le droit est ignoré, le locataire peut agir contre l'acheteur jusqu'à un an après la vente pour prendre sa place.",
+      "Diamant Consult vend les biens loués à Bruxelles pour 2 % HTVA tout compris, avec un premier rendez-vous gratuit et sans engagement."
+    ],
+    "faq": [
+      {
+        "q": "Un locataire peut-il acheter en priorité le bien qu'il loue à Bruxelles ?",
+        "a": "Oui, s'il est domicilié dans le logement avec un bail de résidence principale de longue durée. Il dispose de 30 jours après la lettre recommandée du propriétaire, selon be.brussels et notaire.be."
+      },
+      {
+        "q": "Faut-il prévenir le locataire avant de vendre ?",
+        "a": "Oui, par lettre recommandée avec accusé de réception, avant de conclure la vente. Le courrier indique le prix et les conditions, qui ne sont pas négociables."
+      },
+      {
+        "q": "Que devient le bail si je vends ?",
+        "a": "Le bail continue chez l'acheteur, qui doit respecter les préavis prévus, par exemple 6 mois pour un bail de 9 ans à date certaine selon notaire.be."
+      },
+      {
+        "q": "Peut-on vendre un bien loué sans le locataire qui part ?",
+        "a": "Oui, un bien peut être vendu libre si le locataire quitte les lieux, par exemple d'un commun accord, avant la mise en vente."
+      },
+      {
+        "q": "Combien coûte la vente d'un bien loué avec Diamant Consult ?",
+        "a": "La commission est de 2 % HTVA, tout compris, comme pour toute vente. Le premier rendez-vous est gratuit et sans engagement."
+      }
+    ],
+    "body": "_tools/articles/vendre-bien-loue-bruxelles.fr.html"
+  },
+  "en": {
+    "slug": "sell-rented-property-brussels",
+    "seo_title": "Sell a rented property in Brussels 2026 · Diamant Consult",
+    "description": "Selling a let flat or house in Brussels: the tenant's right of first refusal (30 days), notice periods and the lease. A guide for landlords who want to sell.",
+    "h1": "Selling a rented property in Brussels:<br><span style=\"color: var(--mute);\">tenant's rights, lease and steps in 2026.</span>",
+    "hero_sub": "You let a flat or house in Brussels and are thinking of selling? Here is what Brussels law provides for the tenant, with the official sources.",
+    "breadcrumb": "Selling a rented property in Brussels",
+    "category": "Seller guide",
+    "image_alt": "Apartment building with balconies in Brussels, selling a rented property",
+    "card_title": "Selling a rented property in Brussels: tenant's right of first refusal and lease",
+    "card_excerpt": "The tenant has 30 days to buy first: what a Brussels landlord must do when selling a let flat or house.",
+    "summary": [
+      "Since 6 January 2024, a Brussels tenant on a long-term main-residence lease (9 years or more) has a right of first refusal when the landlord sells.",
+      "The landlord must notify the tenant by registered letter; the tenant has 30 days to buy at the stated price and terms, then 7 more days if a better offer comes in.",
+      "The notary and the estate agent must check that the tenant was informed, and the right also applies to a public auction.",
+      "If the right is ignored, the tenant can take action against the buyer up to one year after the sale to take their place.",
+      "Diamant Consult sells let properties in Brussels for 2% excl. VAT all-inclusive, with a free first meeting and no obligation."
+    ],
+    "faq": [
+      {
+        "q": "Can a tenant buy the property they rent first in Brussels?",
+        "a": "Yes, if they are registered at the address with a long-term main-residence lease. They have 30 days after the landlord's registered letter, according to be.brussels and notaire.be."
+      },
+      {
+        "q": "Do I have to tell the tenant before selling?",
+        "a": "Yes, by registered letter with acknowledgement of receipt, before concluding the sale. The letter states the price and terms, which cannot be negotiated."
+      },
+      {
+        "q": "What happens to the lease if I sell?",
+        "a": "The lease continues with the buyer, who must respect the notice periods, for example 6 months for a 9-year lease with a certain date according to notaire.be."
+      },
+      {
+        "q": "Can I sell a rented property vacant?",
+        "a": "Yes, a property can be sold vacant if the tenant leaves, for example by mutual agreement, before it goes on the market."
+      },
+      {
+        "q": "How much does it cost to sell a rented property with Diamant Consult?",
+        "a": "The commission is 2% excl. VAT, all-inclusive, as for any sale. The first meeting is free and without obligation."
+      }
+    ],
+    "body": "_tools/articles/vendre-bien-loue-bruxelles.en.html"
+  },
+  "nl": {
+    "slug": "verhuurde-woning-verkopen-brussel",
+    "seo_title": "Verhuurde woning verkopen in Brussel 2026 · Diamant Consult",
+    "description": "Een verhuurd appartement of huis verkopen in Brussel: voorkeurrecht van de huurder (30 dagen), opzegtermijnen en huurovereenkomst. Gids voor verhuurders.",
+    "h1": "Verhuurde woning verkopen in Brussel:<br><span style=\"color: var(--mute);\">voorkeurrecht, huur en stappen in 2026.</span>",
+    "hero_sub": "Verhuurt u een appartement of huis in Brussel en overweegt u te verkopen? Dit voorziet de Brusselse regelgeving voor de huurder, met officiële bronnen.",
+    "breadcrumb": "Verhuurde woning verkopen in Brussel",
+    "category": "Verkopersgids",
+    "image_alt": "Appartementsgebouw met balkons in Brussel, verkoop van een verhuurde woning",
+    "card_title": "Verhuurde woning verkopen in Brussel: voorkeurrecht van de huurder en huur",
+    "card_excerpt": "De huurder heeft 30 dagen om als eerste te kopen: wat een Brusselse verhuurder moet doen bij de verkoop van een verhuurd appartement of huis.",
+    "summary": [
+      "Sinds 6 januari 2024 heeft een Brusselse huurder met een langdurige huur voor de hoofdverblijfplaats (9 jaar of meer) een voorkeurrecht wanneer de eigenaar verkoopt.",
+      "De eigenaar moet de huurder per aangetekende brief verwittigen; de huurder heeft 30 dagen om te kopen aan de vermelde prijs en voorwaarden, en 7 extra dagen als een gunstiger bod volgt.",
+      "De notaris en de makelaar moeten nagaan of de huurder verwittigd is, en het recht geldt ook bij een openbare verkoop.",
+      "Wordt het recht genegeerd, dan kan de huurder tot een jaar na de verkoop tegen de koper optreden om zijn plaats in te nemen.",
+      "Diamant Consult verkoopt verhuurde woningen in Brussel voor 2% excl. btw alles inbegrepen, met een gratis en vrijblijvend eerste gesprek."
+    ],
+    "faq": [
+      {
+        "q": "Kan een huurder in Brussel de woning die hij huurt als eerste kopen?",
+        "a": "Ja, als hij in de woning gedomicilieerd is met een langdurige huur voor de hoofdverblijfplaats. Hij heeft 30 dagen na de aangetekende brief van de eigenaar, volgens be.brussels en notaire.be."
+      },
+      {
+        "q": "Moet ik de huurder verwittigen voor ik verkoop?",
+        "a": "Ja, per aangetekende brief met ontvangstbewijs, voor de verkoop wordt afgesloten. De brief vermeldt prijs en voorwaarden, die niet onderhandelbaar zijn."
+      },
+      {
+        "q": "Wat gebeurt er met de huur als ik verkoop?",
+        "a": "De huur loopt door bij de koper, die de opzegtermijnen moet respecteren, bijvoorbeeld 6 maanden bij een huur van 9 jaar met vaste datum volgens notaire.be."
+      },
+      {
+        "q": "Kan ik een verhuurde woning vrij verkopen?",
+        "a": "Ja, een woning kan vrij worden verkocht als de huurder vertrekt, bijvoorbeeld in onderling overleg, voor ze in de verkoop gaat."
+      },
+      {
+        "q": "Wat kost de verkoop van een verhuurde woning bij Diamant Consult?",
+        "a": "De commissie bedraagt 2% excl. btw, alles inbegrepen, zoals bij elke verkoop. Het eerste gesprek is gratis en vrijblijvend."
+      }
+    ],
+    "body": "_tools/articles/vendre-bien-loue-bruxelles.nl.html"
+  },
+  "sources": [
+    {
+      "name": "be.brussels · Droit de préférence du locataire",
+      "url": "https://be.brussels/fr/logement/achat-vente-propriete/achat-vente/droit-de-preference-du-locataire"
+    },
+    {
+      "name": "notaire.be · Le droit de préférence du locataire à Bruxelles",
+      "url": "https://www.notaire.be/actualites/nouveaute-immobiliere-bruxelles-le-droit-de-preference-du-locataire"
+    },
+    {
+      "name": "notaire.be · Vente d'un bien loué : quelles conséquences pour le locataire ?",
+      "url": "https://www.notaire.be/actualites/vente-dun-bien-loue-quelles-consequences-pour-le-locataire"
+    }
+  ]
+}
