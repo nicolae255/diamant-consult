@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-26",
+  "read_min": 6,
+  "image": "img/banque/poignee-de-main.webp",
+  "sources": [
+    {"name": "notaire.be · Qu'advient-il de la maison familiale en cas de séparation du couple ? (05/01/2026)", "url": "https://www.notaire.be/actualites/quadvient-il-de-la-maison-familiale-en-cas-de-separation-du-couple"},
+    {"name": "notaire.be · Le logement familial en cas de séparation", "url": "https://www.notaire.be/relations-et-vivre-ensemble/separation-et-divorce/le-logement-familial-en-cas-de-separation"}
+  ],
+  "fr": {
+    "slug": "vendre-maison-divorce-separation-bruxelles",
+    "seo_title": "Vendre sa maison en cas de divorce à Bruxelles 2026 · Diamant Consult",
+    "description": "Divorce ou séparation à Bruxelles : vendre, racheter la part de l'autre ou rester en indivision ? Accord du conjoint, crédit, droits de partage de 1 %.",
+    "h1": "Vendre sa maison en cas de divorce à Bruxelles :<br><span style=\"color: var(--mute);\">vendre, racheter ou rester en indivision.</span>",
+    "hero_sub": "Vous vous séparez et vous êtes copropriétaires d'une maison ou d'un appartement à Bruxelles ? Voici les trois options, les règles de protection du logement familial et ce qui se passe avec le crédit, d'après notaire.be.",
+    "breadcrumb": "Vendre en cas de divorce à Bruxelles",
+    "category": "Guide vendeur",
+    "image_alt": "Poignée de main autour d'une table, accord entre copropriétaires pour la vente de la maison familiale",
+    "card_title": "Vendre sa maison en cas de divorce ou de séparation à Bruxelles",
+    "card_excerpt": "Vendre, racheter la part de l'autre ou rester en indivision : accord du conjoint, crédit hypothécaire et droits de partage de 1 % à Bruxelles.",
+    "summary": [
+      "En cas de séparation, les copropriétaires ont trois options pour la maison : la vendre, que l'un rachète la part de l'autre, ou la garder en indivision (notaire.be, 2026).",
+      "Pour des époux, le logement familial ne peut pas être vendu ni hypothéqué sans l'accord des deux, même s'il appartient à un seul.",
+      "Jusqu'à la signature de l'acte de vente, chaque ex-partenaire reste solidairement responsable du crédit hypothécaire.",
+      "À Bruxelles, le rachat de la part de l'autre donne lieu à des droits de partage de 1 % de la valeur du bien."
+    ],
+    "faq": [
+      {"q": "Peut-on vendre la maison familiale sans l'accord de son conjoint ?", "a": "Non pour des époux : selon notaire.be, le logement familial qui appartient à un seul époux ne peut être vendu ni hypothéqué sans l'accord de l'autre. Pour les autres statuts, la situation diffère : demandez conseil à votre notaire."},
+      {"q": "Qui rembourse le crédit hypothécaire en cas de séparation ?", "a": "Jusqu'à la signature de l'acte de vente, chaque ex-partenaire reste solidairement responsable du crédit. En cas de vente, la banque est remboursée sur le prix ; si l'un garde le bien, il devient seul emprunteur avec l'accord de la banque."},
+      {"q": "Combien coûte le rachat de la part de l'ex-conjoint à Bruxelles ?", "a": "Les droits de partage sont de 1 % de la valeur du bien indiquée dans l'acte à Bruxelles (et en Wallonie), selon notaire.be. Si la valeur réelle de vente est plus élevée, les droits se calculent sur cette valeur."},
+      {"q": "Quelle est la solution la plus simple pour une maison en indivision après un divorce ?", "a": "La vente est présentée par notaire.be comme la solution la plus simple : le prix rembourse le crédit, puis le solde est réparti selon les droits de chacun. Chacun doit ensuite retrouver un logement."}
+    ],
+    "body": "_tools/articles/vendre-maison-divorce-separation-bruxelles.fr.html"
+  },
+  "en": {
+    "slug": "sell-house-divorce-separation-brussels",
+    "seo_title": "Selling a house in a divorce in Brussels 2026 · Diamant Consult",
+    "description": "Divorce or separation in Brussels: sell, buy out your partner or keep joint ownership? Spouse's consent, mortgage and the 1% registration duty explained.",
+    "h1": "Selling a house in a divorce in Brussels:<br><span style=\"color: var(--mute);\">sell, buy out or keep joint ownership.</span>",
+    "hero_sub": "Separating while co-owning a house or apartment in Brussels? Here are the three options, how the family home is protected and what happens to the mortgage, based on notaire.be.",
+    "breadcrumb": "Selling in a divorce in Brussels",
+    "category": "Seller guide",
+    "image_alt": "Handshake across a table, co-owners agreeing on the sale of the family home",
+    "card_title": "Selling a house in a divorce or separation in Brussels",
+    "card_excerpt": "Sell, buy out your partner or stay in joint ownership: spouse's consent, mortgage and the 1% registration duty in Brussels.",
+    "summary": [
+      "When a couple separates, the co-owners have three options for the home: sell it, have one buy out the other, or keep it in joint ownership (notaire.be, 2026).",
+      "For married couples, the family home cannot be sold or mortgaged without both spouses' consent, even if it belongs to only one of them.",
+      "Until the sale deed is signed, each ex-partner remains jointly liable for the mortgage.",
+      "In Brussels, buying out the other partner's share triggers registration duties of 1% of the property value."
+    ],
+    "faq": [
+      {"q": "Can I sell the family home without my spouse's consent?", "a": "Not if you are married: according to notaire.be, a family home owned by only one spouse cannot be sold or mortgaged without the other's consent. Other statuses differ, so ask your notary."},
+      {"q": "Who pays the mortgage after a separation?", "a": "Until the sale deed is signed, each ex-partner remains jointly liable. In a sale, the bank is repaid from the price; if one partner keeps the home, they become the sole borrower with the bank's agreement."},
+      {"q": "How much does it cost to buy out my ex-partner in Brussels?", "a": "Registration duties (droits de partage) are 1% of the property value stated in the deed in Brussels (and Wallonia), according to notaire.be. If the real sale value is higher, duties are calculated on that value."},
+      {"q": "What is the simplest option for a jointly owned house after a divorce?", "a": "notaire.be presents selling as the simplest option: the price repays the mortgage and the rest is shared according to each partner's rights. Each person then has to find a new home."}
+    ],
+    "body": "_tools/articles/vendre-maison-divorce-separation-bruxelles.en.html"
+  },
+  "nl": {
+    "slug": "woning-verkopen-scheiding-brussel",
+    "seo_title": "Woning verkopen bij scheiding in Brussel 2026 · Diamant Consult",
+    "description": "Scheiding in Brussel: verkopen, het deel van de ander uitkopen of in onverdeeldheid blijven? Toestemming van de partner, lening en 1% verdelingsrechten.",
+    "h1": "Woning verkopen bij scheiding in Brussel:<br><span style=\"color: var(--mute);\">verkopen, uitkopen of onverdeeld blijven.</span>",
+    "hero_sub": "Gaat u uit elkaar en bezit u samen een huis of appartement in Brussel? Dit zijn de drie opties, de bescherming van de gezinswoning en wat er met de lening gebeurt, volgens notaire.be.",
+    "breadcrumb": "Verkopen bij scheiding in Brussel",
+    "category": "Verkopersgids",
+    "image_alt": "Handdruk rond een tafel, mede-eigenaars akkoord over de verkoop van de gezinswoning",
+    "card_title": "Woning verkopen bij scheiding in Brussel",
+    "card_excerpt": "Verkopen, het deel van de ander uitkopen of in onverdeeldheid blijven: toestemming van de partner, lening en 1% verdelingsrechten in Brussel.",
+    "summary": [
+      "Bij een scheiding hebben de mede-eigenaars drie opties voor de woning: verkopen, het deel van de ander uitkopen of in onverdeeldheid houden (notaire.be, 2026).",
+      "Voor gehuwden kan de gezinswoning niet worden verkocht of met een hypotheek bezwaard zonder toestemming van beiden, ook als ze maar van één partner is.",
+      "Tot de verkoopakte is ondertekend, blijft elke ex-partner hoofdelijk aansprakelijk voor de hypothecaire lening.",
+      "In Brussel geeft het uitkopen van het deel van de ander aanleiding tot verdelingsrechten van 1% van de waarde van het goed."
+    ],
+    "faq": [
+      {"q": "Mag ik de gezinswoning verkopen zonder toestemming van mijn partner?", "a": "Niet als u gehuwd bent: volgens notaire.be kan een gezinswoning die aan één echtgenoot toebehoort niet worden verkocht of met een hypotheek bezwaard zonder toestemming van de ander. Voor andere statuten verschilt dit: vraag raad aan uw notaris."},
+      {"q": "Wie betaalt de hypothecaire lening na een scheiding?", "a": "Tot de verkoopakte is ondertekend, blijft elke ex-partner hoofdelijk aansprakelijk. Bij een verkoop wordt de bank terugbetaald uit de prijs; houdt één partner de woning, dan wordt die de enige kredietnemer met akkoord van de bank."},
+      {"q": "Hoeveel kost het uitkopen van mijn ex-partner in Brussel?", "a": "De verdelingsrechten bedragen in Brussel (en Wallonië) 1% van de in de akte vermelde waarde van het goed, volgens notaire.be. Is de werkelijke verkoopwaarde hoger, dan worden de rechten op die waarde berekend."},
+      {"q": "Wat is de eenvoudigste oplossing voor een gezamenlijke woning na een scheiding?", "a": "notaire.be stelt verkopen voor als de eenvoudigste optie: de prijs lost de lening af en de rest wordt verdeeld volgens ieders rechten. Daarna moet iedereen een nieuwe woning vinden."}
+    ],
+    "body": "_tools/articles/vendre-maison-divorce-separation-bruxelles.nl.html"
+  }
+}

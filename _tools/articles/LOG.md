@@ -15,3 +15,4 @@
 - 2026-11-16 · /vendre-pour-acheter-ailleurs-bruxelles/ · /en/sell-brussels-home-buy-elsewhere/ · /nl/woning-brussel-verkopen-elders-kopen/ · seller situation · vendre pour acheter ailleurs (Bruxellois achetant hors de Bruxelles) · notaire.be Fednot 29/10/2026
 - 2026-11-19 · /vendre-maison-woluwe-saint-pierre-2026/ · /en/sell-house-woluwe-saint-pierre-2026/ · /nl/huis-verkopen-sint-pieters-woluwe-2026/ · commune · Woluwe-Saint-Pierre · notaire.be bilan Bruxelles 2025
 - 2026-11-23 · /vendre-bien-loue-bruxelles/ · /en/sell-rented-property-brussels/ · /nl/verhuurde-woning-verkopen-brussel/ · seller situation · vendre un bien loué (droit de préférence du locataire) · be.brussels, notaire.be
+- 2026-11-26 · /vendre-maison-divorce-separation-bruxelles/ · /en/sell-house-divorce-separation-brussels/ · /nl/woning-verkopen-scheiding-brussel/ · seller situation · divorce / séparation · notaire.be (maison familiale en cas de séparation)
